@@ -1,0 +1,18 @@
+{
+  "match_id": 5103377,
+  "round": 2,
+  "date": "2026-02-05T00:30:00Z",
+  "finished": true,
+  "home": {
+    "id": 10283,
+    "name": "Palmeiras",
+    "goals": 5,
+    "xg": 2.38
+  },
+  "away": {
+    "id": 7733,
+    "name": "Vitória",
+    "goals": 1,
+    "xg": 0.94
+  }
+}

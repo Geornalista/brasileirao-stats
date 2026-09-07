@@ -1,0 +1,18 @@
+{
+  "match_id": 5103454,
+  "round": 10,
+  "date": "2026-04-05T20:30:00Z",
+  "finished": true,
+  "home": {
+    "id": 9770,
+    "name": "Flamengo",
+    "goals": 3,
+    "xg": 2.29
+  },
+  "away": {
+    "id": 8514,
+    "name": "Santos",
+    "goals": 1,
+    "xg": 0.77
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "match_id": 5103462,
+  "round": 10,
+  "date": "2026-04-05T22:30:00Z",
+  "finished": true,
+  "home": {
+    "id": 7877,
+    "name": "Bahia",
+    "goals": 1,
+    "xg": 1.21
+  },
+  "away": {
+    "id": 10283,
+    "name": "Palmeiras",
+    "goals": 2,
+    "xg": 0.29
+  }
+}

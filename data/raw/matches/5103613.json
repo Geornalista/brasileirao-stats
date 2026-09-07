@@ -1,0 +1,18 @@
+{
+  "match_id": 5103613,
+  "round": 25,
+  "date": "2026-08-31T23:00:00Z",
+  "finished": true,
+  "home": {
+    "id": 1626,
+    "name": "Remo",
+    "goals": 2,
+    "xg": 3.27
+  },
+  "away": {
+    "id": 9767,
+    "name": "Coritiba",
+    "goals": 3,
+    "xg": 2.08
+  }
+}

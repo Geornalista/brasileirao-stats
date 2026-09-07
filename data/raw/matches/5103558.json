@@ -1,0 +1,18 @@
+{
+  "match_id": 5103558,
+  "round": 20,
+  "date": "2026-07-26T19:00:00Z",
+  "finished": true,
+  "home": {
+    "id": 7877,
+    "name": "Bahia",
+    "goals": 1,
+    "xg": 0.47
+  },
+  "away": {
+    "id": 9808,
+    "name": "Corinthians",
+    "goals": 1,
+    "xg": 0.17
+  }
+}

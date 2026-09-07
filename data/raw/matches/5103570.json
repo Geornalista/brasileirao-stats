@@ -1,0 +1,18 @@
+{
+  "match_id": 5103570,
+  "round": 21,
+  "date": "2026-07-29T22:30:00Z",
+  "finished": true,
+  "home": {
+    "id": 8702,
+    "name": "Internacional",
+    "goals": 1,
+    "xg": 1.24
+  },
+  "away": {
+    "id": 9770,
+    "name": "Flamengo",
+    "goals": 1,
+    "xg": 1.34
+  }
+}

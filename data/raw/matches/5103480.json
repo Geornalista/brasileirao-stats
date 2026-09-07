@@ -1,0 +1,18 @@
+{
+  "match_id": 5103480,
+  "round": 12,
+  "date": "2026-04-19T14:00:00Z",
+  "finished": true,
+  "home": {
+    "id": 8702,
+    "name": "Internacional",
+    "goals": 1,
+    "xg": 1.69
+  },
+  "away": {
+    "id": 163782,
+    "name": "Mirassol",
+    "goals": 2,
+    "xg": 1.74
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "match_id": 5103427,
+  "round": 7,
+  "date": "2026-03-18T22:00:00Z",
+  "finished": true,
+  "home": {
+    "id": 10283,
+    "name": "Palmeiras",
+    "goals": 2,
+    "xg": 1.92
+  },
+  "away": {
+    "id": 8517,
+    "name": "Botafogo",
+    "goals": 1,
+    "xg": 0.59
+  }
+}

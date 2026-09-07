@@ -1,0 +1,18 @@
+{
+  "match_id": 5103581,
+  "round": 22,
+  "date": "2026-08-08T23:30:00Z",
+  "finished": true,
+  "home": {
+    "id": 9767,
+    "name": "Coritiba",
+    "goals": 2,
+    "xg": 1.35
+  },
+  "away": {
+    "id": 197693,
+    "name": "Chapecoense",
+    "goals": 1,
+    "xg": 0.5
+  }
+}

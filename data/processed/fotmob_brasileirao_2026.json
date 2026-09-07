@@ -3,7 +3,7 @@
     "source": "FotMob",
     "league_id": 268,
     "season": 2026,
-    "fetched_at": "2026-09-07T21:37:55.159Z"
+    "fetched_at": "2026-09-07T23:12:05.410Z"
   },
   "competition": {
     "league_id": 268,
@@ -5184,11 +5184,11 @@
       "round": 26,
       "date": "2026-09-07T23:00:00.000Z",
       "finished": false,
-      "started": false,
+      "started": true,
       "cancelled": false,
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "home": {
         "id": 7733,
@@ -7620,6 +7620,12 @@
       }
     }
   ],
+  "match_details": {
+    "total": 255,
+    "cached": 0,
+    "downloaded": 255,
+    "errors": 0
+  },
   "stats": {
     "xg": {
       "TopLists": [
@@ -7854,7 +7860,7 @@
               "StatValue": 24,
               "SubStatValue": 24,
               "MinutesPlayed": 0,
-              "MatchesPlayed": 25,
+              "MatchesPlayed": 26,
               "StatValueCount": 25,
               "Rank": 19
             },
@@ -7866,7 +7872,7 @@
               "StatValue": 23.3,
               "SubStatValue": 27,
               "MinutesPlayed": 0,
-              "MatchesPlayed": 24,
+              "MatchesPlayed": 25,
               "StatValueCount": 24,
               "Rank": 20
             }
@@ -8067,7 +8073,7 @@
               "StatValue": 37.2,
               "SubStatValue": 37,
               "MinutesPlayed": 0,
-              "MatchesPlayed": 25,
+              "MatchesPlayed": 26,
               "StatValueCount": 25,
               "Rank": 15
             },
@@ -8103,7 +8109,7 @@
               "StatValue": 40.3,
               "SubStatValue": 32,
               "MinutesPlayed": 0,
-              "MatchesPlayed": 24,
+              "MatchesPlayed": 25,
               "StatValueCount": 24,
               "Rank": 18
             },
@@ -8364,7 +8370,7 @@
               "StatValue": -13.3,
               "SubStatValue": -13,
               "MinutesPlayed": 0,
-              "MatchesPlayed": 25,
+              "MatchesPlayed": 26,
               "StatValueCount": 1,
               "Rank": 18
             },
@@ -8388,7 +8394,7 @@
               "StatValue": -17,
               "SubStatValue": -5,
               "MinutesPlayed": 0,
-              "MatchesPlayed": 24,
+              "MatchesPlayed": 25,
               "StatValueCount": 1,
               "Rank": 20
             }

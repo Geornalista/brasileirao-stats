@@ -1,0 +1,18 @@
+{
+  "match_id": 5103418,
+  "round": 6,
+  "date": "2026-03-15T23:30:00Z",
+  "finished": true,
+  "home": {
+    "id": 109705,
+    "name": "RB Bragantino",
+    "goals": 1,
+    "xg": 0.61
+  },
+  "away": {
+    "id": 10277,
+    "name": "São Paulo",
+    "goals": 2,
+    "xg": 0.8
+  }
+}

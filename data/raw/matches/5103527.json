@@ -1,0 +1,18 @@
+{
+  "match_id": 5103527,
+  "round": 17,
+  "date": "2026-05-24T21:30:00Z",
+  "finished": true,
+  "home": {
+    "id": 9808,
+    "name": "Corinthians",
+    "goals": 1,
+    "xg": 0.65
+  },
+  "away": {
+    "id": 10272,
+    "name": "Atlético-MG",
+    "goals": 0,
+    "xg": 1.85
+  }
+}

@@ -3,7 +3,7 @@
     "competition": "Campeonato Brasileiro Série A",
     "season": 2026,
     "source": "FotMob",
-    "generated_at": "2026-09-07T21:37:55.330Z",
+    "generated_at": "2026-09-07T23:12:05.583Z",
     "total_teams": 20,
     "processed_matches": 255
   },
@@ -12,12 +12,30 @@
     "teams": 20,
     "total_goals": 673,
     "avg_goals_per_match": 2.639,
-    "over_05": 94.1,
-    "over_15": 77.6,
-    "over_25": 50.2,
-    "over_35": 25.1,
-    "btts": 58.4,
-    "draw_00": 5.9
+    "over_05": {
+      "value": 240,
+      "percentage": 94.1
+    },
+    "over_15": {
+      "value": 198,
+      "percentage": 77.6
+    },
+    "over_25": {
+      "value": 128,
+      "percentage": 50.2
+    },
+    "over_35": {
+      "value": 64,
+      "percentage": 25.1
+    },
+    "btts": {
+      "value": 149,
+      "percentage": 58.4
+    },
+    "draw_00": {
+      "value": 15,
+      "percentage": 5.9
+    }
   },
   "teams": [
     {
@@ -32,67 +50,48 @@
         "goals_for": 51,
         "goals_against": 21,
         "goal_difference": 30,
-        "total_goals": 72,
-        "goals_for_per_match": 1.962,
-        "goals_against_per_match": 0.808,
-        "avg_total_goals": 2.769,
-        "win_percentage": 61.5,
-        "draw_percentage": 23.1,
-        "loss_percentage": 15.4,
+        "avg_goals_for": 1.962,
+        "avg_goals_against": 0.808,
         "over_05": {
-          "count": 26,
+          "value": 26,
           "percentage": 100
         },
         "over_15": {
-          "count": 24,
+          "value": 24,
           "percentage": 92.3
         },
         "over_25": {
-          "count": 15,
+          "value": 15,
           "percentage": 57.7
         },
         "over_35": {
-          "count": 5,
+          "value": 5,
           "percentage": 19.2
         },
         "btts": {
-          "count": 12,
+          "value": 12,
           "percentage": 46.2
         },
         "draw_00": {
-          "count": 0,
+          "value": 0,
           "percentage": 0
         },
-        "clean_sheet": {
-          "count": 12,
-          "percentage": 46.2
-        },
-        "failed_to_score": {
-          "count": 2,
-          "percentage": 7.7
-        },
         "xg": {
-          "value": 43,
-          "per_match": 1.654,
-          "rank": 1
+          "value": null,
+          "per_match": null
         },
         "xga": {
-          "value": 24.7,
-          "per_match": 0.95,
-          "rank": 1
+          "value": null,
+          "per_match": null
         },
         "xgd": {
-          "value": 18.3,
-          "per_match": 0.704,
-          "rank": 1
+          "value": null,
+          "per_match": null
         },
-        "performance_vs_xg": {
-          "goals_vs_xg": 8,
-          "goals_against_vs_xga": -3.7,
-          "goal_difference_vs_xgd": 11.7,
-          "offensive_efficiency": 1.186,
-          "defensive_efficiency": 0.85
-        }
+        "goal_xg_difference": null,
+        "goal_xga_difference": null,
+        "offensive_efficiency": null,
+        "defensive_efficiency": null
       },
       "home": {
         "matches": 12,
@@ -102,44 +101,31 @@
         "goals_for": 24,
         "goals_against": 8,
         "goal_difference": 16,
-        "total_goals": 32,
-        "goals_for_per_match": 2,
-        "goals_against_per_match": 0.667,
-        "avg_total_goals": 2.667,
-        "win_percentage": 66.7,
-        "draw_percentage": 25,
-        "loss_percentage": 8.3,
+        "avg_goals_for": 2,
+        "avg_goals_against": 0.667,
         "over_05": {
-          "count": 12,
+          "value": 12,
           "percentage": 100
         },
         "over_15": {
-          "count": 12,
+          "value": 12,
           "percentage": 100
         },
         "over_25": {
-          "count": 6,
+          "value": 6,
           "percentage": 50
         },
         "over_35": {
-          "count": 2,
+          "value": 2,
           "percentage": 16.7
         },
         "btts": {
-          "count": 4,
+          "value": 4,
           "percentage": 33.3
         },
         "draw_00": {
-          "count": 0,
+          "value": 0,
           "percentage": 0
-        },
-        "clean_sheet": {
-          "count": 7,
-          "percentage": 58.3
-        },
-        "failed_to_score": {
-          "count": 1,
-          "percentage": 8.3
         },
         "xg": null,
         "xga": null,
@@ -153,44 +139,31 @@
         "goals_for": 27,
         "goals_against": 13,
         "goal_difference": 14,
-        "total_goals": 40,
-        "goals_for_per_match": 1.929,
-        "goals_against_per_match": 0.929,
-        "avg_total_goals": 2.857,
-        "win_percentage": 57.1,
-        "draw_percentage": 21.4,
-        "loss_percentage": 21.4,
+        "avg_goals_for": 1.929,
+        "avg_goals_against": 0.929,
         "over_05": {
-          "count": 14,
+          "value": 14,
           "percentage": 100
         },
         "over_15": {
-          "count": 12,
+          "value": 12,
           "percentage": 85.7
         },
         "over_25": {
-          "count": 9,
+          "value": 9,
           "percentage": 64.3
         },
         "over_35": {
-          "count": 3,
+          "value": 3,
           "percentage": 21.4
         },
         "btts": {
-          "count": 8,
+          "value": 8,
           "percentage": 57.1
         },
         "draw_00": {
-          "count": 0,
+          "value": 0,
           "percentage": 0
-        },
-        "clean_sheet": {
-          "count": 5,
-          "percentage": 35.7
-        },
-        "failed_to_score": {
-          "count": 1,
-          "percentage": 7.1
         },
         "xg": null,
         "xga": null,
@@ -209,67 +182,48 @@
         "goals_for": 45,
         "goals_against": 21,
         "goal_difference": 24,
-        "total_goals": 66,
-        "goals_for_per_match": 1.731,
-        "goals_against_per_match": 0.808,
-        "avg_total_goals": 2.538,
-        "win_percentage": 57.7,
-        "draw_percentage": 30.8,
-        "loss_percentage": 11.5,
+        "avg_goals_for": 1.731,
+        "avg_goals_against": 0.808,
         "over_05": {
-          "count": 23,
+          "value": 23,
           "percentage": 88.5
         },
         "over_15": {
-          "count": 18,
+          "value": 18,
           "percentage": 69.2
         },
         "over_25": {
-          "count": 14,
+          "value": 14,
           "percentage": 53.8
         },
         "over_35": {
-          "count": 7,
+          "value": 7,
           "percentage": 26.9
         },
         "btts": {
-          "count": 16,
+          "value": 16,
           "percentage": 61.5
         },
         "draw_00": {
-          "count": 3,
-          "percentage": 11.5
-        },
-        "clean_sheet": {
-          "count": 10,
-          "percentage": 38.5
-        },
-        "failed_to_score": {
-          "count": 3,
+          "value": 3,
           "percentage": 11.5
         },
         "xg": {
-          "value": 28.8,
-          "per_match": 1.108,
-          "rank": 14
+          "value": null,
+          "per_match": null
         },
         "xga": {
-          "value": 25.8,
-          "per_match": 0.992,
-          "rank": 3
+          "value": null,
+          "per_match": null
         },
         "xgd": {
-          "value": 2.9,
-          "per_match": 0.112,
-          "rank": 10
+          "value": null,
+          "per_match": null
         },
-        "performance_vs_xg": {
-          "goals_vs_xg": 16.2,
-          "goals_against_vs_xga": -4.8,
-          "goal_difference_vs_xgd": 21.1,
-          "offensive_efficiency": 1.563,
-          "defensive_efficiency": 0.814
-        }
+        "goal_xg_difference": null,
+        "goal_xga_difference": null,
+        "offensive_efficiency": null,
+        "defensive_efficiency": null
       },
       "home": {
         "matches": 12,
@@ -279,43 +233,30 @@
         "goals_for": 21,
         "goals_against": 9,
         "goal_difference": 12,
-        "total_goals": 30,
-        "goals_for_per_match": 1.75,
-        "goals_against_per_match": 0.75,
-        "avg_total_goals": 2.5,
-        "win_percentage": 66.7,
-        "draw_percentage": 25,
-        "loss_percentage": 8.3,
+        "avg_goals_for": 1.75,
+        "avg_goals_against": 0.75,
         "over_05": {
-          "count": 11,
+          "value": 11,
           "percentage": 91.7
         },
         "over_15": {
-          "count": 8,
+          "value": 8,
           "percentage": 66.7
         },
         "over_25": {
-          "count": 6,
+          "value": 6,
           "percentage": 50
         },
         "over_35": {
-          "count": 2,
+          "value": 2,
           "percentage": 16.7
         },
         "btts": {
-          "count": 8,
+          "value": 8,
           "percentage": 66.7
         },
         "draw_00": {
-          "count": 1,
-          "percentage": 8.3
-        },
-        "clean_sheet": {
-          "count": 4,
-          "percentage": 33.3
-        },
-        "failed_to_score": {
-          "count": 1,
+          "value": 1,
           "percentage": 8.3
         },
         "xg": null,
@@ -330,43 +271,30 @@
         "goals_for": 24,
         "goals_against": 12,
         "goal_difference": 12,
-        "total_goals": 36,
-        "goals_for_per_match": 1.714,
-        "goals_against_per_match": 0.857,
-        "avg_total_goals": 2.571,
-        "win_percentage": 50,
-        "draw_percentage": 35.7,
-        "loss_percentage": 14.3,
+        "avg_goals_for": 1.714,
+        "avg_goals_against": 0.857,
         "over_05": {
-          "count": 12,
+          "value": 12,
           "percentage": 85.7
         },
         "over_15": {
-          "count": 10,
+          "value": 10,
           "percentage": 71.4
         },
         "over_25": {
-          "count": 8,
+          "value": 8,
           "percentage": 57.1
         },
         "over_35": {
-          "count": 5,
+          "value": 5,
           "percentage": 35.7
         },
         "btts": {
-          "count": 8,
+          "value": 8,
           "percentage": 57.1
         },
         "draw_00": {
-          "count": 2,
-          "percentage": 14.3
-        },
-        "clean_sheet": {
-          "count": 6,
-          "percentage": 42.9
-        },
-        "failed_to_score": {
-          "count": 2,
+          "value": 2,
           "percentage": 14.3
         },
         "xg": null,
@@ -386,67 +314,48 @@
         "goals_for": 38,
         "goals_against": 28,
         "goal_difference": 10,
-        "total_goals": 66,
-        "goals_for_per_match": 1.462,
-        "goals_against_per_match": 1.077,
-        "avg_total_goals": 2.538,
-        "win_percentage": 50,
-        "draw_percentage": 23.1,
-        "loss_percentage": 26.9,
+        "avg_goals_for": 1.462,
+        "avg_goals_against": 1.077,
         "over_05": {
-          "count": 24,
+          "value": 24,
           "percentage": 92.3
         },
         "over_15": {
-          "count": 19,
+          "value": 19,
           "percentage": 73.1
         },
         "over_25": {
-          "count": 12,
+          "value": 12,
           "percentage": 46.2
         },
         "over_35": {
-          "count": 6,
+          "value": 6,
           "percentage": 23.1
         },
         "btts": {
-          "count": 14,
+          "value": 14,
           "percentage": 53.8
         },
         "draw_00": {
-          "count": 2,
+          "value": 2,
           "percentage": 7.7
         },
-        "clean_sheet": {
-          "count": 8,
-          "percentage": 30.8
-        },
-        "failed_to_score": {
-          "count": 6,
-          "percentage": 23.1
-        },
         "xg": {
-          "value": 36.7,
-          "per_match": 1.412,
-          "rank": 8
+          "value": null,
+          "per_match": null
         },
         "xga": {
-          "value": 30.2,
-          "per_match": 1.162,
-          "rank": 8
+          "value": null,
+          "per_match": null
         },
         "xgd": {
-          "value": 6.4,
-          "per_match": 0.246,
-          "rank": 6
+          "value": null,
+          "per_match": null
         },
-        "performance_vs_xg": {
-          "goals_vs_xg": 1.3,
-          "goals_against_vs_xga": -2.2,
-          "goal_difference_vs_xgd": 3.6,
-          "offensive_efficiency": 1.035,
-          "defensive_efficiency": 0.927
-        }
+        "goal_xg_difference": null,
+        "goal_xga_difference": null,
+        "offensive_efficiency": null,
+        "defensive_efficiency": null
       },
       "home": {
         "matches": 13,
@@ -456,44 +365,31 @@
         "goals_for": 23,
         "goals_against": 10,
         "goal_difference": 13,
-        "total_goals": 33,
-        "goals_for_per_match": 1.769,
-        "goals_against_per_match": 0.769,
-        "avg_total_goals": 2.538,
-        "win_percentage": 61.5,
-        "draw_percentage": 30.8,
-        "loss_percentage": 7.7,
+        "avg_goals_for": 1.769,
+        "avg_goals_against": 0.769,
         "over_05": {
-          "count": 12,
+          "value": 12,
           "percentage": 92.3
         },
         "over_15": {
-          "count": 10,
+          "value": 10,
           "percentage": 76.9
         },
         "over_25": {
-          "count": 5,
+          "value": 5,
           "percentage": 38.5
         },
         "over_35": {
-          "count": 3,
+          "value": 3,
           "percentage": 23.1
         },
         "btts": {
-          "count": 7,
+          "value": 7,
           "percentage": 53.8
         },
         "draw_00": {
-          "count": 1,
+          "value": 1,
           "percentage": 7.7
-        },
-        "clean_sheet": {
-          "count": 5,
-          "percentage": 38.5
-        },
-        "failed_to_score": {
-          "count": 2,
-          "percentage": 15.4
         },
         "xg": null,
         "xga": null,
@@ -507,44 +403,31 @@
         "goals_for": 15,
         "goals_against": 18,
         "goal_difference": -3,
-        "total_goals": 33,
-        "goals_for_per_match": 1.154,
-        "goals_against_per_match": 1.385,
-        "avg_total_goals": 2.538,
-        "win_percentage": 38.5,
-        "draw_percentage": 15.4,
-        "loss_percentage": 46.2,
+        "avg_goals_for": 1.154,
+        "avg_goals_against": 1.385,
         "over_05": {
-          "count": 12,
+          "value": 12,
           "percentage": 92.3
         },
         "over_15": {
-          "count": 9,
+          "value": 9,
           "percentage": 69.2
         },
         "over_25": {
-          "count": 7,
+          "value": 7,
           "percentage": 53.8
         },
         "over_35": {
-          "count": 3,
+          "value": 3,
           "percentage": 23.1
         },
         "btts": {
-          "count": 7,
+          "value": 7,
           "percentage": 53.8
         },
         "draw_00": {
-          "count": 1,
+          "value": 1,
           "percentage": 7.7
-        },
-        "clean_sheet": {
-          "count": 3,
-          "percentage": 23.1
-        },
-        "failed_to_score": {
-          "count": 4,
-          "percentage": 30.8
         },
         "xg": null,
         "xga": null,
@@ -563,67 +446,48 @@
         "goals_for": 40,
         "goals_against": 32,
         "goal_difference": 8,
-        "total_goals": 72,
-        "goals_for_per_match": 1.538,
-        "goals_against_per_match": 1.231,
-        "avg_total_goals": 2.769,
-        "win_percentage": 46.2,
-        "draw_percentage": 34.6,
-        "loss_percentage": 19.2,
+        "avg_goals_for": 1.538,
+        "avg_goals_against": 1.231,
         "over_05": {
-          "count": 25,
+          "value": 25,
           "percentage": 96.2
         },
         "over_15": {
-          "count": 21,
+          "value": 21,
           "percentage": 80.8
         },
         "over_25": {
-          "count": 13,
+          "value": 13,
           "percentage": 50
         },
         "over_35": {
-          "count": 7,
+          "value": 7,
           "percentage": 26.9
         },
         "btts": {
-          "count": 19,
+          "value": 19,
           "percentage": 73.1
         },
         "draw_00": {
-          "count": 1,
+          "value": 1,
           "percentage": 3.8
         },
-        "clean_sheet": {
-          "count": 5,
-          "percentage": 19.2
-        },
-        "failed_to_score": {
-          "count": 3,
-          "percentage": 11.5
-        },
         "xg": {
-          "value": 38.3,
-          "per_match": 1.473,
-          "rank": 5
+          "value": null,
+          "per_match": null
         },
         "xga": {
-          "value": 29.2,
-          "per_match": 1.123,
-          "rank": 6
+          "value": null,
+          "per_match": null
         },
         "xgd": {
-          "value": 9.1,
-          "per_match": 0.35,
-          "rank": 3
+          "value": null,
+          "per_match": null
         },
-        "performance_vs_xg": {
-          "goals_vs_xg": 1.7,
-          "goals_against_vs_xga": 2.8,
-          "goal_difference_vs_xgd": -1.1,
-          "offensive_efficiency": 1.044,
-          "defensive_efficiency": 1.096
-        }
+        "goal_xg_difference": null,
+        "goal_xga_difference": null,
+        "offensive_efficiency": null,
+        "defensive_efficiency": null
       },
       "home": {
         "matches": 14,
@@ -633,43 +497,30 @@
         "goals_for": 24,
         "goals_against": 14,
         "goal_difference": 10,
-        "total_goals": 38,
-        "goals_for_per_match": 1.714,
-        "goals_against_per_match": 1,
-        "avg_total_goals": 2.714,
-        "win_percentage": 71.4,
-        "draw_percentage": 21.4,
-        "loss_percentage": 7.1,
+        "avg_goals_for": 1.714,
+        "avg_goals_against": 1,
         "over_05": {
-          "count": 13,
+          "value": 13,
           "percentage": 92.9
         },
         "over_15": {
-          "count": 10,
+          "value": 10,
           "percentage": 71.4
         },
         "over_25": {
-          "count": 9,
+          "value": 9,
           "percentage": 64.3
         },
         "over_35": {
-          "count": 4,
+          "value": 4,
           "percentage": 28.6
         },
         "btts": {
-          "count": 10,
+          "value": 10,
           "percentage": 71.4
         },
         "draw_00": {
-          "count": 1,
-          "percentage": 7.1
-        },
-        "clean_sheet": {
-          "count": 4,
-          "percentage": 28.6
-        },
-        "failed_to_score": {
-          "count": 1,
+          "value": 1,
           "percentage": 7.1
         },
         "xg": null,
@@ -684,44 +535,31 @@
         "goals_for": 16,
         "goals_against": 18,
         "goal_difference": -2,
-        "total_goals": 34,
-        "goals_for_per_match": 1.333,
-        "goals_against_per_match": 1.5,
-        "avg_total_goals": 2.833,
-        "win_percentage": 16.7,
-        "draw_percentage": 50,
-        "loss_percentage": 33.3,
+        "avg_goals_for": 1.333,
+        "avg_goals_against": 1.5,
         "over_05": {
-          "count": 12,
+          "value": 12,
           "percentage": 100
         },
         "over_15": {
-          "count": 11,
+          "value": 11,
           "percentage": 91.7
         },
         "over_25": {
-          "count": 4,
+          "value": 4,
           "percentage": 33.3
         },
         "over_35": {
-          "count": 3,
+          "value": 3,
           "percentage": 25
         },
         "btts": {
-          "count": 9,
+          "value": 9,
           "percentage": 75
         },
         "draw_00": {
-          "count": 0,
+          "value": 0,
           "percentage": 0
-        },
-        "clean_sheet": {
-          "count": 1,
-          "percentage": 8.3
-        },
-        "failed_to_score": {
-          "count": 2,
-          "percentage": 16.7
         },
         "xg": null,
         "xga": null,
@@ -740,67 +578,48 @@
         "goals_for": 40,
         "goals_against": 32,
         "goal_difference": 8,
-        "total_goals": 72,
-        "goals_for_per_match": 1.538,
-        "goals_against_per_match": 1.231,
-        "avg_total_goals": 2.769,
-        "win_percentage": 42.3,
-        "draw_percentage": 38.5,
-        "loss_percentage": 19.2,
+        "avg_goals_for": 1.538,
+        "avg_goals_against": 1.231,
         "over_05": {
-          "count": 24,
+          "value": 24,
           "percentage": 92.3
         },
         "over_15": {
-          "count": 22,
+          "value": 22,
           "percentage": 84.6
         },
         "over_25": {
-          "count": 13,
+          "value": 13,
           "percentage": 50
         },
         "over_35": {
-          "count": 7,
+          "value": 7,
           "percentage": 26.9
         },
         "btts": {
-          "count": 17,
+          "value": 17,
           "percentage": 65.4
         },
         "draw_00": {
-          "count": 2,
+          "value": 2,
           "percentage": 7.7
         },
-        "clean_sheet": {
-          "count": 8,
-          "percentage": 30.8
-        },
-        "failed_to_score": {
-          "count": 3,
-          "percentage": 11.5
-        },
         "xg": {
-          "value": 40.4,
-          "per_match": 1.554,
-          "rank": 2
+          "value": null,
+          "per_match": null
         },
         "xga": {
-          "value": 34.6,
-          "per_match": 1.331,
-          "rank": 13
+          "value": null,
+          "per_match": null
         },
         "xgd": {
-          "value": 5.8,
-          "per_match": 0.223,
-          "rank": 7
+          "value": null,
+          "per_match": null
         },
-        "performance_vs_xg": {
-          "goals_vs_xg": -0.4,
-          "goals_against_vs_xga": -2.6,
-          "goal_difference_vs_xgd": 2.2,
-          "offensive_efficiency": 0.99,
-          "defensive_efficiency": 0.925
-        }
+        "goal_xg_difference": null,
+        "goal_xga_difference": null,
+        "offensive_efficiency": null,
+        "defensive_efficiency": null
       },
       "home": {
         "matches": 13,
@@ -810,43 +629,30 @@
         "goals_for": 20,
         "goals_against": 13,
         "goal_difference": 7,
-        "total_goals": 33,
-        "goals_for_per_match": 1.538,
-        "goals_against_per_match": 1,
-        "avg_total_goals": 2.538,
-        "win_percentage": 38.5,
-        "draw_percentage": 46.2,
-        "loss_percentage": 15.4,
+        "avg_goals_for": 1.538,
+        "avg_goals_against": 1,
         "over_05": {
-          "count": 12,
+          "value": 12,
           "percentage": 92.3
         },
         "over_15": {
-          "count": 12,
+          "value": 12,
           "percentage": 92.3
         },
         "over_25": {
-          "count": 6,
+          "value": 6,
           "percentage": 46.2
         },
         "over_35": {
-          "count": 2,
+          "value": 2,
           "percentage": 15.4
         },
         "btts": {
-          "count": 9,
+          "value": 9,
           "percentage": 69.2
         },
         "draw_00": {
-          "count": 1,
-          "percentage": 7.7
-        },
-        "clean_sheet": {
-          "count": 4,
-          "percentage": 30.8
-        },
-        "failed_to_score": {
-          "count": 1,
+          "value": 1,
           "percentage": 7.7
         },
         "xg": null,
@@ -861,44 +667,31 @@
         "goals_for": 20,
         "goals_against": 19,
         "goal_difference": 1,
-        "total_goals": 39,
-        "goals_for_per_match": 1.538,
-        "goals_against_per_match": 1.462,
-        "avg_total_goals": 3,
-        "win_percentage": 46.2,
-        "draw_percentage": 30.8,
-        "loss_percentage": 23.1,
+        "avg_goals_for": 1.538,
+        "avg_goals_against": 1.462,
         "over_05": {
-          "count": 12,
+          "value": 12,
           "percentage": 92.3
         },
         "over_15": {
-          "count": 10,
+          "value": 10,
           "percentage": 76.9
         },
         "over_25": {
-          "count": 7,
+          "value": 7,
           "percentage": 53.8
         },
         "over_35": {
-          "count": 5,
+          "value": 5,
           "percentage": 38.5
         },
         "btts": {
-          "count": 8,
+          "value": 8,
           "percentage": 61.5
         },
         "draw_00": {
-          "count": 1,
+          "value": 1,
           "percentage": 7.7
-        },
-        "clean_sheet": {
-          "count": 4,
-          "percentage": 30.8
-        },
-        "failed_to_score": {
-          "count": 2,
-          "percentage": 15.4
         },
         "xg": null,
         "xga": null,
@@ -917,67 +710,48 @@
         "goals_for": 38,
         "goals_against": 37,
         "goal_difference": 1,
-        "total_goals": 75,
-        "goals_for_per_match": 1.462,
-        "goals_against_per_match": 1.423,
-        "avg_total_goals": 2.885,
-        "win_percentage": 46.2,
-        "draw_percentage": 23.1,
-        "loss_percentage": 30.8,
+        "avg_goals_for": 1.462,
+        "avg_goals_against": 1.423,
         "over_05": {
-          "count": 25,
+          "value": 25,
           "percentage": 96.2
         },
         "over_15": {
-          "count": 22,
+          "value": 22,
           "percentage": 84.6
         },
         "over_25": {
-          "count": 17,
+          "value": 17,
           "percentage": 65.4
         },
         "over_35": {
-          "count": 8,
+          "value": 8,
           "percentage": 30.8
         },
         "btts": {
-          "count": 18,
+          "value": 18,
           "percentage": 69.2
         },
         "draw_00": {
-          "count": 1,
+          "value": 1,
           "percentage": 3.8
         },
-        "clean_sheet": {
-          "count": 5,
-          "percentage": 19.2
-        },
-        "failed_to_score": {
-          "count": 4,
-          "percentage": 15.4
-        },
         "xg": {
-          "value": 36.9,
-          "per_match": 1.419,
-          "rank": 7
+          "value": null,
+          "per_match": null
         },
         "xga": {
-          "value": 32.6,
-          "per_match": 1.254,
-          "rank": 11
+          "value": null,
+          "per_match": null
         },
         "xgd": {
-          "value": 4.2,
-          "per_match": 0.162,
-          "rank": 9
+          "value": null,
+          "per_match": null
         },
-        "performance_vs_xg": {
-          "goals_vs_xg": 1.1,
-          "goals_against_vs_xga": 4.4,
-          "goal_difference_vs_xgd": -3.2,
-          "offensive_efficiency": 1.03,
-          "defensive_efficiency": 1.135
-        }
+        "goal_xg_difference": null,
+        "goal_xga_difference": null,
+        "offensive_efficiency": null,
+        "defensive_efficiency": null
       },
       "home": {
         "matches": 14,
@@ -987,44 +761,31 @@
         "goals_for": 24,
         "goals_against": 16,
         "goal_difference": 8,
-        "total_goals": 40,
-        "goals_for_per_match": 1.714,
-        "goals_against_per_match": 1.143,
-        "avg_total_goals": 2.857,
-        "win_percentage": 50,
-        "draw_percentage": 28.6,
-        "loss_percentage": 21.4,
+        "avg_goals_for": 1.714,
+        "avg_goals_against": 1.143,
         "over_05": {
-          "count": 13,
+          "value": 13,
           "percentage": 92.9
         },
         "over_15": {
-          "count": 12,
+          "value": 12,
           "percentage": 85.7
         },
         "over_25": {
-          "count": 9,
+          "value": 9,
           "percentage": 64.3
         },
         "over_35": {
-          "count": 4,
+          "value": 4,
           "percentage": 28.6
         },
         "btts": {
-          "count": 10,
+          "value": 10,
           "percentage": 71.4
         },
         "draw_00": {
-          "count": 1,
+          "value": 1,
           "percentage": 7.1
-        },
-        "clean_sheet": {
-          "count": 3,
-          "percentage": 21.4
-        },
-        "failed_to_score": {
-          "count": 2,
-          "percentage": 14.3
         },
         "xg": null,
         "xga": null,
@@ -1038,44 +799,31 @@
         "goals_for": 14,
         "goals_against": 21,
         "goal_difference": -7,
-        "total_goals": 35,
-        "goals_for_per_match": 1.167,
-        "goals_against_per_match": 1.75,
-        "avg_total_goals": 2.917,
-        "win_percentage": 41.7,
-        "draw_percentage": 16.7,
-        "loss_percentage": 41.7,
+        "avg_goals_for": 1.167,
+        "avg_goals_against": 1.75,
         "over_05": {
-          "count": 12,
+          "value": 12,
           "percentage": 100
         },
         "over_15": {
-          "count": 10,
+          "value": 10,
           "percentage": 83.3
         },
         "over_25": {
-          "count": 8,
+          "value": 8,
           "percentage": 66.7
         },
         "over_35": {
-          "count": 4,
+          "value": 4,
           "percentage": 33.3
         },
         "btts": {
-          "count": 8,
+          "value": 8,
           "percentage": 66.7
         },
         "draw_00": {
-          "count": 0,
+          "value": 0,
           "percentage": 0
-        },
-        "clean_sheet": {
-          "count": 2,
-          "percentage": 16.7
-        },
-        "failed_to_score": {
-          "count": 2,
-          "percentage": 16.7
         },
         "xg": null,
         "xga": null,
@@ -1094,67 +842,48 @@
         "goals_for": 34,
         "goals_against": 35,
         "goal_difference": -1,
-        "total_goals": 69,
-        "goals_for_per_match": 1.308,
-        "goals_against_per_match": 1.346,
-        "avg_total_goals": 2.654,
-        "win_percentage": 38.5,
-        "draw_percentage": 26.9,
-        "loss_percentage": 34.6,
+        "avg_goals_for": 1.308,
+        "avg_goals_against": 1.346,
         "over_05": {
-          "count": 25,
+          "value": 25,
           "percentage": 96.2
         },
         "over_15": {
-          "count": 19,
+          "value": 19,
           "percentage": 73.1
         },
         "over_25": {
-          "count": 13,
+          "value": 13,
           "percentage": 50
         },
         "over_35": {
-          "count": 7,
+          "value": 7,
           "percentage": 26.9
         },
         "btts": {
-          "count": 14,
+          "value": 14,
           "percentage": 53.8
         },
         "draw_00": {
-          "count": 1,
+          "value": 1,
           "percentage": 3.8
         },
-        "clean_sheet": {
-          "count": 6,
-          "percentage": 23.1
-        },
-        "failed_to_score": {
-          "count": 7,
-          "percentage": 26.9
-        },
         "xg": {
-          "value": 27.6,
-          "per_match": 1.062,
-          "rank": 15
+          "value": null,
+          "per_match": null
         },
         "xga": {
-          "value": 40.4,
-          "per_match": 1.554,
-          "rank": 19
+          "value": null,
+          "per_match": null
         },
         "xgd": {
-          "value": -12.8,
-          "per_match": -0.492,
-          "rank": 16
+          "value": null,
+          "per_match": null
         },
-        "performance_vs_xg": {
-          "goals_vs_xg": 6.4,
-          "goals_against_vs_xga": -5.4,
-          "goal_difference_vs_xgd": 11.8,
-          "offensive_efficiency": 1.232,
-          "defensive_efficiency": 0.866
-        }
+        "goal_xg_difference": null,
+        "goal_xga_difference": null,
+        "offensive_efficiency": null,
+        "defensive_efficiency": null
       },
       "home": {
         "matches": 13,
@@ -1164,44 +893,31 @@
         "goals_for": 16,
         "goals_against": 16,
         "goal_difference": 0,
-        "total_goals": 32,
-        "goals_for_per_match": 1.231,
-        "goals_against_per_match": 1.231,
-        "avg_total_goals": 2.462,
-        "win_percentage": 38.5,
-        "draw_percentage": 23.1,
-        "loss_percentage": 38.5,
+        "avg_goals_for": 1.231,
+        "avg_goals_against": 1.231,
         "over_05": {
-          "count": 13,
+          "value": 13,
           "percentage": 100
         },
         "over_15": {
-          "count": 9,
+          "value": 9,
           "percentage": 69.2
         },
         "over_25": {
-          "count": 6,
+          "value": 6,
           "percentage": 46.2
         },
         "over_35": {
-          "count": 3,
+          "value": 3,
           "percentage": 23.1
         },
         "btts": {
-          "count": 8,
+          "value": 8,
           "percentage": 61.5
         },
         "draw_00": {
-          "count": 0,
+          "value": 0,
           "percentage": 0
-        },
-        "clean_sheet": {
-          "count": 2,
-          "percentage": 15.4
-        },
-        "failed_to_score": {
-          "count": 3,
-          "percentage": 23.1
         },
         "xg": null,
         "xga": null,
@@ -1215,44 +931,31 @@
         "goals_for": 18,
         "goals_against": 19,
         "goal_difference": -1,
-        "total_goals": 37,
-        "goals_for_per_match": 1.385,
-        "goals_against_per_match": 1.462,
-        "avg_total_goals": 2.846,
-        "win_percentage": 38.5,
-        "draw_percentage": 30.8,
-        "loss_percentage": 30.8,
+        "avg_goals_for": 1.385,
+        "avg_goals_against": 1.462,
         "over_05": {
-          "count": 12,
+          "value": 12,
           "percentage": 92.3
         },
         "over_15": {
-          "count": 10,
+          "value": 10,
           "percentage": 76.9
         },
         "over_25": {
-          "count": 7,
+          "value": 7,
           "percentage": 53.8
         },
         "over_35": {
-          "count": 4,
+          "value": 4,
           "percentage": 30.8
         },
         "btts": {
-          "count": 6,
+          "value": 6,
           "percentage": 46.2
         },
         "draw_00": {
-          "count": 1,
+          "value": 1,
           "percentage": 7.7
-        },
-        "clean_sheet": {
-          "count": 4,
-          "percentage": 30.8
-        },
-        "failed_to_score": {
-          "count": 4,
-          "percentage": 30.8
         },
         "xg": null,
         "xga": null,
@@ -1271,67 +974,48 @@
         "goals_for": 32,
         "goals_against": 30,
         "goal_difference": 2,
-        "total_goals": 62,
-        "goals_for_per_match": 1.28,
-        "goals_against_per_match": 1.2,
-        "avg_total_goals": 2.48,
-        "win_percentage": 40,
-        "draw_percentage": 24,
-        "loss_percentage": 36,
+        "avg_goals_for": 1.28,
+        "avg_goals_against": 1.2,
         "over_05": {
-          "count": 24,
+          "value": 24,
           "percentage": 96
         },
         "over_15": {
-          "count": 17,
+          "value": 17,
           "percentage": 68
         },
         "over_25": {
-          "count": 12,
+          "value": 12,
           "percentage": 48
         },
         "over_35": {
-          "count": 7,
+          "value": 7,
           "percentage": 28
         },
         "btts": {
-          "count": 11,
+          "value": 11,
           "percentage": 44
         },
         "draw_00": {
-          "count": 1,
+          "value": 1,
           "percentage": 4
         },
-        "clean_sheet": {
-          "count": 6,
-          "percentage": 24
-        },
-        "failed_to_score": {
-          "count": 9,
-          "percentage": 36
-        },
         "xg": {
-          "value": 33.2,
-          "per_match": 1.328,
-          "rank": 11
+          "value": null,
+          "per_match": null
         },
         "xga": {
-          "value": 30.2,
-          "per_match": 1.208,
-          "rank": 9
+          "value": null,
+          "per_match": null
         },
         "xgd": {
-          "value": 2.9,
-          "per_match": 0.116,
-          "rank": 11
+          "value": null,
+          "per_match": null
         },
-        "performance_vs_xg": {
-          "goals_vs_xg": -1.2,
-          "goals_against_vs_xga": -0.2,
-          "goal_difference_vs_xgd": -0.9,
-          "offensive_efficiency": 0.964,
-          "defensive_efficiency": 0.993
-        }
+        "goal_xg_difference": null,
+        "goal_xga_difference": null,
+        "offensive_efficiency": null,
+        "defensive_efficiency": null
       },
       "home": {
         "matches": 11,
@@ -1341,44 +1025,31 @@
         "goals_for": 19,
         "goals_against": 14,
         "goal_difference": 5,
-        "total_goals": 33,
-        "goals_for_per_match": 1.727,
-        "goals_against_per_match": 1.273,
-        "avg_total_goals": 3,
-        "win_percentage": 54.5,
-        "draw_percentage": 36.4,
-        "loss_percentage": 9.1,
+        "avg_goals_for": 1.727,
+        "avg_goals_against": 1.273,
         "over_05": {
-          "count": 11,
+          "value": 11,
           "percentage": 100
         },
         "over_15": {
-          "count": 9,
+          "value": 9,
           "percentage": 81.8
         },
         "over_25": {
-          "count": 7,
+          "value": 7,
           "percentage": 63.6
         },
         "over_35": {
-          "count": 4,
+          "value": 4,
           "percentage": 36.4
         },
         "btts": {
-          "count": 7,
+          "value": 7,
           "percentage": 63.6
         },
         "draw_00": {
-          "count": 0,
+          "value": 0,
           "percentage": 0
-        },
-        "clean_sheet": {
-          "count": 3,
-          "percentage": 27.3
-        },
-        "failed_to_score": {
-          "count": 1,
-          "percentage": 9.1
         },
         "xg": null,
         "xga": null,
@@ -1392,44 +1063,31 @@
         "goals_for": 13,
         "goals_against": 16,
         "goal_difference": -3,
-        "total_goals": 29,
-        "goals_for_per_match": 0.929,
-        "goals_against_per_match": 1.143,
-        "avg_total_goals": 2.071,
-        "win_percentage": 28.6,
-        "draw_percentage": 14.3,
-        "loss_percentage": 57.1,
+        "avg_goals_for": 0.929,
+        "avg_goals_against": 1.143,
         "over_05": {
-          "count": 13,
+          "value": 13,
           "percentage": 92.9
         },
         "over_15": {
-          "count": 8,
+          "value": 8,
           "percentage": 57.1
         },
         "over_25": {
-          "count": 5,
+          "value": 5,
           "percentage": 35.7
         },
         "over_35": {
-          "count": 3,
+          "value": 3,
           "percentage": 21.4
         },
         "btts": {
-          "count": 4,
+          "value": 4,
           "percentage": 28.6
         },
         "draw_00": {
-          "count": 1,
+          "value": 1,
           "percentage": 7.1
-        },
-        "clean_sheet": {
-          "count": 3,
-          "percentage": 21.4
-        },
-        "failed_to_score": {
-          "count": 8,
-          "percentage": 57.1
         },
         "xg": null,
         "xga": null,
@@ -1448,67 +1106,48 @@
         "goals_for": 31,
         "goals_against": 28,
         "goal_difference": 3,
-        "total_goals": 59,
-        "goals_for_per_match": 1.24,
-        "goals_against_per_match": 1.12,
-        "avg_total_goals": 2.36,
-        "win_percentage": 40,
-        "draw_percentage": 20,
-        "loss_percentage": 40,
+        "avg_goals_for": 1.24,
+        "avg_goals_against": 1.12,
         "over_05": {
-          "count": 24,
+          "value": 24,
           "percentage": 96
         },
         "over_15": {
-          "count": 19,
+          "value": 19,
           "percentage": 76
         },
         "over_25": {
-          "count": 10,
+          "value": 10,
           "percentage": 40
         },
         "over_35": {
-          "count": 3,
+          "value": 3,
           "percentage": 12
         },
         "btts": {
-          "count": 12,
+          "value": 12,
           "percentage": 48
         },
         "draw_00": {
-          "count": 1,
+          "value": 1,
           "percentage": 4
         },
-        "clean_sheet": {
-          "count": 8,
-          "percentage": 32
-        },
-        "failed_to_score": {
-          "count": 6,
-          "percentage": 24
-        },
         "xg": {
-          "value": 37.2,
-          "per_match": 1.488,
-          "rank": 6
+          "value": null,
+          "per_match": null
         },
         "xga": {
-          "value": 27.4,
-          "per_match": 1.096,
-          "rank": 4
+          "value": null,
+          "per_match": null
         },
         "xgd": {
-          "value": 9.8,
-          "per_match": 0.392,
-          "rank": 2
+          "value": null,
+          "per_match": null
         },
-        "performance_vs_xg": {
-          "goals_vs_xg": -6.2,
-          "goals_against_vs_xga": 0.6,
-          "goal_difference_vs_xgd": -6.8,
-          "offensive_efficiency": 0.833,
-          "defensive_efficiency": 1.022
-        }
+        "goal_xg_difference": null,
+        "goal_xga_difference": null,
+        "offensive_efficiency": null,
+        "defensive_efficiency": null
       },
       "home": {
         "matches": 13,
@@ -1518,44 +1157,31 @@
         "goals_for": 19,
         "goals_against": 14,
         "goal_difference": 5,
-        "total_goals": 33,
-        "goals_for_per_match": 1.462,
-        "goals_against_per_match": 1.077,
-        "avg_total_goals": 2.538,
-        "win_percentage": 46.2,
-        "draw_percentage": 15.4,
-        "loss_percentage": 38.5,
+        "avg_goals_for": 1.462,
+        "avg_goals_against": 1.077,
         "over_05": {
-          "count": 12,
+          "value": 12,
           "percentage": 92.3
         },
         "over_15": {
-          "count": 9,
+          "value": 9,
           "percentage": 69.2
         },
         "over_25": {
-          "count": 6,
+          "value": 6,
           "percentage": 46.2
         },
         "over_35": {
-          "count": 3,
+          "value": 3,
           "percentage": 23.1
         },
         "btts": {
-          "count": 6,
+          "value": 6,
           "percentage": 46.2
         },
         "draw_00": {
-          "count": 1,
+          "value": 1,
           "percentage": 7.7
-        },
-        "clean_sheet": {
-          "count": 5,
-          "percentage": 38.5
-        },
-        "failed_to_score": {
-          "count": 3,
-          "percentage": 23.1
         },
         "xg": null,
         "xga": null,
@@ -1569,44 +1195,31 @@
         "goals_for": 12,
         "goals_against": 14,
         "goal_difference": -2,
-        "total_goals": 26,
-        "goals_for_per_match": 1,
-        "goals_against_per_match": 1.167,
-        "avg_total_goals": 2.167,
-        "win_percentage": 33.3,
-        "draw_percentage": 25,
-        "loss_percentage": 41.7,
+        "avg_goals_for": 1,
+        "avg_goals_against": 1.167,
         "over_05": {
-          "count": 12,
+          "value": 12,
           "percentage": 100
         },
         "over_15": {
-          "count": 10,
+          "value": 10,
           "percentage": 83.3
         },
         "over_25": {
-          "count": 4,
+          "value": 4,
           "percentage": 33.3
         },
         "over_35": {
-          "count": 0,
+          "value": 0,
           "percentage": 0
         },
         "btts": {
-          "count": 6,
+          "value": 6,
           "percentage": 50
         },
         "draw_00": {
-          "count": 0,
+          "value": 0,
           "percentage": 0
-        },
-        "clean_sheet": {
-          "count": 3,
-          "percentage": 25
-        },
-        "failed_to_score": {
-          "count": 3,
-          "percentage": 25
         },
         "xg": null,
         "xga": null,
@@ -1625,67 +1238,48 @@
         "goals_for": 31,
         "goals_against": 28,
         "goal_difference": 3,
-        "total_goals": 59,
-        "goals_for_per_match": 1.24,
-        "goals_against_per_match": 1.12,
-        "avg_total_goals": 2.36,
-        "win_percentage": 36,
-        "draw_percentage": 24,
-        "loss_percentage": 40,
+        "avg_goals_for": 1.24,
+        "avg_goals_against": 1.12,
         "over_05": {
-          "count": 25,
+          "value": 25,
           "percentage": 100
         },
         "over_15": {
-          "count": 19,
+          "value": 19,
           "percentage": 76
         },
         "over_25": {
-          "count": 10,
+          "value": 10,
           "percentage": 40
         },
         "over_35": {
-          "count": 3,
+          "value": 3,
           "percentage": 12
         },
         "btts": {
-          "count": 15,
+          "value": 15,
           "percentage": 60
         },
         "draw_00": {
-          "count": 0,
+          "value": 0,
           "percentage": 0
         },
-        "clean_sheet": {
-          "count": 5,
-          "percentage": 20
-        },
-        "failed_to_score": {
-          "count": 5,
-          "percentage": 20
-        },
         "xg": {
-          "value": 33.9,
-          "per_match": 1.356,
-          "rank": 10
+          "value": null,
+          "per_match": null
         },
         "xga": {
-          "value": 29,
-          "per_match": 1.16,
-          "rank": 5
+          "value": null,
+          "per_match": null
         },
         "xgd": {
-          "value": 4.9,
-          "per_match": 0.196,
-          "rank": 8
+          "value": null,
+          "per_match": null
         },
-        "performance_vs_xg": {
-          "goals_vs_xg": -2.9,
-          "goals_against_vs_xga": -1,
-          "goal_difference_vs_xgd": -1.9,
-          "offensive_efficiency": 0.914,
-          "defensive_efficiency": 0.966
-        }
+        "goal_xg_difference": null,
+        "goal_xga_difference": null,
+        "offensive_efficiency": null,
+        "defensive_efficiency": null
       },
       "home": {
         "matches": 12,
@@ -1695,44 +1289,31 @@
         "goals_for": 20,
         "goals_against": 10,
         "goal_difference": 10,
-        "total_goals": 30,
-        "goals_for_per_match": 1.667,
-        "goals_against_per_match": 0.833,
-        "avg_total_goals": 2.5,
-        "win_percentage": 58.3,
-        "draw_percentage": 25,
-        "loss_percentage": 16.7,
+        "avg_goals_for": 1.667,
+        "avg_goals_against": 0.833,
         "over_05": {
-          "count": 12,
+          "value": 12,
           "percentage": 100
         },
         "over_15": {
-          "count": 10,
+          "value": 10,
           "percentage": 83.3
         },
         "over_25": {
-          "count": 5,
+          "value": 5,
           "percentage": 41.7
         },
         "over_35": {
-          "count": 2,
+          "value": 2,
           "percentage": 16.7
         },
         "btts": {
-          "count": 7,
+          "value": 7,
           "percentage": 58.3
         },
         "draw_00": {
-          "count": 0,
+          "value": 0,
           "percentage": 0
-        },
-        "clean_sheet": {
-          "count": 4,
-          "percentage": 33.3
-        },
-        "failed_to_score": {
-          "count": 1,
-          "percentage": 8.3
         },
         "xg": null,
         "xga": null,
@@ -1746,44 +1327,31 @@
         "goals_for": 11,
         "goals_against": 18,
         "goal_difference": -7,
-        "total_goals": 29,
-        "goals_for_per_match": 0.846,
-        "goals_against_per_match": 1.385,
-        "avg_total_goals": 2.231,
-        "win_percentage": 15.4,
-        "draw_percentage": 23.1,
-        "loss_percentage": 61.5,
+        "avg_goals_for": 0.846,
+        "avg_goals_against": 1.385,
         "over_05": {
-          "count": 13,
+          "value": 13,
           "percentage": 100
         },
         "over_15": {
-          "count": 9,
+          "value": 9,
           "percentage": 69.2
         },
         "over_25": {
-          "count": 5,
+          "value": 5,
           "percentage": 38.5
         },
         "over_35": {
-          "count": 1,
+          "value": 1,
           "percentage": 7.7
         },
         "btts": {
-          "count": 8,
+          "value": 8,
           "percentage": 61.5
         },
         "draw_00": {
-          "count": 0,
+          "value": 0,
           "percentage": 0
-        },
-        "clean_sheet": {
-          "count": 1,
-          "percentage": 7.7
-        },
-        "failed_to_score": {
-          "count": 4,
-          "percentage": 30.8
         },
         "xg": null,
         "xga": null,
@@ -1802,67 +1370,48 @@
         "goals_for": 27,
         "goals_against": 27,
         "goal_difference": 0,
-        "total_goals": 54,
-        "goals_for_per_match": 1.038,
-        "goals_against_per_match": 1.038,
-        "avg_total_goals": 2.077,
-        "win_percentage": 30.8,
-        "draw_percentage": 30.8,
-        "loss_percentage": 38.5,
+        "avg_goals_for": 1.038,
+        "avg_goals_against": 1.038,
         "over_05": {
-          "count": 22,
+          "value": 22,
           "percentage": 84.6
         },
         "over_15": {
-          "count": 17,
+          "value": 17,
           "percentage": 65.4
         },
         "over_25": {
-          "count": 10,
+          "value": 10,
           "percentage": 38.5
         },
         "over_35": {
-          "count": 4,
+          "value": 4,
           "percentage": 15.4
         },
         "btts": {
-          "count": 13,
+          "value": 13,
           "percentage": 50
         },
         "draw_00": {
-          "count": 4,
+          "value": 4,
           "percentage": 15.4
         },
-        "clean_sheet": {
-          "count": 10,
-          "percentage": 38.5
-        },
-        "failed_to_score": {
-          "count": 7,
-          "percentage": 26.9
-        },
         "xg": {
-          "value": 25.6,
-          "per_match": 0.985,
-          "rank": 18
+          "value": null,
+          "per_match": null
         },
         "xga": {
-          "value": 25.6,
-          "per_match": 0.985,
-          "rank": 2
+          "value": null,
+          "per_match": null
         },
         "xgd": {
-          "value": -0.1,
-          "per_match": -0.004,
-          "rank": 13
+          "value": null,
+          "per_match": null
         },
-        "performance_vs_xg": {
-          "goals_vs_xg": 1.4,
-          "goals_against_vs_xga": 1.4,
-          "goal_difference_vs_xgd": 0.1,
-          "offensive_efficiency": 1.055,
-          "defensive_efficiency": 1.055
-        }
+        "goal_xg_difference": null,
+        "goal_xga_difference": null,
+        "offensive_efficiency": null,
+        "defensive_efficiency": null
       },
       "home": {
         "matches": 14,
@@ -1872,44 +1421,31 @@
         "goals_for": 14,
         "goals_against": 13,
         "goal_difference": 1,
-        "total_goals": 27,
-        "goals_for_per_match": 1,
-        "goals_against_per_match": 0.929,
-        "avg_total_goals": 1.929,
-        "win_percentage": 35.7,
-        "draw_percentage": 21.4,
-        "loss_percentage": 42.9,
+        "avg_goals_for": 1,
+        "avg_goals_against": 0.929,
         "over_05": {
-          "count": 12,
+          "value": 12,
           "percentage": 85.7
         },
         "over_15": {
-          "count": 8,
+          "value": 8,
           "percentage": 57.1
         },
         "over_25": {
-          "count": 5,
+          "value": 5,
           "percentage": 35.7
         },
         "over_35": {
-          "count": 1,
+          "value": 1,
           "percentage": 7.1
         },
         "btts": {
-          "count": 5,
+          "value": 5,
           "percentage": 35.7
         },
         "draw_00": {
-          "count": 2,
+          "value": 2,
           "percentage": 14.3
-        },
-        "clean_sheet": {
-          "count": 6,
-          "percentage": 42.9
-        },
-        "failed_to_score": {
-          "count": 5,
-          "percentage": 35.7
         },
         "xg": null,
         "xga": null,
@@ -1923,43 +1459,30 @@
         "goals_for": 13,
         "goals_against": 14,
         "goal_difference": -1,
-        "total_goals": 27,
-        "goals_for_per_match": 1.083,
-        "goals_against_per_match": 1.167,
-        "avg_total_goals": 2.25,
-        "win_percentage": 25,
-        "draw_percentage": 41.7,
-        "loss_percentage": 33.3,
+        "avg_goals_for": 1.083,
+        "avg_goals_against": 1.167,
         "over_05": {
-          "count": 10,
+          "value": 10,
           "percentage": 83.3
         },
         "over_15": {
-          "count": 9,
+          "value": 9,
           "percentage": 75
         },
         "over_25": {
-          "count": 5,
+          "value": 5,
           "percentage": 41.7
         },
         "over_35": {
-          "count": 3,
+          "value": 3,
           "percentage": 25
         },
         "btts": {
-          "count": 8,
+          "value": 8,
           "percentage": 66.7
         },
         "draw_00": {
-          "count": 2,
-          "percentage": 16.7
-        },
-        "clean_sheet": {
-          "count": 4,
-          "percentage": 33.3
-        },
-        "failed_to_score": {
-          "count": 2,
+          "value": 2,
           "percentage": 16.7
         },
         "xg": null,
@@ -1979,67 +1502,48 @@
         "goals_for": 37,
         "goals_against": 38,
         "goal_difference": -1,
-        "total_goals": 75,
-        "goals_for_per_match": 1.48,
-        "goals_against_per_match": 1.52,
-        "avg_total_goals": 3,
-        "win_percentage": 32,
-        "draw_percentage": 32,
-        "loss_percentage": 36,
+        "avg_goals_for": 1.48,
+        "avg_goals_against": 1.52,
         "over_05": {
-          "count": 24,
+          "value": 24,
           "percentage": 96
         },
         "over_15": {
-          "count": 22,
+          "value": 22,
           "percentage": 88
         },
         "over_25": {
-          "count": 15,
+          "value": 15,
           "percentage": 60
         },
         "over_35": {
-          "count": 9,
+          "value": 9,
           "percentage": 36
         },
         "btts": {
-          "count": 17,
+          "value": 17,
           "percentage": 68
         },
         "draw_00": {
-          "count": 1,
+          "value": 1,
           "percentage": 4
         },
-        "clean_sheet": {
-          "count": 6,
-          "percentage": 24
-        },
-        "failed_to_score": {
-          "count": 3,
-          "percentage": 12
-        },
         "xg": {
-          "value": 34.2,
-          "per_match": 1.368,
-          "rank": 9
+          "value": null,
+          "per_match": null
         },
         "xga": {
-          "value": 32.9,
-          "per_match": 1.316,
-          "rank": 12
+          "value": null,
+          "per_match": null
         },
         "xgd": {
-          "value": 1.3,
-          "per_match": 0.052,
-          "rank": 12
+          "value": null,
+          "per_match": null
         },
-        "performance_vs_xg": {
-          "goals_vs_xg": 2.8,
-          "goals_against_vs_xga": 5.1,
-          "goal_difference_vs_xgd": -2.3,
-          "offensive_efficiency": 1.082,
-          "defensive_efficiency": 1.155
-        }
+        "goal_xg_difference": null,
+        "goal_xga_difference": null,
+        "offensive_efficiency": null,
+        "defensive_efficiency": null
       },
       "home": {
         "matches": 13,
@@ -2049,44 +1553,31 @@
         "goals_for": 18,
         "goals_against": 17,
         "goal_difference": 1,
-        "total_goals": 35,
-        "goals_for_per_match": 1.385,
-        "goals_against_per_match": 1.308,
-        "avg_total_goals": 2.692,
-        "win_percentage": 38.5,
-        "draw_percentage": 30.8,
-        "loss_percentage": 30.8,
+        "avg_goals_for": 1.385,
+        "avg_goals_against": 1.308,
         "over_05": {
-          "count": 13,
+          "value": 13,
           "percentage": 100
         },
         "over_15": {
-          "count": 12,
+          "value": 12,
           "percentage": 92.3
         },
         "over_25": {
-          "count": 6,
+          "value": 6,
           "percentage": 46.2
         },
         "over_35": {
-          "count": 3,
+          "value": 3,
           "percentage": 23.1
         },
         "btts": {
-          "count": 8,
+          "value": 8,
           "percentage": 61.5
         },
         "draw_00": {
-          "count": 0,
+          "value": 0,
           "percentage": 0
-        },
-        "clean_sheet": {
-          "count": 3,
-          "percentage": 23.1
-        },
-        "failed_to_score": {
-          "count": 2,
-          "percentage": 15.4
         },
         "xg": null,
         "xga": null,
@@ -2100,43 +1591,30 @@
         "goals_for": 19,
         "goals_against": 21,
         "goal_difference": -2,
-        "total_goals": 40,
-        "goals_for_per_match": 1.583,
-        "goals_against_per_match": 1.75,
-        "avg_total_goals": 3.333,
-        "win_percentage": 25,
-        "draw_percentage": 33.3,
-        "loss_percentage": 41.7,
+        "avg_goals_for": 1.583,
+        "avg_goals_against": 1.75,
         "over_05": {
-          "count": 11,
+          "value": 11,
           "percentage": 91.7
         },
         "over_15": {
-          "count": 10,
+          "value": 10,
           "percentage": 83.3
         },
         "over_25": {
-          "count": 9,
+          "value": 9,
           "percentage": 75
         },
         "over_35": {
-          "count": 6,
+          "value": 6,
           "percentage": 50
         },
         "btts": {
-          "count": 9,
+          "value": 9,
           "percentage": 75
         },
         "draw_00": {
-          "count": 1,
-          "percentage": 8.3
-        },
-        "clean_sheet": {
-          "count": 3,
-          "percentage": 25
-        },
-        "failed_to_score": {
-          "count": 1,
+          "value": 1,
           "percentage": 8.3
         },
         "xg": null,
@@ -2156,67 +1634,48 @@
         "goals_for": 37,
         "goals_against": 40,
         "goal_difference": -3,
-        "total_goals": 77,
-        "goals_for_per_match": 1.48,
-        "goals_against_per_match": 1.6,
-        "avg_total_goals": 3.08,
-        "win_percentage": 32,
-        "draw_percentage": 28,
-        "loss_percentage": 40,
+        "avg_goals_for": 1.48,
+        "avg_goals_against": 1.6,
         "over_05": {
-          "count": 23,
+          "value": 23,
           "percentage": 92
         },
         "over_15": {
-          "count": 20,
+          "value": 20,
           "percentage": 80
         },
         "over_25": {
-          "count": 17,
+          "value": 17,
           "percentage": 68
         },
         "over_35": {
-          "count": 9,
+          "value": 9,
           "percentage": 36
         },
         "btts": {
-          "count": 17,
+          "value": 17,
           "percentage": 68
         },
         "draw_00": {
-          "count": 2,
+          "value": 2,
           "percentage": 8
         },
-        "clean_sheet": {
-          "count": 4,
-          "percentage": 16
-        },
-        "failed_to_score": {
-          "count": 6,
-          "percentage": 24
-        },
         "xg": {
-          "value": 32.9,
-          "per_match": 1.316,
-          "rank": 12
+          "value": null,
+          "per_match": null
         },
         "xga": {
-          "value": 38.5,
-          "per_match": 1.54,
-          "rank": 16
+          "value": null,
+          "per_match": null
         },
         "xgd": {
-          "value": -5.6,
-          "per_match": -0.224,
-          "rank": 15
+          "value": null,
+          "per_match": null
         },
-        "performance_vs_xg": {
-          "goals_vs_xg": 4.1,
-          "goals_against_vs_xga": 1.5,
-          "goal_difference_vs_xgd": 2.6,
-          "offensive_efficiency": 1.125,
-          "defensive_efficiency": 1.039
-        }
+        "goal_xg_difference": null,
+        "goal_xga_difference": null,
+        "offensive_efficiency": null,
+        "defensive_efficiency": null
       },
       "home": {
         "matches": 12,
@@ -2226,44 +1685,31 @@
         "goals_for": 20,
         "goals_against": 17,
         "goal_difference": 3,
-        "total_goals": 37,
-        "goals_for_per_match": 1.667,
-        "goals_against_per_match": 1.417,
-        "avg_total_goals": 3.083,
-        "win_percentage": 33.3,
-        "draw_percentage": 41.7,
-        "loss_percentage": 25,
+        "avg_goals_for": 1.667,
+        "avg_goals_against": 1.417,
         "over_05": {
-          "count": 10,
+          "value": 10,
           "percentage": 83.3
         },
         "over_15": {
-          "count": 10,
+          "value": 10,
           "percentage": 83.3
         },
         "over_25": {
-          "count": 9,
+          "value": 9,
           "percentage": 75
         },
         "over_35": {
-          "count": 6,
+          "value": 6,
           "percentage": 50
         },
         "btts": {
-          "count": 8,
+          "value": 8,
           "percentage": 66.7
         },
         "draw_00": {
-          "count": 2,
+          "value": 2,
           "percentage": 16.7
-        },
-        "clean_sheet": {
-          "count": 3,
-          "percentage": 25
-        },
-        "failed_to_score": {
-          "count": 3,
-          "percentage": 25
         },
         "xg": null,
         "xga": null,
@@ -2277,44 +1723,31 @@
         "goals_for": 17,
         "goals_against": 23,
         "goal_difference": -6,
-        "total_goals": 40,
-        "goals_for_per_match": 1.308,
-        "goals_against_per_match": 1.769,
-        "avg_total_goals": 3.077,
-        "win_percentage": 30.8,
-        "draw_percentage": 15.4,
-        "loss_percentage": 53.8,
+        "avg_goals_for": 1.308,
+        "avg_goals_against": 1.769,
         "over_05": {
-          "count": 13,
+          "value": 13,
           "percentage": 100
         },
         "over_15": {
-          "count": 10,
+          "value": 10,
           "percentage": 76.9
         },
         "over_25": {
-          "count": 8,
+          "value": 8,
           "percentage": 61.5
         },
         "over_35": {
-          "count": 3,
+          "value": 3,
           "percentage": 23.1
         },
         "btts": {
-          "count": 9,
+          "value": 9,
           "percentage": 69.2
         },
         "draw_00": {
-          "count": 0,
+          "value": 0,
           "percentage": 0
-        },
-        "clean_sheet": {
-          "count": 1,
-          "percentage": 7.7
-        },
-        "failed_to_score": {
-          "count": 3,
-          "percentage": 23.1
         },
         "xg": null,
         "xga": null,
@@ -2333,67 +1766,48 @@
         "goals_for": 24,
         "goals_against": 37,
         "goal_difference": -13,
-        "total_goals": 61,
-        "goals_for_per_match": 0.96,
-        "goals_against_per_match": 1.48,
-        "avg_total_goals": 2.44,
-        "win_percentage": 32,
-        "draw_percentage": 20,
-        "loss_percentage": 48,
+        "avg_goals_for": 0.96,
+        "avg_goals_against": 1.48,
         "over_05": {
-          "count": 23,
+          "value": 23,
           "percentage": 92
         },
         "over_15": {
-          "count": 20,
+          "value": 20,
           "percentage": 80
         },
         "over_25": {
-          "count": 9,
+          "value": 9,
           "percentage": 36
         },
         "over_35": {
-          "count": 6,
+          "value": 6,
           "percentage": 24
         },
         "btts": {
-          "count": 9,
+          "value": 9,
           "percentage": 36
         },
         "draw_00": {
-          "count": 2,
+          "value": 2,
           "percentage": 8
         },
-        "clean_sheet": {
-          "count": 9,
-          "percentage": 36
-        },
-        "failed_to_score": {
-          "count": 9,
-          "percentage": 36
-        },
         "xg": {
-          "value": 24,
-          "per_match": 0.96,
-          "rank": 19
+          "value": null,
+          "per_match": null
         },
         "xga": {
-          "value": 37.2,
-          "per_match": 1.488,
-          "rank": 15
+          "value": null,
+          "per_match": null
         },
         "xgd": {
-          "value": -13.3,
-          "per_match": -0.532,
-          "rank": 18
+          "value": null,
+          "per_match": null
         },
-        "performance_vs_xg": {
-          "goals_vs_xg": 0,
-          "goals_against_vs_xga": -0.2,
-          "goal_difference_vs_xgd": 0.3,
-          "offensive_efficiency": 1,
-          "defensive_efficiency": 0.995
-        }
+        "goal_xg_difference": null,
+        "goal_xga_difference": null,
+        "offensive_efficiency": null,
+        "defensive_efficiency": null
       },
       "home": {
         "matches": 12,
@@ -2403,44 +1817,31 @@
         "goals_for": 16,
         "goals_against": 9,
         "goal_difference": 7,
-        "total_goals": 25,
-        "goals_for_per_match": 1.333,
-        "goals_against_per_match": 0.75,
-        "avg_total_goals": 2.083,
-        "win_percentage": 66.7,
-        "draw_percentage": 8.3,
-        "loss_percentage": 25,
+        "avg_goals_for": 1.333,
+        "avg_goals_against": 0.75,
         "over_05": {
-          "count": 11,
+          "value": 11,
           "percentage": 91.7
         },
         "over_15": {
-          "count": 8,
+          "value": 8,
           "percentage": 66.7
         },
         "over_25": {
-          "count": 3,
+          "value": 3,
           "percentage": 25
         },
         "over_35": {
-          "count": 2,
+          "value": 2,
           "percentage": 16.7
         },
         "btts": {
-          "count": 2,
+          "value": 2,
           "percentage": 16.7
         },
         "draw_00": {
-          "count": 1,
+          "value": 1,
           "percentage": 8.3
-        },
-        "clean_sheet": {
-          "count": 8,
-          "percentage": 66.7
-        },
-        "failed_to_score": {
-          "count": 3,
-          "percentage": 25
         },
         "xg": null,
         "xga": null,
@@ -2454,44 +1855,31 @@
         "goals_for": 8,
         "goals_against": 28,
         "goal_difference": -20,
-        "total_goals": 36,
-        "goals_for_per_match": 0.615,
-        "goals_against_per_match": 2.154,
-        "avg_total_goals": 2.769,
-        "win_percentage": 0,
-        "draw_percentage": 30.8,
-        "loss_percentage": 69.2,
+        "avg_goals_for": 0.615,
+        "avg_goals_against": 2.154,
         "over_05": {
-          "count": 12,
+          "value": 12,
           "percentage": 92.3
         },
         "over_15": {
-          "count": 12,
+          "value": 12,
           "percentage": 92.3
         },
         "over_25": {
-          "count": 6,
+          "value": 6,
           "percentage": 46.2
         },
         "over_35": {
-          "count": 4,
+          "value": 4,
           "percentage": 30.8
         },
         "btts": {
-          "count": 7,
+          "value": 7,
           "percentage": 53.8
         },
         "draw_00": {
-          "count": 1,
+          "value": 1,
           "percentage": 7.7
-        },
-        "clean_sheet": {
-          "count": 1,
-          "percentage": 7.7
-        },
-        "failed_to_score": {
-          "count": 6,
-          "percentage": 46.2
         },
         "xg": null,
         "xga": null,
@@ -2510,67 +1898,48 @@
         "goals_for": 27,
         "goals_against": 32,
         "goal_difference": -5,
-        "total_goals": 59,
-        "goals_for_per_match": 1.125,
-        "goals_against_per_match": 1.333,
-        "avg_total_goals": 2.458,
-        "win_percentage": 29.2,
-        "draw_percentage": 29.2,
-        "loss_percentage": 41.7,
+        "avg_goals_for": 1.125,
+        "avg_goals_against": 1.333,
         "over_05": {
-          "count": 21,
+          "value": 21,
           "percentage": 87.5
         },
         "over_15": {
-          "count": 18,
+          "value": 18,
           "percentage": 75
         },
         "over_25": {
-          "count": 11,
+          "value": 11,
           "percentage": 45.8
         },
         "over_35": {
-          "count": 4,
+          "value": 4,
           "percentage": 16.7
         },
         "btts": {
-          "count": 14,
+          "value": 14,
           "percentage": 58.3
         },
         "draw_00": {
-          "count": 3,
+          "value": 3,
           "percentage": 12.5
         },
-        "clean_sheet": {
-          "count": 5,
-          "percentage": 20.8
-        },
-        "failed_to_score": {
-          "count": 8,
-          "percentage": 33.3
-        },
         "xg": {
-          "value": 23.3,
-          "per_match": 0.971,
-          "rank": 20
+          "value": null,
+          "per_match": null
         },
         "xga": {
-          "value": 40.3,
-          "per_match": 1.679,
-          "rank": 18
+          "value": null,
+          "per_match": null
         },
         "xgd": {
-          "value": -17,
-          "per_match": -0.708,
-          "rank": 20
+          "value": null,
+          "per_match": null
         },
-        "performance_vs_xg": {
-          "goals_vs_xg": 3.7,
-          "goals_against_vs_xga": -8.3,
-          "goal_difference_vs_xgd": 12,
-          "offensive_efficiency": 1.159,
-          "defensive_efficiency": 0.794
-        }
+        "goal_xg_difference": null,
+        "goal_xga_difference": null,
+        "offensive_efficiency": null,
+        "defensive_efficiency": null
       },
       "home": {
         "matches": 12,
@@ -2580,44 +1949,31 @@
         "goals_for": 21,
         "goals_against": 14,
         "goal_difference": 7,
-        "total_goals": 35,
-        "goals_for_per_match": 1.75,
-        "goals_against_per_match": 1.167,
-        "avg_total_goals": 2.917,
-        "win_percentage": 58.3,
-        "draw_percentage": 25,
-        "loss_percentage": 16.7,
+        "avg_goals_for": 1.75,
+        "avg_goals_against": 1.167,
         "over_05": {
-          "count": 11,
+          "value": 11,
           "percentage": 91.7
         },
         "over_15": {
-          "count": 9,
+          "value": 9,
           "percentage": 75
         },
         "over_25": {
-          "count": 6,
+          "value": 6,
           "percentage": 50
         },
         "over_35": {
-          "count": 4,
+          "value": 4,
           "percentage": 33.3
         },
         "btts": {
-          "count": 8,
+          "value": 8,
           "percentage": 66.7
         },
         "draw_00": {
-          "count": 1,
+          "value": 1,
           "percentage": 8.3
-        },
-        "clean_sheet": {
-          "count": 3,
-          "percentage": 25
-        },
-        "failed_to_score": {
-          "count": 2,
-          "percentage": 16.7
         },
         "xg": null,
         "xga": null,
@@ -2631,44 +1987,31 @@
         "goals_for": 6,
         "goals_against": 18,
         "goal_difference": -12,
-        "total_goals": 24,
-        "goals_for_per_match": 0.5,
-        "goals_against_per_match": 1.5,
-        "avg_total_goals": 2,
-        "win_percentage": 0,
-        "draw_percentage": 33.3,
-        "loss_percentage": 66.7,
+        "avg_goals_for": 0.5,
+        "avg_goals_against": 1.5,
         "over_05": {
-          "count": 10,
+          "value": 10,
           "percentage": 83.3
         },
         "over_15": {
-          "count": 9,
+          "value": 9,
           "percentage": 75
         },
         "over_25": {
-          "count": 5,
+          "value": 5,
           "percentage": 41.7
         },
         "over_35": {
-          "count": 0,
+          "value": 0,
           "percentage": 0
         },
         "btts": {
-          "count": 6,
+          "value": 6,
           "percentage": 50
         },
         "draw_00": {
-          "count": 2,
+          "value": 2,
           "percentage": 16.7
-        },
-        "clean_sheet": {
-          "count": 2,
-          "percentage": 16.7
-        },
-        "failed_to_score": {
-          "count": 6,
-          "percentage": 50
         },
         "xg": null,
         "xga": null,
@@ -2687,67 +2030,48 @@
         "goals_for": 29,
         "goals_against": 40,
         "goal_difference": -11,
-        "total_goals": 69,
-        "goals_for_per_match": 1.115,
-        "goals_against_per_match": 1.538,
-        "avg_total_goals": 2.654,
-        "win_percentage": 26.9,
-        "draw_percentage": 26.9,
-        "loss_percentage": 46.2,
+        "avg_goals_for": 1.115,
+        "avg_goals_against": 1.538,
         "over_05": {
-          "count": 26,
+          "value": 26,
           "percentage": 100
         },
         "over_15": {
-          "count": 19,
+          "value": 19,
           "percentage": 73.1
         },
         "over_25": {
-          "count": 14,
+          "value": 14,
           "percentage": 53.8
         },
         "over_35": {
-          "count": 7,
+          "value": 7,
           "percentage": 26.9
         },
         "btts": {
-          "count": 18,
+          "value": 18,
           "percentage": 69.2
         },
         "draw_00": {
-          "count": 0,
+          "value": 0,
           "percentage": 0
         },
-        "clean_sheet": {
-          "count": 1,
-          "percentage": 3.8
-        },
-        "failed_to_score": {
-          "count": 7,
-          "percentage": 26.9
-        },
         "xg": {
-          "value": 31.1,
-          "per_match": 1.196,
-          "rank": 13
+          "value": null,
+          "per_match": null
         },
         "xga": {
-          "value": 35.2,
-          "per_match": 1.354,
-          "rank": 14
+          "value": null,
+          "per_match": null
         },
         "xgd": {
-          "value": -4.1,
-          "per_match": -0.158,
-          "rank": 14
+          "value": null,
+          "per_match": null
         },
-        "performance_vs_xg": {
-          "goals_vs_xg": -2.1,
-          "goals_against_vs_xga": 4.8,
-          "goal_difference_vs_xgd": -6.9,
-          "offensive_efficiency": 0.932,
-          "defensive_efficiency": 1.136
-        }
+        "goal_xg_difference": null,
+        "goal_xga_difference": null,
+        "offensive_efficiency": null,
+        "defensive_efficiency": null
       },
       "home": {
         "matches": 13,
@@ -2757,44 +2081,31 @@
         "goals_for": 17,
         "goals_against": 19,
         "goal_difference": -2,
-        "total_goals": 36,
-        "goals_for_per_match": 1.308,
-        "goals_against_per_match": 1.462,
-        "avg_total_goals": 2.769,
-        "win_percentage": 38.5,
-        "draw_percentage": 30.8,
-        "loss_percentage": 30.8,
+        "avg_goals_for": 1.308,
+        "avg_goals_against": 1.462,
         "over_05": {
-          "count": 13,
+          "value": 13,
           "percentage": 100
         },
         "over_15": {
-          "count": 10,
+          "value": 10,
           "percentage": 76.9
         },
         "over_25": {
-          "count": 8,
+          "value": 8,
           "percentage": 61.5
         },
         "over_35": {
-          "count": 3,
+          "value": 3,
           "percentage": 23.1
         },
         "btts": {
-          "count": 10,
+          "value": 10,
           "percentage": 76.9
         },
         "draw_00": {
-          "count": 0,
+          "value": 0,
           "percentage": 0
-        },
-        "clean_sheet": {
-          "count": 1,
-          "percentage": 7.7
-        },
-        "failed_to_score": {
-          "count": 2,
-          "percentage": 15.4
         },
         "xg": null,
         "xga": null,
@@ -2808,44 +2119,31 @@
         "goals_for": 12,
         "goals_against": 21,
         "goal_difference": -9,
-        "total_goals": 33,
-        "goals_for_per_match": 0.923,
-        "goals_against_per_match": 1.615,
-        "avg_total_goals": 2.538,
-        "win_percentage": 15.4,
-        "draw_percentage": 23.1,
-        "loss_percentage": 61.5,
+        "avg_goals_for": 0.923,
+        "avg_goals_against": 1.615,
         "over_05": {
-          "count": 13,
+          "value": 13,
           "percentage": 100
         },
         "over_15": {
-          "count": 9,
+          "value": 9,
           "percentage": 69.2
         },
         "over_25": {
-          "count": 6,
+          "value": 6,
           "percentage": 46.2
         },
         "over_35": {
-          "count": 4,
+          "value": 4,
           "percentage": 30.8
         },
         "btts": {
-          "count": 8,
+          "value": 8,
           "percentage": 61.5
         },
         "draw_00": {
-          "count": 0,
+          "value": 0,
           "percentage": 0
-        },
-        "clean_sheet": {
-          "count": 0,
-          "percentage": 0
-        },
-        "failed_to_score": {
-          "count": 5,
-          "percentage": 38.5
         },
         "xg": null,
         "xga": null,
@@ -2864,67 +2162,48 @@
         "goals_for": 28,
         "goals_against": 34,
         "goal_difference": -6,
-        "total_goals": 62,
-        "goals_for_per_match": 1.077,
-        "goals_against_per_match": 1.308,
-        "avg_total_goals": 2.385,
-        "win_percentage": 19.2,
-        "draw_percentage": 38.5,
-        "loss_percentage": 42.3,
+        "avg_goals_for": 1.077,
+        "avg_goals_against": 1.308,
         "over_05": {
-          "count": 23,
+          "value": 23,
           "percentage": 88.5
         },
         "over_15": {
-          "count": 19,
+          "value": 19,
           "percentage": 73.1
         },
         "over_25": {
-          "count": 10,
+          "value": 10,
           "percentage": 38.5
         },
         "over_35": {
-          "count": 7,
+          "value": 7,
           "percentage": 26.9
         },
         "btts": {
-          "count": 15,
+          "value": 15,
           "percentage": 57.7
         },
         "draw_00": {
-          "count": 3,
+          "value": 3,
           "percentage": 11.5
         },
-        "clean_sheet": {
-          "count": 6,
-          "percentage": 23.1
-        },
-        "failed_to_score": {
-          "count": 8,
-          "percentage": 30.8
-        },
         "xg": {
-          "value": 40.4,
-          "per_match": 1.554,
-          "rank": 3
+          "value": null,
+          "per_match": null
         },
         "xga": {
-          "value": 32.1,
-          "per_match": 1.235,
-          "rank": 10
+          "value": null,
+          "per_match": null
         },
         "xgd": {
-          "value": 8.3,
-          "per_match": 0.319,
-          "rank": 5
+          "value": null,
+          "per_match": null
         },
-        "performance_vs_xg": {
-          "goals_vs_xg": -12.4,
-          "goals_against_vs_xga": 1.9,
-          "goal_difference_vs_xgd": -14.3,
-          "offensive_efficiency": 0.693,
-          "defensive_efficiency": 1.059
-        }
+        "goal_xg_difference": null,
+        "goal_xga_difference": null,
+        "offensive_efficiency": null,
+        "defensive_efficiency": null
       },
       "home": {
         "matches": 14,
@@ -2934,44 +2213,31 @@
         "goals_for": 16,
         "goals_against": 16,
         "goal_difference": 0,
-        "total_goals": 32,
-        "goals_for_per_match": 1.143,
-        "goals_against_per_match": 1.143,
-        "avg_total_goals": 2.286,
-        "win_percentage": 21.4,
-        "draw_percentage": 35.7,
-        "loss_percentage": 42.9,
+        "avg_goals_for": 1.143,
+        "avg_goals_against": 1.143,
         "over_05": {
-          "count": 12,
+          "value": 12,
           "percentage": 85.7
         },
         "over_15": {
-          "count": 10,
+          "value": 10,
           "percentage": 71.4
         },
         "over_25": {
-          "count": 5,
+          "value": 5,
           "percentage": 35.7
         },
         "over_35": {
-          "count": 3,
+          "value": 3,
           "percentage": 21.4
         },
         "btts": {
-          "count": 8,
+          "value": 8,
           "percentage": 57.1
         },
         "draw_00": {
-          "count": 2,
+          "value": 2,
           "percentage": 14.3
-        },
-        "clean_sheet": {
-          "count": 4,
-          "percentage": 28.6
-        },
-        "failed_to_score": {
-          "count": 4,
-          "percentage": 28.6
         },
         "xg": null,
         "xga": null,
@@ -2985,44 +2251,31 @@
         "goals_for": 12,
         "goals_against": 18,
         "goal_difference": -6,
-        "total_goals": 30,
-        "goals_for_per_match": 1,
-        "goals_against_per_match": 1.5,
-        "avg_total_goals": 2.5,
-        "win_percentage": 16.7,
-        "draw_percentage": 41.7,
-        "loss_percentage": 41.7,
+        "avg_goals_for": 1,
+        "avg_goals_against": 1.5,
         "over_05": {
-          "count": 11,
+          "value": 11,
           "percentage": 91.7
         },
         "over_15": {
-          "count": 9,
+          "value": 9,
           "percentage": 75
         },
         "over_25": {
-          "count": 5,
+          "value": 5,
           "percentage": 41.7
         },
         "over_35": {
-          "count": 4,
+          "value": 4,
           "percentage": 33.3
         },
         "btts": {
-          "count": 7,
+          "value": 7,
           "percentage": 58.3
         },
         "draw_00": {
-          "count": 1,
+          "value": 1,
           "percentage": 8.3
-        },
-        "clean_sheet": {
-          "count": 2,
-          "percentage": 16.7
-        },
-        "failed_to_score": {
-          "count": 4,
-          "percentage": 33.3
         },
         "xg": null,
         "xga": null,
@@ -3041,67 +2294,48 @@
         "goals_for": 27,
         "goals_against": 40,
         "goal_difference": -13,
-        "total_goals": 67,
-        "goals_for_per_match": 1.08,
-        "goals_against_per_match": 1.6,
-        "avg_total_goals": 2.68,
-        "win_percentage": 24,
-        "draw_percentage": 28,
-        "loss_percentage": 48,
+        "avg_goals_for": 1.08,
+        "avg_goals_against": 1.6,
         "over_05": {
-          "count": 24,
+          "value": 24,
           "percentage": 96
         },
         "over_15": {
-          "count": 18,
+          "value": 18,
           "percentage": 72
         },
         "over_25": {
-          "count": 14,
+          "value": 14,
           "percentage": 56
         },
         "over_35": {
-          "count": 6,
+          "value": 6,
           "percentage": 24
         },
         "btts": {
-          "count": 16,
+          "value": 16,
           "percentage": 64
         },
         "draw_00": {
-          "count": 1,
+          "value": 1,
           "percentage": 4
         },
-        "clean_sheet": {
-          "count": 2,
-          "percentage": 8
-        },
-        "failed_to_score": {
-          "count": 8,
-          "percentage": 32
-        },
         "xg": {
-          "value": 38.4,
-          "per_match": 1.536,
-          "rank": 4
+          "value": null,
+          "per_match": null
         },
         "xga": {
-          "value": 30,
-          "per_match": 1.2,
-          "rank": 7
+          "value": null,
+          "per_match": null
         },
         "xgd": {
-          "value": 8.4,
-          "per_match": 0.336,
-          "rank": 4
+          "value": null,
+          "per_match": null
         },
-        "performance_vs_xg": {
-          "goals_vs_xg": -11.4,
-          "goals_against_vs_xga": 10,
-          "goal_difference_vs_xgd": -21.4,
-          "offensive_efficiency": 0.703,
-          "defensive_efficiency": 1.333
-        }
+        "goal_xg_difference": null,
+        "goal_xga_difference": null,
+        "offensive_efficiency": null,
+        "defensive_efficiency": null
       },
       "home": {
         "matches": 13,
@@ -3111,44 +2345,31 @@
         "goals_for": 16,
         "goals_against": 18,
         "goal_difference": -2,
-        "total_goals": 34,
-        "goals_for_per_match": 1.231,
-        "goals_against_per_match": 1.385,
-        "avg_total_goals": 2.615,
-        "win_percentage": 46.2,
-        "draw_percentage": 15.4,
-        "loss_percentage": 38.5,
+        "avg_goals_for": 1.231,
+        "avg_goals_against": 1.385,
         "over_05": {
-          "count": 13,
+          "value": 13,
           "percentage": 100
         },
         "over_15": {
-          "count": 10,
+          "value": 10,
           "percentage": 76.9
         },
         "over_25": {
-          "count": 8,
+          "value": 8,
           "percentage": 61.5
         },
         "over_35": {
-          "count": 2,
+          "value": 2,
           "percentage": 15.4
         },
         "btts": {
-          "count": 8,
+          "value": 8,
           "percentage": 61.5
         },
         "draw_00": {
-          "count": 0,
+          "value": 0,
           "percentage": 0
-        },
-        "clean_sheet": {
-          "count": 1,
-          "percentage": 7.7
-        },
-        "failed_to_score": {
-          "count": 4,
-          "percentage": 30.8
         },
         "xg": null,
         "xga": null,
@@ -3162,44 +2383,31 @@
         "goals_for": 11,
         "goals_against": 22,
         "goal_difference": -11,
-        "total_goals": 33,
-        "goals_for_per_match": 0.917,
-        "goals_against_per_match": 1.833,
-        "avg_total_goals": 2.75,
-        "win_percentage": 0,
-        "draw_percentage": 41.7,
-        "loss_percentage": 58.3,
+        "avg_goals_for": 0.917,
+        "avg_goals_against": 1.833,
         "over_05": {
-          "count": 11,
+          "value": 11,
           "percentage": 91.7
         },
         "over_15": {
-          "count": 8,
+          "value": 8,
           "percentage": 66.7
         },
         "over_25": {
-          "count": 6,
+          "value": 6,
           "percentage": 50
         },
         "over_35": {
-          "count": 4,
+          "value": 4,
           "percentage": 33.3
         },
         "btts": {
-          "count": 8,
+          "value": 8,
           "percentage": 66.7
         },
         "draw_00": {
-          "count": 1,
+          "value": 1,
           "percentage": 8.3
-        },
-        "clean_sheet": {
-          "count": 1,
-          "percentage": 8.3
-        },
-        "failed_to_score": {
-          "count": 4,
-          "percentage": 33.3
         },
         "xg": null,
         "xga": null,
@@ -3218,67 +2426,48 @@
         "goals_for": 30,
         "goals_against": 43,
         "goal_difference": -13,
-        "total_goals": 73,
-        "goals_for_per_match": 1.154,
-        "goals_against_per_match": 1.654,
-        "avg_total_goals": 2.808,
-        "win_percentage": 19.2,
-        "draw_percentage": 30.8,
-        "loss_percentage": 50,
+        "avg_goals_for": 1.154,
+        "avg_goals_against": 1.654,
         "over_05": {
-          "count": 25,
+          "value": 25,
           "percentage": 96.2
         },
         "over_15": {
-          "count": 21,
+          "value": 21,
           "percentage": 80.8
         },
         "over_25": {
-          "count": 13,
+          "value": 13,
           "percentage": 50
         },
         "over_35": {
-          "count": 7,
+          "value": 7,
           "percentage": 26.9
         },
         "btts": {
-          "count": 15,
+          "value": 15,
           "percentage": 57.7
         },
         "draw_00": {
-          "count": 1,
+          "value": 1,
           "percentage": 3.8
         },
-        "clean_sheet": {
-          "count": 3,
-          "percentage": 11.5
-        },
-        "failed_to_score": {
-          "count": 9,
-          "percentage": 34.6
-        },
         "xg": {
-          "value": 27.4,
-          "per_match": 1.054,
-          "rank": 16
+          "value": null,
+          "per_match": null
         },
         "xga": {
-          "value": 40.2,
-          "per_match": 1.546,
-          "rank": 17
+          "value": null,
+          "per_match": null
         },
         "xgd": {
-          "value": -12.8,
-          "per_match": -0.492,
-          "rank": 17
+          "value": null,
+          "per_match": null
         },
-        "performance_vs_xg": {
-          "goals_vs_xg": 2.6,
-          "goals_against_vs_xga": 2.8,
-          "goal_difference_vs_xgd": -0.2,
-          "offensive_efficiency": 1.095,
-          "defensive_efficiency": 1.07
-        }
+        "goal_xg_difference": null,
+        "goal_xga_difference": null,
+        "offensive_efficiency": null,
+        "defensive_efficiency": null
       },
       "home": {
         "matches": 13,
@@ -3288,44 +2477,31 @@
         "goals_for": 17,
         "goals_against": 17,
         "goal_difference": 0,
-        "total_goals": 34,
-        "goals_for_per_match": 1.308,
-        "goals_against_per_match": 1.308,
-        "avg_total_goals": 2.615,
-        "win_percentage": 23.1,
-        "draw_percentage": 38.5,
-        "loss_percentage": 38.5,
+        "avg_goals_for": 1.308,
+        "avg_goals_against": 1.308,
         "over_05": {
-          "count": 13,
+          "value": 13,
           "percentage": 100
         },
         "over_15": {
-          "count": 10,
+          "value": 10,
           "percentage": 76.9
         },
         "over_25": {
-          "count": 5,
+          "value": 5,
           "percentage": 38.5
         },
         "over_35": {
-          "count": 4,
+          "value": 4,
           "percentage": 30.8
         },
         "btts": {
-          "count": 8,
+          "value": 8,
           "percentage": 61.5
         },
         "draw_00": {
-          "count": 0,
+          "value": 0,
           "percentage": 0
-        },
-        "clean_sheet": {
-          "count": 2,
-          "percentage": 15.4
-        },
-        "failed_to_score": {
-          "count": 3,
-          "percentage": 23.1
         },
         "xg": null,
         "xga": null,
@@ -3339,44 +2515,31 @@
         "goals_for": 13,
         "goals_against": 26,
         "goal_difference": -13,
-        "total_goals": 39,
-        "goals_for_per_match": 1,
-        "goals_against_per_match": 2,
-        "avg_total_goals": 3,
-        "win_percentage": 15.4,
-        "draw_percentage": 23.1,
-        "loss_percentage": 61.5,
+        "avg_goals_for": 1,
+        "avg_goals_against": 2,
         "over_05": {
-          "count": 12,
+          "value": 12,
           "percentage": 92.3
         },
         "over_15": {
-          "count": 11,
+          "value": 11,
           "percentage": 84.6
         },
         "over_25": {
-          "count": 8,
+          "value": 8,
           "percentage": 61.5
         },
         "over_35": {
-          "count": 3,
+          "value": 3,
           "percentage": 23.1
         },
         "btts": {
-          "count": 7,
+          "value": 7,
           "percentage": 53.8
         },
         "draw_00": {
-          "count": 1,
+          "value": 1,
           "percentage": 7.7
-        },
-        "clean_sheet": {
-          "count": 1,
-          "percentage": 7.7
-        },
-        "failed_to_score": {
-          "count": 6,
-          "percentage": 46.2
         },
         "xg": null,
         "xga": null,
@@ -3395,67 +2558,48 @@
         "goals_for": 27,
         "goals_against": 50,
         "goal_difference": -23,
-        "total_goals": 77,
-        "goals_for_per_match": 1.08,
-        "goals_against_per_match": 2,
-        "avg_total_goals": 3.08,
-        "win_percentage": 12,
-        "draw_percentage": 32,
-        "loss_percentage": 56,
+        "avg_goals_for": 1.08,
+        "avg_goals_against": 2,
         "over_05": {
-          "count": 24,
+          "value": 24,
           "percentage": 96
         },
         "over_15": {
-          "count": 22,
+          "value": 22,
           "percentage": 88
         },
         "over_25": {
-          "count": 14,
+          "value": 14,
           "percentage": 56
         },
         "over_35": {
-          "count": 9,
+          "value": 9,
           "percentage": 36
         },
         "btts": {
-          "count": 16,
+          "value": 16,
           "percentage": 64
         },
         "draw_00": {
-          "count": 1,
+          "value": 1,
           "percentage": 4
         },
-        "clean_sheet": {
-          "count": 2,
-          "percentage": 8
-        },
-        "failed_to_score": {
-          "count": 8,
-          "percentage": 32
-        },
         "xg": {
-          "value": 27.1,
-          "per_match": 1.084,
-          "rank": 17
+          "value": null,
+          "per_match": null
         },
         "xga": {
-          "value": 43.8,
-          "per_match": 1.752,
-          "rank": 20
+          "value": null,
+          "per_match": null
         },
         "xgd": {
-          "value": -16.7,
-          "per_match": -0.668,
-          "rank": 19
+          "value": null,
+          "per_match": null
         },
-        "performance_vs_xg": {
-          "goals_vs_xg": -0.1,
-          "goals_against_vs_xga": 6.2,
-          "goal_difference_vs_xgd": -6.3,
-          "offensive_efficiency": 0.996,
-          "defensive_efficiency": 1.142
-        }
+        "goal_xg_difference": null,
+        "goal_xga_difference": null,
+        "offensive_efficiency": null,
+        "defensive_efficiency": null
       },
       "home": {
         "matches": 12,
@@ -3465,44 +2609,31 @@
         "goals_for": 17,
         "goals_against": 27,
         "goal_difference": -10,
-        "total_goals": 44,
-        "goals_for_per_match": 1.417,
-        "goals_against_per_match": 2.25,
-        "avg_total_goals": 3.667,
-        "win_percentage": 16.7,
-        "draw_percentage": 41.7,
-        "loss_percentage": 41.7,
+        "avg_goals_for": 1.417,
+        "avg_goals_against": 2.25,
         "over_05": {
-          "count": 11,
+          "value": 11,
           "percentage": 91.7
         },
         "over_15": {
-          "count": 10,
+          "value": 10,
           "percentage": 83.3
         },
         "over_25": {
-          "count": 8,
+          "value": 8,
           "percentage": 66.7
         },
         "over_35": {
-          "count": 7,
+          "value": 7,
           "percentage": 58.3
         },
         "btts": {
-          "count": 8,
+          "value": 8,
           "percentage": 66.7
         },
         "draw_00": {
-          "count": 1,
+          "value": 1,
           "percentage": 8.3
-        },
-        "clean_sheet": {
-          "count": 2,
-          "percentage": 16.7
-        },
-        "failed_to_score": {
-          "count": 3,
-          "percentage": 25
         },
         "xg": null,
         "xga": null,
@@ -3516,44 +2647,31 @@
         "goals_for": 10,
         "goals_against": 23,
         "goal_difference": -13,
-        "total_goals": 33,
-        "goals_for_per_match": 0.769,
-        "goals_against_per_match": 1.769,
-        "avg_total_goals": 2.538,
-        "win_percentage": 7.7,
-        "draw_percentage": 23.1,
-        "loss_percentage": 69.2,
+        "avg_goals_for": 0.769,
+        "avg_goals_against": 1.769,
         "over_05": {
-          "count": 13,
+          "value": 13,
           "percentage": 100
         },
         "over_15": {
-          "count": 12,
+          "value": 12,
           "percentage": 92.3
         },
         "over_25": {
-          "count": 6,
+          "value": 6,
           "percentage": 46.2
         },
         "over_35": {
-          "count": 2,
+          "value": 2,
           "percentage": 15.4
         },
         "btts": {
-          "count": 8,
+          "value": 8,
           "percentage": 61.5
         },
         "draw_00": {
-          "count": 0,
+          "value": 0,
           "percentage": 0
-        },
-        "clean_sheet": {
-          "count": 0,
-          "percentage": 0
-        },
-        "failed_to_score": {
-          "count": 5,
-          "percentage": 38.5
         },
         "xg": null,
         "xga": null,

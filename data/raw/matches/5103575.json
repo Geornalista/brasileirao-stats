@@ -1,0 +1,18 @@
+{
+  "match_id": 5103575,
+  "round": 22,
+  "date": "2026-08-09T00:00:00Z",
+  "finished": true,
+  "home": {
+    "id": 8517,
+    "name": "Botafogo",
+    "goals": 1,
+    "xg": 1.39
+  },
+  "away": {
+    "id": 9863,
+    "name": "Fluminense",
+    "goals": 1,
+    "xg": 1
+  }
+}
