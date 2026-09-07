@@ -1,0 +1,3800 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Brasileirão Stats 2026</title>
+
+<style>
+
+/* ============================================================
+   VARIÁVEIS
+============================================================ */
+
+:root {
+
+    --bg: #080d12;
+    --bg-secondary: #0e151d;
+    --card: #121b25;
+    --card-hover: #172330;
+
+    --border: #253444;
+
+    --text: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+
+    --primary: #22c55e;
+    --blue: #38bdf8;
+    --orange: #fb923c;
+    --red: #ef4444;
+    --purple: #a78bfa;
+    --yellow: #facc15;
+
+}
+
+
+/* ============================================================
+   RESET
+============================================================ */
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+    margin: 0;
+
+    font-family:
+
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+
+        radial-gradient(
+            circle at top left,
+            #14202d 0%,
+            #080d12 50%
+        );
+
+    color: var(--text);
+
+    min-height: 100vh;
+
+}
+
+
+button,
+select {
+
+    font-family: inherit;
+
+}
+
+
+/* ============================================================
+   CONTAINER
+============================================================ */
+
+.container {
+
+    max-width: 1550px;
+
+    margin: auto;
+
+    padding: 28px 24px 60px;
+
+}
+
+
+/* ============================================================
+   HEADER
+============================================================ */
+
+.header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 28px;
+
+}
+
+
+.brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+
+.logo {
+
+    width: 54px;
+    height: 54px;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #22c55e,
+            #15803d
+        );
+
+    box-shadow:
+
+        0 10px 30px
+        rgba(34,197,94,.25);
+
+}
+
+
+.brand h1 {
+
+    margin: 0;
+
+    font-size: 25px;
+
+}
+
+
+.brand p {
+
+    margin: 3px 0 0;
+
+    font-size: 13px;
+
+    color: var(--text-secondary);
+
+}
+
+
+.header-meta {
+
+    text-align: right;
+
+    font-size: 12px;
+
+    color: var(--text-secondary);
+
+}
+
+
+.header-meta strong {
+
+    display: block;
+
+    color: var(--text);
+
+    margin-bottom: 4px;
+
+}
+
+
+/* ============================================================
+   HERO
+============================================================ */
+
+.hero {
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(34,197,94,.12),
+            rgba(56,189,248,.05)
+        );
+
+    border:
+
+        1px solid
+        rgba(34,197,94,.18);
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+
+    margin-bottom: 24px;
+
+}
+
+
+.hero h2 {
+
+    margin: 0 0 7px;
+
+    font-size: 21px;
+
+}
+
+
+.hero p {
+
+    margin: 0;
+
+    color: var(--text-secondary);
+
+    font-size: 13px;
+
+}
+
+
+.hero-stats {
+
+    display: flex;
+
+    gap: 28px;
+
+}
+
+
+.hero-stat {
+
+    text-align: center;
+
+}
+
+
+.hero-stat-value {
+
+    font-size: 24px;
+
+    font-weight: 800;
+
+}
+
+
+.hero-stat-label {
+
+    margin-top: 4px;
+
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+    color: var(--text-secondary);
+
+}
+
+
+/* ============================================================
+   CONTROLES
+============================================================ */
+
+.controls {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.segmented-control {
+
+    display: flex;
+
+    background: var(--bg-secondary);
+
+    border: 1px solid var(--border);
+
+    padding: 4px;
+
+    border-radius: 10px;
+
+}
+
+
+.segment-button {
+
+    border: none;
+
+    background: transparent;
+
+    color: var(--text-secondary);
+
+    padding: 9px 20px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    transition: .2s;
+
+}
+
+
+.segment-button.active {
+
+    background: var(--primary);
+
+    color: #06220f;
+
+    font-weight: 700;
+
+}
+
+
+.select {
+
+    background: var(--bg-secondary);
+
+    border: 1px solid var(--border);
+
+    color: var(--text);
+
+    padding: 9px 14px;
+
+    border-radius: 9px;
+
+}
+
+
+/* ============================================================
+   TABS
+============================================================ */
+
+.tabs {
+
+    display: flex;
+
+    gap: 8px;
+
+    overflow-x: auto;
+
+    margin-bottom: 24px;
+
+    padding-bottom: 6px;
+
+}
+
+
+.tab {
+
+    border: 1px solid var(--border);
+
+    background: var(--bg-secondary);
+
+    color: var(--text-secondary);
+
+    padding: 10px 17px;
+
+    border-radius: 9px;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+}
+
+
+.tab.active {
+
+    background: var(--primary);
+
+    color: #06220f;
+
+    border-color: var(--primary);
+
+    font-weight: 700;
+
+}
+
+
+/* ============================================================
+   TITULOS
+============================================================ */
+
+.section-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    margin:
+
+        28px 0 15px;
+
+}
+
+
+.section-title {
+
+    font-size: 19px;
+
+    font-weight: 800;
+
+}
+
+
+.section-subtitle {
+
+    font-size: 12px;
+
+    color: var(--text-secondary);
+
+    margin-top: 4px;
+
+}
+
+
+/* ============================================================
+   SUMMARY
+============================================================ */
+
+.summary-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(6,1fr);
+
+    gap: 12px;
+
+}
+
+
+.summary-card {
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 13px;
+
+    padding: 16px;
+
+}
+
+
+.summary-label {
+
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+    color: var(--text-secondary);
+
+}
+
+
+.summary-value {
+
+    margin-top: 8px;
+
+    font-size: 24px;
+
+    font-weight: 800;
+
+}
+
+
+/* ============================================================
+   RANKING
+============================================================ */
+
+.ranking-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,minmax(0,1fr));
+
+    gap: 18px;
+
+}
+
+
+.ranking-card {
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+}
+
+
+.ranking-card-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 16px 18px;
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+
+.ranking-title {
+
+    font-weight: 700;
+
+}
+
+
+.ranking-list {
+
+    padding: 6px;
+
+}
+
+
+.ranking-row {
+
+    display: grid;
+
+    grid-template-columns:
+
+        28px
+        34px
+        minmax(100px,1fr)
+        75px;
+
+    gap: 10px;
+
+    align-items: center;
+
+    padding: 9px;
+
+    border-radius: 9px;
+
+    cursor: pointer;
+
+}
+
+
+.ranking-row:hover {
+
+    background: var(--card-hover);
+
+}
+
+
+.rank {
+
+    color: var(--text-muted);
+
+    text-align: center;
+
+    font-size: 12px;
+
+}
+
+
+.team-logo {
+
+    width: 30px;
+    height: 30px;
+
+    object-fit: contain;
+
+}
+
+
+.team-name {
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+
+.ranking-value {
+
+    text-align: right;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+}
+
+
+.progress-container {
+
+    width: 100%;
+
+    height: 5px;
+
+    background: #0b1117;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    margin-top: 4px;
+
+}
+
+
+.progress {
+
+    height: 100%;
+
+    background: var(--primary);
+
+    border-radius: 10px;
+
+}
+
+
+/* ============================================================
+   TABLE
+============================================================ */
+
+.table-container {
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+
+    overflow-x: auto;
+
+}
+
+
+.stats-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 1100px;
+
+}
+
+
+.stats-table th {
+
+    background: #0e151d;
+
+    color: var(--text-secondary);
+
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+    padding: 14px 12px;
+
+    border-bottom: 1px solid var(--border);
+
+    white-space: nowrap;
+
+}
+
+
+.stats-table td {
+
+    padding: 12px;
+
+    border-bottom:
+
+        1px solid
+        rgba(37,52,68,.65);
+
+    text-align: center;
+
+    font-size: 13px;
+
+}
+
+
+.stats-table tr:hover {
+
+    background: var(--card-hover);
+
+}
+
+
+.team-cell {
+
+    text-align: left !important;
+
+}
+
+
+.team-cell-content {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    cursor: pointer;
+
+}
+
+
+.table-team-logo {
+
+    width: 30px;
+    height: 30px;
+
+    object-fit: contain;
+
+}
+
+
+.highlight {
+
+    color: var(--primary);
+
+    font-weight: 700;
+
+}
+
+
+.xg-value {
+
+    color: var(--blue);
+
+    font-weight: 700;
+
+}
+
+
+.xga-value {
+
+    color: var(--orange);
+
+    font-weight: 700;
+
+}
+
+
+.positive {
+
+    color: var(--primary);
+
+}
+
+
+.negative {
+
+    color: var(--red);
+
+}
+
+
+/* ============================================================
+   TEAM MODAL
+============================================================ */
+
+.modal {
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+
+        rgba(0,0,0,.72);
+
+    backdrop-filter:
+
+        blur(6px);
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    z-index: 999;
+
+    padding: 20px;
+
+}
+
+
+.modal.active {
+
+    display: flex;
+
+}
+
+
+.modal-content {
+
+    width: min(1200px,100%);
+
+    max-height: 92vh;
+
+    overflow-y: auto;
+
+    background: #0c131b;
+
+    border: 1px solid var(--border);
+
+    border-radius: 20px;
+
+    padding: 28px;
+
+}
+
+
+.modal-close {
+
+    float: right;
+
+    border: none;
+
+    background: #1a2632;
+
+    color: var(--text);
+
+    width: 36px;
+    height: 36px;
+
+    border-radius: 9px;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+}
+
+
+/* ============================================================
+   TEAM HEADER
+============================================================ */
+
+.team-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 28px;
+
+}
+
+
+.team-header-logo {
+
+    width: 90px;
+    height: 90px;
+
+    object-fit: contain;
+
+}
+
+
+.team-header h2 {
+
+    margin: 0;
+
+    font-size: 28px;
+
+}
+
+
+.team-header p {
+
+    color: var(--text-secondary);
+
+    margin: 5px 0 0;
+
+}
+
+
+/* ============================================================
+   TEAM CONTEXT GRID
+============================================================ */
+
+.context-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 16px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.context-card {
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 14px;
+
+    padding: 18px;
+
+}
+
+
+.context-card h3 {
+
+    margin: 0 0 15px;
+
+    font-size: 15px;
+
+}
+
+
+.context-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 7px 0;
+
+    border-bottom:
+
+        1px solid
+        rgba(37,52,68,.5);
+
+    font-size: 13px;
+
+}
+
+
+.context-row:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.context-row span:first-child {
+
+    color: var(--text-secondary);
+
+}
+
+
+/* ============================================================
+   CHART
+============================================================ */
+
+.chart-section {
+
+    margin-top: 20px;
+
+}
+
+
+.chart-container {
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+}
+
+
+.chart-title {
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+
+}
+
+
+.bar-chart {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+
+.bar-row {
+
+    display: grid;
+
+    grid-template-columns:
+
+        140px
+        1fr
+        70px;
+
+    gap: 12px;
+
+    align-items: center;
+
+}
+
+
+.bar-label {
+
+    font-size: 12px;
+
+    color: var(--text-secondary);
+
+}
+
+
+.bar-track {
+
+    height: 12px;
+
+    background: #080d12;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+}
+
+
+.bar-fill {
+
+    height: 100%;
+
+    border-radius: 10px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #16a34a,
+            #22c55e
+        );
+
+}
+
+
+.bar-value {
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    text-align: right;
+
+}
+
+
+/* ============================================================
+   LOADING
+============================================================ */
+
+.loading {
+
+    min-height: 60vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    color: var(--text-secondary);
+
+}
+
+
+.spinner {
+
+    width: 36px;
+    height: 36px;
+
+    border-radius: 50%;
+
+    border: 3px solid #253444;
+
+    border-top-color: var(--primary);
+
+    animation: spin 1s linear infinite;
+
+}
+
+
+@keyframes spin {
+
+    to {
+
+        transform: rotate(360deg);
+
+    }
+
+}
+
+
+
+/* ============================================================
+   MATCH COMPARISON - FASE 4
+============================================================ */
+.compare-container{display:flex;flex-direction:column;gap:22px}.match-selector-card,.comparison-card,.insight-card{background:var(--card);border:1px solid var(--border);border-radius:18px}.match-selector-card{padding:24px}.match-selectors{display:grid;grid-template-columns:1fr 80px 1fr;gap:20px;align-items:center}.team-selector{display:flex;flex-direction:column;gap:9px}.team-selector label{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--text-secondary)}.team-select{width:100%;background:var(--bg-secondary);color:var(--text);border:1px solid var(--border);border-radius:10px;padding:13px;font-size:15px}.vs-badge{width:64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:auto;font-weight:900;background:#0e151d;border:1px solid var(--border)}.match-header{display:grid;grid-template-columns:1fr 100px 1fr;align-items:center;text-align:center;padding:8px 0 4px}.match-team{display:flex;flex-direction:column;align-items:center;gap:8px}.match-team-logo{width:82px;height:82px;object-fit:contain}.match-team-name{font-size:20px;font-weight:800}.match-team-context{font-size:11px;text-transform:uppercase;color:var(--text-secondary)}.match-vs{font-size:24px;font-weight:900;color:var(--text-muted)}.projection-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.projection-card{background:linear-gradient(135deg,rgba(34,197,94,.10),rgba(56,189,248,.05));border:1px solid rgba(34,197,94,.18);border-radius:15px;padding:18px;text-align:center}.projection-label{font-size:10px;text-transform:uppercase;color:var(--text-secondary)}.projection-value{font-size:27px;font-weight:900;margin-top:8px}.projection-description{font-size:11px;color:var(--text-muted);margin-top:5px}.comparison-list{padding:18px}.comparison-row{display:grid;grid-template-columns:70px 1fr 150px 1fr 70px;gap:12px;align-items:center;margin-bottom:17px}.comparison-row:last-child{margin-bottom:0}.compare-value{font-weight:800;font-size:14px}.compare-value.home{text-align:right}.compare-label{text-align:center;font-size:11px;text-transform:uppercase;color:var(--text-secondary)}.compare-bar-track{height:10px;background:#080d12;border-radius:8px;overflow:hidden}.compare-bar-home,.compare-bar-away{height:100%;border-radius:8px}.compare-bar-home{margin-left:auto;background:linear-gradient(90deg,#15803d,#22c55e)}.compare-bar-away{background:linear-gradient(90deg,#0284c7,#38bdf8)}.insight-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.insight-card{padding:18px}.insight-icon{font-size:22px;margin-bottom:10px}.insight-title{font-weight:700;margin-bottom:6px}.insight-text{font-size:12px;line-height:1.5;color:var(--text-secondary)}
+@media(max-width:850px){.match-selectors{grid-template-columns:1fr}.vs-badge{width:52px;height:52px}.match-header{grid-template-columns:1fr 50px 1fr}.match-team-logo{width:62px;height:62px}.match-team-name{font-size:14px}.projection-grid{grid-template-columns:repeat(2,1fr)}.insight-grid{grid-template-columns:1fr}.comparison-row{grid-template-columns:50px 1fr 78px 1fr 50px;gap:6px}.compare-label{font-size:9px}}
+
+
+/* ============================================================
+   MATCH PREDICTOR - FASE 5
+============================================================ */
+.predictor-card{background:linear-gradient(135deg,rgba(56,189,248,.08),rgba(34,197,94,.06));border:1px solid rgba(56,189,248,.22);border-radius:18px;padding:22px}.predictor-hero{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;text-align:center;gap:20px;padding:8px 0 22px}.predictor-team{font-size:14px;font-weight:700;color:var(--text-secondary)}.predictor-xg{font-size:44px;font-weight:900;line-height:1;margin-top:8px}.predictor-center{font-size:13px;color:var(--text-muted);font-weight:700}.predictor-score{font-size:18px;font-weight:900;margin-top:6px}.predictor-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.predictor-metric{background:rgba(8,13,18,.65);border:1px solid var(--border);border-radius:13px;padding:16px;text-align:center}.predictor-metric-label{font-size:10px;text-transform:uppercase;color:var(--text-secondary)}.predictor-metric-value{font-size:25px;font-weight:900;margin-top:7px}.predictor-note{font-size:11px;color:var(--text-muted);margin-top:6px}.probability-bars{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}.probability-item{background:var(--card);border:1px solid var(--border);border-radius:13px;padding:14px;text-align:center}.probability-label{font-size:10px;text-transform:uppercase;color:var(--text-secondary)}.probability-value{font-size:24px;font-weight:900;margin:7px 0}.probability-track{height:6px;background:#080d12;border-radius:10px;overflow:hidden}.probability-fill{height:100%;background:var(--primary);border-radius:10px}.scoreline-list{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.scoreline-item{background:var(--card);border:1px solid var(--border);border-radius:11px;padding:12px;text-align:center}.scoreline-score{font-size:18px;font-weight:900}.scoreline-prob{font-size:12px;color:var(--text-secondary);margin-top:5px}.method-box{background:rgba(15,23,42,.6);border-left:3px solid var(--blue);padding:14px 16px;border-radius:8px;font-size:12px;line-height:1.55;color:var(--text-secondary)}
+/* ============================================================
+   MODELO HÍBRIDO - FASE 6
+============================================================ */
+.hybrid-card{background:linear-gradient(135deg,rgba(99,102,241,.08),rgba(34,197,94,.06));border:1px solid rgba(99,102,241,.24);border-radius:18px;padding:22px}
+.hybrid-header{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-bottom:18px}
+.hybrid-title{font-size:18px;font-weight:800}
+.hybrid-subtitle{font-size:12px;color:var(--text-secondary);margin-top:4px;line-height:1.5}
+.confidence-badge{min-width:150px;background:rgba(8,13,18,.68);border:1px solid var(--border);border-radius:14px;padding:12px 14px;text-align:center}
+.confidence-label{font-size:10px;text-transform:uppercase;color:var(--text-secondary)}
+.confidence-value{font-size:25px;font-weight:900;margin-top:3px}
+.confidence-status{font-size:11px;color:var(--text-muted);margin-top:2px}
+.hybrid-summary{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}
+.hybrid-stat{background:rgba(8,13,18,.62);border:1px solid var(--border);border-radius:13px;padding:15px;text-align:center}
+.hybrid-stat-label{font-size:10px;text-transform:uppercase;color:var(--text-secondary)}
+.hybrid-stat-value{font-size:24px;font-weight:900;margin-top:6px}
+.hybrid-stat-note{font-size:10px;color:var(--text-muted);margin-top:5px}
+.model-table{background:rgba(8,13,18,.45);border:1px solid var(--border);border-radius:14px;overflow:hidden}
+.model-row{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:10px;align-items:center;padding:13px 16px;border-bottom:1px solid var(--border)}
+.model-row:last-child{border-bottom:none}
+.model-row.head{background:rgba(15,23,42,.65);font-size:10px;text-transform:uppercase;color:var(--text-secondary);font-weight:700}
+.model-name{font-weight:700;font-size:13px}
+.model-value{text-align:center;font-weight:800;font-size:13px}
+.model-final{color:#86efac}
+.model-agreement{margin-top:16px;padding:15px 16px;background:rgba(15,23,42,.45);border:1px solid var(--border);border-radius:12px;font-size:12px;line-height:1.55;color:var(--text-secondary)}
+.signal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+.signal-card{background:var(--card);border:1px solid var(--border);border-radius:13px;padding:15px}
+.signal-label{font-size:10px;text-transform:uppercase;color:var(--text-secondary)}
+.signal-value{font-size:20px;font-weight:900;margin-top:6px}
+.signal-note{font-size:11px;color:var(--text-muted);margin-top:5px}
+@media(max-width:850px){.hybrid-header{flex-direction:column;align-items:stretch}.confidence-badge{width:100%;box-sizing:border-box}.hybrid-summary{grid-template-columns:repeat(2,1fr)}.signal-grid{grid-template-columns:1fr}.model-row{grid-template-columns:1.25fr .9fr .9fr .9fr;padding:11px 8px;gap:4px}.model-row.head{font-size:8px}.model-name,.model-value{font-size:11px}}
+@media(max-width:850px){.predictor-grid,.probability-bars{grid-template-columns:1fr}.predictor-hero{gap:10px}.predictor-xg{font-size:34px}.scoreline-list{grid-template-columns:repeat(2,1fr)}}
+
+/* ============================================================
+   RESPONSIVO
+============================================================ */
+
+@media(max-width:1100px) {
+
+    .summary-grid {
+
+        grid-template-columns:
+            repeat(3,1fr);
+
+    }
+
+}
+
+
+@media(max-width:850px) {
+
+    .ranking-grid {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .context-grid {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .hero {
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+
+    .hero-stats {
+
+        width:100%;
+
+        justify-content:space-between;
+
+    }
+
+}
+
+
+@media(max-width:600px) {
+
+    .container {
+
+        padding:18px 12px 40px;
+
+    }
+
+
+    .summary-grid {
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+
+    .header-meta {
+
+        display:none;
+
+    }
+
+
+    .controls {
+
+        flex-direction:column;
+
+    }
+
+
+    .segmented-control {
+
+        width:100%;
+
+    }
+
+
+    .segment-button {
+
+        flex:1;
+
+    }
+
+
+    .modal-content {
+
+        padding:18px;
+
+    }
+
+
+    .team-header-logo {
+
+        width:65px;
+        height:65px;
+
+    }
+
+
+    .team-header h2 {
+
+        font-size:22px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<header class="header">
+
+    <div class="brand">
+
+        <div class="logo">⚽</div>
+
+        <div>
+
+            <h1>Brasileirão Stats</h1>
+
+            <p>
+                Gols, mercados e Expected Goals
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="header-meta">
+
+        <strong id="seasonLabel">
+            Campeonato Brasileiro
+        </strong>
+
+        <span id="updatedLabel">
+            Carregando...
+        </span>
+
+    </div>
+
+</header>
+
+
+<div
+    id="loading"
+    class="loading"
+>
+
+    <div class="spinner"></div>
+
+    Carregando estatísticas...
+
+</div>
+
+
+<main
+    id="app"
+    style="display:none"
+>
+
+
+<section class="hero">
+
+    <div>
+
+        <h2>
+            Campeonato Brasileiro Série A
+        </h2>
+
+        <p>
+            Dashboard avançado de estatísticas das equipes.
+        </p>
+
+    </div>
+
+
+    <div
+        id="heroStats"
+        class="hero-stats"
+    ></div>
+
+</section>
+
+
+<section class="controls">
+
+    <div class="segmented-control">
+
+        <button
+            class="segment-button active"
+            data-context="overall"
+        >
+            Geral
+        </button>
+
+        <button
+            class="segment-button"
+            data-context="home"
+        >
+            Mandante
+        </button>
+
+        <button
+            class="segment-button"
+            data-context="away"
+        >
+            Visitante
+        </button>
+
+    </div>
+
+
+    <select
+        id="sortSelect"
+        class="select"
+    >
+
+        <option value="position">
+            Classificação
+        </option>
+
+        <option value="over_25">
+            Over 2.5
+        </option>
+
+        <option value="over_15">
+            Over 1.5
+        </option>
+
+        <option value="btts">
+            Ambas Marcam
+        </option>
+
+        <option value="avg_total_goals">
+            Média de Gols
+        </option>
+
+        <option value="xg">
+            xG
+        </option>
+
+        <option value="xga">
+            xGA
+        </option>
+
+    </select>
+
+</section>
+
+
+<section class="tabs">
+
+    <button
+        class="tab active"
+        data-tab="overview"
+    >
+        Visão Geral
+    </button>
+
+
+    <button
+        class="tab"
+        data-tab="goals"
+    >
+        Gols & Mercados
+    </button>
+
+
+    <button
+        class="tab"
+        data-tab="xg"
+    >
+        Expected Goals
+    </button>
+
+
+    <button
+        class="tab"
+        data-tab="teams"
+    >
+        Equipes
+    </button>
+
+
+    <button class="tab" data-tab="compare">⚔ Comparar Partida</button>
+
+</section>
+
+
+<div id="content"></div>
+
+
+</main>
+
+</div>
+
+
+<!-- ============================================================
+     MODAL DA EQUIPE
+============================================================ -->
+
+<div
+    id="teamModal"
+    class="modal"
+>
+
+    <div class="modal-content">
+
+        <button
+            class="modal-close"
+            onclick="closeTeamModal()"
+        >
+            ×
+        </button>
+
+
+        <div id="teamModalContent"></div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+/* ============================================================
+   ESTADO
+============================================================ */
+
+let appData = null;
+
+let currentContext = "overall";
+
+let currentTab = "overview";
+
+
+/* ============================================================
+   DATA
+============================================================ */
+
+async function loadData() {
+
+    try {
+
+        const response = await fetch(
+            "./data/app/brasileirao_stats_2026.json"
+        );
+
+        if (!response.ok) {
+
+            throw new Error(
+                "Arquivo de dados não encontrado."
+            );
+
+        }
+
+        appData =
+            await response.json();
+
+        initializeApp();
+
+    }
+
+    catch(error) {
+
+        console.error(error);
+
+        document.getElementById(
+            "loading"
+        ).innerHTML = `
+
+            <div style="color:#ef4444">
+                Erro ao carregar dados
+            </div>
+
+            <div>
+                ${error.message}
+            </div>
+
+        `;
+
+    }
+
+}
+
+
+/* ============================================================
+   INIT
+============================================================ */
+
+function initializeApp() {
+
+    document.getElementById(
+        "loading"
+    ).style.display = "none";
+
+
+    document.getElementById(
+        "app"
+    ).style.display = "block";
+
+
+    document.getElementById(
+        "seasonLabel"
+    ).textContent =
+
+        `${appData.metadata.competition}
+         ${appData.metadata.season}`;
+
+
+    const date =
+        new Date(
+            appData.metadata.generated_at
+        );
+
+
+    document.getElementById(
+        "updatedLabel"
+    ).textContent =
+
+        `Atualizado:
+         ${date.toLocaleString("pt-BR")}`;
+
+
+    renderHero();
+
+    setupControls();
+
+    renderCurrentTab();
+
+}
+
+
+/* ============================================================
+   TEAM ID / LOGO
+============================================================ */
+
+function getTeamId(team) {
+
+    return (
+
+        team.id ||
+
+        team.team_id ||
+
+        team.teamId
+
+    );
+
+}
+
+
+function getTeamLogo(team) {
+
+    const id =
+        getTeamId(team);
+
+
+    return `https://images.fotmob.com/image_resources/logo/teamlogo/${id}.png`;
+
+}
+
+
+/* ============================================================
+   HERO
+============================================================ */
+
+function renderHero() {
+
+    const s =
+        appData.league_summary;
+
+
+    document.getElementById(
+        "heroStats"
+    ).innerHTML = `
+
+        <div class="hero-stat">
+
+            <div class="hero-stat-value">
+                ${s.matches}
+            </div>
+
+            <div class="hero-stat-label">
+                Jogos
+            </div>
+
+        </div>
+
+
+        <div class="hero-stat">
+
+            <div class="hero-stat-value">
+                ${s.avg_goals_per_match}
+            </div>
+
+            <div class="hero-stat-label">
+                Gols/Jogo
+            </div>
+
+        </div>
+
+
+        <div class="hero-stat">
+
+            <div class="hero-stat-value">
+                ${s.over_25}%
+            </div>
+
+            <div class="hero-stat-label">
+                Over 2.5
+            </div>
+
+        </div>
+
+
+        <div class="hero-stat">
+
+            <div class="hero-stat-value">
+                ${s.btts}%
+            </div>
+
+            <div class="hero-stat-label">
+                BTTS
+            </div>
+
+        </div>
+
+    `;
+
+}
+
+
+/* ============================================================
+   CONTROLES
+============================================================ */
+
+function setupControls() {
+
+    document
+        .querySelectorAll(
+            ".segment-button"
+        )
+        .forEach(button => {
+
+            button.onclick = () => {
+
+                document
+                    .querySelectorAll(
+                        ".segment-button"
+                    )
+                    .forEach(
+                        b =>
+                            b.classList.remove(
+                                "active"
+                            )
+                    );
+
+
+                button.classList.add(
+                    "active"
+                );
+
+
+                currentContext =
+                    button.dataset.context;
+
+
+                renderCurrentTab();
+
+            };
+
+        });
+
+
+    document
+        .querySelectorAll(
+            ".tab"
+        )
+        .forEach(button => {
+
+            button.onclick = () => {
+
+                document
+                    .querySelectorAll(
+                        ".tab"
+                    )
+                    .forEach(
+                        b =>
+                            b.classList.remove(
+                                "active"
+                            )
+                    );
+
+
+                button.classList.add(
+                    "active"
+                );
+
+
+                currentTab =
+                    button.dataset.tab;
+
+
+                renderCurrentTab();
+
+            };
+
+        });
+
+
+    document
+        .getElementById(
+            "sortSelect"
+        )
+        .onchange =
+            renderCurrentTab;
+
+}
+
+
+/* ============================================================
+   HELPERS
+============================================================ */
+
+function getTeams() {
+
+    return appData.teams;
+
+}
+
+
+function getStats(team) {
+
+    return team[currentContext];
+
+}
+
+
+function formatNumber(
+    value,
+    decimals = 1
+) {
+
+    if (
+        value === null ||
+        value === undefined
+    ) return "-";
+
+
+    return Number(value)
+        .toLocaleString(
+            "pt-BR",
+            {
+
+                minimumFractionDigits:
+                    decimals,
+
+                maximumFractionDigits:
+                    decimals
+
+            }
+        );
+
+}
+
+
+function formatPercent(value) {
+
+    return value === null
+        ? "-"
+        : `${formatNumber(value)}%`;
+
+}
+
+
+function getSignedValue(value) {
+
+    if (
+        value === null ||
+        value === undefined
+    ) return "-";
+
+
+    return (
+        value > 0 ? "+" : ""
+    ) + formatNumber(value);
+
+}
+
+
+function getValueClass(value) {
+
+    if (value > 0)
+        return "positive";
+
+    if (value < 0)
+        return "negative";
+
+    return "";
+
+}
+
+
+function getContextLabel() {
+
+    return {
+
+        overall: "Geral",
+
+        home: "Mandante",
+
+        away: "Visitante"
+
+    }[currentContext];
+
+}
+
+
+/* ============================================================
+   TEAM VISUAL
+============================================================ */
+
+function teamVisual(team) {
+
+    return `
+
+        <img
+            class="team-logo"
+            src="${getTeamLogo(team)}"
+            alt="${team.name}"
+            onerror="this.style.display='none'"
+        >
+
+    `;
+
+}
+
+
+function tableTeamVisual(team) {
+
+    return `
+
+        <div
+            class="team-cell-content"
+            onclick="openTeamModal('${getTeamId(team)}')"
+        >
+
+            <img
+                class="table-team-logo"
+                src="${getTeamLogo(team)}"
+                alt="${team.name}"
+                onerror="this.style.display='none'"
+            >
+
+            <span>
+
+                ${team.name}
+
+            </span>
+
+        </div>
+
+    `;
+
+}
+
+
+/* ============================================================
+   SUMMARY
+============================================================ */
+
+function createSummaryCards() {
+
+    const teams =
+        getTeams();
+
+
+    const avg = field =>
+
+        teams.reduce(
+
+            (sum, team) =>
+                sum +
+                field(
+                    getStats(team)
+                ),
+
+            0
+
+        ) / teams.length;
+
+
+    return `
+
+        <div class="summary-grid">
+
+            ${summaryCard(
+                "Contexto",
+                getContextLabel()
+            )}
+
+            ${summaryCard(
+                "Equipes",
+                teams.length
+            )}
+
+            ${summaryCard(
+                "Média Gols",
+                formatNumber(
+                    avg(
+                        s =>
+                            s.avg_total_goals
+                    )
+                )
+            )}
+
+            ${summaryCard(
+                "Over 2.5",
+                formatPercent(
+                    avg(
+                        s =>
+                            s.over_25.percentage
+                    )
+                )
+            )}
+
+            ${summaryCard(
+                "BTTS",
+                formatPercent(
+                    avg(
+                        s =>
+                            s.btts.percentage
+                    )
+                )
+            )}
+
+            ${summaryCard(
+                "0 x 0",
+                formatPercent(
+                    avg(
+                        s =>
+                            s.draw_00.percentage
+                    )
+                )
+            )}
+
+        </div>
+
+    `;
+
+}
+
+
+function summaryCard(
+    label,
+    value
+) {
+
+    return `
+
+        <div class="summary-card">
+
+            <div class="summary-label">
+                ${label}
+            </div>
+
+            <div class="summary-value">
+                ${value}
+            </div>
+
+        </div>
+
+    `;
+
+}
+
+
+/* ============================================================
+   RANKING
+============================================================ */
+
+function createRanking(
+    title,
+    metric,
+    formatter = formatPercent
+) {
+
+    const teams =
+        [...getTeams()]
+        .sort(
+            (a,b) =>
+                metric(
+                    getStats(b)
+                )
+                -
+                metric(
+                    getStats(a)
+                )
+        )
+        .slice(0,10);
+
+
+    const max =
+        Math.max(
+            ...teams.map(
+                t =>
+                    metric(
+                        getStats(t)
+                    )
+            )
+        );
+
+
+    return `
+
+        <div class="ranking-card">
+
+            <div class="ranking-card-header">
+
+                <div class="ranking-title">
+                    ${title}
+                </div>
+
+                <div class="section-subtitle">
+                    ${getContextLabel()}
+                </div>
+
+            </div>
+
+
+            <div class="ranking-list">
+
+                ${teams.map(
+                    (team,index) => {
+
+                        const value =
+                            metric(
+                                getStats(team)
+                            );
+
+
+                        const width =
+                            max
+                            ?
+                            value / max * 100
+                            :
+                            0;
+
+
+                        return `
+
+                            <div
+                                class="ranking-row"
+                                onclick="openTeamModal('${getTeamId(team)}')"
+                            >
+
+                                <div class="rank">
+
+                                    ${index + 1}
+
+                                </div>
+
+
+                                ${teamVisual(team)}
+
+
+                                <div>
+
+                                    <div class="team-name">
+
+                                        ${team.name}
+
+                                    </div>
+
+
+                                    <div
+                                        class="progress-container"
+                                    >
+
+                                        <div
+                                            class="progress"
+                                            style="
+                                                width:${width}%
+                                            "
+                                        ></div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="ranking-value">
+
+                                    ${formatter(value)}
+
+                                </div>
+
+                            </div>
+
+                        `;
+
+                    }
+                ).join("")}
+
+            </div>
+
+        </div>
+
+    `;
+
+}
+
+
+/* ============================================================
+   OVERVIEW
+============================================================ */
+
+function renderOverview() {
+
+    document.getElementById(
+        "content"
+    ).innerHTML = `
+
+        ${createSummaryCards()}
+
+
+        <div class="section-header">
+
+            <div>
+
+                <div class="section-title">
+                    Rankings Principais
+                </div>
+
+                <div class="section-subtitle">
+
+                    Clique em uma equipe
+                    para abrir sua análise detalhada.
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="ranking-grid">
+
+            ${createRanking(
+                "Over 2.5 Gols",
+                s =>
+                    s.over_25.percentage
+            )}
+
+
+            ${createRanking(
+                "Ambas Marcam",
+                s =>
+                    s.btts.percentage
+            )}
+
+
+            ${createRanking(
+                "Média de Gols",
+                s =>
+                    s.avg_total_goals,
+                v =>
+                    formatNumber(v)
+            )}
+
+
+            ${createRanking(
+                "Over 1.5 Gols",
+                s =>
+                    s.over_15.percentage
+            )}
+
+        </div>
+
+    `;
+
+}
+
+
+/* ============================================================
+   GOALS
+============================================================ */
+
+function renderGoals() {
+
+    document.getElementById(
+        "content"
+    ).innerHTML = `
+
+        <div class="ranking-grid">
+
+            ${createRanking(
+                "Over 0.5",
+                s =>
+                    s.over_05.percentage
+            )}
+
+            ${createRanking(
+                "Over 1.5",
+                s =>
+                    s.over_15.percentage
+            )}
+
+            ${createRanking(
+                "Over 2.5",
+                s =>
+                    s.over_25.percentage
+            )}
+
+            ${createRanking(
+                "Over 3.5",
+                s =>
+                    s.over_35.percentage
+            )}
+
+            ${createRanking(
+                "Ambas Marcam",
+                s =>
+                    s.btts.percentage
+            )}
+
+            ${createRanking(
+                "Clean Sheet",
+                s =>
+                    s.clean_sheet.percentage
+            )}
+
+            ${createRanking(
+                "Sem Marcar",
+                s =>
+                    s.failed_to_score.percentage
+            )}
+
+            ${createRanking(
+                "0 x 0",
+                s =>
+                    s.draw_00.percentage
+            )}
+
+        </div>
+
+    `;
+
+}
+
+
+/* ============================================================
+   XG
+============================================================ */
+
+function renderXG() {
+
+    const teams =
+        [...getTeams()]
+        .sort(
+            (a,b) =>
+                (
+                    b.overall.xg?.value || 0
+                )
+                -
+                (
+                    a.overall.xg?.value || 0
+                )
+        );
+
+
+    document.getElementById(
+        "content"
+    ).innerHTML = `
+
+        <div class="section-header">
+
+            <div>
+
+                <div class="section-title">
+                    Expected Goals
+                </div>
+
+                <div class="section-subtitle">
+
+                    Produção ofensiva,
+                    defensiva e desempenho
+                    em relação ao esperado.
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="table-container">
+
+            <table class="stats-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>#</th>
+
+                        <th>Equipe</th>
+
+                        <th>J</th>
+
+                        <th>xG</th>
+
+                        <th>xG/J</th>
+
+                        <th>xGA</th>
+
+                        <th>xGA/J</th>
+
+                        <th>xGD</th>
+
+                        <th>GF-xG</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    ${teams.map(
+                        (team,index) => {
+
+                            const s =
+                                team.overall;
+
+                            const p =
+                                s.performance_vs_xg;
+
+
+                            return `
+
+                                <tr>
+
+                                    <td>
+                                        ${index+1}
+                                    </td>
+
+                                    <td class="team-cell">
+
+                                        ${tableTeamVisual(team)}
+
+                                    </td>
+
+                                    <td>
+                                        ${s.matches}
+                                    </td>
+
+                                    <td class="xg-value">
+
+                                        ${formatNumber(
+                                            s.xg?.value
+                                        )}
+
+                                    </td>
+
+                                    <td>
+
+                                        ${formatNumber(
+                                            s.xg?.per_match,
+                                            2
+                                        )}
+
+                                    </td>
+
+                                    <td class="xga-value">
+
+                                        ${formatNumber(
+                                            s.xga?.value
+                                        )}
+
+                                    </td>
+
+                                    <td>
+
+                                        ${formatNumber(
+                                            s.xga?.per_match,
+                                            2
+                                        )}
+
+                                    </td>
+
+                                    <td class="
+                                        ${getValueClass(
+                                            s.xgd?.value
+                                        )}
+                                    ">
+
+                                        ${getSignedValue(
+                                            s.xgd?.value
+                                        )}
+
+                                    </td>
+
+                                    <td class="
+                                        ${getValueClass(
+                                            p?.goals_vs_xg
+                                        )}
+                                    ">
+
+                                        ${getSignedValue(
+                                            p?.goals_vs_xg
+                                        )}
+
+                                    </td>
+
+                                </tr>
+
+                            `;
+
+                        }
+                    ).join("")}
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    `;
+
+}
+
+
+/* ============================================================
+   TEAMS TABLE
+============================================================ */
+
+function renderTeamsTable() {
+
+    const teams =
+        [...getTeams()];
+
+
+    const sort =
+        document.getElementById(
+            "sortSelect"
+        ).value;
+
+
+    teams.sort(
+        (a,b) => {
+
+            if (sort === "position") {
+
+                return (
+                    a.position || 999
+                )
+                -
+                (
+                    b.position || 999
+                );
+
+            }
+
+
+            const sa =
+                getStats(a);
+
+            const sb =
+                getStats(b);
+
+
+            const map = {
+
+                over_25:
+                    s =>
+                        s.over_25.percentage,
+
+                over_15:
+                    s =>
+                        s.over_15.percentage,
+
+                btts:
+                    s =>
+                        s.btts.percentage,
+
+                avg_total_goals:
+                    s =>
+                        s.avg_total_goals,
+
+                xg:
+                    s =>
+                        s.xg?.value || 0,
+
+                xga:
+                    s =>
+                        s.xga?.value || 0
+
+            };
+
+
+            return map[sort](sb)
+                -
+                map[sort](sa);
+
+        }
+    );
+
+
+    document.getElementById(
+        "content"
+    ).innerHTML = `
+
+        <div class="table-container">
+
+            <table class="stats-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>#</th>
+
+                        <th>Equipe</th>
+
+                        <th>J</th>
+
+                        <th>V</th>
+
+                        <th>E</th>
+
+                        <th>D</th>
+
+                        <th>GF</th>
+
+                        <th>GA</th>
+
+                        <th>SG</th>
+
+                        <th>G/J</th>
+
+                        <th>O1.5</th>
+
+                        <th>O2.5</th>
+
+                        <th>BTTS</th>
+
+                        <th>0x0</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    ${teams.map(
+                        (team,index) => {
+
+                            const s =
+                                getStats(team);
+
+
+                            return `
+
+                                <tr>
+
+                                    <td>
+                                        ${index+1}
+                                    </td>
+
+                                    <td class="team-cell">
+
+                                        ${tableTeamVisual(team)}
+
+                                    </td>
+
+                                    <td>${s.matches}</td>
+
+                                    <td>${s.wins}</td>
+
+                                    <td>${s.draws}</td>
+
+                                    <td>${s.losses}</td>
+
+                                    <td class="highlight">
+
+                                        ${s.goals_for}
+
+                                    </td>
+
+                                    <td>
+
+                                        ${s.goals_against}
+
+                                    </td>
+
+                                    <td class="
+                                        ${getValueClass(
+                                            s.goal_difference
+                                        )}
+                                    ">
+
+                                        ${getSignedValue(
+                                            s.goal_difference
+                                        )}
+
+                                    </td>
+
+                                    <td>
+
+                                        ${formatNumber(
+                                            s.avg_total_goals
+                                        )}
+
+                                    </td>
+
+                                    <td>
+
+                                        ${formatPercent(
+                                            s.over_15.percentage
+                                        )}
+
+                                    </td>
+
+                                    <td class="highlight">
+
+                                        ${formatPercent(
+                                            s.over_25.percentage
+                                        )}
+
+                                    </td>
+
+                                    <td>
+
+                                        ${formatPercent(
+                                            s.btts.percentage
+                                        )}
+
+                                    </td>
+
+                                    <td>
+
+                                        ${formatPercent(
+                                            s.draw_00.percentage
+                                        )}
+
+                                    </td>
+
+                                </tr>
+
+                            `;
+
+                        }
+                    ).join("")}
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    `;
+
+}
+
+
+/* ============================================================
+   MODAL
+============================================================ */
+
+function openTeamModal(teamId) {
+
+    const team =
+        getTeams().find(
+            t =>
+                String(
+                    getTeamId(t)
+                )
+                ===
+                String(teamId)
+        );
+
+
+    if (!team)
+        return;
+
+
+    const modal =
+        document.getElementById(
+            "teamModal"
+        );
+
+
+    document.getElementById(
+        "teamModalContent"
+    ).innerHTML =
+
+        renderTeamDetail(team);
+
+
+    modal.classList.add(
+        "active"
+    );
+
+}
+
+
+function closeTeamModal() {
+
+    document
+        .getElementById(
+            "teamModal"
+        )
+        .classList.remove(
+            "active"
+        );
+
+}
+
+
+/* ============================================================
+   TEAM DETAIL
+============================================================ */
+
+function renderTeamDetail(team) {
+
+    return `
+
+        <div class="team-header">
+
+            <img
+                class="team-header-logo"
+                src="${getTeamLogo(team)}"
+            >
+
+            <div>
+
+                <h2>
+                    ${team.name}
+                </h2>
+
+                <p>
+
+                    Análise estatística
+                    completa da temporada
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="context-grid">
+
+            ${createContextCard(
+                "Geral",
+                team.overall
+            )}
+
+            ${createContextCard(
+                "Mandante",
+                team.home
+            )}
+
+            ${createContextCard(
+                "Visitante",
+                team.away
+            )}
+
+        </div>
+
+
+        <div class="chart-section">
+
+            <div class="chart-container">
+
+                <div class="chart-title">
+
+                    Perfil de Mercados
+
+                </div>
+
+                ${createTeamBarChart(team)}
+
+            </div>
+
+        </div>
+
+
+        <div class="chart-section">
+
+            <div class="chart-container">
+
+                <div class="chart-title">
+
+                    Produção de Gols
+
+                </div>
+
+                ${createGoalsChart(team)}
+
+            </div>
+
+        </div>
+
+    `;
+
+}
+
+
+/* ============================================================
+   CONTEXT CARD
+============================================================ */
+
+function createContextCard(
+    title,
+    s
+) {
+
+    return `
+
+        <div class="context-card">
+
+            <h3>
+                ${title}
+            </h3>
+
+
+            ${contextRow(
+                "Jogos",
+                s.matches
+            )}
+
+
+            ${contextRow(
+                "Vitórias",
+                s.wins
+            )}
+
+
+            ${contextRow(
+                "Empates",
+                s.draws
+            )}
+
+
+            ${contextRow(
+                "Derrotas",
+                s.losses
+            )}
+
+
+            ${contextRow(
+                "Gols Marcados",
+                s.goals_for
+            )}
+
+
+            ${contextRow(
+                "Gols Sofridos",
+                s.goals_against
+            )}
+
+
+            ${contextRow(
+                "Média de Gols",
+                formatNumber(
+                    s.avg_total_goals
+                )
+            )}
+
+        </div>
+
+    `;
+
+}
+
+
+function contextRow(
+    label,
+    value
+) {
+
+    return `
+
+        <div class="context-row">
+
+            <span>
+                ${label}
+            </span>
+
+            <strong>
+                ${value}
+            </strong>
+
+        </div>
+
+    `;
+
+}
+
+
+/* ============================================================
+   BAR CHART
+============================================================ */
+
+function createTeamBarChart(team) {
+
+    const s =
+        team.overall;
+
+
+    const data = [
+
+        {
+            label: "Over 0.5",
+            value:
+                s.over_05.percentage
+        },
+
+        {
+            label: "Over 1.5",
+            value:
+                s.over_15.percentage
+        },
+
+        {
+            label: "Over 2.5",
+            value:
+                s.over_25.percentage
+        },
+
+        {
+            label: "Over 3.5",
+            value:
+                s.over_35.percentage
+        },
+
+        {
+            label: "BTTS",
+            value:
+                s.btts.percentage
+        },
+
+        {
+            label: "Clean Sheet",
+            value:
+                s.clean_sheet.percentage
+        }
+
+    ];
+
+
+    return `
+
+        <div class="bar-chart">
+
+            ${data.map(item => `
+
+                <div class="bar-row">
+
+                    <div class="bar-label">
+
+                        ${item.label}
+
+                    </div>
+
+
+                    <div class="bar-track">
+
+                        <div
+                            class="bar-fill"
+                            style="
+                                width:${item.value}%
+                            "
+                        ></div>
+
+                    </div>
+
+
+                    <div class="bar-value">
+
+                        ${formatPercent(
+                            item.value
+                        )}
+
+                    </div>
+
+                </div>
+
+            `).join("")}
+
+        </div>
+
+    `;
+
+}
+
+
+/* ============================================================
+   GOALS CHART
+============================================================ */
+
+function createGoalsChart(team) {
+
+    const s =
+        team.overall;
+
+
+    const values = [
+
+        {
+            label:
+                "Gols Marcados",
+
+            value:
+                s.goals_for
+        },
+
+        {
+            label:
+                "Gols Sofridos",
+
+            value:
+                s.goals_against
+        },
+
+        {
+            label:
+                "xG",
+
+            value:
+                s.xg?.value || 0
+        },
+
+        {
+            label:
+                "xGA",
+
+            value:
+                s.xga?.value || 0
+        }
+
+    ];
+
+
+    const max =
+        Math.max(
+            ...values.map(
+                v => v.value
+            )
+        );
+
+
+    return `
+
+        <div class="bar-chart">
+
+            ${values.map(item => {
+
+                const width =
+                    max
+                    ?
+                    item.value /
+                    max *
+                    100
+                    :
+                    0;
+
+
+                return `
+
+                    <div class="bar-row">
+
+                        <div class="bar-label">
+
+                            ${item.label}
+
+                        </div>
+
+
+                        <div class="bar-track">
+
+                            <div
+                                class="bar-fill"
+                                style="
+                                    width:${width}%
+                                "
+                            ></div>
+
+                        </div>
+
+
+                        <div class="bar-value">
+
+                            ${formatNumber(
+                                item.value
+                            )}
+
+                        </div>
+
+                    </div>
+
+                `;
+
+            }).join("")}
+
+        </div>
+
+    `;
+
+}
+
+
+
+/* ============================================================
+   MATCH COMPARISON - FASE 4
+============================================================ */
+let compareHomeId = null;
+let compareAwayId = null;
+function statPct(s,key){const v=s?.[key];return typeof v==='object'?(Number(v?.percentage)||0):(Number(v)||0)}
+function statNum(s,key){const v=s?.[key];return typeof v==='object'?(Number(v?.per_match ?? v?.value ?? v?.total)||0):(Number(v)||0)}
+function safeMatches(s){return Number(s?.matches)||0}
+
+/* ============================================================
+   CONTEXTUAL xG ESTIMATION
+   FotMob data currently provides xG/xGA only in OVERALL.
+   HOME/AWAY xG fields are null in the processed JSON.
+
+   We preserve the team's overall xG quality and distribute it
+   according to its real scoring/conceding performance in each context.
+
+   Estimated contextual xG:
+   overall xG/J × (context GF/J ÷ overall GF/J)
+
+   Estimated contextual xGA:
+   overall xGA/J × (context GA/J ÷ overall GA/J)
+============================================================ */
+function estimateContextXg(team, context, key){
+    const contextual = team?.[context] || {};
+    const overall = team?.overall || {};
+
+    const direct = statNum(contextual, key);
+    if (direct > 0) return { value: direct, estimated: false };
+
+    const overallValue = statNum(overall, key);
+    if (overallValue <= 0) return { value: 0, estimated: true };
+
+    const isXg = key === 'xg';
+    const contextRate = isXg
+        ? statNum(contextual, 'goals_for_per_match')
+        : statNum(contextual, 'goals_against_per_match');
+
+    const overallRate = isXg
+        ? statNum(overall, 'goals_for_per_match')
+        : statNum(overall, 'goals_against_per_match');
+
+    if (contextRate > 0 && overallRate > 0) {
+        return {
+            value: overallValue * (contextRate / overallRate),
+            estimated: true
+        };
+    }
+
+    return { value: overallValue, estimated: true };
+}
+
+function contextualXgValue(team, context, key){
+    return estimateContextXg(team, context, key).value;
+}
+function getCompareTeams(){const teams=getTeams();return {home:teams.find(t=>String(getTeamId(t))===String(compareHomeId)),away:teams.find(t=>String(getTeamId(t))===String(compareAwayId))}}
+function createTeamOptions(selected){return getTeams().map(t=>`<option value="${getTeamId(t)}" ${String(getTeamId(t))===String(selected)?'selected':''}>${t.name}</option>`).join('')}
+function renderCompare(){const teams=getTeams();if(!compareHomeId&&teams[0])compareHomeId=getTeamId(teams[0]);if(!compareAwayId&&teams[1])compareAwayId=getTeamId(teams[1]);document.getElementById('content').innerHTML=`<div class="compare-container"><div class="match-selector-card"><div class="section-header" style="margin-top:0"><div><div class="section-title">Comparador de Partida</div><div class="section-subtitle">Estatísticas do mandante em casa contra o visitante jogando fora.</div></div></div><div class="match-selectors"><div class="team-selector"><label>🏠 Mandante</label><select id="compareHomeSelect" class="team-select">${createTeamOptions(compareHomeId)}</select></div><div class="vs-badge">VS</div><div class="team-selector"><label>✈ Visitante</label><select id="compareAwaySelect" class="team-select">${createTeamOptions(compareAwayId)}</select></div></div></div><div id="matchComparisonContent"></div></div>`;document.getElementById('compareHomeSelect').onchange=e=>{compareHomeId=e.target.value;renderMatchComparison()};document.getElementById('compareAwaySelect').onchange=e=>{compareAwayId=e.target.value;renderMatchComparison()};renderMatchComparison()}
+function projectionCard(label,value,desc){return `<div class="projection-card"><div class="projection-label">${label}</div><div class="projection-value">${value}</div><div class="projection-description">${desc}</div></div>`}
+function compareCard(home,away,metrics){return `<div class="comparison-card"><div class="comparison-list">${metrics.map(m=>{const a=m.get(home),b=m.get(away),max=Math.max(Math.abs(a),Math.abs(b),.001);const fmt=v=>m.type==='pct'?formatPercent(v):formatNumber(v,2);return `<div class="comparison-row"><div class="compare-value home">${fmt(a)}</div><div class="compare-bar-track"><div class="compare-bar-home" style="width:${Math.abs(a)/max*100}%"></div></div><div class="compare-label">${m.label}</div><div class="compare-bar-track"><div class="compare-bar-away" style="width:${Math.abs(b)/max*100}%"></div></div><div class="compare-value">${fmt(b)}</div></div>`}).join('')}</div></div>`}
+function renderMatchComparison(){const {home:ht,away:at}=getCompareTeams();if(!ht||!at)return;const h=ht.home||{},a=at.away||{};const avg=(x,y)=>(x+y)/2;const o15=avg(statPct(h,'over_15'),statPct(a,'over_15')),o25=avg(statPct(h,'over_25'),statPct(a,'over_25')),btts=avg(statPct(h,'btts'),statPct(a,'btts')),goals=avg(statNum(h,'avg_total_goals'),statNum(a,'avg_total_goals'));const metricsGoals=[['Over 0.5','over_05'],['Over 1.5','over_15'],['Over 2.5','over_25'],['Over 3.5','over_35'],['BTTS','btts'],['0 x 0','draw_00']].map(([label,key])=>({label,type:'pct',get:s=>statPct(s,key)}));const metricsPerf=[{label:'GF / Jogo',get:s=>safeMatches(s)?statNum(s,'goals_for')/safeMatches(s):0},{label:'GA / Jogo',get:s=>safeMatches(s)?statNum(s,'goals_against')/safeMatches(s):0},{label:'Média Gols',get:s=>statNum(s,'avg_total_goals')},{label:'Clean Sheet',type:'pct',get:s=>statPct(s,'clean_sheet')},{label:'Sem Marcar',type:'pct',get:s=>statPct(s,'failed_to_score')}];// O FotMob não fornece xG/xGA diretamente separados em casa/fora no JSON.
+// Para esta seção usamos a mesma estimativa contextual já utilizada pelo Match Predictor.
+const homeXgInfo=estimateContextXg(ht,'home','xg');
+const homeXgaInfo=estimateContextXg(ht,'home','xga');
+const awayXgInfo=estimateContextXg(at,'away','xg');
+const awayXgaInfo=estimateContextXg(at,'away','xga');
+
+const hXgContext={...h,
+    xg:{per_match:homeXgInfo.value},
+    xga:{per_match:homeXgaInfo.value}
+};
+const aXgContext={...a,
+    xg:{per_match:awayXgInfo.value},
+    xga:{per_match:awayXgaInfo.value}
+};
+
+const metricsXg=[
+    {label:'xG / Jogo',get:s=>statNum(s,'xg')},
+    {label:'xGA / Jogo',get:s=>statNum(s,'xga')},
+    {label:'xGD / Jogo',get:s=>statNum(s,'xg')-statNum(s,'xga')}
+];
+const insights=[];if(o25>=65)insights.push(['🔥','Tendência para jogo com gols',`Indicador combinado de ${formatPercent(o25)} para Over 2.5.`]);else if(o25<=40)insights.push(['🧱','Perfil de poucos gols',`Indicador combinado de apenas ${formatPercent(o25)} para Over 2.5.`]);if(btts>=60)insights.push(['⚽','Boa tendência para ambas marcam',`O indicador combinado de BTTS é ${formatPercent(btts)}.`]);else if(btts<=40)insights.push(['🛡️','BTTS com baixa incidência',`O indicador combinado é ${formatPercent(btts)}.`]);const hxg=homeXgInfo.value,axg=awayXgInfo.value,sumXg=hxg+axg;
+insights.push(['📈','Produção ofensiva estimada',`A soma dos xG por jogo estimados nos contextos selecionados é ${formatNumber(sumXg,2)}.`]);
+const diff=(homeXgInfo.value-homeXgaInfo.value)-(awayXgInfo.value-awayXgaInfo.value);if(diff>.4)insights.push(['🏠',`${ht.name} apresenta vantagem estatística`,'O diferencial xG/xGA do mandante é superior ao do visitante.']);else if(diff<-.4)insights.push(['✈️',`${at.name} apresenta vantagem estatística`,'O visitante possui melhor diferencial xG/xGA nos contextos analisados.']);document.getElementById('matchComparisonContent').innerHTML=`<div class="match-header"><div class="match-team"><img class="match-team-logo" src="${getTeamLogo(ht)}"><div class="match-team-name">${ht.name}</div><div class="match-team-context">Mandante</div></div><div class="match-vs">VS</div><div class="match-team"><img class="match-team-logo" src="${getTeamLogo(at)}"><div class="match-team-name">${at.name}</div><div class="match-team-context">Visitante</div></div></div>${createPredictor(ht,at)}${createHybridPredictor(ht,at)}<div class="section-header"><div><div class="section-title">Indicadores Combinados</div><div class="section-subtitle">Média simples entre o desempenho do mandante em casa e do visitante fora.</div></div></div><div class="projection-grid">${projectionCard('Over 1.5',formatPercent(o15),'Indicador combinado')}${projectionCard('Over 2.5',formatPercent(o25),'Indicador combinado')}${projectionCard('Ambas Marcam',formatPercent(btts),'Indicador combinado')}${projectionCard('Média de Gols',formatNumber(goals,2),'Gols por partida')}</div><div class="section-header"><div><div class="section-title">Gols & Mercados</div></div></div>${compareCard(h,a,metricsGoals)}<div class="section-header"><div><div class="section-title">Produção Ofensiva e Defensiva</div></div></div>${compareCard(h,a,metricsPerf)}<div class="section-header"><div><div class="section-title">Expected Goals</div><div class="section-subtitle">xG e xGA contextuais estimados a partir do xG geral e do desempenho real em casa e fora.</div></div></div>${compareCard(hXgContext,aXgContext,metricsXg)}<div class="section-header"><div><div class="section-title">Leitura Estatística</div><div class="section-subtitle">Insights automáticos baseados nos dados selecionados.</div></div></div><div class="insight-grid">${insights.map(i=>`<div class="insight-card"><div class="insight-icon">${i[0]}</div><div class="insight-title">${i[1]}</div><div class="insight-text">${i[2]}</div></div>`).join('')}</div>`}
+
+
+
+/* ============================================================
+   MATCH PREDICTOR - FASE 5
+============================================================ */
+function factorial(n){let r=1;for(let i=2;i<=n;i++)r*=i;return r}
+function poisson(k,lambda){if(lambda<0||!Number.isFinite(lambda))return 0;return Math.exp(-lambda)*Math.pow(lambda,k)/factorial(k)}
+function pct(v){return Math.max(0,Math.min(100,v*100))}
+function predictMatch(homeTeam,awayTeam){
+    const h=homeTeam.home||{}, a=awayTeam.away||{};
+
+    /*
+       Os campos xG/xGA por contexto (home/away) estão nulos no JSON.
+       Por isso usamos uma estimativa contextual calibrada pelo desempenho
+       real de gols marcados/sofridos em casa e fora, mantendo como base
+       o xG/xGA geral fornecido pelo FotMob.
+    */
+    const homeXgInfo = estimateContextXg(homeTeam,'home','xg');
+    const homeXgaInfo = estimateContextXg(homeTeam,'home','xga');
+    const awayXgInfo = estimateContextXg(awayTeam,'away','xg');
+    const awayXgaInfo = estimateContextXg(awayTeam,'away','xga');
+
+    const hxg=homeXgInfo.value, hxga=homeXgaInfo.value;
+    const axg=awayXgInfo.value, axga=awayXgaInfo.value;
+
+    // Cruzamento ofensivo/defensivo: ataque de uma equipe + defesa adversária.
+    const lambdaHome=(hxg+axga)/2;
+    const lambdaAway=(axg+hxga)/2;
+    const maxGoals=10;
+    const ph=Array.from({length:maxGoals+1},(_,k)=>poisson(k,lambdaHome));
+    const pa=Array.from({length:maxGoals+1},(_,k)=>poisson(k,lambdaAway));
+    let homeWin=0,draw=0,awayWin=0,over05=0,over15=0,over25=0,over35=0,btts=0,under25=0;
+    const scores=[];
+    for(let i=0;i<=maxGoals;i++)for(let j=0;j<=maxGoals;j++){
+        const p=ph[i]*pa[j];
+        if(i>j)homeWin+=p; else if(i===j)draw+=p; else awayWin+=p;
+        const total=i+j;
+        if(total>=1)over05+=p;if(total>=2)over15+=p;if(total>=3)over25+=p;if(total>=4)over35+=p;if(total<=2)under25+=p;if(i>0&&j>0)btts+=p;
+        scores.push({home:i,away:j,p});
+    }
+    scores.sort((x,y)=>y.p-x.p);
+    return {
+        lambdaHome,lambdaAway,totalXg:lambdaHome+lambdaAway,
+        homeWin,draw,awayWin,over05,over15,over25,over35,under25,btts,
+        scores:scores.slice(0,5),
+        inputs:{
+            homeXg:hxg,homeXga:hxga,awayXg:axg,awayXga:axga,
+            estimated:{
+                homeXg:homeXgInfo.estimated,
+                homeXga:homeXgaInfo.estimated,
+                awayXg:awayXgInfo.estimated,
+                awayXga:awayXgaInfo.estimated
+            }
+        }
+    };
+}
+function predictorMetric(label,value,note){return `<div class="predictor-metric"><div class="predictor-metric-label">${label}</div><div class="predictor-metric-value">${value}</div>${note?`<div class="predictor-note">${note}</div>`:''}</div>`}
+function predictorProbability(label,value){const v=pct(value);return `<div class="probability-item"><div class="probability-label">${label}</div><div class="probability-value">${formatPercent(v)}</div><div class="probability-track"><div class="probability-fill" style="width:${v}%"></div></div></div>`}
+
+/* ============================================================
+   MODELO HÍBRIDO - FASE 6
+
+   Combina:
+   1. Modelo Poisson baseado em xG/xGA contextual.
+   2. Frequências históricas reais de mandante e visitante.
+   3. Avaliação de concordância entre os dois modelos.
+   4. Índice de confiança baseado em tamanho de amostra e convergência.
+============================================================ */
+
+function clamp01(v){
+    return Math.max(0,Math.min(1,Number(v)||0));
+}
+
+function normalizeOutcome(homeWin,draw,awayWin){
+    const total=homeWin+draw+awayWin;
+    if(total<=0) return {homeWin:1/3,draw:1/3,awayWin:1/3};
+    return {
+        homeWin:homeWin/total,
+        draw:draw/total,
+        awayWin:awayWin/total
+    };
+}
+
+function getHistoricalModel(homeTeam,awayTeam){
+    const h=homeTeam.home||{};
+    const a=awayTeam.away||{};
+
+    const historicalMarkets={
+        over05:clamp01((statPct(h,'over_05')+statPct(a,'over_05'))/200),
+        over15:clamp01((statPct(h,'over_15')+statPct(a,'over_15'))/200),
+        over25:clamp01((statPct(h,'over_25')+statPct(a,'over_25'))/200),
+        over35:clamp01((statPct(h,'over_35')+statPct(a,'over_35'))/200),
+        btts:clamp01((statPct(h,'btts')+statPct(a,'btts'))/200)
+    };
+
+    historicalMarkets.under25=1-historicalMarkets.over25;
+
+    const outcomes=normalizeOutcome(
+        (statNum(h,'win_percentage')+statNum(a,'loss_percentage'))/200,
+        (statNum(h,'draw_percentage')+statNum(a,'draw_percentage'))/200,
+        (statNum(a,'win_percentage')+statNum(h,'loss_percentage'))/200
+    );
+
+    return {
+        ...historicalMarkets,
+        ...outcomes,
+        homeMatches:safeMatches(h),
+        awayMatches:safeMatches(a)
+    };
+}
+
+function getHybridWeights(homeTeam,awayTeam,poissonModel,historicalModel){
+    const minMatches=Math.min(
+        historicalModel.homeMatches||0,
+        historicalModel.awayMatches||0
+    );
+
+    const usesEstimatedXg=
+        poissonModel.inputs?.estimated?.homeXg ||
+        poissonModel.inputs?.estimated?.homeXga ||
+        poissonModel.inputs?.estimated?.awayXg ||
+        poissonModel.inputs?.estimated?.awayXga;
+
+    /*
+       Quanto maior a amostra contextual, maior o peso do histórico.
+       Como o xG casa/fora é estimado neste dataset, o histórico recebe
+       uma pequena valorização adicional.
+    */
+    const sampleFactor=Math.min(1,minMatches/15);
+
+    let historicalWeight=0.25 + 0.20*sampleFactor;
+    if(usesEstimatedXg) historicalWeight+=0.10;
+
+    historicalWeight=Math.min(0.55,Math.max(0.25,historicalWeight));
+    const poissonWeight=1-historicalWeight;
+
+    return {
+        poissonWeight,
+        historicalWeight,
+        minMatches,
+        usesEstimatedXg
+    };
+}
+
+function weighted(poissonValue,historicalValue,weights){
+    return clamp01(
+        poissonValue*weights.poissonWeight+
+        historicalValue*weights.historicalWeight
+    );
+}
+
+function calculateHybridModel(homeTeam,awayTeam){
+    const poissonModel=predictMatch(homeTeam,awayTeam);
+    const historicalModel=getHistoricalModel(homeTeam,awayTeam);
+    const weights=getHybridWeights(homeTeam,awayTeam,poissonModel,historicalModel);
+
+    const hybrid={
+        over05:weighted(poissonModel.over05,historicalModel.over05,weights),
+        over15:weighted(poissonModel.over15,historicalModel.over15,weights),
+        over25:weighted(poissonModel.over25,historicalModel.over25,weights),
+        over35:weighted(poissonModel.over35,historicalModel.over35,weights),
+        under25:weighted(poissonModel.under25,historicalModel.under25,weights),
+        btts:weighted(poissonModel.btts,historicalModel.btts,weights),
+        homeWin:weighted(poissonModel.homeWin,historicalModel.homeWin,weights),
+        draw:weighted(poissonModel.draw,historicalModel.draw,weights),
+        awayWin:weighted(poissonModel.awayWin,historicalModel.awayWin,weights)
+    };
+
+    const normalized=normalizeOutcome(
+        hybrid.homeWin,
+        hybrid.draw,
+        hybrid.awayWin
+    );
+
+    hybrid.homeWin=normalized.homeWin;
+    hybrid.draw=normalized.draw;
+    hybrid.awayWin=normalized.awayWin;
+
+    const marketKeys=['over05','over15','over25','over35','btts'];
+    const agreementDiff=marketKeys.reduce((sum,key)=>{
+        return sum+Math.abs(poissonModel[key]-historicalModel[key]);
+    },0)/marketKeys.length;
+
+    const agreementScore=Math.max(0,100-(agreementDiff*100));
+    const sampleScore=Math.min(100,(weights.minMatches/15)*100);
+    const dataQualityScore=weights.usesEstimatedXg?78:100;
+
+    const confidence=
+        agreementScore*0.45+
+        sampleScore*0.35+
+        dataQualityScore*0.20;
+
+    let confidenceLabel='Baixa';
+    if(confidence>=75) confidenceLabel='Alta';
+    else if(confidence>=55) confidenceLabel='Moderada';
+
+    return {
+        poisson:poissonModel,
+        historical:historicalModel,
+        hybrid,
+        weights,
+        agreementDiff,
+        agreementScore,
+        confidence,
+        confidenceLabel
+    };
+}
+
+function getHybridSignal(value){
+    const p=pct(value);
+    if(p>=70) return 'Forte';
+    if(p>=58) return 'Favorável';
+    if(p<=42) return 'Baixa';
+    return 'Equilibrada';
+}
+
+function hybridTableRow(label,poissonValue,historicalValue,finalValue){
+    return `
+        <div class="model-row">
+            <div class="model-name">${label}</div>
+            <div class="model-value">${formatPercent(pct(poissonValue))}</div>
+            <div class="model-value">${formatPercent(pct(historicalValue))}</div>
+            <div class="model-value model-final">${formatPercent(pct(finalValue))}</div>
+        </div>
+    `;
+}
+
+function createHybridPredictor(homeTeam,awayTeam){
+    const m=calculateHybridModel(homeTeam,awayTeam);
+    const h=m.hybrid;
+    const p=m.poisson;
+    const hist=m.historical;
+
+    const marketSignals=[
+        ['Over 2.5',h.over25],
+        ['Ambas Marcam',h.btts],
+        ['Vitória '+homeTeam.name,h.homeWin]
+    ].sort((a,b)=>b[1]-a[1]).slice(0,3);
+
+    const agreementText=
+        m.agreementDiff<=0.08
+            ? 'Os modelos de Poisson e histórico apresentam forte concordância nos principais mercados.'
+            : m.agreementDiff<=0.15
+                ? 'Existe boa convergência entre o modelo baseado em xG e o comportamento histórico das equipes.'
+                : 'Os modelos apresentam divergência relevante. O resultado deve ser interpretado com maior cautela.';
+
+    return `
+        <div class="section-header">
+            <div>
+                <div class="section-title">Modelo Híbrido de Previsão</div>
+                <div class="section-subtitle">
+                    Combinação entre Poisson/xG e frequências históricas reais de mandante e visitante.
+                </div>
+            </div>
+        </div>
+
+        <div class="hybrid-card">
+
+            <div class="hybrid-header">
+                <div>
+                    <div class="hybrid-title">Consenso Estatístico</div>
+                    <div class="hybrid-subtitle">
+                        Peso Poisson: ${formatPercent(pct(m.weights.poissonWeight))}
+                        · Peso histórico: ${formatPercent(pct(m.weights.historicalWeight))}
+                        · Amostra mínima contextual: ${m.weights.minMatches} jogos
+                    </div>
+                </div>
+
+                <div class="confidence-badge">
+                    <div class="confidence-label">Confiança do Modelo</div>
+                    <div class="confidence-value">${formatPercent(m.confidence)}</div>
+                    <div class="confidence-status">${m.confidenceLabel}</div>
+                </div>
+            </div>
+
+            <div class="hybrid-summary">
+                <div class="hybrid-stat">
+                    <div class="hybrid-stat-label">Over 2.5 Final</div>
+                    <div class="hybrid-stat-value">${formatPercent(pct(h.over25))}</div>
+                    <div class="hybrid-stat-note">${getHybridSignal(h.over25)}</div>
+                </div>
+
+                <div class="hybrid-stat">
+                    <div class="hybrid-stat-label">BTTS Final</div>
+                    <div class="hybrid-stat-value">${formatPercent(pct(h.btts))}</div>
+                    <div class="hybrid-stat-note">${getHybridSignal(h.btts)}</div>
+                </div>
+
+                <div class="hybrid-stat">
+                    <div class="hybrid-stat-label">Favorito Estatístico</div>
+                    <div class="hybrid-stat-value">${
+                        h.homeWin>=h.draw&&h.homeWin>=h.awayWin
+                            ? homeTeam.name
+                            : h.awayWin>=h.draw
+                                ? awayTeam.name
+                                : 'Empate'
+                    }</div>
+                    <div class="hybrid-stat-note">resultado híbrido</div>
+                </div>
+
+                <div class="hybrid-stat">
+                    <div class="hybrid-stat-label">Convergência</div>
+                    <div class="hybrid-stat-value">${formatPercent(m.agreementScore)}</div>
+                    <div class="hybrid-stat-note">entre os modelos</div>
+                </div>
+            </div>
+
+            <div class="model-table">
+                <div class="model-row head">
+                    <div>Mercado</div>
+                    <div>Poisson</div>
+                    <div>Histórico</div>
+                    <div>Modelo Final</div>
+                </div>
+
+                ${hybridTableRow('Over 0.5',p.over05,hist.over05,h.over05)}
+                ${hybridTableRow('Over 1.5',p.over15,hist.over15,h.over15)}
+                ${hybridTableRow('Over 2.5',p.over25,hist.over25,h.over25)}
+                ${hybridTableRow('Over 3.5',p.over35,hist.over35,h.over35)}
+                ${hybridTableRow('Ambas Marcam',p.btts,hist.btts,h.btts)}
+                ${hybridTableRow('Vitória '+homeTeam.name,p.homeWin,hist.homeWin,h.homeWin)}
+                ${hybridTableRow('Empate',p.draw,hist.draw,h.draw)}
+                ${hybridTableRow('Vitória '+awayTeam.name,p.awayWin,hist.awayWin,h.awayWin)}
+            </div>
+
+            <div class="model-agreement">
+                <strong>Leitura do modelo:</strong> ${agreementText}
+                A confiança considera o tamanho da amostra, a concordância entre as abordagens
+                e a qualidade dos dados de xG disponíveis.
+            </div>
+
+            <div class="signal-grid">
+                ${marketSignals.map(([label,value])=>`
+                    <div class="signal-card">
+                        <div class="signal-label">${label}</div>
+                        <div class="signal-value">${formatPercent(pct(value))}</div>
+                        <div class="signal-note">${getHybridSignal(value)} no consenso híbrido</div>
+                    </div>
+                `).join('')}
+            </div>
+
+        </div>
+    `;
+}
+
+function createPredictor(homeTeam,awayTeam){
+    const p=predictMatch(homeTeam,awayTeam);
+    return `<div class="section-header"><div><div class="section-title">Previsão Estatística da Partida</div><div class="section-subtitle">Modelo Poisson com xG/xGA contextual. Como o FotMob fornece xG apenas no geral neste dataset, os valores casa/fora são estimados a partir do desempenho contextual de gols.</div></div></div>
+    <div class="predictor-card">
+      <div class="predictor-hero"><div><div class="predictor-team">${homeTeam.name}</div><div class="predictor-xg">${formatNumber(p.lambdaHome,2)}</div><div class="predictor-note">gols esperados</div></div><div class="predictor-center">xG PROJETADO<div class="predictor-score">${p.scores[0].home} x ${p.scores[0].away}</div></div><div><div class="predictor-team">${awayTeam.name}</div><div class="predictor-xg">${formatNumber(p.lambdaAway,2)}</div><div class="predictor-note">gols esperados</div></div></div>
+      <div class="predictor-grid">${predictorMetric('Total esperado',formatNumber(p.totalXg,2),'xG projetado')}${predictorMetric('Placar mais provável',`${p.scores[0].home} x ${p.scores[0].away}`,formatPercent(pct(p.scores[0].p))+' de probabilidade')}${predictorMetric('BTTS',formatPercent(pct(p.btts)),'modelo Poisson')}</div>
+      <div class="probability-bars">${predictorProbability('Vitória '+homeTeam.name,p.homeWin)}${predictorProbability('Empate',p.draw)}${predictorProbability('Vitória '+awayTeam.name,p.awayWin)}</div>
+    </div>
+    <div class="section-header"><div><div class="section-title">Mercados Projetados pelo Modelo</div><div class="section-subtitle">Probabilidades calculadas a partir das distribuições de gols esperados.</div></div></div>
+    <div class="projection-grid">${projectionCard('Over 0.5',formatPercent(pct(p.over05)),'Poisson')}${projectionCard('Over 1.5',formatPercent(pct(p.over15)),'Poisson')}${projectionCard('Over 2.5',formatPercent(pct(p.over25)),'Poisson')}${projectionCard('Over 3.5',formatPercent(pct(p.over35)),'Poisson')}${projectionCard('Under 2.5',formatPercent(pct(p.under25)),'Poisson')}${projectionCard('Ambas Marcam',formatPercent(pct(p.btts)),'Poisson')}</div>
+    <div class="section-header"><div><div class="section-title">Placares Mais Prováveis</div></div></div><div class="scoreline-list">${p.scores.map(s=>`<div class="scoreline-item"><div class="scoreline-score">${s.home} x ${s.away}</div><div class="scoreline-prob">${formatPercent(pct(s.p))}</div></div>`).join('')}</div>
+    <div class="section-header"><div><div class="section-title">Metodologia</div></div></div><div class="method-box"><strong>Modelo Poisson:</strong> no JSON atual do FotMob, os campos xG/xGA de Mandante e Visitante estão nulos. Por isso, o app estima o xG contextual usando o xG geral por jogo, ajustado pelo desempenho real de gols em casa e fora. Depois aplica o cruzamento ofensivo/defensivo para obter os λ de cada equipe e calcula as probabilidades pela distribuição de Poisson. <strong>Modelo Híbrido:</strong> combina essas probabilidades com as frequências históricas reais dos contextos Mandante e Visitante. Os pesos variam conforme o tamanho da amostra e a qualidade dos dados disponíveis. A confiança final considera convergência entre os modelos, amostra e qualidade do xG. Os resultados são probabilísticos e não representam garantia de placar.</div>`;
+}
+
+/* ============================================================
+   RENDER ROUTER
+============================================================ */
+
+function renderCurrentTab() {
+
+    switch(currentTab) {
+
+        case "overview":
+
+            renderOverview();
+
+            break;
+
+
+        case "goals":
+
+            renderGoals();
+
+            break;
+
+
+        case "xg":
+
+            renderXG();
+
+            break;
+
+
+        case "teams":
+
+            renderTeamsTable();
+
+            break;
+
+
+        case "compare":
+
+            renderCompare();
+
+            break;
+
+    }
+
+}
+
+
+/* ============================================================
+   CLOSE MODAL
+============================================================ */
+
+document
+    .getElementById(
+        "teamModal"
+    )
+    .addEventListener(
+        "click",
+        event => {
+
+            if (
+                event.target.id ===
+                "teamModal"
+            ) {
+
+                closeTeamModal();
+
+            }
+
+        }
+    );
+
+
+document
+    .addEventListener(
+        "keydown",
+        event => {
+
+            if (
+                event.key === "Escape"
+            ) {
+
+                closeTeamModal();
+
+            }
+
+        }
+    );
+
+
+/* ============================================================
+   START
+============================================================ */
+
+loadData();
+
+</script>
+
+</body>
+
+</html>
