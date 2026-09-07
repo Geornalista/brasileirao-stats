@@ -1334,6 +1334,26 @@ select {
 
 }
 
+
+
+/* ============================================================
+   HISTÓRICO TEMPORAL - FASE 7
+============================================================ */
+.history-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:20px}
+.history-team-select{min-width:280px;background:var(--bg-secondary);border:1px solid var(--border);color:var(--text);padding:12px 14px;border-radius:10px;font-weight:700}
+.history-compare-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin:16px 0 24px}
+.history-metric-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px}
+.history-metric-label{font-size:11px;text-transform:uppercase;color:var(--text-secondary);font-weight:700}
+.history-values{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:13px}
+.history-value small{display:block;color:var(--text-muted);font-size:9px;text-transform:uppercase;margin-bottom:4px}
+.history-value strong{font-size:18px}.trend-up{color:var(--primary)}.trend-down{color:var(--red)}.trend-neutral{color:var(--text-secondary)}
+.history-trends{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 0 24px}
+.trend-card{background:linear-gradient(135deg,var(--card),var(--bg-secondary));border:1px solid var(--border);border-radius:15px;padding:18px}.trend-title{font-size:11px;color:var(--text-secondary);text-transform:uppercase}.trend-main{font-size:20px;font-weight:800;margin-top:7px}.trend-detail{font-size:12px;color:var(--text-secondary);margin-top:5px}
+.history-chart-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:24px}.history-chart-card{background:var(--card);border:1px solid var(--border);border-radius:15px;padding:18px;min-height:350px}.history-chart-card canvas{max-height:300px}
+.history-table{min-width:900px}.history-location{font-size:11px;padding:4px 8px;border-radius:20px;background:#15202b;color:var(--text-secondary)}
+@media(max-width:1000px){.history-compare-grid{grid-template-columns:repeat(2,1fr)}.history-chart-grid{grid-template-columns:1fr}.history-trends{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.history-compare-grid,.history-trends{grid-template-columns:1fr}.history-team-select{width:100%;min-width:0}}
+
 </style>
 
 </head>
@@ -1522,6 +1542,8 @@ select {
 
     <button class="tab" data-tab="compare">⚔ Comparar Partida</button>
 
+    <button class="tab" data-tab="history">📉 Histórico</button>
+
 </section>
 
 
@@ -1566,6 +1588,9 @@ select {
 ============================================================ */
 
 let appData = null;
+let historyData = null;
+let historyTeamId = null;
+let historyCharts = {};
 
 let currentContext = "overall";
 
@@ -1580,47 +1605,33 @@ async function loadData() {
 
     try {
 
-        const response = await fetch(
-            "./data/app/brasileirao_stats_2026.json"
-        );
+        const [statsResponse, historyResponse] = await Promise.all([
+            fetch("./data/app/brasileirao_stats_2026.json"),
+            fetch("./data/app/brasileirao_historico_2026.json")
+        ]);
 
-        if (!response.ok) {
-
-            throw new Error(
-                "Arquivo de dados não encontrado."
-            );
-
+        if (!statsResponse.ok) {
+            throw new Error("Arquivo principal de dados não encontrado.");
         }
 
-        appData =
-            await response.json();
+        appData = await statsResponse.json();
+
+        if (historyResponse.ok) {
+            historyData = await historyResponse.json();
+        } else {
+            console.warn("Histórico temporal ainda não disponível.");
+            historyData = { teams: [] };
+        }
 
         initializeApp();
 
-    }
-
-    catch(error) {
-
+    } catch(error) {
         console.error(error);
-
-        document.getElementById(
-            "loading"
-        ).innerHTML = `
-
-            <div style="color:#ef4444">
-                Erro ao carregar dados
-            </div>
-
-            <div>
-                ${error.message}
-            </div>
-
-        `;
-
+        const loading = document.getElementById("loading");
+        if (loading) loading.innerHTML = `<div style="color:#ef4444">Erro ao carregar dados</div><div>${error.message}</div>`;
     }
 
 }
-
 
 /* ============================================================
    INIT
@@ -3698,6 +3709,124 @@ function createPredictor(homeTeam,awayTeam){
     <div class="section-header"><div><div class="section-title">Metodologia</div></div></div><div class="method-box"><strong>Modelo Poisson:</strong> no JSON atual do FotMob, os campos xG/xGA de Mandante e Visitante estão nulos. Por isso, o app estima o xG contextual usando o xG geral por jogo, ajustado pelo desempenho real de gols em casa e fora. Depois aplica o cruzamento ofensivo/defensivo para obter os λ de cada equipe e calcula as probabilidades pela distribuição de Poisson. <strong>Modelo Híbrido:</strong> combina essas probabilidades com as frequências históricas reais dos contextos Mandante e Visitante. Os pesos variam conforme o tamanho da amostra e a qualidade dos dados disponíveis. A confiança final considera convergência entre os modelos, amostra e qualidade do xG. Os resultados são probabilísticos e não representam garantia de placar.</div>`;
 }
 
+
+
+/* ============================================================
+   HISTÓRICO TEMPORAL - FASE 7.2
+============================================================ */
+
+function getHistoryTeams() {
+    return historyData?.teams || [];
+}
+
+function getHistoryTeam(teamId) {
+    return getHistoryTeams().find(t => String(t.id) === String(teamId));
+}
+
+function historyTeamName(teamId) {
+    const current = getTeams().find(t => String(getTeamId(t)) === String(teamId));
+    return current?.name || current?.team?.name || getHistoryTeam(teamId)?.name || "Equipe";
+}
+
+function formatSigned(value) {
+    if (value === null || value === undefined || Number.isNaN(Number(value))) return "—";
+    return `${Number(value) > 0 ? "+" : ""}${formatNumber(Number(value))}`;
+}
+
+function trendLabel(trend, type) {
+    if (!trend || trend.percentage === null || trend.percentage === undefined) return { cls:"trend-neutral", text:"Dados insuficientes", icon:"→" };
+    const good = trend.direction === "up";
+    const neutral = trend.direction === "neutral";
+    if (neutral) return { cls:"trend-neutral", text:"Estável", icon:"→" };
+    const isDefense = type === "defensive";
+    const positive = isDefense ? good : good;
+    return { cls: positive ? "trend-up" : "trend-down", text: good ? "Melhorando" : "Piorando", icon: good ? "↑" : "↓" };
+}
+
+function destroyHistoryCharts() {
+    Object.values(historyCharts).forEach(chart => { if (chart?.destroy) chart.destroy(); });
+    historyCharts = {};
+}
+
+function renderHistory() {
+    const teams = getHistoryTeams();
+    if (!teams.length) {
+        document.getElementById("content").innerHTML = `<div class="section-header"><div><div class="section-title">Histórico Temporal</div><div class="section-subtitle">O arquivo brasileirao_historico_2026.json ainda não possui dados.</div></div></div>`;
+        return;
+    }
+
+    if (!historyTeamId || !getHistoryTeam(historyTeamId)) historyTeamId = teams[0].id;
+
+    document.getElementById("content").innerHTML = `
+        <div class="section-header">
+            <div>
+                <div class="section-title">Histórico Temporal das Estatísticas</div>
+                <div class="section-subtitle">Evolução de xG, desempenho ofensivo e defensivo e tendência das últimas 5 partidas.</div>
+            </div>
+        </div>
+        <div class="history-toolbar">
+            <select id="historyTeamSelect" class="history-team-select">
+                ${teams.map(t => `<option value="${t.id}" ${String(t.id)===String(historyTeamId)?"selected":""}>${t.name}</option>`).join("")}
+            </select>
+        </div>
+        <div id="historyContent"></div>`;
+
+    document.getElementById("historyTeamSelect").onchange = e => {
+        historyTeamId = e.target.value;
+        renderHistoryContent();
+    };
+    renderHistoryContent();
+}
+
+function renderHistoryContent() {
+    const team = getHistoryTeam(historyTeamId);
+    if (!team) return;
+    destroyHistoryCharts();
+    const season = team.summary?.season || {};
+    const last5 = team.summary?.last_5 || {};
+    const trends = team.trends || {};
+    const metrics = [
+        ["xG médio", season.xg, last5.xg, false],
+        ["xGA médio", season.xga, last5.xga, true],
+        ["xGD médio", season.xgd, last5.xgd, false],
+        ["Gols Pró", season.goals_for, last5.goals_for, false],
+        ["Gols Contra", season.goals_against, last5.goals_against, true]
+    ];
+    const metricHtml = metrics.map(([label,a,b,inverse]) => {
+        const delta = (a!==null&&a!==undefined&&b!==null&&b!==undefined&&a!==0) ? ((b-a)/Math.abs(a))*100 : null;
+        const better = inverse ? delta < 0 : delta > 0;
+        const cls = delta===null || Math.abs(delta)<5 ? "trend-neutral" : better ? "trend-up" : "trend-down";
+        const arrow = delta===null || Math.abs(delta)<5 ? "→" : delta>0 ? "↑" : "↓";
+        return `<div class="history-metric-card"><div class="history-metric-label">${label}</div><div class="history-values"><div class="history-value"><small>Temporada</small><strong>${label.includes("xGD") ? formatSigned(a) : formatNumber(a)}</strong></div><div class="history-value"><small>Últimos ${last5.matches||0}</small><strong>${label.includes("xGD") ? formatSigned(b) : formatNumber(b)}</strong><span class="${cls}" style="font-size:11px;font-weight:700"> ${arrow} ${delta===null?"":Math.abs(delta).toFixed(1)+"%"}</span></div></div></div>`;
+    }).join("");
+
+    const trendCards = [["Ataque", trends.offensive, "offensive", "xG"],["Defesa", trends.defensive, "defensive", "xGA"],["Equilíbrio", trends.balance, "balance", "xGD"]].map(([title,t,type,metric])=>{const z=trendLabel(t,type);return `<div class="trend-card"><div class="trend-title">${title}</div><div class="trend-main ${z.cls}">${z.icon} ${z.text}</div><div class="trend-detail">${metric} últimos 5 vs temporada ${t?.percentage===null||t?.percentage===undefined?"":`(${Math.abs(t.percentage).toFixed(1)}%)`}</div></div>`}).join("");
+
+    document.getElementById("historyContent").innerHTML = `
+        <div class="history-compare-grid">${metricHtml}</div>
+        <div class="section-header"><div><div class="section-title">Tendência Recente</div><div class="section-subtitle">Comparação da forma atual com a média da temporada.</div></div></div>
+        <div class="history-trends">${trendCards}</div>
+        <div class="history-chart-grid">
+            <div class="history-chart-card"><div class="ranking-title">Evolução de xG por rodada</div><div class="section-subtitle">Produção ofensiva, xG concedido e saldo de xG.</div><canvas id="historyXGChart"></canvas></div>
+            <div class="history-chart-card"><div class="ranking-title">Tendência móvel dos últimos 5 jogos</div><div class="section-subtitle">Suaviza oscilações e evidencia o momento recente.</div><canvas id="historyRollingChart"></canvas></div>
+        </div>
+        <div class="section-header"><div><div class="section-title">Partidas da Temporada</div><div class="section-subtitle">Histórico individual de desempenho.</div></div></div>
+        <div class="table-container"><table class="stats-table history-table"><thead><tr><th>Rod.</th><th>Data</th><th>Local</th><th>Adversário</th><th>Placar</th><th>xG</th><th>xGA</th><th>xGD</th><th>xG Móvel 5</th><th>xGA Móvel 5</th></tr></thead><tbody>${(team.matches||[]).map(m=>`<tr><td>${m.round??"—"}</td><td>${m.date?new Date(m.date).toLocaleDateString("pt-BR"):"—"}</td><td><span class="history-location">${m.location==="home"?"Casa":"Fora"}</span></td><td>${m.opponent?.name||"—"}</td><td class="highlight">${m.goals_for ?? "—"} x ${m.goals_against ?? "—"}</td><td class="xg-value">${formatNumber(m.xg)}</td><td class="xga-value">${formatNumber(m.xga)}</td><td class="${(m.xgd||0)>0?"positive":(m.xgd||0)<0?"negative":""}">${formatSigned(m.xgd)}</td><td>${formatNumber(m.rolling_5?.xg)}</td><td>${formatNumber(m.rolling_5?.xga)}</td></tr>`).join("")}</tbody></table></div>`;
+
+    drawHistoryCharts(team);
+}
+
+function drawHistoryCharts(team) {
+    if (typeof Chart === "undefined") return;
+    const matches = team.matches || [];
+    const labels = matches.map(m => `R${m.round ?? "?"}`);
+    const baseOptions = { responsive:true, maintainAspectRatio:false, interaction:{mode:"index",intersect:false}, plugins:{legend:{labels:{color:"#94a3b8"}}}, scales:{x:{ticks:{color:"#64748b"},grid:{color:"rgba(37,52,68,.35)"}},y:{ticks:{color:"#64748b"},grid:{color:"rgba(37,52,68,.35)"}}} };
+    const c1=document.getElementById("historyXGChart");
+    if(c1) historyCharts.xg = new Chart(c1,{type:"line",data:{labels,datasets:[{label:"xG",data:matches.map(m=>m.xg),borderColor:"#38bdf8",backgroundColor:"rgba(56,189,248,.08)",tension:.3,borderWidth:2},{label:"xGA",data:matches.map(m=>m.xga),borderColor:"#fb923c",backgroundColor:"rgba(251,146,60,.08)",tension:.3,borderWidth:2},{label:"xGD",data:matches.map(m=>m.xgd),borderColor:"#22c55e",backgroundColor:"rgba(34,197,94,.08)",tension:.3,borderWidth:2}]},options:baseOptions});
+    const c2=document.getElementById("historyRollingChart");
+    if(c2) historyCharts.rolling = new Chart(c2,{type:"line",data:{labels,datasets:[{label:"xG médio móvel (5)",data:matches.map(m=>m.rolling_5?.xg),borderColor:"#38bdf8",tension:.35,borderWidth:3},{label:"xGA médio móvel (5)",data:matches.map(m=>m.rolling_5?.xga),borderColor:"#fb923c",tension:.35,borderWidth:3},{label:"xGD médio móvel (5)",data:matches.map(m=>m.rolling_5?.xgd),borderColor:"#a78bfa",tension:.35,borderWidth:3}]},options:baseOptions});
+}
+
 /* ============================================================
    RENDER ROUTER
 ============================================================ */
@@ -3737,6 +3866,12 @@ function renderCurrentTab() {
         case "compare":
 
             renderCompare();
+
+            break;
+
+        case "history":
+
+            renderHistory();
 
             break;
 
