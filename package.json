@@ -1,0 +1,13 @@
+{
+  "name": "fotmob-brasileirao",
+  "version": "1.0.0",
+  "description": "Coleta e processamento de dados do Campeonato Brasileiro",
+  "type": "module",
+
+  "scripts": {
+    "fetch": "node fetch-fotmob.js",
+    "process": "node process-stats.js"
+  },
+
+  "dependencies": {}
+}
