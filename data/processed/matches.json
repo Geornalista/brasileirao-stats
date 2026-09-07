@@ -1,0 +1,7602 @@
+[
+  {
+    "match_id": 5103369,
+    "round": 1,
+    "date": "2026-01-28T22:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 2
+    },
+    "home": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    },
+    "away": {
+      "id": 10283,
+      "name": "Palmeiras"
+    }
+  },
+  {
+    "match_id": 5103371,
+    "round": 1,
+    "date": "2026-01-28T22:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "home": {
+      "id": 9767,
+      "name": "Coritiba"
+    },
+    "away": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    }
+  },
+  {
+    "match_id": 5103370,
+    "round": 1,
+    "date": "2026-01-28T22:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "home": {
+      "id": 8702,
+      "name": "Internacional"
+    },
+    "away": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    }
+  },
+  {
+    "match_id": 5103372,
+    "round": 1,
+    "date": "2026-01-28T22:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "home": {
+      "id": 7733,
+      "name": "Vitória"
+    },
+    "away": {
+      "id": 1626,
+      "name": "Remo"
+    }
+  },
+  {
+    "match_id": 5103364,
+    "round": 1,
+    "date": "2026-01-28T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "home": {
+      "id": 9863,
+      "name": "Fluminense"
+    },
+    "away": {
+      "id": 9769,
+      "name": "Grêmio"
+    }
+  },
+  {
+    "match_id": 5103373,
+    "round": 1,
+    "date": "2026-01-28T23:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 4,
+      "away": 2
+    },
+    "home": {
+      "id": 197693,
+      "name": "Chapecoense"
+    },
+    "away": {
+      "id": 8514,
+      "name": "Santos"
+    }
+  },
+  {
+    "match_id": 5103367,
+    "round": 1,
+    "date": "2026-01-28T23:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "home": {
+      "id": 9808,
+      "name": "Corinthians"
+    },
+    "away": {
+      "id": 7877,
+      "name": "Bahia"
+    }
+  },
+  {
+    "match_id": 5103366,
+    "round": 1,
+    "date": "2026-01-29T00:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "home": {
+      "id": 10277,
+      "name": "São Paulo"
+    },
+    "away": {
+      "id": 9770,
+      "name": "Flamengo"
+    }
+  },
+  {
+    "match_id": 5103368,
+    "round": 1,
+    "date": "2026-01-29T23:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "home": {
+      "id": 163782,
+      "name": "Mirassol"
+    },
+    "away": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    }
+  },
+  {
+    "match_id": 5103365,
+    "round": 1,
+    "date": "2026-01-30T00:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 4,
+      "away": 0
+    },
+    "home": {
+      "id": 8517,
+      "name": "Botafogo"
+    },
+    "away": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    }
+  },
+  {
+    "match_id": 5103374,
+    "round": 2,
+    "date": "2026-02-04T22:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 9770,
+      "name": "Flamengo"
+    },
+    "away": {
+      "id": 8702,
+      "name": "Internacional"
+    }
+  },
+  {
+    "match_id": 5103378,
+    "round": 2,
+    "date": "2026-02-04T22:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "home": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    },
+    "away": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    }
+  },
+  {
+    "match_id": 5103383,
+    "round": 2,
+    "date": "2026-02-04T23:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 2
+    },
+    "home": {
+      "id": 1626,
+      "name": "Remo"
+    },
+    "away": {
+      "id": 163782,
+      "name": "Mirassol"
+    }
+  },
+  {
+    "match_id": 5103376,
+    "round": 2,
+    "date": "2026-02-04T23:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 8514,
+      "name": "Santos"
+    },
+    "away": {
+      "id": 10277,
+      "name": "São Paulo"
+    }
+  },
+  {
+    "match_id": 5103380,
+    "round": 2,
+    "date": "2026-02-05T00:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 5,
+      "away": 3
+    },
+    "home": {
+      "id": 9769,
+      "name": "Grêmio"
+    },
+    "away": {
+      "id": 8517,
+      "name": "Botafogo"
+    }
+  },
+  {
+    "match_id": 5103377,
+    "round": 2,
+    "date": "2026-02-05T00:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 5,
+      "away": 1
+    },
+    "home": {
+      "id": 10283,
+      "name": "Palmeiras"
+    },
+    "away": {
+      "id": 7733,
+      "name": "Vitória"
+    }
+  },
+  {
+    "match_id": 5103382,
+    "round": 2,
+    "date": "2026-02-05T22:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 7877,
+      "name": "Bahia"
+    },
+    "away": {
+      "id": 9863,
+      "name": "Fluminense"
+    }
+  },
+  {
+    "match_id": 5103375,
+    "round": 2,
+    "date": "2026-02-05T23:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    },
+    "away": {
+      "id": 197693,
+      "name": "Chapecoense"
+    }
+  },
+  {
+    "match_id": 5103379,
+    "round": 2,
+    "date": "2026-02-06T00:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "home": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    },
+    "away": {
+      "id": 9767,
+      "name": "Coritiba"
+    }
+  },
+  {
+    "match_id": 5103392,
+    "round": 3,
+    "date": "2026-02-11T00:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "home": {
+      "id": 7733,
+      "name": "Vitória"
+    },
+    "away": {
+      "id": 9770,
+      "name": "Flamengo"
+    }
+  },
+  {
+    "match_id": 5103393,
+    "round": 3,
+    "date": "2026-02-11T22:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 3
+    },
+    "home": {
+      "id": 197693,
+      "name": "Chapecoense"
+    },
+    "away": {
+      "id": 9767,
+      "name": "Coritiba"
+    }
+  },
+  {
+    "match_id": 5103388,
+    "round": 3,
+    "date": "2026-02-11T22:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 2
+    },
+    "home": {
+      "id": 163782,
+      "name": "Mirassol"
+    },
+    "away": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    }
+  },
+  {
+    "match_id": 5103389,
+    "round": 3,
+    "date": "2026-02-11T23:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 3
+    },
+    "home": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    },
+    "away": {
+      "id": 1626,
+      "name": "Remo"
+    }
+  },
+  {
+    "match_id": 5103386,
+    "round": 3,
+    "date": "2026-02-12T00:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "home": {
+      "id": 10277,
+      "name": "São Paulo"
+    },
+    "away": {
+      "id": 9769,
+      "name": "Grêmio"
+    }
+  },
+  {
+    "match_id": 5103385,
+    "round": 3,
+    "date": "2026-02-12T00:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "home": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    },
+    "away": {
+      "id": 7877,
+      "name": "Bahia"
+    }
+  },
+  {
+    "match_id": 5103391,
+    "round": 3,
+    "date": "2026-02-12T22:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "home": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    },
+    "away": {
+      "id": 8514,
+      "name": "Santos"
+    }
+  },
+  {
+    "match_id": 5103384,
+    "round": 3,
+    "date": "2026-02-12T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "home": {
+      "id": 9863,
+      "name": "Fluminense"
+    },
+    "away": {
+      "id": 8517,
+      "name": "Botafogo"
+    }
+  },
+  {
+    "match_id": 5103387,
+    "round": 3,
+    "date": "2026-02-12T23:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "home": {
+      "id": 9808,
+      "name": "Corinthians"
+    },
+    "away": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    }
+  },
+  {
+    "match_id": 5103390,
+    "round": 3,
+    "date": "2026-02-13T00:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 3
+    },
+    "home": {
+      "id": 8702,
+      "name": "Internacional"
+    },
+    "away": {
+      "id": 10283,
+      "name": "Palmeiras"
+    }
+  },
+  {
+    "match_id": 5103381,
+    "round": 2,
+    "date": "2026-02-19T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "home": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    },
+    "away": {
+      "id": 9808,
+      "name": "Corinthians"
+    }
+  },
+  {
+    "match_id": 5103398,
+    "round": 4,
+    "date": "2026-02-25T22:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    },
+    "away": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    }
+  },
+  {
+    "match_id": 5103403,
+    "round": 4,
+    "date": "2026-02-25T22:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 1626,
+      "name": "Remo"
+    },
+    "away": {
+      "id": 8702,
+      "name": "Internacional"
+    }
+  },
+  {
+    "match_id": 5103401,
+    "round": 4,
+    "date": "2026-02-25T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "home": {
+      "id": 9767,
+      "name": "Coritiba"
+    },
+    "away": {
+      "id": 10277,
+      "name": "São Paulo"
+    }
+  },
+  {
+    "match_id": 5103399,
+    "round": 4,
+    "date": "2026-02-25T23:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    },
+    "away": {
+      "id": 9808,
+      "name": "Corinthians"
+    }
+  },
+  {
+    "match_id": 5103400,
+    "round": 4,
+    "date": "2026-02-26T00:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "home": {
+      "id": 9769,
+      "name": "Grêmio"
+    },
+    "away": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    }
+  },
+  {
+    "match_id": 5103397,
+    "round": 4,
+    "date": "2026-02-26T00:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "home": {
+      "id": 10283,
+      "name": "Palmeiras"
+    },
+    "away": {
+      "id": 9863,
+      "name": "Fluminense"
+    }
+  },
+  {
+    "match_id": 5103396,
+    "round": 4,
+    "date": "2026-02-26T22:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "home": {
+      "id": 8514,
+      "name": "Santos"
+    },
+    "away": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    }
+  },
+  {
+    "match_id": 5103408,
+    "round": 5,
+    "date": "2026-03-11T00:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 2
+    },
+    "home": {
+      "id": 163782,
+      "name": "Mirassol"
+    },
+    "away": {
+      "id": 8514,
+      "name": "Santos"
+    }
+  },
+  {
+    "match_id": 5103409,
+    "round": 5,
+    "date": "2026-03-11T22:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "home": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    },
+    "away": {
+      "id": 8702,
+      "name": "Internacional"
+    }
+  },
+  {
+    "match_id": 5103412,
+    "round": 5,
+    "date": "2026-03-11T23:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 7877,
+      "name": "Bahia"
+    },
+    "away": {
+      "id": 7733,
+      "name": "Vitória"
+    }
+  },
+  {
+    "match_id": 5103407,
+    "round": 5,
+    "date": "2026-03-12T00:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 2
+    },
+    "home": {
+      "id": 9808,
+      "name": "Corinthians"
+    },
+    "away": {
+      "id": 9767,
+      "name": "Coritiba"
+    }
+  },
+  {
+    "match_id": 5103404,
+    "round": 5,
+    "date": "2026-03-12T00:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "home": {
+      "id": 9770,
+      "name": "Flamengo"
+    },
+    "away": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    }
+  },
+  {
+    "match_id": 5103413,
+    "round": 5,
+    "date": "2026-03-12T22:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 2
+    },
+    "home": {
+      "id": 1626,
+      "name": "Remo"
+    },
+    "away": {
+      "id": 9863,
+      "name": "Fluminense"
+    }
+  },
+  {
+    "match_id": 5103405,
+    "round": 5,
+    "date": "2026-03-12T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "home": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    },
+    "away": {
+      "id": 10283,
+      "name": "Palmeiras"
+    }
+  },
+  {
+    "match_id": 5103406,
+    "round": 5,
+    "date": "2026-03-12T23:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "home": {
+      "id": 10277,
+      "name": "São Paulo"
+    },
+    "away": {
+      "id": 197693,
+      "name": "Chapecoense"
+    }
+  },
+  {
+    "match_id": 5103410,
+    "round": 5,
+    "date": "2026-03-13T00:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 9769,
+      "name": "Grêmio"
+    },
+    "away": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    }
+  },
+  {
+    "match_id": 5103422,
+    "round": 6,
+    "date": "2026-03-14T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "home": {
+      "id": 7733,
+      "name": "Vitória"
+    },
+    "away": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    }
+  },
+  {
+    "match_id": 5103415,
+    "round": 6,
+    "date": "2026-03-14T23:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 3
+    },
+    "home": {
+      "id": 8517,
+      "name": "Botafogo"
+    },
+    "away": {
+      "id": 9770,
+      "name": "Flamengo"
+    }
+  },
+  {
+    "match_id": 5103414,
+    "round": 6,
+    "date": "2026-03-15T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 2
+    },
+    "home": {
+      "id": 9863,
+      "name": "Fluminense"
+    },
+    "away": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    }
+  },
+  {
+    "match_id": 5103420,
+    "round": 6,
+    "date": "2026-03-15T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "home": {
+      "id": 8702,
+      "name": "Internacional"
+    },
+    "away": {
+      "id": 7877,
+      "name": "Bahia"
+    }
+  },
+  {
+    "match_id": 5103416,
+    "round": 6,
+    "date": "2026-03-15T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 8514,
+      "name": "Santos"
+    },
+    "away": {
+      "id": 9808,
+      "name": "Corinthians"
+    }
+  },
+  {
+    "match_id": 5103421,
+    "round": 6,
+    "date": "2026-03-15T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "home": {
+      "id": 9767,
+      "name": "Coritiba"
+    },
+    "away": {
+      "id": 1626,
+      "name": "Remo"
+    }
+  },
+  {
+    "match_id": 5103417,
+    "round": 6,
+    "date": "2026-03-15T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "home": {
+      "id": 10283,
+      "name": "Palmeiras"
+    },
+    "away": {
+      "id": 163782,
+      "name": "Mirassol"
+    }
+  },
+  {
+    "match_id": 5103419,
+    "round": 6,
+    "date": "2026-03-15T23:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 3
+    },
+    "home": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    },
+    "away": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    }
+  },
+  {
+    "match_id": 5103418,
+    "round": 6,
+    "date": "2026-03-15T23:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "home": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    },
+    "away": {
+      "id": 10277,
+      "name": "São Paulo"
+    }
+  },
+  {
+    "match_id": 5103423,
+    "round": 6,
+    "date": "2026-03-16T23:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 197693,
+      "name": "Chapecoense"
+    },
+    "away": {
+      "id": 9769,
+      "name": "Grêmio"
+    }
+  },
+  {
+    "match_id": 5103432,
+    "round": 7,
+    "date": "2026-03-18T22:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "home": {
+      "id": 7877,
+      "name": "Bahia"
+    },
+    "away": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    }
+  },
+  {
+    "match_id": 5103427,
+    "round": 7,
+    "date": "2026-03-18T22:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "home": {
+      "id": 10283,
+      "name": "Palmeiras"
+    },
+    "away": {
+      "id": 8517,
+      "name": "Botafogo"
+    }
+  },
+  {
+    "match_id": 5103431,
+    "round": 7,
+    "date": "2026-03-18T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "home": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    },
+    "away": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    }
+  },
+  {
+    "match_id": 5103429,
+    "round": 7,
+    "date": "2026-03-18T23:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "home": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    },
+    "away": {
+      "id": 10277,
+      "name": "São Paulo"
+    }
+  },
+  {
+    "match_id": 5103428,
+    "round": 7,
+    "date": "2026-03-18T23:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "home": {
+      "id": 163782,
+      "name": "Mirassol"
+    },
+    "away": {
+      "id": 9767,
+      "name": "Coritiba"
+    }
+  },
+  {
+    "match_id": 5103426,
+    "round": 7,
+    "date": "2026-03-19T00:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "home": {
+      "id": 8514,
+      "name": "Santos"
+    },
+    "away": {
+      "id": 8702,
+      "name": "Internacional"
+    }
+  },
+  {
+    "match_id": 5103425,
+    "round": 7,
+    "date": "2026-03-19T00:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 2
+    },
+    "home": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    },
+    "away": {
+      "id": 9863,
+      "name": "Fluminense"
+    }
+  },
+  {
+    "match_id": 5103430,
+    "round": 7,
+    "date": "2026-03-19T22:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "home": {
+      "id": 9769,
+      "name": "Grêmio"
+    },
+    "away": {
+      "id": 7733,
+      "name": "Vitória"
+    }
+  },
+  {
+    "match_id": 5103424,
+    "round": 7,
+    "date": "2026-03-19T23:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 0
+    },
+    "home": {
+      "id": 9770,
+      "name": "Flamengo"
+    },
+    "away": {
+      "id": 1626,
+      "name": "Remo"
+    }
+  },
+  {
+    "match_id": 5103433,
+    "round": 7,
+    "date": "2026-03-20T00:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "home": {
+      "id": 197693,
+      "name": "Chapecoense"
+    },
+    "away": {
+      "id": 9808,
+      "name": "Corinthians"
+    }
+  },
+  {
+    "match_id": 5103438,
+    "round": 8,
+    "date": "2026-03-21T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "home": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    },
+    "away": {
+      "id": 8517,
+      "name": "Botafogo"
+    }
+  },
+  {
+    "match_id": 5103434,
+    "round": 8,
+    "date": "2026-03-21T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "home": {
+      "id": 9863,
+      "name": "Fluminense"
+    },
+    "away": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    }
+  },
+  {
+    "match_id": 5103436,
+    "round": 8,
+    "date": "2026-03-22T00:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "home": {
+      "id": 10277,
+      "name": "São Paulo"
+    },
+    "away": {
+      "id": 10283,
+      "name": "Palmeiras"
+    }
+  },
+  {
+    "match_id": 5103441,
+    "round": 8,
+    "date": "2026-03-22T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "home": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    },
+    "away": {
+      "id": 9767,
+      "name": "Coritiba"
+    }
+  },
+  {
+    "match_id": 5103439,
+    "round": 8,
+    "date": "2026-03-22T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "home": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    },
+    "away": {
+      "id": 8514,
+      "name": "Santos"
+    }
+  },
+  {
+    "match_id": 5103443,
+    "round": 8,
+    "date": "2026-03-22T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 4,
+      "away": 1
+    },
+    "home": {
+      "id": 1626,
+      "name": "Remo"
+    },
+    "away": {
+      "id": 7877,
+      "name": "Bahia"
+    }
+  },
+  {
+    "match_id": 5103435,
+    "round": 8,
+    "date": "2026-03-22T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "home": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    },
+    "away": {
+      "id": 9769,
+      "name": "Grêmio"
+    }
+  },
+  {
+    "match_id": 5103440,
+    "round": 8,
+    "date": "2026-03-22T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "home": {
+      "id": 8702,
+      "name": "Internacional"
+    },
+    "away": {
+      "id": 197693,
+      "name": "Chapecoense"
+    }
+  },
+  {
+    "match_id": 5103442,
+    "round": 8,
+    "date": "2026-03-22T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "home": {
+      "id": 7733,
+      "name": "Vitória"
+    },
+    "away": {
+      "id": 163782,
+      "name": "Mirassol"
+    }
+  },
+  {
+    "match_id": 5103437,
+    "round": 8,
+    "date": "2026-03-22T23:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 9808,
+      "name": "Corinthians"
+    },
+    "away": {
+      "id": 9770,
+      "name": "Flamengo"
+    }
+  },
+  {
+    "match_id": 5103411,
+    "round": 5,
+    "date": "2026-03-29T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 4,
+      "away": 1
+    },
+    "home": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    },
+    "away": {
+      "id": 8517,
+      "name": "Botafogo"
+    }
+  },
+  {
+    "match_id": 5103445,
+    "round": 9,
+    "date": "2026-04-01T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 2
+    },
+    "home": {
+      "id": 8517,
+      "name": "Botafogo"
+    },
+    "away": {
+      "id": 163782,
+      "name": "Mirassol"
+    }
+  },
+  {
+    "match_id": 5103450,
+    "round": 9,
+    "date": "2026-04-01T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 8702,
+      "name": "Internacional"
+    },
+    "away": {
+      "id": 10277,
+      "name": "São Paulo"
+    }
+  },
+  {
+    "match_id": 5103452,
+    "round": 9,
+    "date": "2026-04-01T23:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 0
+    },
+    "home": {
+      "id": 7877,
+      "name": "Bahia"
+    },
+    "away": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    }
+  },
+  {
+    "match_id": 5103449,
+    "round": 9,
+    "date": "2026-04-01T23:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 0
+    },
+    "home": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    },
+    "away": {
+      "id": 7733,
+      "name": "Vitória"
+    }
+  },
+  {
+    "match_id": 5103451,
+    "round": 9,
+    "date": "2026-04-01T23:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 9767,
+      "name": "Coritiba"
+    },
+    "away": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    }
+  },
+  {
+    "match_id": 5103444,
+    "round": 9,
+    "date": "2026-04-02T00:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 1
+    },
+    "home": {
+      "id": 9863,
+      "name": "Fluminense"
+    },
+    "away": {
+      "id": 9808,
+      "name": "Corinthians"
+    }
+  },
+  {
+    "match_id": 5103453,
+    "round": 9,
+    "date": "2026-04-02T22:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 4
+    },
+    "home": {
+      "id": 197693,
+      "name": "Chapecoense"
+    },
+    "away": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    }
+  },
+  {
+    "match_id": 5103446,
+    "round": 9,
+    "date": "2026-04-02T22:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "home": {
+      "id": 8514,
+      "name": "Santos"
+    },
+    "away": {
+      "id": 1626,
+      "name": "Remo"
+    }
+  },
+  {
+    "match_id": 5103447,
+    "round": 9,
+    "date": "2026-04-03T00:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "home": {
+      "id": 10283,
+      "name": "Palmeiras"
+    },
+    "away": {
+      "id": 9769,
+      "name": "Grêmio"
+    }
+  },
+  {
+    "match_id": 5103448,
+    "round": 9,
+    "date": "2026-04-03T00:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 0
+    },
+    "home": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    },
+    "away": {
+      "id": 9770,
+      "name": "Flamengo"
+    }
+  },
+  {
+    "match_id": 5103456,
+    "round": 10,
+    "date": "2026-04-04T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 4,
+      "away": 1
+    },
+    "home": {
+      "id": 10277,
+      "name": "São Paulo"
+    },
+    "away": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    }
+  },
+  {
+    "match_id": 5103461,
+    "round": 10,
+    "date": "2026-04-04T23:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 9767,
+      "name": "Coritiba"
+    },
+    "away": {
+      "id": 9863,
+      "name": "Fluminense"
+    }
+  },
+  {
+    "match_id": 5103455,
+    "round": 10,
+    "date": "2026-04-05T00:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "home": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    },
+    "away": {
+      "id": 8517,
+      "name": "Botafogo"
+    }
+  },
+  {
+    "match_id": 5103463,
+    "round": 10,
+    "date": "2026-04-05T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 197693,
+      "name": "Chapecoense"
+    },
+    "away": {
+      "id": 7733,
+      "name": "Vitória"
+    }
+  },
+  {
+    "match_id": 5103459,
+    "round": 10,
+    "date": "2026-04-05T20:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "home": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    },
+    "away": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    }
+  },
+  {
+    "match_id": 5103454,
+    "round": 10,
+    "date": "2026-04-05T20:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 1
+    },
+    "home": {
+      "id": 9770,
+      "name": "Flamengo"
+    },
+    "away": {
+      "id": 8514,
+      "name": "Santos"
+    }
+  },
+  {
+    "match_id": 5103462,
+    "round": 10,
+    "date": "2026-04-05T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "home": {
+      "id": 7877,
+      "name": "Bahia"
+    },
+    "away": {
+      "id": 10283,
+      "name": "Palmeiras"
+    }
+  },
+  {
+    "match_id": 5103457,
+    "round": 10,
+    "date": "2026-04-05T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "home": {
+      "id": 9808,
+      "name": "Corinthians"
+    },
+    "away": {
+      "id": 8702,
+      "name": "Internacional"
+    }
+  },
+  {
+    "match_id": 5103458,
+    "round": 10,
+    "date": "2026-04-05T23:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "home": {
+      "id": 163782,
+      "name": "Mirassol"
+    },
+    "away": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    }
+  },
+  {
+    "match_id": 5103460,
+    "round": 10,
+    "date": "2026-04-05T23:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "home": {
+      "id": 9769,
+      "name": "Grêmio"
+    },
+    "away": {
+      "id": 1626,
+      "name": "Remo"
+    }
+  },
+  {
+    "match_id": 5103473,
+    "round": 11,
+    "date": "2026-04-11T19:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 1626,
+      "name": "Remo"
+    },
+    "away": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    }
+  },
+  {
+    "match_id": 5103472,
+    "round": 11,
+    "date": "2026-04-11T19:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "home": {
+      "id": 7733,
+      "name": "Vitória"
+    },
+    "away": {
+      "id": 10277,
+      "name": "São Paulo"
+    }
+  },
+  {
+    "match_id": 5103468,
+    "round": 11,
+    "date": "2026-04-11T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "home": {
+      "id": 163782,
+      "name": "Mirassol"
+    },
+    "away": {
+      "id": 7877,
+      "name": "Bahia"
+    }
+  },
+  {
+    "match_id": 5103466,
+    "round": 11,
+    "date": "2026-04-11T23:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "home": {
+      "id": 8514,
+      "name": "Santos"
+    },
+    "away": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    }
+  },
+  {
+    "match_id": 5103470,
+    "round": 11,
+    "date": "2026-04-11T23:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "home": {
+      "id": 8702,
+      "name": "Internacional"
+    },
+    "away": {
+      "id": 9769,
+      "name": "Grêmio"
+    }
+  },
+  {
+    "match_id": 5103471,
+    "round": 11,
+    "date": "2026-04-12T14:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "home": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    },
+    "away": {
+      "id": 197693,
+      "name": "Chapecoense"
+    }
+  },
+  {
+    "match_id": 5103465,
+    "round": 11,
+    "date": "2026-04-12T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 2
+    },
+    "home": {
+      "id": 8517,
+      "name": "Botafogo"
+    },
+    "away": {
+      "id": 9767,
+      "name": "Coritiba"
+    }
+  },
+  {
+    "match_id": 5103464,
+    "round": 11,
+    "date": "2026-04-12T21:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "home": {
+      "id": 9863,
+      "name": "Fluminense"
+    },
+    "away": {
+      "id": 9770,
+      "name": "Flamengo"
+    }
+  },
+  {
+    "match_id": 5103467,
+    "round": 11,
+    "date": "2026-04-12T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "home": {
+      "id": 9808,
+      "name": "Corinthians"
+    },
+    "away": {
+      "id": 10283,
+      "name": "Palmeiras"
+    }
+  },
+  {
+    "match_id": 5103469,
+    "round": 11,
+    "date": "2026-04-12T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "home": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    },
+    "away": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    }
+  },
+  {
+    "match_id": 5103483,
+    "round": 12,
+    "date": "2026-04-18T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 4
+    },
+    "home": {
+      "id": 197693,
+      "name": "Chapecoense"
+    },
+    "away": {
+      "id": 8517,
+      "name": "Botafogo"
+    }
+  },
+  {
+    "match_id": 5103475,
+    "round": 12,
+    "date": "2026-04-18T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "home": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    },
+    "away": {
+      "id": 10277,
+      "name": "São Paulo"
+    }
+  },
+  {
+    "match_id": 5103482,
+    "round": 12,
+    "date": "2026-04-18T23:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "home": {
+      "id": 7733,
+      "name": "Vitória"
+    },
+    "away": {
+      "id": 9808,
+      "name": "Corinthians"
+    }
+  },
+  {
+    "match_id": 5103479,
+    "round": 12,
+    "date": "2026-04-18T23:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "home": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    },
+    "away": {
+      "id": 9769,
+      "name": "Grêmio"
+    }
+  },
+  {
+    "match_id": 5103480,
+    "round": 12,
+    "date": "2026-04-19T14:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "home": {
+      "id": 8702,
+      "name": "Internacional"
+    },
+    "away": {
+      "id": 163782,
+      "name": "Mirassol"
+    }
+  },
+  {
+    "match_id": 5103481,
+    "round": 12,
+    "date": "2026-04-19T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "home": {
+      "id": 9767,
+      "name": "Coritiba"
+    },
+    "away": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    }
+  },
+  {
+    "match_id": 5103476,
+    "round": 12,
+    "date": "2026-04-19T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 3
+    },
+    "home": {
+      "id": 8514,
+      "name": "Santos"
+    },
+    "away": {
+      "id": 9863,
+      "name": "Fluminense"
+    }
+  },
+  {
+    "match_id": 5103477,
+    "round": 12,
+    "date": "2026-04-19T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "home": {
+      "id": 10283,
+      "name": "Palmeiras"
+    },
+    "away": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    }
+  },
+  {
+    "match_id": 5103478,
+    "round": 12,
+    "date": "2026-04-19T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 4,
+      "away": 2
+    },
+    "home": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    },
+    "away": {
+      "id": 1626,
+      "name": "Remo"
+    }
+  },
+  {
+    "match_id": 5103474,
+    "round": 12,
+    "date": "2026-04-19T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "home": {
+      "id": 9770,
+      "name": "Flamengo"
+    },
+    "away": {
+      "id": 7877,
+      "name": "Bahia"
+    }
+  },
+  {
+    "match_id": 5103492,
+    "round": 13,
+    "date": "2026-04-25T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 2
+    },
+    "home": {
+      "id": 7877,
+      "name": "Bahia"
+    },
+    "away": {
+      "id": 8514,
+      "name": "Santos"
+    }
+  },
+  {
+    "match_id": 5103485,
+    "round": 13,
+    "date": "2026-04-25T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 2
+    },
+    "home": {
+      "id": 8517,
+      "name": "Botafogo"
+    },
+    "away": {
+      "id": 8702,
+      "name": "Internacional"
+    }
+  },
+  {
+    "match_id": 5103493,
+    "round": 13,
+    "date": "2026-04-25T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "home": {
+      "id": 1626,
+      "name": "Remo"
+    },
+    "away": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    }
+  },
+  {
+    "match_id": 5103486,
+    "round": 13,
+    "date": "2026-04-26T00:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "home": {
+      "id": 10277,
+      "name": "São Paulo"
+    },
+    "away": {
+      "id": 163782,
+      "name": "Mirassol"
+    }
+  },
+  {
+    "match_id": 5103487,
+    "round": 13,
+    "date": "2026-04-26T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "home": {
+      "id": 9808,
+      "name": "Corinthians"
+    },
+    "away": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    }
+  },
+  {
+    "match_id": 5103490,
+    "round": 13,
+    "date": "2026-04-26T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "home": {
+      "id": 9769,
+      "name": "Grêmio"
+    },
+    "away": {
+      "id": 9767,
+      "name": "Coritiba"
+    }
+  },
+  {
+    "match_id": 5103491,
+    "round": 13,
+    "date": "2026-04-26T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 1
+    },
+    "home": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    },
+    "away": {
+      "id": 7733,
+      "name": "Vitória"
+    }
+  },
+  {
+    "match_id": 5103488,
+    "round": 13,
+    "date": "2026-04-26T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "home": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    },
+    "away": {
+      "id": 10283,
+      "name": "Palmeiras"
+    }
+  },
+  {
+    "match_id": 5103489,
+    "round": 13,
+    "date": "2026-04-26T23:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 4
+    },
+    "home": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    },
+    "away": {
+      "id": 9770,
+      "name": "Flamengo"
+    }
+  },
+  {
+    "match_id": 5103484,
+    "round": 13,
+    "date": "2026-04-26T23:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "home": {
+      "id": 9863,
+      "name": "Fluminense"
+    },
+    "away": {
+      "id": 197693,
+      "name": "Chapecoense"
+    }
+  },
+  {
+    "match_id": 5103495,
+    "round": 14,
+    "date": "2026-05-02T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "home": {
+      "id": 8517,
+      "name": "Botafogo"
+    },
+    "away": {
+      "id": 1626,
+      "name": "Remo"
+    }
+  },
+  {
+    "match_id": 5103497,
+    "round": 14,
+    "date": "2026-05-02T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 10283,
+      "name": "Palmeiras"
+    },
+    "away": {
+      "id": 8514,
+      "name": "Santos"
+    }
+  },
+  {
+    "match_id": 5103502,
+    "round": 14,
+    "date": "2026-05-02T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 4,
+      "away": 1
+    },
+    "home": {
+      "id": 7733,
+      "name": "Vitória"
+    },
+    "away": {
+      "id": 9767,
+      "name": "Coritiba"
+    }
+  },
+  {
+    "match_id": 5103501,
+    "round": 14,
+    "date": "2026-05-02T23:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "home": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    },
+    "away": {
+      "id": 9769,
+      "name": "Grêmio"
+    }
+  },
+  {
+    "match_id": 5103499,
+    "round": 14,
+    "date": "2026-05-03T00:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 3
+    },
+    "home": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    },
+    "away": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    }
+  },
+  {
+    "match_id": 5103494,
+    "round": 14,
+    "date": "2026-05-03T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 2
+    },
+    "home": {
+      "id": 9770,
+      "name": "Flamengo"
+    },
+    "away": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    }
+  },
+  {
+    "match_id": 5103496,
+    "round": 14,
+    "date": "2026-05-03T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 2
+    },
+    "home": {
+      "id": 10277,
+      "name": "São Paulo"
+    },
+    "away": {
+      "id": 7877,
+      "name": "Bahia"
+    }
+  },
+  {
+    "match_id": 5103503,
+    "round": 14,
+    "date": "2026-05-03T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "home": {
+      "id": 197693,
+      "name": "Chapecoense"
+    },
+    "away": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    }
+  },
+  {
+    "match_id": 5103500,
+    "round": 14,
+    "date": "2026-05-03T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "home": {
+      "id": 8702,
+      "name": "Internacional"
+    },
+    "away": {
+      "id": 9863,
+      "name": "Fluminense"
+    }
+  },
+  {
+    "match_id": 5103498,
+    "round": 14,
+    "date": "2026-05-03T23:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "home": {
+      "id": 163782,
+      "name": "Mirassol"
+    },
+    "away": {
+      "id": 9808,
+      "name": "Corinthians"
+    }
+  },
+  {
+    "match_id": 5103511,
+    "round": 15,
+    "date": "2026-05-09T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 2
+    },
+    "home": {
+      "id": 9767,
+      "name": "Coritiba"
+    },
+    "away": {
+      "id": 8702,
+      "name": "Internacional"
+    }
+  },
+  {
+    "match_id": 5103504,
+    "round": 15,
+    "date": "2026-05-09T21:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 2
+    },
+    "home": {
+      "id": 9863,
+      "name": "Fluminense"
+    },
+    "away": {
+      "id": 7733,
+      "name": "Vitória"
+    }
+  },
+  {
+    "match_id": 5103512,
+    "round": 15,
+    "date": "2026-05-10T00:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "home": {
+      "id": 7877,
+      "name": "Bahia"
+    },
+    "away": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    }
+  },
+  {
+    "match_id": 5103509,
+    "round": 15,
+    "date": "2026-05-10T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    },
+    "away": {
+      "id": 8517,
+      "name": "Botafogo"
+    }
+  },
+  {
+    "match_id": 5103513,
+    "round": 15,
+    "date": "2026-05-10T20:40:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 1626,
+      "name": "Remo"
+    },
+    "away": {
+      "id": 10283,
+      "name": "Palmeiras"
+    }
+  },
+  {
+    "match_id": 5103507,
+    "round": 15,
+    "date": "2026-05-10T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 2
+    },
+    "home": {
+      "id": 9808,
+      "name": "Corinthians"
+    },
+    "away": {
+      "id": 10277,
+      "name": "São Paulo"
+    }
+  },
+  {
+    "match_id": 5103508,
+    "round": 15,
+    "date": "2026-05-10T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 163782,
+      "name": "Mirassol"
+    },
+    "away": {
+      "id": 197693,
+      "name": "Chapecoense"
+    }
+  },
+  {
+    "match_id": 5103506,
+    "round": 15,
+    "date": "2026-05-10T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "home": {
+      "id": 8514,
+      "name": "Santos"
+    },
+    "away": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    }
+  },
+  {
+    "match_id": 5103510,
+    "round": 15,
+    "date": "2026-05-10T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "home": {
+      "id": 9769,
+      "name": "Grêmio"
+    },
+    "away": {
+      "id": 9770,
+      "name": "Flamengo"
+    }
+  },
+  {
+    "match_id": 5103505,
+    "round": 15,
+    "date": "2026-05-10T23:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "home": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    },
+    "away": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    }
+  },
+  {
+    "match_id": 5103519,
+    "round": 16,
+    "date": "2026-05-16T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 1
+    },
+    "home": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    },
+    "away": {
+      "id": 163782,
+      "name": "Mirassol"
+    }
+  },
+  {
+    "match_id": 5103520,
+    "round": 16,
+    "date": "2026-05-16T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 4,
+      "away": 1
+    },
+    "home": {
+      "id": 8702,
+      "name": "Internacional"
+    },
+    "away": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    }
+  },
+  {
+    "match_id": 5103514,
+    "round": 16,
+    "date": "2026-05-16T22:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "home": {
+      "id": 9863,
+      "name": "Fluminense"
+    },
+    "away": {
+      "id": 10277,
+      "name": "São Paulo"
+    }
+  },
+  {
+    "match_id": 5103517,
+    "round": 16,
+    "date": "2026-05-17T00:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 10283,
+      "name": "Palmeiras"
+    },
+    "away": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    }
+  },
+  {
+    "match_id": 5103516,
+    "round": 16,
+    "date": "2026-05-17T14:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 3
+    },
+    "home": {
+      "id": 8514,
+      "name": "Santos"
+    },
+    "away": {
+      "id": 9767,
+      "name": "Coritiba"
+    }
+  },
+  {
+    "match_id": 5103522,
+    "round": 16,
+    "date": "2026-05-17T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 7877,
+      "name": "Bahia"
+    },
+    "away": {
+      "id": 9769,
+      "name": "Grêmio"
+    }
+  },
+  {
+    "match_id": 5103515,
+    "round": 16,
+    "date": "2026-05-17T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 1
+    },
+    "home": {
+      "id": 8517,
+      "name": "Botafogo"
+    },
+    "away": {
+      "id": 9808,
+      "name": "Corinthians"
+    }
+  },
+  {
+    "match_id": 5103523,
+    "round": 16,
+    "date": "2026-05-17T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 3
+    },
+    "home": {
+      "id": 197693,
+      "name": "Chapecoense"
+    },
+    "away": {
+      "id": 1626,
+      "name": "Remo"
+    }
+  },
+  {
+    "match_id": 5103518,
+    "round": 16,
+    "date": "2026-05-17T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "home": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    },
+    "away": {
+      "id": 7733,
+      "name": "Vitória"
+    }
+  },
+  {
+    "match_id": 5103521,
+    "round": 16,
+    "date": "2026-05-17T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    },
+    "away": {
+      "id": 9770,
+      "name": "Flamengo"
+    }
+  },
+  {
+    "match_id": 5103526,
+    "round": 17,
+    "date": "2026-05-23T20:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 10277,
+      "name": "São Paulo"
+    },
+    "away": {
+      "id": 8517,
+      "name": "Botafogo"
+    }
+  },
+  {
+    "match_id": 5103532,
+    "round": 17,
+    "date": "2026-05-23T20:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "home": {
+      "id": 7733,
+      "name": "Vitória"
+    },
+    "away": {
+      "id": 8702,
+      "name": "Internacional"
+    }
+  },
+  {
+    "match_id": 5103530,
+    "round": 17,
+    "date": "2026-05-23T22:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 2
+    },
+    "home": {
+      "id": 9769,
+      "name": "Grêmio"
+    },
+    "away": {
+      "id": 8514,
+      "name": "Santos"
+    }
+  },
+  {
+    "match_id": 5103528,
+    "round": 17,
+    "date": "2026-05-23T22:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "home": {
+      "id": 163782,
+      "name": "Mirassol"
+    },
+    "away": {
+      "id": 9863,
+      "name": "Fluminense"
+    }
+  },
+  {
+    "match_id": 5103524,
+    "round": 17,
+    "date": "2026-05-24T00:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 3
+    },
+    "home": {
+      "id": 9770,
+      "name": "Flamengo"
+    },
+    "away": {
+      "id": 10283,
+      "name": "Palmeiras"
+    }
+  },
+  {
+    "match_id": 5103529,
+    "round": 17,
+    "date": "2026-05-24T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "home": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    },
+    "away": {
+      "id": 197693,
+      "name": "Chapecoense"
+    }
+  },
+  {
+    "match_id": 5103533,
+    "round": 17,
+    "date": "2026-05-24T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "home": {
+      "id": 1626,
+      "name": "Remo"
+    },
+    "away": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    }
+  },
+  {
+    "match_id": 5103527,
+    "round": 17,
+    "date": "2026-05-24T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "home": {
+      "id": 9808,
+      "name": "Corinthians"
+    },
+    "away": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    }
+  },
+  {
+    "match_id": 5103525,
+    "round": 17,
+    "date": "2026-05-24T23:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 3
+    },
+    "home": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    },
+    "away": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    }
+  },
+  {
+    "match_id": 5103531,
+    "round": 17,
+    "date": "2026-05-25T23:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 2
+    },
+    "home": {
+      "id": 9767,
+      "name": "Coritiba"
+    },
+    "away": {
+      "id": 7877,
+      "name": "Bahia"
+    }
+  },
+  {
+    "match_id": 5103541,
+    "round": 18,
+    "date": "2026-05-30T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "home": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    },
+    "away": {
+      "id": 163782,
+      "name": "Mirassol"
+    }
+  },
+  {
+    "match_id": 5103534,
+    "round": 18,
+    "date": "2026-05-30T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 0
+    },
+    "home": {
+      "id": 9770,
+      "name": "Flamengo"
+    },
+    "away": {
+      "id": 9767,
+      "name": "Coritiba"
+    }
+  },
+  {
+    "match_id": 5103542,
+    "round": 18,
+    "date": "2026-05-30T20:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "home": {
+      "id": 7877,
+      "name": "Bahia"
+    },
+    "away": {
+      "id": 8517,
+      "name": "Botafogo"
+    }
+  },
+  {
+    "match_id": 5103540,
+    "round": 18,
+    "date": "2026-05-30T20:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 3
+    },
+    "home": {
+      "id": 9769,
+      "name": "Grêmio"
+    },
+    "away": {
+      "id": 9808,
+      "name": "Corinthians"
+    }
+  },
+  {
+    "match_id": 5103536,
+    "round": 18,
+    "date": "2026-05-30T23:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 1
+    },
+    "home": {
+      "id": 8514,
+      "name": "Santos"
+    },
+    "away": {
+      "id": 7733,
+      "name": "Vitória"
+    }
+  },
+  {
+    "match_id": 5103538,
+    "round": 18,
+    "date": "2026-05-31T14:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 1
+    },
+    "home": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    },
+    "away": {
+      "id": 8702,
+      "name": "Internacional"
+    }
+  },
+  {
+    "match_id": 5103537,
+    "round": 18,
+    "date": "2026-05-31T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "home": {
+      "id": 10283,
+      "name": "Palmeiras"
+    },
+    "away": {
+      "id": 197693,
+      "name": "Chapecoense"
+    }
+  },
+  {
+    "match_id": 5103535,
+    "round": 18,
+    "date": "2026-05-31T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "home": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    },
+    "away": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    }
+  },
+  {
+    "match_id": 5103539,
+    "round": 18,
+    "date": "2026-05-31T23:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    },
+    "away": {
+      "id": 9863,
+      "name": "Fluminense"
+    }
+  },
+  {
+    "match_id": 5103543,
+    "round": 18,
+    "date": "2026-05-31T23:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "home": {
+      "id": 1626,
+      "name": "Remo"
+    },
+    "away": {
+      "id": 10277,
+      "name": "São Paulo"
+    }
+  },
+  {
+    "match_id": 5103545,
+    "round": 19,
+    "date": "2026-07-16T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "home": {
+      "id": 8517,
+      "name": "Botafogo"
+    },
+    "away": {
+      "id": 8514,
+      "name": "Santos"
+    }
+  },
+  {
+    "match_id": 5103552,
+    "round": 19,
+    "date": "2026-07-16T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "home": {
+      "id": 7733,
+      "name": "Vitória"
+    },
+    "away": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    }
+  },
+  {
+    "match_id": 5103402,
+    "round": 4,
+    "date": "2026-07-17T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "home": {
+      "id": 7877,
+      "name": "Bahia"
+    },
+    "away": {
+      "id": 197693,
+      "name": "Chapecoense"
+    }
+  },
+  {
+    "match_id": 5103544,
+    "round": 19,
+    "date": "2026-07-17T23:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 9863,
+      "name": "Fluminense"
+    },
+    "away": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    }
+  },
+  {
+    "match_id": 5103548,
+    "round": 19,
+    "date": "2026-07-17T23:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "home": {
+      "id": 163782,
+      "name": "Mirassol"
+    },
+    "away": {
+      "id": 9769,
+      "name": "Grêmio"
+    }
+  },
+  {
+    "match_id": 5103549,
+    "round": 19,
+    "date": "2026-07-21T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    },
+    "away": {
+      "id": 7877,
+      "name": "Bahia"
+    }
+  },
+  {
+    "match_id": 5103551,
+    "round": 19,
+    "date": "2026-07-22T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 3
+    },
+    "home": {
+      "id": 9767,
+      "name": "Coritiba"
+    },
+    "away": {
+      "id": 10283,
+      "name": "Palmeiras"
+    }
+  },
+  {
+    "match_id": 5103553,
+    "round": 19,
+    "date": "2026-07-23T00:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 4
+    },
+    "home": {
+      "id": 197693,
+      "name": "Chapecoense"
+    },
+    "away": {
+      "id": 9770,
+      "name": "Flamengo"
+    }
+  },
+  {
+    "match_id": 5103550,
+    "round": 19,
+    "date": "2026-07-23T00:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "home": {
+      "id": 8702,
+      "name": "Internacional"
+    },
+    "away": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    }
+  },
+  {
+    "match_id": 5103546,
+    "round": 19,
+    "date": "2026-07-23T00:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "home": {
+      "id": 10277,
+      "name": "São Paulo"
+    },
+    "away": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    }
+  },
+  {
+    "match_id": 5103395,
+    "round": 4,
+    "date": "2026-07-23T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "home": {
+      "id": 8517,
+      "name": "Botafogo"
+    },
+    "away": {
+      "id": 7733,
+      "name": "Vitória"
+    }
+  },
+  {
+    "match_id": 5103547,
+    "round": 19,
+    "date": "2026-07-23T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 0
+    },
+    "home": {
+      "id": 9808,
+      "name": "Corinthians"
+    },
+    "away": {
+      "id": 1626,
+      "name": "Remo"
+    }
+  },
+  {
+    "match_id": 5103557,
+    "round": 20,
+    "date": "2026-07-25T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "home": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    },
+    "away": {
+      "id": 8702,
+      "name": "Internacional"
+    }
+  },
+  {
+    "match_id": 5103562,
+    "round": 20,
+    "date": "2026-07-25T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 2
+    },
+    "home": {
+      "id": 8514,
+      "name": "Santos"
+    },
+    "away": {
+      "id": 197693,
+      "name": "Chapecoense"
+    }
+  },
+  {
+    "match_id": 5103561,
+    "round": 20,
+    "date": "2026-07-25T23:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    },
+    "away": {
+      "id": 163782,
+      "name": "Mirassol"
+    }
+  },
+  {
+    "match_id": 5103558,
+    "round": 20,
+    "date": "2026-07-26T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 7877,
+      "name": "Bahia"
+    },
+    "away": {
+      "id": 9808,
+      "name": "Corinthians"
+    }
+  },
+  {
+    "match_id": 5103555,
+    "round": 20,
+    "date": "2026-07-26T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "home": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    },
+    "away": {
+      "id": 8517,
+      "name": "Botafogo"
+    }
+  },
+  {
+    "match_id": 5103560,
+    "round": 20,
+    "date": "2026-07-26T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 9770,
+      "name": "Flamengo"
+    },
+    "away": {
+      "id": 10277,
+      "name": "São Paulo"
+    }
+  },
+  {
+    "match_id": 5103556,
+    "round": 20,
+    "date": "2026-07-26T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 9769,
+      "name": "Grêmio"
+    },
+    "away": {
+      "id": 9863,
+      "name": "Fluminense"
+    }
+  },
+  {
+    "match_id": 5103554,
+    "round": 20,
+    "date": "2026-07-26T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "home": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    },
+    "away": {
+      "id": 9767,
+      "name": "Coritiba"
+    }
+  },
+  {
+    "match_id": 5103563,
+    "round": 20,
+    "date": "2026-07-26T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "home": {
+      "id": 10283,
+      "name": "Palmeiras"
+    },
+    "away": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    }
+  },
+  {
+    "match_id": 5103559,
+    "round": 20,
+    "date": "2026-07-26T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "home": {
+      "id": 1626,
+      "name": "Remo"
+    },
+    "away": {
+      "id": 7733,
+      "name": "Vitória"
+    }
+  },
+  {
+    "match_id": 5103569,
+    "round": 21,
+    "date": "2026-07-29T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": true,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    },
+    "away": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    }
+  },
+  {
+    "match_id": 5103573,
+    "round": 21,
+    "date": "2026-07-29T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": true,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 197693,
+      "name": "Chapecoense"
+    },
+    "away": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    }
+  },
+  {
+    "match_id": 5103566,
+    "round": 21,
+    "date": "2026-07-29T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": true,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10277,
+      "name": "São Paulo"
+    },
+    "away": {
+      "id": 8514,
+      "name": "Santos"
+    }
+  },
+  {
+    "match_id": 5103570,
+    "round": 21,
+    "date": "2026-07-29T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 8702,
+      "name": "Internacional"
+    },
+    "away": {
+      "id": 9770,
+      "name": "Flamengo"
+    }
+  },
+  {
+    "match_id": 5103568,
+    "round": 21,
+    "date": "2026-07-29T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "home": {
+      "id": 163782,
+      "name": "Mirassol"
+    },
+    "away": {
+      "id": 1626,
+      "name": "Remo"
+    }
+  },
+  {
+    "match_id": 5103564,
+    "round": 21,
+    "date": "2026-07-30T00:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "home": {
+      "id": 9863,
+      "name": "Fluminense"
+    },
+    "away": {
+      "id": 7877,
+      "name": "Bahia"
+    }
+  },
+  {
+    "match_id": 5103572,
+    "round": 21,
+    "date": "2026-07-30T00:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 4
+    },
+    "home": {
+      "id": 7733,
+      "name": "Vitória"
+    },
+    "away": {
+      "id": 10283,
+      "name": "Palmeiras"
+    }
+  },
+  {
+    "match_id": 5103567,
+    "round": 21,
+    "date": "2026-07-30T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "home": {
+      "id": 9808,
+      "name": "Corinthians"
+    },
+    "away": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    }
+  },
+  {
+    "match_id": 5103571,
+    "round": 21,
+    "date": "2026-07-31T00:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "home": {
+      "id": 9767,
+      "name": "Coritiba"
+    },
+    "away": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    }
+  },
+  {
+    "match_id": 5103580,
+    "round": 22,
+    "date": "2026-08-08T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "home": {
+      "id": 9769,
+      "name": "Grêmio"
+    },
+    "away": {
+      "id": 10277,
+      "name": "São Paulo"
+    }
+  },
+  {
+    "match_id": 5103583,
+    "round": 22,
+    "date": "2026-08-08T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 2
+    },
+    "home": {
+      "id": 1626,
+      "name": "Remo"
+    },
+    "away": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    }
+  },
+  {
+    "match_id": 5103581,
+    "round": 22,
+    "date": "2026-08-08T23:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "home": {
+      "id": 9767,
+      "name": "Coritiba"
+    },
+    "away": {
+      "id": 197693,
+      "name": "Chapecoense"
+    }
+  },
+  {
+    "match_id": 5103575,
+    "round": 22,
+    "date": "2026-08-09T00:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 8517,
+      "name": "Botafogo"
+    },
+    "away": {
+      "id": 9863,
+      "name": "Fluminense"
+    }
+  },
+  {
+    "match_id": 5103579,
+    "round": 22,
+    "date": "2026-08-09T14:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 1
+    },
+    "home": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    },
+    "away": {
+      "id": 163782,
+      "name": "Mirassol"
+    }
+  },
+  {
+    "match_id": 5103582,
+    "round": 22,
+    "date": "2026-08-09T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "home": {
+      "id": 7877,
+      "name": "Bahia"
+    },
+    "away": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    }
+  },
+  {
+    "match_id": 5103577,
+    "round": 22,
+    "date": "2026-08-09T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "home": {
+      "id": 10283,
+      "name": "Palmeiras"
+    },
+    "away": {
+      "id": 8702,
+      "name": "Internacional"
+    }
+  },
+  {
+    "match_id": 5103578,
+    "round": 22,
+    "date": "2026-08-09T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 2
+    },
+    "home": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    },
+    "away": {
+      "id": 9808,
+      "name": "Corinthians"
+    }
+  },
+  {
+    "match_id": 5103576,
+    "round": 22,
+    "date": "2026-08-09T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 2
+    },
+    "home": {
+      "id": 8514,
+      "name": "Santos"
+    },
+    "away": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    }
+  },
+  {
+    "match_id": 5103574,
+    "round": 22,
+    "date": "2026-08-09T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "home": {
+      "id": 9770,
+      "name": "Flamengo"
+    },
+    "away": {
+      "id": 7733,
+      "name": "Vitória"
+    }
+  },
+  {
+    "match_id": 5103584,
+    "round": 23,
+    "date": "2026-08-15T19:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 2
+    },
+    "home": {
+      "id": 9863,
+      "name": "Fluminense"
+    },
+    "away": {
+      "id": 10283,
+      "name": "Palmeiras"
+    }
+  },
+  {
+    "match_id": 5103591,
+    "round": 23,
+    "date": "2026-08-15T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    },
+    "away": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    }
+  },
+  {
+    "match_id": 5103586,
+    "round": 23,
+    "date": "2026-08-16T00:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 10277,
+      "name": "São Paulo"
+    },
+    "away": {
+      "id": 9767,
+      "name": "Coritiba"
+    }
+  },
+  {
+    "match_id": 5103593,
+    "round": 23,
+    "date": "2026-08-16T14:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 3
+    },
+    "home": {
+      "id": 197693,
+      "name": "Chapecoense"
+    },
+    "away": {
+      "id": 7877,
+      "name": "Bahia"
+    }
+  },
+  {
+    "match_id": 5103589,
+    "round": 23,
+    "date": "2026-08-16T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 0
+    },
+    "home": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    },
+    "away": {
+      "id": 9769,
+      "name": "Grêmio"
+    }
+  },
+  {
+    "match_id": 5103585,
+    "round": 23,
+    "date": "2026-08-16T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 3
+    },
+    "home": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    },
+    "away": {
+      "id": 8514,
+      "name": "Santos"
+    }
+  },
+  {
+    "match_id": 5103588,
+    "round": 23,
+    "date": "2026-08-16T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 5
+    },
+    "home": {
+      "id": 163782,
+      "name": "Mirassol"
+    },
+    "away": {
+      "id": 9770,
+      "name": "Flamengo"
+    }
+  },
+  {
+    "match_id": 5103592,
+    "round": 23,
+    "date": "2026-08-16T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "home": {
+      "id": 7733,
+      "name": "Vitória"
+    },
+    "away": {
+      "id": 8517,
+      "name": "Botafogo"
+    }
+  },
+  {
+    "match_id": 5103587,
+    "round": 23,
+    "date": "2026-08-16T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "home": {
+      "id": 9808,
+      "name": "Corinthians"
+    },
+    "away": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    }
+  },
+  {
+    "match_id": 5103590,
+    "round": 23,
+    "date": "2026-08-17T23:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 8702,
+      "name": "Internacional"
+    },
+    "away": {
+      "id": 1626,
+      "name": "Remo"
+    }
+  },
+  {
+    "match_id": 5103594,
+    "round": 24,
+    "date": "2026-08-22T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "home": {
+      "id": 9863,
+      "name": "Fluminense"
+    },
+    "away": {
+      "id": 1626,
+      "name": "Remo"
+    }
+  },
+  {
+    "match_id": 5103600,
+    "round": 24,
+    "date": "2026-08-22T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "home": {
+      "id": 8702,
+      "name": "Internacional"
+    },
+    "away": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    }
+  },
+  {
+    "match_id": 5103599,
+    "round": 24,
+    "date": "2026-08-22T23:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "home": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    },
+    "away": {
+      "id": 9770,
+      "name": "Flamengo"
+    }
+  },
+  {
+    "match_id": 5103597,
+    "round": 24,
+    "date": "2026-08-23T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 4,
+      "away": 1
+    },
+    "home": {
+      "id": 10283,
+      "name": "Palmeiras"
+    },
+    "away": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    }
+  },
+  {
+    "match_id": 5103598,
+    "round": 24,
+    "date": "2026-08-23T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "home": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    },
+    "away": {
+      "id": 9769,
+      "name": "Grêmio"
+    }
+  },
+  {
+    "match_id": 5103602,
+    "round": 24,
+    "date": "2026-08-23T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 2
+    },
+    "home": {
+      "id": 7733,
+      "name": "Vitória"
+    },
+    "away": {
+      "id": 7877,
+      "name": "Bahia"
+    }
+  },
+  {
+    "match_id": 5103603,
+    "round": 24,
+    "date": "2026-08-23T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "home": {
+      "id": 197693,
+      "name": "Chapecoense"
+    },
+    "away": {
+      "id": 10277,
+      "name": "São Paulo"
+    }
+  },
+  {
+    "match_id": 5103596,
+    "round": 24,
+    "date": "2026-08-23T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 8514,
+      "name": "Santos"
+    },
+    "away": {
+      "id": 163782,
+      "name": "Mirassol"
+    }
+  },
+  {
+    "match_id": 5103601,
+    "round": 24,
+    "date": "2026-08-23T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "home": {
+      "id": 9767,
+      "name": "Coritiba"
+    },
+    "away": {
+      "id": 9808,
+      "name": "Corinthians"
+    }
+  },
+  {
+    "match_id": 5103595,
+    "round": 24,
+    "date": "2026-08-24T23:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 3
+    },
+    "home": {
+      "id": 8517,
+      "name": "Botafogo"
+    },
+    "away": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    }
+  },
+  {
+    "match_id": 5103609,
+    "round": 25,
+    "date": "2026-08-29T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "home": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    },
+    "away": {
+      "id": 7733,
+      "name": "Vitória"
+    }
+  },
+  {
+    "match_id": 5103606,
+    "round": 25,
+    "date": "2026-08-29T23:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "home": {
+      "id": 10277,
+      "name": "São Paulo"
+    },
+    "away": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    }
+  },
+  {
+    "match_id": 5103605,
+    "round": 25,
+    "date": "2026-08-30T00:20:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 1
+    },
+    "home": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    },
+    "away": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    }
+  },
+  {
+    "match_id": 5103611,
+    "round": 25,
+    "date": "2026-08-30T14:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 3
+    },
+    "home": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    },
+    "away": {
+      "id": 9863,
+      "name": "Fluminense"
+    }
+  },
+  {
+    "match_id": 5103607,
+    "round": 25,
+    "date": "2026-08-30T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "home": {
+      "id": 9808,
+      "name": "Corinthians"
+    },
+    "away": {
+      "id": 8514,
+      "name": "Santos"
+    }
+  },
+  {
+    "match_id": 5103604,
+    "round": 25,
+    "date": "2026-08-30T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 0
+    },
+    "home": {
+      "id": 9770,
+      "name": "Flamengo"
+    },
+    "away": {
+      "id": 8517,
+      "name": "Botafogo"
+    }
+  },
+  {
+    "match_id": 5103610,
+    "round": 25,
+    "date": "2026-08-30T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 1
+    },
+    "home": {
+      "id": 9769,
+      "name": "Grêmio"
+    },
+    "away": {
+      "id": 197693,
+      "name": "Chapecoense"
+    }
+  },
+  {
+    "match_id": 5103608,
+    "round": 25,
+    "date": "2026-08-30T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "home": {
+      "id": 163782,
+      "name": "Mirassol"
+    },
+    "away": {
+      "id": 10283,
+      "name": "Palmeiras"
+    }
+  },
+  {
+    "match_id": 5103612,
+    "round": 25,
+    "date": "2026-08-30T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 2
+    },
+    "home": {
+      "id": 7877,
+      "name": "Bahia"
+    },
+    "away": {
+      "id": 8702,
+      "name": "Internacional"
+    }
+  },
+  {
+    "match_id": 5103613,
+    "round": 25,
+    "date": "2026-08-31T23:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 3
+    },
+    "home": {
+      "id": 1626,
+      "name": "Remo"
+    },
+    "away": {
+      "id": 9767,
+      "name": "Coritiba"
+    }
+  },
+  {
+    "match_id": 5103394,
+    "round": 4,
+    "date": "2026-09-02T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "home": {
+      "id": 9770,
+      "name": "Flamengo"
+    },
+    "away": {
+      "id": 163782,
+      "name": "Mirassol"
+    }
+  },
+  {
+    "match_id": 5103618,
+    "round": 26,
+    "date": "2026-09-05T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 3
+    },
+    "home": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    },
+    "away": {
+      "id": 7877,
+      "name": "Bahia"
+    }
+  },
+  {
+    "match_id": 5103616,
+    "round": 26,
+    "date": "2026-09-05T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "home": {
+      "id": 10277,
+      "name": "São Paulo"
+    },
+    "away": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    }
+  },
+  {
+    "match_id": 5103614,
+    "round": 26,
+    "date": "2026-09-06T00:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "home": {
+      "id": 9863,
+      "name": "Fluminense"
+    },
+    "away": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    }
+  },
+  {
+    "match_id": 5103621,
+    "round": 26,
+    "date": "2026-09-06T14:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "home": {
+      "id": 9767,
+      "name": "Coritiba"
+    },
+    "away": {
+      "id": 163782,
+      "name": "Mirassol"
+    }
+  },
+  {
+    "match_id": 5103619,
+    "round": 26,
+    "date": "2026-09-06T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 3,
+      "away": 1
+    },
+    "home": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    },
+    "away": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    }
+  },
+  {
+    "match_id": 5103620,
+    "round": 26,
+    "date": "2026-09-06T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 2,
+      "away": 3
+    },
+    "home": {
+      "id": 8702,
+      "name": "Internacional"
+    },
+    "away": {
+      "id": 8514,
+      "name": "Santos"
+    }
+  },
+  {
+    "match_id": 5103623,
+    "round": 26,
+    "date": "2026-09-06T19:00:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "home": {
+      "id": 1626,
+      "name": "Remo"
+    },
+    "away": {
+      "id": 9770,
+      "name": "Flamengo"
+    }
+  },
+  {
+    "match_id": 5103615,
+    "round": 26,
+    "date": "2026-09-06T21:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "home": {
+      "id": 8517,
+      "name": "Botafogo"
+    },
+    "away": {
+      "id": 10283,
+      "name": "Palmeiras"
+    }
+  },
+  {
+    "match_id": 5103617,
+    "round": 26,
+    "date": "2026-09-06T22:30:00Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "home": {
+      "id": 9808,
+      "name": "Corinthians"
+    },
+    "away": {
+      "id": 197693,
+      "name": "Chapecoense"
+    }
+  },
+  {
+    "match_id": 5103622,
+    "round": 26,
+    "date": "2026-09-07T23:00:00.000Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 7733,
+      "name": "Vitória"
+    },
+    "away": {
+      "id": 9769,
+      "name": "Grêmio"
+    }
+  },
+  {
+    "match_id": 5103631,
+    "round": 27,
+    "date": "2026-09-12T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9767,
+      "name": "Coritiba"
+    },
+    "away": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    }
+  },
+  {
+    "match_id": 5103629,
+    "round": 27,
+    "date": "2026-09-12T19:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    },
+    "away": {
+      "id": 9863,
+      "name": "Fluminense"
+    }
+  },
+  {
+    "match_id": 5103630,
+    "round": 27,
+    "date": "2026-09-12T19:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9769,
+      "name": "Grêmio"
+    },
+    "away": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    }
+  },
+  {
+    "match_id": 5103633,
+    "round": 27,
+    "date": "2026-09-12T20:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 197693,
+      "name": "Chapecoense"
+    },
+    "away": {
+      "id": 8702,
+      "name": "Internacional"
+    }
+  },
+  {
+    "match_id": 5103627,
+    "round": 27,
+    "date": "2026-09-12T21:30:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10283,
+      "name": "Palmeiras"
+    },
+    "away": {
+      "id": 10277,
+      "name": "São Paulo"
+    }
+  },
+  {
+    "match_id": 5103625,
+    "round": 27,
+    "date": "2026-09-12T23:30:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 8517,
+      "name": "Botafogo"
+    },
+    "away": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    }
+  },
+  {
+    "match_id": 5103626,
+    "round": 27,
+    "date": "2026-09-13T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 8514,
+      "name": "Santos"
+    },
+    "away": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    }
+  },
+  {
+    "match_id": 5103628,
+    "round": 27,
+    "date": "2026-09-13T19:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 163782,
+      "name": "Mirassol"
+    },
+    "away": {
+      "id": 7733,
+      "name": "Vitória"
+    }
+  },
+  {
+    "match_id": 5103624,
+    "round": 27,
+    "date": "2026-09-13T20:30:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9770,
+      "name": "Flamengo"
+    },
+    "away": {
+      "id": 9808,
+      "name": "Corinthians"
+    }
+  },
+  {
+    "match_id": 5103632,
+    "round": 27,
+    "date": "2026-09-14T23:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 7877,
+      "name": "Bahia"
+    },
+    "away": {
+      "id": 1626,
+      "name": "Remo"
+    }
+  },
+  {
+    "match_id": 5103565,
+    "round": 21,
+    "date": "2026-09-16T22:30:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 8517,
+      "name": "Botafogo"
+    },
+    "away": {
+      "id": 9769,
+      "name": "Grêmio"
+    }
+  },
+  {
+    "match_id": 5103639,
+    "round": 28,
+    "date": "2026-09-19T19:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    },
+    "away": {
+      "id": 197693,
+      "name": "Chapecoense"
+    }
+  },
+  {
+    "match_id": 5103638,
+    "round": 28,
+    "date": "2026-09-19T20:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 163782,
+      "name": "Mirassol"
+    },
+    "away": {
+      "id": 8517,
+      "name": "Botafogo"
+    }
+  },
+  {
+    "match_id": 5103643,
+    "round": 28,
+    "date": "2026-09-19T21:30:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 1626,
+      "name": "Remo"
+    },
+    "away": {
+      "id": 8514,
+      "name": "Santos"
+    }
+  },
+  {
+    "match_id": 5103635,
+    "round": 28,
+    "date": "2026-09-19T23:30:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    },
+    "away": {
+      "id": 9767,
+      "name": "Coritiba"
+    }
+  },
+  {
+    "match_id": 5103636,
+    "round": 28,
+    "date": "2026-09-20T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10277,
+      "name": "São Paulo"
+    },
+    "away": {
+      "id": 8702,
+      "name": "Internacional"
+    }
+  },
+  {
+    "match_id": 5103640,
+    "round": 28,
+    "date": "2026-09-20T14:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9769,
+      "name": "Grêmio"
+    },
+    "away": {
+      "id": 10283,
+      "name": "Palmeiras"
+    }
+  },
+  {
+    "match_id": 5103637,
+    "round": 28,
+    "date": "2026-09-20T19:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9808,
+      "name": "Corinthians"
+    },
+    "away": {
+      "id": 9863,
+      "name": "Fluminense"
+    }
+  },
+  {
+    "match_id": 5103642,
+    "round": 28,
+    "date": "2026-09-20T19:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 7733,
+      "name": "Vitória"
+    },
+    "away": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    }
+  },
+  {
+    "match_id": 5103634,
+    "round": 28,
+    "date": "2026-09-20T21:30:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9770,
+      "name": "Flamengo"
+    },
+    "away": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    }
+  },
+  {
+    "match_id": 5103641,
+    "round": 28,
+    "date": "2026-09-20T22:30:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    },
+    "away": {
+      "id": 7877,
+      "name": "Bahia"
+    }
+  },
+  {
+    "match_id": 5103650,
+    "round": 29,
+    "date": "2026-10-07T22:30:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 8702,
+      "name": "Internacional"
+    },
+    "away": {
+      "id": 9808,
+      "name": "Corinthians"
+    }
+  },
+  {
+    "match_id": 5103648,
+    "round": 29,
+    "date": "2026-10-07T22:30:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    },
+    "away": {
+      "id": 163782,
+      "name": "Mirassol"
+    }
+  },
+  {
+    "match_id": 5103653,
+    "round": 29,
+    "date": "2026-10-07T22:30:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 1626,
+      "name": "Remo"
+    },
+    "away": {
+      "id": 9769,
+      "name": "Grêmio"
+    }
+  },
+  {
+    "match_id": 5103652,
+    "round": 29,
+    "date": "2026-10-07T23:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 7733,
+      "name": "Vitória"
+    },
+    "away": {
+      "id": 197693,
+      "name": "Chapecoense"
+    }
+  },
+  {
+    "match_id": 5103645,
+    "round": 29,
+    "date": "2026-10-07T23:30:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 8517,
+      "name": "Botafogo"
+    },
+    "away": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    }
+  },
+  {
+    "match_id": 5103649,
+    "round": 29,
+    "date": "2026-10-08T00:30:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    },
+    "away": {
+      "id": 10277,
+      "name": "São Paulo"
+    }
+  },
+  {
+    "match_id": 5103646,
+    "round": 29,
+    "date": "2026-10-08T22:30:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 8514,
+      "name": "Santos"
+    },
+    "away": {
+      "id": 9770,
+      "name": "Flamengo"
+    }
+  },
+  {
+    "match_id": 5103651,
+    "round": 29,
+    "date": "2026-10-08T23:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    },
+    "away": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    }
+  },
+  {
+    "match_id": 5103644,
+    "round": 29,
+    "date": "2026-10-09T00:30:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9863,
+      "name": "Fluminense"
+    },
+    "away": {
+      "id": 9767,
+      "name": "Coritiba"
+    }
+  },
+  {
+    "match_id": 5103647,
+    "round": 29,
+    "date": "2026-10-09T00:30:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10283,
+      "name": "Palmeiras"
+    },
+    "away": {
+      "id": 7877,
+      "name": "Bahia"
+    }
+  },
+  {
+    "match_id": 5103655,
+    "round": 30,
+    "date": "2026-10-10T20:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    },
+    "away": {
+      "id": 1626,
+      "name": "Remo"
+    }
+  },
+  {
+    "match_id": 5103656,
+    "round": 30,
+    "date": "2026-10-11T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10277,
+      "name": "São Paulo"
+    },
+    "away": {
+      "id": 7733,
+      "name": "Vitória"
+    }
+  },
+  {
+    "match_id": 5103659,
+    "round": 30,
+    "date": "2026-10-11T19:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    },
+    "away": {
+      "id": 8514,
+      "name": "Santos"
+    }
+  },
+  {
+    "match_id": 5103654,
+    "round": 30,
+    "date": "2026-10-11T20:30:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9770,
+      "name": "Flamengo"
+    },
+    "away": {
+      "id": 9863,
+      "name": "Fluminense"
+    }
+  },
+  {
+    "match_id": 5103660,
+    "round": 30,
+    "date": "2026-10-11T20:30:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9769,
+      "name": "Grêmio"
+    },
+    "away": {
+      "id": 8702,
+      "name": "Internacional"
+    }
+  },
+  {
+    "match_id": 5103657,
+    "round": 30,
+    "date": "2026-10-11T20:30:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10283,
+      "name": "Palmeiras"
+    },
+    "away": {
+      "id": 9808,
+      "name": "Corinthians"
+    }
+  },
+  {
+    "match_id": 5103662,
+    "round": 30,
+    "date": "2026-10-11T22:30:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 7877,
+      "name": "Bahia"
+    },
+    "away": {
+      "id": 163782,
+      "name": "Mirassol"
+    }
+  },
+  {
+    "match_id": 5103661,
+    "round": 30,
+    "date": "2026-10-11T22:30:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9767,
+      "name": "Coritiba"
+    },
+    "away": {
+      "id": 8517,
+      "name": "Botafogo"
+    }
+  },
+  {
+    "match_id": 5103663,
+    "round": 30,
+    "date": "2026-10-12T22:30:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 197693,
+      "name": "Chapecoense"
+    },
+    "away": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    }
+  },
+  {
+    "match_id": 5103658,
+    "round": 30,
+    "date": "2026-10-13T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    },
+    "away": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    }
+  },
+  {
+    "match_id": 5103671,
+    "round": 31,
+    "date": "2026-10-17T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    },
+    "away": {
+      "id": 10283,
+      "name": "Palmeiras"
+    }
+  },
+  {
+    "match_id": 5103669,
+    "round": 31,
+    "date": "2026-10-17T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    },
+    "away": {
+      "id": 9767,
+      "name": "Coritiba"
+    }
+  },
+  {
+    "match_id": 5103672,
+    "round": 31,
+    "date": "2026-10-17T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 7877,
+      "name": "Bahia"
+    },
+    "away": {
+      "id": 9770,
+      "name": "Flamengo"
+    }
+  },
+  {
+    "match_id": 5103665,
+    "round": 31,
+    "date": "2026-10-17T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 8517,
+      "name": "Botafogo"
+    },
+    "away": {
+      "id": 197693,
+      "name": "Chapecoense"
+    }
+  },
+  {
+    "match_id": 5103667,
+    "round": 31,
+    "date": "2026-10-17T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9808,
+      "name": "Corinthians"
+    },
+    "away": {
+      "id": 7733,
+      "name": "Vitória"
+    }
+  },
+  {
+    "match_id": 5103664,
+    "round": 31,
+    "date": "2026-10-17T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9863,
+      "name": "Fluminense"
+    },
+    "away": {
+      "id": 8514,
+      "name": "Santos"
+    }
+  },
+  {
+    "match_id": 5103670,
+    "round": 31,
+    "date": "2026-10-17T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9769,
+      "name": "Grêmio"
+    },
+    "away": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    }
+  },
+  {
+    "match_id": 5103668,
+    "round": 31,
+    "date": "2026-10-17T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 163782,
+      "name": "Mirassol"
+    },
+    "away": {
+      "id": 8702,
+      "name": "Internacional"
+    }
+  },
+  {
+    "match_id": 5103673,
+    "round": 31,
+    "date": "2026-10-17T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 1626,
+      "name": "Remo"
+    },
+    "away": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    }
+  },
+  {
+    "match_id": 5103666,
+    "round": 31,
+    "date": "2026-10-17T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10277,
+      "name": "São Paulo"
+    },
+    "away": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    }
+  },
+  {
+    "match_id": 5103683,
+    "round": 32,
+    "date": "2026-10-24T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 197693,
+      "name": "Chapecoense"
+    },
+    "away": {
+      "id": 9863,
+      "name": "Fluminense"
+    }
+  },
+  {
+    "match_id": 5103681,
+    "round": 32,
+    "date": "2026-10-24T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9767,
+      "name": "Coritiba"
+    },
+    "away": {
+      "id": 9769,
+      "name": "Grêmio"
+    }
+  },
+  {
+    "match_id": 5103679,
+    "round": 32,
+    "date": "2026-10-24T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    },
+    "away": {
+      "id": 1626,
+      "name": "Remo"
+    }
+  },
+  {
+    "match_id": 5103674,
+    "round": 32,
+    "date": "2026-10-24T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9770,
+      "name": "Flamengo"
+    },
+    "away": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    }
+  },
+  {
+    "match_id": 5103680,
+    "round": 32,
+    "date": "2026-10-24T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 8702,
+      "name": "Internacional"
+    },
+    "away": {
+      "id": 8517,
+      "name": "Botafogo"
+    }
+  },
+  {
+    "match_id": 5103678,
+    "round": 32,
+    "date": "2026-10-24T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 163782,
+      "name": "Mirassol"
+    },
+    "away": {
+      "id": 10277,
+      "name": "São Paulo"
+    }
+  },
+  {
+    "match_id": 5103677,
+    "round": 32,
+    "date": "2026-10-24T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10283,
+      "name": "Palmeiras"
+    },
+    "away": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    }
+  },
+  {
+    "match_id": 5103676,
+    "round": 32,
+    "date": "2026-10-24T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 8514,
+      "name": "Santos"
+    },
+    "away": {
+      "id": 7877,
+      "name": "Bahia"
+    }
+  },
+  {
+    "match_id": 5103675,
+    "round": 32,
+    "date": "2026-10-24T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    },
+    "away": {
+      "id": 9808,
+      "name": "Corinthians"
+    }
+  },
+  {
+    "match_id": 5103682,
+    "round": 32,
+    "date": "2026-10-24T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 7733,
+      "name": "Vitória"
+    },
+    "away": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    }
+  },
+  {
+    "match_id": 5103689,
+    "round": 33,
+    "date": "2026-10-28T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    },
+    "away": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    }
+  },
+  {
+    "match_id": 5103692,
+    "round": 33,
+    "date": "2026-10-28T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 7877,
+      "name": "Bahia"
+    },
+    "away": {
+      "id": 10277,
+      "name": "São Paulo"
+    }
+  },
+  {
+    "match_id": 5103687,
+    "round": 33,
+    "date": "2026-10-28T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9808,
+      "name": "Corinthians"
+    },
+    "away": {
+      "id": 163782,
+      "name": "Mirassol"
+    }
+  },
+  {
+    "match_id": 5103691,
+    "round": 33,
+    "date": "2026-10-28T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9767,
+      "name": "Coritiba"
+    },
+    "away": {
+      "id": 7733,
+      "name": "Vitória"
+    }
+  },
+  {
+    "match_id": 5103684,
+    "round": 33,
+    "date": "2026-10-28T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9863,
+      "name": "Fluminense"
+    },
+    "away": {
+      "id": 8702,
+      "name": "Internacional"
+    }
+  },
+  {
+    "match_id": 5103690,
+    "round": 33,
+    "date": "2026-10-28T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9769,
+      "name": "Grêmio"
+    },
+    "away": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    }
+  },
+  {
+    "match_id": 5103688,
+    "round": 33,
+    "date": "2026-10-28T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    },
+    "away": {
+      "id": 197693,
+      "name": "Chapecoense"
+    }
+  },
+  {
+    "match_id": 5103693,
+    "round": 33,
+    "date": "2026-10-28T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 1626,
+      "name": "Remo"
+    },
+    "away": {
+      "id": 8517,
+      "name": "Botafogo"
+    }
+  },
+  {
+    "match_id": 5103686,
+    "round": 33,
+    "date": "2026-10-28T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 8514,
+      "name": "Santos"
+    },
+    "away": {
+      "id": 10283,
+      "name": "Palmeiras"
+    }
+  },
+  {
+    "match_id": 5103685,
+    "round": 33,
+    "date": "2026-10-28T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    },
+    "away": {
+      "id": 9770,
+      "name": "Flamengo"
+    }
+  },
+  {
+    "match_id": 5103701,
+    "round": 34,
+    "date": "2026-11-04T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    },
+    "away": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    }
+  },
+  {
+    "match_id": 5103695,
+    "round": 34,
+    "date": "2026-11-04T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 8517,
+      "name": "Botafogo"
+    },
+    "away": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    }
+  },
+  {
+    "match_id": 5103703,
+    "round": 34,
+    "date": "2026-11-04T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 197693,
+      "name": "Chapecoense"
+    },
+    "away": {
+      "id": 163782,
+      "name": "Mirassol"
+    }
+  },
+  {
+    "match_id": 5103699,
+    "round": 34,
+    "date": "2026-11-04T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    },
+    "away": {
+      "id": 7877,
+      "name": "Bahia"
+    }
+  },
+  {
+    "match_id": 5103694,
+    "round": 34,
+    "date": "2026-11-04T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9770,
+      "name": "Flamengo"
+    },
+    "away": {
+      "id": 9769,
+      "name": "Grêmio"
+    }
+  },
+  {
+    "match_id": 5103700,
+    "round": 34,
+    "date": "2026-11-04T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 8702,
+      "name": "Internacional"
+    },
+    "away": {
+      "id": 9767,
+      "name": "Coritiba"
+    }
+  },
+  {
+    "match_id": 5103697,
+    "round": 34,
+    "date": "2026-11-04T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10283,
+      "name": "Palmeiras"
+    },
+    "away": {
+      "id": 1626,
+      "name": "Remo"
+    }
+  },
+  {
+    "match_id": 5103698,
+    "round": 34,
+    "date": "2026-11-04T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    },
+    "away": {
+      "id": 8514,
+      "name": "Santos"
+    }
+  },
+  {
+    "match_id": 5103696,
+    "round": 34,
+    "date": "2026-11-04T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10277,
+      "name": "São Paulo"
+    },
+    "away": {
+      "id": 9808,
+      "name": "Corinthians"
+    }
+  },
+  {
+    "match_id": 5103702,
+    "round": 34,
+    "date": "2026-11-04T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 7733,
+      "name": "Vitória"
+    },
+    "away": {
+      "id": 9863,
+      "name": "Fluminense"
+    }
+  },
+  {
+    "match_id": 5103707,
+    "round": 35,
+    "date": "2026-11-18T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9808,
+      "name": "Corinthians"
+    },
+    "away": {
+      "id": 8517,
+      "name": "Botafogo"
+    }
+  },
+  {
+    "match_id": 5103711,
+    "round": 35,
+    "date": "2026-11-18T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9767,
+      "name": "Coritiba"
+    },
+    "away": {
+      "id": 8514,
+      "name": "Santos"
+    }
+  },
+  {
+    "match_id": 5103709,
+    "round": 35,
+    "date": "2026-11-18T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    },
+    "away": {
+      "id": 10283,
+      "name": "Palmeiras"
+    }
+  },
+  {
+    "match_id": 5103704,
+    "round": 35,
+    "date": "2026-11-18T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9770,
+      "name": "Flamengo"
+    },
+    "away": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    }
+  },
+  {
+    "match_id": 5103710,
+    "round": 35,
+    "date": "2026-11-18T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9769,
+      "name": "Grêmio"
+    },
+    "away": {
+      "id": 7877,
+      "name": "Bahia"
+    }
+  },
+  {
+    "match_id": 5103708,
+    "round": 35,
+    "date": "2026-11-18T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 163782,
+      "name": "Mirassol"
+    },
+    "away": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    }
+  },
+  {
+    "match_id": 5103713,
+    "round": 35,
+    "date": "2026-11-18T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 1626,
+      "name": "Remo"
+    },
+    "away": {
+      "id": 197693,
+      "name": "Chapecoense"
+    }
+  },
+  {
+    "match_id": 5103706,
+    "round": 35,
+    "date": "2026-11-18T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10277,
+      "name": "São Paulo"
+    },
+    "away": {
+      "id": 9863,
+      "name": "Fluminense"
+    }
+  },
+  {
+    "match_id": 5103705,
+    "round": 35,
+    "date": "2026-11-18T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    },
+    "away": {
+      "id": 8702,
+      "name": "Internacional"
+    }
+  },
+  {
+    "match_id": 5103712,
+    "round": 35,
+    "date": "2026-11-18T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 7733,
+      "name": "Vitória"
+    },
+    "away": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    }
+  },
+  {
+    "match_id": 5103721,
+    "round": 36,
+    "date": "2026-11-21T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    },
+    "away": {
+      "id": 1626,
+      "name": "Remo"
+    }
+  },
+  {
+    "match_id": 5103719,
+    "round": 36,
+    "date": "2026-11-21T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    },
+    "away": {
+      "id": 9808,
+      "name": "Corinthians"
+    }
+  },
+  {
+    "match_id": 5103722,
+    "round": 36,
+    "date": "2026-11-21T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 7877,
+      "name": "Bahia"
+    },
+    "away": {
+      "id": 9767,
+      "name": "Coritiba"
+    }
+  },
+  {
+    "match_id": 5103715,
+    "round": 36,
+    "date": "2026-11-21T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 8517,
+      "name": "Botafogo"
+    },
+    "away": {
+      "id": 10277,
+      "name": "São Paulo"
+    }
+  },
+  {
+    "match_id": 5103723,
+    "round": 36,
+    "date": "2026-11-21T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 197693,
+      "name": "Chapecoense"
+    },
+    "away": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    }
+  },
+  {
+    "match_id": 5103714,
+    "round": 36,
+    "date": "2026-11-21T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9863,
+      "name": "Fluminense"
+    },
+    "away": {
+      "id": 163782,
+      "name": "Mirassol"
+    }
+  },
+  {
+    "match_id": 5103720,
+    "round": 36,
+    "date": "2026-11-21T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 8702,
+      "name": "Internacional"
+    },
+    "away": {
+      "id": 7733,
+      "name": "Vitória"
+    }
+  },
+  {
+    "match_id": 5103717,
+    "round": 36,
+    "date": "2026-11-21T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10283,
+      "name": "Palmeiras"
+    },
+    "away": {
+      "id": 9770,
+      "name": "Flamengo"
+    }
+  },
+  {
+    "match_id": 5103718,
+    "round": 36,
+    "date": "2026-11-21T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    },
+    "away": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    }
+  },
+  {
+    "match_id": 5103716,
+    "round": 36,
+    "date": "2026-11-21T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 8514,
+      "name": "Santos"
+    },
+    "away": {
+      "id": 9769,
+      "name": "Grêmio"
+    }
+  },
+  {
+    "match_id": 5103729,
+    "round": 37,
+    "date": "2026-11-28T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    },
+    "away": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    }
+  },
+  {
+    "match_id": 5103725,
+    "round": 37,
+    "date": "2026-11-28T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 8517,
+      "name": "Botafogo"
+    },
+    "away": {
+      "id": 7877,
+      "name": "Bahia"
+    }
+  },
+  {
+    "match_id": 5103733,
+    "round": 37,
+    "date": "2026-11-28T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 197693,
+      "name": "Chapecoense"
+    },
+    "away": {
+      "id": 10283,
+      "name": "Palmeiras"
+    }
+  },
+  {
+    "match_id": 5103727,
+    "round": 37,
+    "date": "2026-11-28T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9808,
+      "name": "Corinthians"
+    },
+    "away": {
+      "id": 9769,
+      "name": "Grêmio"
+    }
+  },
+  {
+    "match_id": 5103731,
+    "round": 37,
+    "date": "2026-11-28T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9767,
+      "name": "Coritiba"
+    },
+    "away": {
+      "id": 9770,
+      "name": "Flamengo"
+    }
+  },
+  {
+    "match_id": 5103724,
+    "round": 37,
+    "date": "2026-11-28T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9863,
+      "name": "Fluminense"
+    },
+    "away": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    }
+  },
+  {
+    "match_id": 5103730,
+    "round": 37,
+    "date": "2026-11-28T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 8702,
+      "name": "Internacional"
+    },
+    "away": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    }
+  },
+  {
+    "match_id": 5103728,
+    "round": 37,
+    "date": "2026-11-28T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 163782,
+      "name": "Mirassol"
+    },
+    "away": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    }
+  },
+  {
+    "match_id": 5103726,
+    "round": 37,
+    "date": "2026-11-28T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10277,
+      "name": "São Paulo"
+    },
+    "away": {
+      "id": 1626,
+      "name": "Remo"
+    }
+  },
+  {
+    "match_id": 5103732,
+    "round": 37,
+    "date": "2026-11-28T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 7733,
+      "name": "Vitória"
+    },
+    "away": {
+      "id": 8514,
+      "name": "Santos"
+    }
+  },
+  {
+    "match_id": 5103741,
+    "round": 38,
+    "date": "2026-12-02T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10273,
+      "name": "Athletico Paranaense"
+    },
+    "away": {
+      "id": 10277,
+      "name": "São Paulo"
+    }
+  },
+  {
+    "match_id": 5103742,
+    "round": 38,
+    "date": "2026-12-02T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 7877,
+      "name": "Bahia"
+    },
+    "away": {
+      "id": 10272,
+      "name": "Atlético-MG"
+    }
+  },
+  {
+    "match_id": 5103739,
+    "round": 38,
+    "date": "2026-12-02T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9781,
+      "name": "Cruzeiro"
+    },
+    "away": {
+      "id": 8702,
+      "name": "Internacional"
+    }
+  },
+  {
+    "match_id": 5103734,
+    "round": 38,
+    "date": "2026-12-02T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9770,
+      "name": "Flamengo"
+    },
+    "away": {
+      "id": 197693,
+      "name": "Chapecoense"
+    }
+  },
+  {
+    "match_id": 5103740,
+    "round": 38,
+    "date": "2026-12-02T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 9769,
+      "name": "Grêmio"
+    },
+    "away": {
+      "id": 163782,
+      "name": "Mirassol"
+    }
+  },
+  {
+    "match_id": 5103737,
+    "round": 38,
+    "date": "2026-12-02T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10283,
+      "name": "Palmeiras"
+    },
+    "away": {
+      "id": 9767,
+      "name": "Coritiba"
+    }
+  },
+  {
+    "match_id": 5103738,
+    "round": 38,
+    "date": "2026-12-02T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 109705,
+      "name": "RB Bragantino"
+    },
+    "away": {
+      "id": 9863,
+      "name": "Fluminense"
+    }
+  },
+  {
+    "match_id": 5103743,
+    "round": 38,
+    "date": "2026-12-02T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 1626,
+      "name": "Remo"
+    },
+    "away": {
+      "id": 9808,
+      "name": "Corinthians"
+    }
+  },
+  {
+    "match_id": 5103736,
+    "round": 38,
+    "date": "2026-12-02T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 8514,
+      "name": "Santos"
+    },
+    "away": {
+      "id": 8517,
+      "name": "Botafogo"
+    }
+  },
+  {
+    "match_id": 5103735,
+    "round": 38,
+    "date": "2026-12-02T00:00:00Z",
+    "finished": false,
+    "started": false,
+    "cancelled": false,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "home": {
+      "id": 10276,
+      "name": "Vasco da Gama"
+    },
+    "away": {
+      "id": 7733,
+      "name": "Vitória"
+    }
+  }
+]
