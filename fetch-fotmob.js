@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 
+
 // ============================================================
 // CONFIGURAÇÃO
 // ============================================================
@@ -17,8 +18,21 @@ const BASE_URL = "https://www.fotmob.com/api/data";
 const DATA_DIR = path.join(__dirname, "data");
 const RAW_DIR = path.join(DATA_DIR, "raw");
 const PROCESSED_DIR = path.join(DATA_DIR, "processed");
+const MATCHES_DIR = path.join(RAW_DIR, "matches");
 
-[DATA_DIR, RAW_DIR, PROCESSED_DIR].forEach(dir => {
+const REQUEST_DELAY = 400;
+
+
+// ============================================================
+// CRIAR DIRETÓRIOS
+// ============================================================
+
+[
+    DATA_DIR,
+    RAW_DIR,
+    PROCESSED_DIR,
+    MATCHES_DIR
+].forEach(dir => {
 
     if (!fs.existsSync(dir)) {
 
@@ -34,6 +48,17 @@ const PROCESSED_DIR = path.join(DATA_DIR, "processed");
 // ============================================================
 // UTILITÁRIOS
 // ============================================================
+
+function sleep(ms) {
+
+    return new Promise(resolve => {
+
+        setTimeout(resolve, ms);
+
+    });
+
+}
+
 
 async function fetchJSON(url) {
 
@@ -79,6 +104,21 @@ function saveJSON(filename, data) {
 
     console.log(
         `💾 Salvo: ${filename}`
+    );
+
+}
+
+
+function readJSON(filename) {
+
+    if (!fs.existsSync(filename)) {
+
+        return null;
+
+    }
+
+    return JSON.parse(
+        fs.readFileSync(filename, "utf8")
     );
 
 }
@@ -297,7 +337,7 @@ function getStatsURL(data, statName) {
 
 
 // ============================================================
-// 5. BAIXAR ESTATÍSTICAS DE XG
+// 5. BAIXAR ESTATÍSTICAS GERAIS DE XG
 // ============================================================
 
 async function getXGStats(data) {
@@ -353,6 +393,7 @@ async function getXGStats(data) {
         result.xg
     );
 
+
     saveJSON(
         path.join(
             RAW_DIR,
@@ -360,6 +401,7 @@ async function getXGStats(data) {
         ),
         result.xga
     );
+
 
     saveJSON(
         path.join(
@@ -400,23 +442,319 @@ function inspectXG(xgData) {
         Object.keys(xgData)
     );
 
-    console.log(
-        "\nAmostra:"
-    );
+}
 
-    console.log(
-        JSON.stringify(
-            xgData,
-            null,
-            2
-        ).substring(0, 3000)
-    );
+
+// ============================================================
+// 7. BUSCAR DETALHES DE UMA PARTIDA
+// ============================================================
+
+async function fetchMatchDetails(matchId) {
+
+    const url =
+        `${BASE_URL}/matchDetails?matchId=${matchId}`;
+
+    return await fetchJSON(url);
 
 }
 
 
 // ============================================================
-// 7. GERAR RESUMO DAS PARTIDAS
+// 8. EXTRAIR XG DA PARTIDA
+// ============================================================
+
+function extractMatchXG(matchData) {
+
+    try {
+
+        const periods =
+            matchData?.content?.stats?.Periods;
+
+        if (!periods) {
+
+            return null;
+
+        }
+
+        const allPeriod =
+            periods.All ||
+            periods["All"];
+
+        if (!allPeriod) {
+
+            return null;
+
+        }
+
+        const groups =
+            allPeriod.stats || [];
+
+        for (const group of groups) {
+
+            const stats =
+                group.stats || [];
+
+            for (const stat of stats) {
+
+                if (
+                    stat.key === "expected_goals"
+                ) {
+
+                    const values =
+                        stat.stats || [];
+
+                    if (
+                        values.length >= 2 &&
+                        values[0] !== null &&
+                        values[1] !== null
+                    ) {
+
+                        return {
+
+                            home:
+                                Number(values[0]),
+
+                            away:
+                                Number(values[1])
+
+                        };
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    } catch (error) {
+
+        console.log(
+            `⚠ Erro ao extrair xG: ${error.message}`
+        );
+
+    }
+
+    return null;
+
+}
+
+
+// ============================================================
+// 9. NORMALIZAR DETALHES DA PARTIDA
+// ============================================================
+
+function normalizeMatchDetails(
+    match,
+    matchData
+) {
+
+    const xg =
+        extractMatchXG(matchData);
+
+    return {
+
+        match_id:
+            match.match_id,
+
+        round:
+            match.round,
+
+        date:
+            match.date,
+
+        finished:
+            match.finished,
+
+        home: {
+
+            id:
+                match.home.id,
+
+            name:
+                match.home.name,
+
+            goals:
+                match.score.home,
+
+            xg:
+                xg?.home ?? null
+
+        },
+
+        away: {
+
+            id:
+                match.away.id,
+
+            name:
+                match.away.name,
+
+            goals:
+                match.score.away,
+
+            xg:
+                xg?.away ?? null
+
+        }
+
+    };
+
+}
+
+
+// ============================================================
+// 10. BAIXAR DETALHES DAS PARTIDAS ENCERRADAS
+// ============================================================
+
+async function getFinishedMatchesDetails(matches) {
+
+    console.log("\n======================================");
+    console.log("📈 COLETANDO XG INDIVIDUAL DAS PARTIDAS");
+    console.log("======================================");
+
+    const finishedMatches =
+        matches.filter(
+            match =>
+                match.finished &&
+                !match.cancelled
+        );
+
+    console.log(
+        `Partidas encerradas: ${finishedMatches.length}`
+    );
+
+    let cached = 0;
+    let downloaded = 0;
+    let errors = 0;
+
+
+    for (
+        let i = 0;
+        i < finishedMatches.length;
+        i++
+    ) {
+
+        const match =
+            finishedMatches[i];
+
+        const filename =
+            path.join(
+                MATCHES_DIR,
+                `${match.match_id}.json`
+            );
+
+
+        console.log(
+            `\n[${i + 1}/${finishedMatches.length}] ` +
+            `${match.home.name} x ${match.away.name}`
+        );
+
+
+        // ----------------------------------------------------
+        // CACHE
+        // ----------------------------------------------------
+
+        if (fs.existsSync(filename)) {
+
+            console.log(
+                "✓ Cache encontrado"
+            );
+
+            cached++;
+
+            continue;
+
+        }
+
+
+        // ----------------------------------------------------
+        // DOWNLOAD
+        // ----------------------------------------------------
+
+        try {
+
+            const matchData =
+                await fetchMatchDetails(
+                    match.match_id
+                );
+
+            const normalized =
+                normalizeMatchDetails(
+                    match,
+                    matchData
+                );
+
+            saveJSON(
+                filename,
+                normalized
+            );
+
+            downloaded++;
+
+        } catch (error) {
+
+            console.error(
+                `❌ Erro na partida ${match.match_id}:`,
+                error.message
+            );
+
+            errors++;
+
+        }
+
+
+        // Pequeno intervalo entre requisições
+
+        if (
+            i <
+            finishedMatches.length - 1
+        ) {
+
+            await sleep(
+                REQUEST_DELAY
+            );
+
+        }
+
+    }
+
+
+    console.log("\n======================================");
+    console.log("📊 RESUMO DA COLETA DE PARTIDAS");
+    console.log("======================================");
+
+    console.log(
+        `Cache: ${cached}`
+    );
+
+    console.log(
+        `Novas partidas: ${downloaded}`
+    );
+
+    console.log(
+        `Erros: ${errors}`
+    );
+
+
+    return {
+
+        total:
+            finishedMatches.length,
+
+        cached,
+
+        downloaded,
+
+        errors
+
+    };
+
+}
+
+
+// ============================================================
+// 11. GERAR RESUMO DAS PARTIDAS
 // ============================================================
 
 function generateMatchSummary(matches) {
@@ -467,7 +805,7 @@ function generateMatchSummary(matches) {
 
 
 // ============================================================
-// 8. EXECUÇÃO PRINCIPAL
+// 12. EXECUÇÃO PRINCIPAL
 // ============================================================
 
 async function main() {
@@ -525,7 +863,7 @@ async function main() {
 
 
         // ----------------------------------
-        // xG
+        // Estatísticas gerais de xG
         // ----------------------------------
 
         const xgStats =
@@ -540,7 +878,18 @@ async function main() {
 
 
         // ----------------------------------
-        // Arquivo final da Fase 1
+        // NOVO:
+        // Detalhes individuais das partidas
+        // ----------------------------------
+
+        const matchesDetailsSummary =
+            await getFinishedMatchesDetails(
+                matches
+            );
+
+
+        // ----------------------------------
+        // Arquivo final
         // ----------------------------------
 
         const finalData = {
@@ -561,13 +910,21 @@ async function main() {
 
             },
 
+
             competition:
                 seasonInfo,
+
 
             summary:
                 matchSummary,
 
+
             matches,
+
+
+            match_details:
+                matchesDetailsSummary,
+
 
             stats: {
 
@@ -595,13 +952,14 @@ async function main() {
 
 
         console.log("\n======================================");
-        console.log("✅ FASE 1 CONCLUÍDA");
+        console.log("✅ COLETA CONCLUÍDA");
         console.log("======================================");
 
 
         console.log(
             "\nArquivo final:"
         );
+
 
         console.log(
             path.join(

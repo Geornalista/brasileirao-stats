@@ -4,17 +4,36 @@ import { fileURLToPath } from "url";
 
 
 // ============================================================
-// CONFIGURAÇÃO
+// CONFIGURAÇÃO DE CAMINHOS
 // ============================================================
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const DATA_DIR = path.join(__dirname, "data");
+const DATA_DIR = path.join(
+    __dirname,
+    "data"
+);
 
-const RAW_DIR = path.join(DATA_DIR, "raw");
-const PROCESSED_DIR = path.join(DATA_DIR, "processed");
-const APP_DIR = path.join(DATA_DIR, "app");
+const RAW_DIR = path.join(
+    DATA_DIR,
+    "raw"
+);
+
+const PROCESSED_DIR = path.join(
+    DATA_DIR,
+    "processed"
+);
+
+const APP_DIR = path.join(
+    DATA_DIR,
+    "app"
+);
+
+
+// ============================================================
+// ARQUIVOS DE ENTRADA
+// ============================================================
 
 const MATCHES_FILE = path.join(
     PROCESSED_DIR,
@@ -36,6 +55,26 @@ const XGD_FILE = path.join(
     "xg_difference.json"
 );
 
+
+// ============================================================
+// NOVOS ARQUIVOS - HISTÓRICO TEMPORAL
+// ============================================================
+
+const MATCH_DETAILS_DIR = path.join(
+    RAW_DIR,
+    "matches"
+);
+
+const HISTORY_OUTPUT_FILE = path.join(
+    APP_DIR,
+    "brasileirao_historico_2026.json"
+);
+
+
+// ============================================================
+// ARQUIVO PRINCIPAL DO APP
+// ============================================================
+
 const OUTPUT_FILE = path.join(
     APP_DIR,
     "brasileirao_stats_2026.json"
@@ -43,48 +82,70 @@ const OUTPUT_FILE = path.join(
 
 
 // ============================================================
-// CRIAR DIRETÓRIO DE SAÍDA
+// GARANTIR DIRETÓRIOS
 // ============================================================
 
-if (!fs.existsSync(APP_DIR)) {
+[
+    DATA_DIR,
+    RAW_DIR,
+    PROCESSED_DIR,
+    APP_DIR,
+    MATCH_DETAILS_DIR
+].forEach(dir => {
 
-    fs.mkdirSync(APP_DIR, {
-        recursive: true
-    });
+    if (!fs.existsSync(dir)) {
 
-}
+        fs.mkdirSync(
+            dir,
+            {
+                recursive: true
+            }
+        );
+
+    }
+
+});
 
 
 // ============================================================
 // UTILITÁRIOS
 // ============================================================
 
-function readJSON(file) {
+function readJSON(filename) {
 
-    if (!fs.existsSync(file)) {
+    if (!fs.existsSync(filename)) {
 
         throw new Error(
-            `Arquivo não encontrado: ${file}`
+            `Arquivo não encontrado: ${filename}`
         );
 
     }
 
     return JSON.parse(
-        fs.readFileSync(file, "utf8")
+        fs.readFileSync(
+            filename,
+            "utf8"
+        )
     );
 
 }
 
 
-function saveJSON(file, data) {
+function saveJSON(filename, data) {
 
     fs.writeFileSync(
-        file,
-        JSON.stringify(data, null, 2),
+        filename,
+        JSON.stringify(
+            data,
+            null,
+            2
+        ),
         "utf8"
     );
 
-    console.log(`💾 Arquivo salvo: ${file}`);
+    console.log(
+        `💾 Arquivo salvo: ${filename}`
+    );
 
 }
 
@@ -96,26 +157,52 @@ function round(value, decimals = 2) {
         value === undefined ||
         Number.isNaN(value)
     ) {
+
         return null;
+
     }
 
-    const factor = 10 ** decimals;
+    const factor =
+        10 ** decimals;
 
-    return Math.round(value * factor) / factor;
+    return (
+        Math.round(
+            value * factor
+        ) / factor
+    );
 
 }
 
 
 function percentage(part, total) {
 
-    if (!total || total === 0) {
-        return 0;
+    if (
+        !total ||
+        total === 0
+    ) {
+
+        return {
+
+            value: 0,
+
+            percentage: 0
+
+        };
+
     }
 
-    return round(
-        (part / total) * 100,
-        1
-    );
+    return {
+
+        value:
+            part,
+
+        percentage:
+            round(
+                (part / total) * 100,
+                1
+            )
+
+    };
 
 }
 
@@ -123,169 +210,163 @@ function percentage(part, total) {
 function safeDivide(a, b) {
 
     if (
-        !b ||
-        b === 0 ||
         a === null ||
-        a === undefined
+        a === undefined ||
+        b === null ||
+        b === undefined ||
+        b === 0
     ) {
+
         return null;
+
     }
 
-    return round(a / b, 3);
+    return round(
+        a / b,
+        3
+    );
 
 }
 
 
 // ============================================================
-// LOCALIZAR STATLIST DO FOTMOB
+// NORMALIZAR ESTATÍSTICAS XG
 // ============================================================
 
-function getStatList(data) {
+function normalizeXGStats(
+    xgData,
+    xgaData,
+    xgdData
+) {
 
-    if (!data) return [];
+    const teams =
+        new Map();
 
-    // Estrutura mais comum encontrada nos arquivos
-    if (Array.isArray(data.TopLists)) {
 
-        for (const item of data.TopLists) {
+    function processStat(
+        data,
+        statKey
+    ) {
 
-            if (Array.isArray(item.StatList)) {
-                return item.StatList;
+        if (!data) {
+            return;
+        }
+
+
+        const stats =
+            data?.stats ||
+            data?.statsData ||
+            data?.teams ||
+            [];
+
+
+        const rows =
+            Array.isArray(stats)
+                ? stats
+                : Object.values(stats);
+
+
+        for (const item of rows) {
+
+            const teamId =
+                item.teamId ??
+                item.id ??
+                item.team?.id;
+
+            const teamName =
+                item.teamName ??
+                item.name ??
+                item.team?.name;
+
+
+            if (
+                teamId === undefined ||
+                teamId === null
+            ) {
+
+                continue;
+
+            }
+
+
+            const value =
+
+                item.value ??
+                item.statValue ??
+                item.stats?.value ??
+                item.total ??
+                item[statKey];
+
+
+            if (!teams.has(teamId)) {
+
+                teams.set(
+                    teamId,
+                    {
+                        id:
+                            teamId,
+
+                        name:
+                            teamName,
+
+                        xg:
+                            null,
+
+                        xga:
+                            null,
+
+                        xgd:
+                            null
+                    }
+                );
+
+            }
+
+
+            const team =
+                teams.get(teamId);
+
+
+            if (
+                teamName &&
+                !team.name
+            ) {
+
+                team.name =
+                    teamName;
+
+            }
+
+
+            if (
+                value !== undefined &&
+                value !== null
+            ) {
+
+                team[statKey] =
+                    Number(value);
+
             }
 
         }
 
     }
 
-    // Caso exista estrutura alternativa
-    if (Array.isArray(data.StatList)) {
-        return data.StatList;
-    }
 
-    return [];
+    processStat(
+        xgData,
+        "xg"
+    );
 
-}
+    processStat(
+        xgaData,
+        "xga"
+    );
 
-
-// ============================================================
-// NORMALIZAR DADOS DE XG
-// ============================================================
-
-function normalizeXGStats(xgData, xgaData, xgdData) {
-
-    const xgList = getStatList(xgData);
-    const xgaList = getStatList(xgaData);
-    const xgdList = getStatList(xgdData);
-
-    const teams = new Map();
-
-
-    // --------------------------------------------------------
-    // xG
-    // --------------------------------------------------------
-
-    for (const item of xgList) {
-
-        const teamId = Number(item.TeamId);
-
-        if (!teamId) continue;
-
-        teams.set(teamId, {
-
-            id: teamId,
-
-            name:
-                item.ParticipantName,
-
-            xg:
-                Number(item.StatValue),
-
-            goals_from_xg_file:
-                Number(item.SubStatValue),
-
-            matches_from_xg_file:
-                Number(item.MatchesPlayed),
-
-            xg_rank:
-                Number(item.Rank),
-
-            xga: null,
-            goals_against_from_xga_file: null,
-            xga_rank: null,
-
-            xgd: null,
-            goal_difference_from_xgd_file: null,
-            xgd_rank: null
-
-        });
-
-    }
-
-
-    // --------------------------------------------------------
-    // xGA
-    // --------------------------------------------------------
-
-    for (const item of xgaList) {
-
-        const teamId = Number(item.TeamId);
-
-        if (!teamId) continue;
-
-        if (!teams.has(teamId)) {
-
-            teams.set(teamId, {
-                id: teamId,
-                name: item.ParticipantName
-            });
-
-        }
-
-        const team = teams.get(teamId);
-
-        team.xga =
-            Number(item.StatValue);
-
-        team.goals_against_from_xga_file =
-            Number(item.SubStatValue);
-
-        team.xga_rank =
-            Number(item.Rank);
-
-    }
-
-
-    // --------------------------------------------------------
-    // xG Difference
-    // --------------------------------------------------------
-
-    for (const item of xgdList) {
-
-        const teamId = Number(item.TeamId);
-
-        if (!teamId) continue;
-
-        if (!teams.has(teamId)) {
-
-            teams.set(teamId, {
-                id: teamId,
-                name: item.ParticipantName
-            });
-
-        }
-
-        const team = teams.get(teamId);
-
-        team.xgd =
-            Number(item.StatValue);
-
-        team.goal_difference_from_xgd_file =
-            Number(item.SubStatValue);
-
-        team.xgd_rank =
-            Number(item.Rank);
-
-    }
+    processStat(
+        xgdData,
+        "xgd"
+    );
 
 
     return teams;
@@ -294,68 +375,131 @@ function normalizeXGStats(xgData, xgaData, xgdData) {
 
 
 // ============================================================
-// ESTRUTURA BASE DE ESTATÍSTICAS
+// PROCESSAR PARTIDAS
 // ============================================================
 
-function createEmptyStats() {
+function processMatches(matches) {
+
+    const teams =
+        new Map();
+
+    let validMatches = 0;
+
+
+    function getTeam(
+        id,
+        name
+    ) {
+
+        if (!teams.has(id)) {
+
+            teams.set(
+                id,
+                {
+
+                    id,
+
+                    name,
+
+                    overall:
+                        createStats(),
+
+                    home:
+                        createStats(),
+
+                    away:
+                        createStats()
+
+                }
+            );
+
+        }
+
+        return teams.get(id);
+
+    }
+
+
+    for (const match of matches) {
+
+        if (
+            !match.finished ||
+            match.cancelled
+        ) {
+
+            continue;
+
+        }
+
+
+        const homeGoals =
+            match.score?.home;
+
+        const awayGoals =
+            match.score?.away;
+
+
+        if (
+            homeGoals === null ||
+            homeGoals === undefined ||
+            awayGoals === null ||
+            awayGoals === undefined
+        ) {
+
+            continue;
+
+        }
+
+
+        const homeTeam =
+            getTeam(
+                match.home.id,
+                match.home.name
+            );
+
+        const awayTeam =
+            getTeam(
+                match.away.id,
+                match.away.name
+            );
+
+
+        updateStats(
+            homeTeam.overall,
+            homeGoals,
+            awayGoals
+        );
+
+        updateStats(
+            awayTeam.overall,
+            awayGoals,
+            homeGoals
+        );
+
+
+        updateStats(
+            homeTeam.home,
+            homeGoals,
+            awayGoals
+        );
+
+        updateStats(
+            awayTeam.away,
+            awayGoals,
+            homeGoals
+        );
+
+
+        validMatches++;
+
+    }
+
 
     return {
 
-        matches: 0,
+        teams,
 
-        wins: 0,
-        draws: 0,
-        losses: 0,
-
-        goals_for: 0,
-        goals_against: 0,
-
-        total_goals: 0,
-
-
-        // ----------------------------------------------------
-        // OVER / UNDER
-        // ----------------------------------------------------
-
-        over_05_count: 0,
-        over_15_count: 0,
-        over_25_count: 0,
-        over_35_count: 0,
-
-
-        // ----------------------------------------------------
-        // BTTS
-        // ----------------------------------------------------
-
-        btts_count: 0,
-
-
-        // ----------------------------------------------------
-        // 0x0
-        // ----------------------------------------------------
-
-        draw_00_count: 0,
-
-
-        // ----------------------------------------------------
-        // CLEAN SHEET
-        // ----------------------------------------------------
-
-        clean_sheet_count: 0,
-
-
-        // ----------------------------------------------------
-        // FAILED TO SCORE
-        // ----------------------------------------------------
-
-        failed_to_score_count: 0,
-
-
-        // ----------------------------------------------------
-        // RESULTADOS
-        // ----------------------------------------------------
-
-        scored_first_half_placeholder: 0
+        validMatches
 
     };
 
@@ -363,10 +507,62 @@ function createEmptyStats() {
 
 
 // ============================================================
-// ATUALIZAR ESTATÍSTICAS DE UMA EQUIPE
+// CRIAR ESTRUTURA ESTATÍSTICA
 // ============================================================
 
-function updateTeamStats(
+function createStats() {
+
+    return {
+
+        matches:
+            0,
+
+        wins:
+            0,
+
+        draws:
+            0,
+
+        losses:
+            0,
+
+        goals_for:
+            0,
+
+        goals_against:
+            0,
+
+        goal_difference:
+            0,
+
+        over_05:
+            0,
+
+        over_15:
+            0,
+
+        over_25:
+            0,
+
+        over_35:
+            0,
+
+        btts:
+            0,
+
+        draw_00:
+            0
+
+    };
+
+}
+
+
+// ============================================================
+// ATUALIZAR ESTATÍSTICAS
+// ============================================================
+
+function updateStats(
     stats,
     goalsFor,
     goalsAgainst
@@ -374,18 +570,21 @@ function updateTeamStats(
 
     stats.matches++;
 
-    stats.goals_for += goalsFor;
-    stats.goals_against += goalsAgainst;
+    stats.goals_for +=
+        goalsFor;
+
+    stats.goals_against +=
+        goalsAgainst;
+
+    stats.goal_difference =
+        stats.goals_for -
+        stats.goals_against;
+
 
     const totalGoals =
-        goalsFor + goalsAgainst;
+        goalsFor +
+        goalsAgainst;
 
-    stats.total_goals += totalGoals;
-
-
-    // --------------------------------------------------------
-    // RESULTADO
-    // --------------------------------------------------------
 
     if (goalsFor > goalsAgainst) {
 
@@ -402,66 +601,40 @@ function updateTeamStats(
     }
 
 
-    // --------------------------------------------------------
-    // OVER
-    // --------------------------------------------------------
-
     if (totalGoals > 0) {
-        stats.over_05_count++;
+        stats.over_05++;
     }
 
     if (totalGoals > 1) {
-        stats.over_15_count++;
+        stats.over_15++;
     }
 
     if (totalGoals > 2) {
-        stats.over_25_count++;
+        stats.over_25++;
     }
 
     if (totalGoals > 3) {
-        stats.over_35_count++;
+        stats.over_35++;
     }
 
-
-    // --------------------------------------------------------
-    // AMBAS MARCAM
-    // --------------------------------------------------------
 
     if (
         goalsFor > 0 &&
         goalsAgainst > 0
     ) {
-        stats.btts_count++;
+
+        stats.btts++;
+
     }
 
-
-    // --------------------------------------------------------
-    // 0x0
-    // --------------------------------------------------------
 
     if (
         goalsFor === 0 &&
         goalsAgainst === 0
     ) {
-        stats.draw_00_count++;
-    }
 
+        stats.draw_00++;
 
-    // --------------------------------------------------------
-    // CLEAN SHEET
-    // --------------------------------------------------------
-
-    if (goalsAgainst === 0) {
-        stats.clean_sheet_count++;
-    }
-
-
-    // --------------------------------------------------------
-    // FAILED TO SCORE
-    // --------------------------------------------------------
-
-    if (goalsFor === 0) {
-        stats.failed_to_score_count++;
     }
 
 }
@@ -473,16 +646,10 @@ function updateTeamStats(
 
 function finalizeStats(stats) {
 
-    const matches =
-        stats.matches;
-
     return {
 
-        // ----------------------------------------------------
-        // PARTIDAS
-        // ----------------------------------------------------
-
-        matches,
+        matches:
+            stats.matches,
 
         wins:
             stats.wins,
@@ -493,11 +660,6 @@ function finalizeStats(stats) {
         losses:
             stats.losses,
 
-
-        // ----------------------------------------------------
-        // GOLS
-        // ----------------------------------------------------
-
         goals_for:
             stats.goals_for,
 
@@ -505,165 +667,57 @@ function finalizeStats(stats) {
             stats.goals_against,
 
         goal_difference:
-            stats.goals_for -
-            stats.goals_against,
+            stats.goal_difference,
 
-        total_goals:
-            stats.total_goals,
 
-        goals_for_per_match:
+        avg_goals_for:
             safeDivide(
                 stats.goals_for,
-                matches
+                stats.matches
             ),
 
-        goals_against_per_match:
+        avg_goals_against:
             safeDivide(
                 stats.goals_against,
-                matches
-            ),
-
-        avg_total_goals:
-            safeDivide(
-                stats.total_goals,
-                matches
+                stats.matches
             ),
 
 
-        // ----------------------------------------------------
-        // APROVEITAMENTO
-        // ----------------------------------------------------
-
-        win_percentage:
+        over_05:
             percentage(
-                stats.wins,
-                matches
+                stats.over_05,
+                stats.matches
             ),
 
-        draw_percentage:
+        over_15:
             percentage(
-                stats.draws,
-                matches
+                stats.over_15,
+                stats.matches
             ),
 
-        loss_percentage:
+        over_25:
             percentage(
-                stats.losses,
-                matches
+                stats.over_25,
+                stats.matches
             ),
 
+        over_35:
+            percentage(
+                stats.over_35,
+                stats.matches
+            ),
 
-        // ----------------------------------------------------
-        // OVER
-        // ----------------------------------------------------
+        btts:
+            percentage(
+                stats.btts,
+                stats.matches
+            ),
 
-        over_05: {
-            count:
-                stats.over_05_count,
-
-            percentage:
-                percentage(
-                    stats.over_05_count,
-                    matches
-                )
-        },
-
-        over_15: {
-            count:
-                stats.over_15_count,
-
-            percentage:
-                percentage(
-                    stats.over_15_count,
-                    matches
-                )
-        },
-
-        over_25: {
-            count:
-                stats.over_25_count,
-
-            percentage:
-                percentage(
-                    stats.over_25_count,
-                    matches
-                )
-        },
-
-        over_35: {
-            count:
-                stats.over_35_count,
-
-            percentage:
-                percentage(
-                    stats.over_35_count,
-                    matches
-                )
-        },
-
-
-        // ----------------------------------------------------
-        // BTTS
-        // ----------------------------------------------------
-
-        btts: {
-            count:
-                stats.btts_count,
-
-            percentage:
-                percentage(
-                    stats.btts_count,
-                    matches
-                )
-        },
-
-
-        // ----------------------------------------------------
-        // 0x0
-        // ----------------------------------------------------
-
-        draw_00: {
-            count:
-                stats.draw_00_count,
-
-            percentage:
-                percentage(
-                    stats.draw_00_count,
-                    matches
-                )
-        },
-
-
-        // ----------------------------------------------------
-        // CLEAN SHEET
-        // ----------------------------------------------------
-
-        clean_sheet: {
-            count:
-                stats.clean_sheet_count,
-
-            percentage:
-                percentage(
-                    stats.clean_sheet_count,
-                    matches
-                )
-        },
-
-
-        // ----------------------------------------------------
-        // FAILED TO SCORE
-        // ----------------------------------------------------
-
-        failed_to_score: {
-            count:
-                stats.failed_to_score_count,
-
-            percentage:
-                percentage(
-                    stats.failed_to_score_count,
-                    matches
-                )
-        }
+        draw_00:
+            percentage(
+                stats.draw_00,
+                stats.matches
+            )
 
     };
 
@@ -671,183 +725,11 @@ function finalizeStats(stats) {
 
 
 // ============================================================
-// CRIAR EQUIPE
-// ============================================================
-
-function createTeam(id, name) {
-
-    return {
-
-        id,
-        name,
-
-        overall:
-            createEmptyStats(),
-
-        home:
-            createEmptyStats(),
-
-        away:
-            createEmptyStats()
-
-    };
-
-}
-
-
-// ============================================================
-// PROCESSAR PARTIDAS
-// ============================================================
-
-function processMatches(matches) {
-
-    const teams = new Map();
-
-    let validMatches = 0;
-
-
-    for (const match of matches) {
-
-        // Apenas jogos encerrados
-        if (match.finished !== true) {
-            continue;
-        }
-
-
-        const homeGoals =
-            match.score?.home;
-
-        const awayGoals =
-            match.score?.away;
-
-
-        // Garantir placar válido
-        if (
-            homeGoals === null ||
-            homeGoals === undefined ||
-            awayGoals === null ||
-            awayGoals === undefined
-        ) {
-            continue;
-        }
-
-
-        const homeId =
-            Number(match.home?.id);
-
-        const awayId =
-            Number(match.away?.id);
-
-
-        if (!homeId || !awayId) {
-            continue;
-        }
-
-
-        // ----------------------------------------------------
-        // CRIAR EQUIPES
-        // ----------------------------------------------------
-
-        if (!teams.has(homeId)) {
-
-            teams.set(
-                homeId,
-                createTeam(
-                    homeId,
-                    match.home.name
-                )
-            );
-
-        }
-
-
-        if (!teams.has(awayId)) {
-
-            teams.set(
-                awayId,
-                createTeam(
-                    awayId,
-                    match.away.name
-                )
-            );
-
-        }
-
-
-        const homeTeam =
-            teams.get(homeId);
-
-        const awayTeam =
-            teams.get(awayId);
-
-
-        // ----------------------------------------------------
-        // GERAL
-        // ----------------------------------------------------
-
-        updateTeamStats(
-            homeTeam.overall,
-            homeGoals,
-            awayGoals
-        );
-
-        updateTeamStats(
-            awayTeam.overall,
-            awayGoals,
-            homeGoals
-        );
-
-
-        // ----------------------------------------------------
-        // CASA
-        // ----------------------------------------------------
-
-        updateTeamStats(
-            homeTeam.home,
-            homeGoals,
-            awayGoals
-        );
-
-
-        // ----------------------------------------------------
-        // FORA
-        // ----------------------------------------------------
-
-        updateTeamStats(
-            awayTeam.away,
-            awayGoals,
-            homeGoals
-        );
-
-
-        validMatches++;
-
-    }
-
-
-    console.log(
-        `⚽ Jogos encerrados processados: ${validMatches}`
-    );
-
-    console.log(
-        `🏆 Equipes encontradas: ${teams.size}`
-    );
-
-
-    return {
-        teams,
-        validMatches
-    };
-
-}
-
-
-// ============================================================
-// ADICIONAR XG ÀS EQUIPES
+// CONSOLIDAR XG
 // ============================================================
 
 function mergeXGData(
-    matchTeams,
+    teamsMap,
     xgTeams
 ) {
 
@@ -855,12 +737,12 @@ function mergeXGData(
 
 
     for (
-        const [teamId, team]
-        of matchTeams.entries()
+        const team of teamsMap.values()
     ) {
 
-        const xgData =
-            xgTeams.get(teamId);
+        const xgInfo =
+            xgTeams.get(team.id) ||
+            {};
 
 
         const overall =
@@ -879,38 +761,18 @@ function mergeXGData(
             );
 
 
-        // ----------------------------------------------------
-        // DADOS AVANÇADOS
-        // ----------------------------------------------------
-
         const xg =
-            xgData?.xg ?? null;
+            xgInfo.xg ??
+            null;
 
         const xga =
-            xgData?.xga ?? null;
+            xgInfo.xga ??
+            null;
 
-        let xgd =
-            xgData?.xgd ?? null;
+        const xgd =
+            xgInfo.xgd ??
+            null;
 
-
-        // Caso o arquivo de xGD falhe,
-        // calcular a partir de xG - xGA
-
-        if (
-            xgd === null &&
-            xg !== null &&
-            xga !== null
-        ) {
-
-            xgd =
-                round(xg - xga, 2);
-
-        }
-
-
-        // ----------------------------------------------------
-        // ADICIONAR XG AO GERAL
-        // ----------------------------------------------------
 
         overall.xg = {
 
@@ -918,15 +780,10 @@ function mergeXGData(
                 xg,
 
             per_match:
-                xg !== null
-                    ? safeDivide(
-                        xg,
-                        overall.matches
-                    )
-                    : null,
-
-            rank:
-                xgData?.xg_rank ?? null
+                safeDivide(
+                    xg,
+                    overall.matches
+                )
 
         };
 
@@ -937,15 +794,10 @@ function mergeXGData(
                 xga,
 
             per_match:
-                xga !== null
-                    ? safeDivide(
-                        xga,
-                        overall.matches
-                    )
-                    : null,
-
-            rank:
-                xgData?.xga_rank ?? null
+                safeDivide(
+                    xga,
+                    overall.matches
+                )
 
         };
 
@@ -956,79 +808,58 @@ function mergeXGData(
                 xgd,
 
             per_match:
-                xgd !== null
-                    ? safeDivide(
-                        xgd,
-                        overall.matches
-                    )
-                    : null,
-
-            rank:
-                xgData?.xgd_rank ?? null
+                safeDivide(
+                    xgd,
+                    overall.matches
+                )
 
         };
 
 
-        // ----------------------------------------------------
-        // PERFORMANCE VS EXPECTATIVA
-        // ----------------------------------------------------
+        overall.goal_xg_difference =
 
-        overall.performance_vs_xg = {
-
-            goals_vs_xg:
-
-                xg !== null
-                    ? round(
-                        overall.goals_for - xg,
-                        2
-                    )
-                    : null,
+            xg !== null
+                ? round(
+                    overall.goals_for - xg,
+                    2
+                )
+                : null;
 
 
-            goals_against_vs_xga:
+        overall.goal_xga_difference =
 
-                xga !== null
-                    ? round(
-                        overall.goals_against - xga,
-                        2
-                    )
-                    : null,
-
-
-            goal_difference_vs_xgd:
-
-                xgd !== null
-                    ? round(
-                        overall.goal_difference - xgd,
-                        2
-                    )
-                    : null,
+            xga !== null
+                ? round(
+                    overall.goals_against - xga,
+                    2
+                )
+                : null;
 
 
-            offensive_efficiency:
+        overall.offensive_efficiency =
 
-                xg !== null
-                    ? safeDivide(
-                        overall.goals_for,
-                        xg
-                    )
-                    : null,
+            xg !== null
+                ? safeDivide(
+                    overall.goals_for,
+                    xg
+                )
+                : null;
 
 
-            defensive_efficiency:
+        overall.defensive_efficiency =
 
-                xga !== null
-                    ? safeDivide(
-                        overall.goals_against,
-                        xga
-                    )
-                    : null
-
-        };
+            xga !== null
+                ? safeDivide(
+                    overall.goals_against,
+                    xga
+                )
+                : null;
 
 
         // ----------------------------------------------------
-        // XG DE CASA/FORA AINDA NÃO DISPONÍVEL
+        // xG CASA/FORA
+        // Ainda não disponível no dataset agregado.
+        // Será futuramente calculado a partir do histórico.
         // ----------------------------------------------------
 
         home.xg = null;
@@ -1039,10 +870,6 @@ function mergeXGData(
         away.xga = null;
         away.xgd = null;
 
-
-        // ----------------------------------------------------
-        // ESTRUTURA FINAL DA EQUIPE
-        // ----------------------------------------------------
 
         finalTeams.push({
 
@@ -1074,42 +901,50 @@ function mergeXGData(
 
 function sortTeams(teams) {
 
-    return teams.sort((a, b) => {
+    return teams.sort(
+        (a, b) => {
 
-        // Pontos
-        const pointsA =
-            a.overall.wins * 3 +
-            a.overall.draws;
+            const pointsA =
+                a.overall.wins * 3 +
+                a.overall.draws;
 
-        const pointsB =
-            b.overall.wins * 3 +
-            b.overall.draws;
-
-
-        if (pointsB !== pointsA) {
-            return pointsB - pointsA;
-        }
+            const pointsB =
+                b.overall.wins * 3 +
+                b.overall.draws;
 
 
-        if (
-            b.overall.goal_difference !==
-            a.overall.goal_difference
-        ) {
+            if (
+                pointsB !== pointsA
+            ) {
+
+                return (
+                    pointsB -
+                    pointsA
+                );
+
+            }
+
+
+            if (
+                b.overall.goal_difference !==
+                a.overall.goal_difference
+            ) {
+
+                return (
+                    b.overall.goal_difference -
+                    a.overall.goal_difference
+                );
+
+            }
+
 
             return (
-                b.overall.goal_difference -
-                a.overall.goal_difference
+                b.overall.goals_for -
+                a.overall.goals_for
             );
 
         }
-
-
-        return (
-            b.overall.goals_for -
-            a.overall.goals_for
-        );
-
-    });
+    );
 
 }
 
@@ -1145,7 +980,9 @@ function calculateLeagueSummary(
     let draw00 = 0;
 
 
-    for (const match of finishedMatches) {
+    for (
+        const match of finishedMatches
+    ) {
 
         const home =
             match.score.home;
@@ -1154,9 +991,12 @@ function calculateLeagueSummary(
             match.score.away;
 
         const total =
-            home + away;
+            home +
+            away;
 
-        totalGoals += total;
+
+        totalGoals +=
+            total;
 
 
         if (total > 0) over05++;
@@ -1164,18 +1004,24 @@ function calculateLeagueSummary(
         if (total > 2) over25++;
         if (total > 3) over35++;
 
+
         if (
             home > 0 &&
             away > 0
         ) {
+
             btts++;
+
         }
+
 
         if (
             home === 0 &&
             away === 0
         ) {
+
             draw00++;
+
         }
 
     }
@@ -1240,6 +1086,1077 @@ function calculateLeagueSummary(
 
 
 // ============================================================
+// ============================================================
+// FASE 7 - HISTÓRICO TEMPORAL
+// ============================================================
+// ============================================================
+
+
+// ============================================================
+// MÉDIA DE VALORES
+// ============================================================
+
+function average(values) {
+
+    const validValues =
+        values.filter(
+            value =>
+                value !== null &&
+                value !== undefined &&
+                !Number.isNaN(value)
+        );
+
+
+    if (
+        validValues.length === 0
+    ) {
+
+        return null;
+
+    }
+
+
+    const total =
+        validValues.reduce(
+            (sum, value) =>
+                sum + value,
+            0
+        );
+
+
+    return round(
+        total / validValues.length,
+        3
+    );
+
+}
+
+
+// ============================================================
+// CARREGAR DETALHES INDIVIDUAIS DAS PARTIDAS
+// ============================================================
+
+function loadMatchDetails() {
+
+    console.log(
+        "\n📂 Carregando histórico individual das partidas..."
+    );
+
+
+    if (
+        !fs.existsSync(
+            MATCH_DETAILS_DIR
+        )
+    ) {
+
+        console.log(
+            "⚠ Diretório de detalhes das partidas não encontrado."
+        );
+
+        return [];
+
+    }
+
+
+    const files =
+        fs.readdirSync(
+            MATCH_DETAILS_DIR
+        )
+        .filter(
+            file =>
+                file.endsWith(".json")
+        );
+
+
+    const matches = [];
+
+
+    for (
+        const file of files
+    ) {
+
+        try {
+
+            const fullPath =
+                path.join(
+                    MATCH_DETAILS_DIR,
+                    file
+                );
+
+
+            const match =
+                readJSON(
+                    fullPath
+                );
+
+
+            if (
+                !match ||
+                !match.finished
+            ) {
+
+                continue;
+
+            }
+
+
+            if (
+                !match.home ||
+                !match.away
+            ) {
+
+                continue;
+
+            }
+
+
+            matches.push(
+                match
+            );
+
+        } catch (error) {
+
+            console.log(
+                `⚠ Erro ao ler ${file}: ${error.message}`
+            );
+
+        }
+
+    }
+
+
+    console.log(
+        `✓ Partidas históricas carregadas: ${matches.length}`
+    );
+
+
+    return matches;
+
+}
+
+
+// ============================================================
+// CRIAR ESTRUTURA DE EQUIPE HISTÓRICA
+// ============================================================
+
+function createHistoryTeam(
+    id,
+    name
+) {
+
+    return {
+
+        id,
+
+        name,
+
+        matches: []
+
+    };
+
+}
+
+
+// ============================================================
+// PROCESSAR PARTIDAS PARA PERSPECTIVA DE CADA EQUIPE
+// ============================================================
+
+function processHistoricalMatches(
+    matchDetails
+) {
+
+    console.log(
+        "\n📈 Processando séries temporais..."
+    );
+
+
+    const teams =
+        new Map();
+
+
+    for (
+        const match of matchDetails
+    ) {
+
+        const home =
+            match.home;
+
+        const away =
+            match.away;
+
+
+        if (
+            !home?.id ||
+            !away?.id
+        ) {
+
+            continue;
+
+        }
+
+
+        // ----------------------------------------------------
+        // Criar mandante
+        // ----------------------------------------------------
+
+        if (
+            !teams.has(home.id)
+        ) {
+
+            teams.set(
+                home.id,
+                createHistoryTeam(
+                    home.id,
+                    home.name
+                )
+            );
+
+        }
+
+
+        // ----------------------------------------------------
+        // Criar visitante
+        // ----------------------------------------------------
+
+        if (
+            !teams.has(away.id)
+        ) {
+
+            teams.set(
+                away.id,
+                createHistoryTeam(
+                    away.id,
+                    away.name
+                )
+            );
+
+        }
+
+
+        const homeTeam =
+            teams.get(
+                home.id
+            );
+
+        const awayTeam =
+            teams.get(
+                away.id
+            );
+
+
+        // ----------------------------------------------------
+        // PERSPECTIVA DO MANDANTE
+        // ----------------------------------------------------
+
+        homeTeam.matches.push({
+
+            match_id:
+                match.match_id,
+
+            round:
+                match.round,
+
+            date:
+                match.date,
+
+
+            opponent: {
+
+                id:
+                    away.id,
+
+                name:
+                    away.name
+
+            },
+
+
+            location:
+                "home",
+
+
+            goals_for:
+                home.goals,
+
+            goals_against:
+                away.goals,
+
+
+            xg:
+                home.xg,
+
+            xga:
+                away.xg,
+
+
+            xgd:
+
+                home.xg !== null &&
+                home.xg !== undefined &&
+                away.xg !== null &&
+                away.xg !== undefined
+
+                    ? round(
+                        home.xg -
+                        away.xg,
+                        3
+                    )
+
+                    : null
+
+        });
+
+
+        // ----------------------------------------------------
+        // PERSPECTIVA DO VISITANTE
+        // ----------------------------------------------------
+
+        awayTeam.matches.push({
+
+            match_id:
+                match.match_id,
+
+            round:
+                match.round,
+
+            date:
+                match.date,
+
+
+            opponent: {
+
+                id:
+                    home.id,
+
+                name:
+                    home.name
+
+            },
+
+
+            location:
+                "away",
+
+
+            goals_for:
+                away.goals,
+
+            goals_against:
+                home.goals,
+
+
+            xg:
+                away.xg,
+
+            xga:
+                home.xg,
+
+
+            xgd:
+
+                away.xg !== null &&
+                away.xg !== undefined &&
+                home.xg !== null &&
+                home.xg !== undefined
+
+                    ? round(
+                        away.xg -
+                        home.xg,
+                        3
+                    )
+
+                    : null
+
+        });
+
+    }
+
+
+    return teams;
+
+}
+
+
+// ============================================================
+// ORDENAR E CALCULAR MÉTRICAS TEMPORAIS
+// ============================================================
+
+function calculateHistoricalMetrics(
+    team
+) {
+
+    // --------------------------------------------------------
+    // ORDENAR POR RODADA E DATA
+    // --------------------------------------------------------
+
+    team.matches.sort(
+        (a, b) => {
+
+            const roundA =
+                Number(a.round) || 0;
+
+            const roundB =
+                Number(b.round) || 0;
+
+
+            if (
+                roundA !== roundB
+            ) {
+
+                return (
+                    roundA -
+                    roundB
+                );
+
+            }
+
+
+            return (
+                new Date(a.date) -
+                new Date(b.date)
+            );
+
+        }
+    );
+
+
+    let cumulativeXG = 0;
+    let cumulativeXGA = 0;
+    let cumulativeXGD = 0;
+
+    let validXGCount = 0;
+    let validXGACount = 0;
+
+
+    team.matches.forEach(
+        (
+            match,
+            index
+        ) => {
+
+            // ------------------------------------------------
+            // ACUMULADOS
+            // ------------------------------------------------
+
+            if (
+                match.xg !== null &&
+                match.xg !== undefined
+            ) {
+
+                cumulativeXG +=
+                    match.xg;
+
+                validXGCount++;
+
+            }
+
+
+            if (
+                match.xga !== null &&
+                match.xga !== undefined
+            ) {
+
+                cumulativeXGA +=
+                    match.xga;
+
+                validXGACount++;
+
+            }
+
+
+            if (
+                match.xgd !== null &&
+                match.xgd !== undefined
+            ) {
+
+                cumulativeXGD +=
+                    match.xgd;
+
+            }
+
+
+            match.cumulative = {
+
+                xg:
+                    round(
+                        cumulativeXG,
+                        3
+                    ),
+
+                xga:
+                    round(
+                        cumulativeXGA,
+                        3
+                    ),
+
+                xgd:
+                    round(
+                        cumulativeXGD,
+                        3
+                    ),
+
+
+                xg_per_match:
+
+                    validXGCount > 0
+
+                        ? round(
+                            cumulativeXG /
+                            validXGCount,
+                            3
+                        )
+
+                        : null,
+
+
+                xga_per_match:
+
+                    validXGACount > 0
+
+                        ? round(
+                            cumulativeXGA /
+                            validXGACount,
+                            3
+                        )
+
+                        : null
+
+            };
+
+
+            // ------------------------------------------------
+            // MÉDIA MÓVEL DOS ÚLTIMOS 5 JOGOS
+            // ------------------------------------------------
+
+            const windowSize = 5;
+
+
+            const start =
+                Math.max(
+                    0,
+                    index -
+                    windowSize +
+                    1
+                );
+
+
+            const recentMatches =
+                team.matches.slice(
+                    start,
+                    index + 1
+                );
+
+
+            match.rolling_5 = {
+
+                matches:
+                    recentMatches.length,
+
+
+                xg:
+                    average(
+                        recentMatches.map(
+                            item =>
+                                item.xg
+                        )
+                    ),
+
+
+                xga:
+                    average(
+                        recentMatches.map(
+                            item =>
+                                item.xga
+                        )
+                    ),
+
+
+                xgd:
+                    average(
+                        recentMatches.map(
+                            item =>
+                                item.xgd
+                        )
+                    ),
+
+
+                goals_for:
+                    average(
+                        recentMatches.map(
+                            item =>
+                                item.goals_for
+                        )
+                    ),
+
+
+                goals_against:
+                    average(
+                        recentMatches.map(
+                            item =>
+                                item.goals_against
+                        )
+                    )
+
+            };
+
+        }
+    );
+
+
+    return team;
+
+}
+
+
+// ============================================================
+// GERAR RESUMO DA TEMPORADA
+// ============================================================
+
+function generateTeamHistorySummary(
+    team
+) {
+
+    const matches =
+        team.matches;
+
+
+    const totalMatches =
+        matches.length;
+
+
+    const xgValues =
+        matches
+            .map(
+                match =>
+                    match.xg
+            )
+            .filter(
+                value =>
+                    value !== null &&
+                    value !== undefined
+            );
+
+
+    const xgaValues =
+        matches
+            .map(
+                match =>
+                    match.xga
+            )
+            .filter(
+                value =>
+                    value !== null &&
+                    value !== undefined
+            );
+
+
+    const xgdValues =
+        matches
+            .map(
+                match =>
+                    match.xgd
+            )
+            .filter(
+                value =>
+                    value !== null &&
+                    value !== undefined
+            );
+
+
+    const last5 =
+        matches.slice(-5);
+
+
+    return {
+
+        matches:
+            totalMatches,
+
+
+        season: {
+
+            xg:
+                average(
+                    xgValues
+                ),
+
+            xga:
+                average(
+                    xgaValues
+                ),
+
+            xgd:
+                average(
+                    xgdValues
+                ),
+
+            goals_for:
+                average(
+                    matches.map(
+                        match =>
+                            match.goals_for
+                    )
+                ),
+
+            goals_against:
+                average(
+                    matches.map(
+                        match =>
+                            match.goals_against
+                    )
+                )
+
+        },
+
+
+        last_5: {
+
+            matches:
+                last5.length,
+
+
+            xg:
+                average(
+                    last5.map(
+                        match =>
+                            match.xg
+                    )
+                ),
+
+
+            xga:
+                average(
+                    last5.map(
+                        match =>
+                            match.xga
+                    )
+                ),
+
+
+            xgd:
+                average(
+                    last5.map(
+                        match =>
+                            match.xgd
+                    )
+                ),
+
+
+            goals_for:
+                average(
+                    last5.map(
+                        match =>
+                            match.goals_for
+                    )
+                ),
+
+
+            goals_against:
+                average(
+                    last5.map(
+                        match =>
+                            match.goals_against
+                    )
+                )
+
+        }
+
+    };
+
+}
+
+
+// ============================================================
+// CALCULAR TENDÊNCIA
+// ============================================================
+
+function calculateTrend(
+    seasonValue,
+    recentValue,
+    inverse = false
+) {
+
+    if (
+        seasonValue === null ||
+        seasonValue === undefined ||
+        recentValue === null ||
+        recentValue === undefined
+    ) {
+
+        return {
+
+            direction:
+                "neutral",
+
+            percentage:
+                null
+
+        };
+
+    }
+
+
+    let percentageChange =
+        null;
+
+
+    if (
+        seasonValue !== 0
+    ) {
+
+        percentageChange =
+            round(
+                (
+                    (
+                        recentValue -
+                        seasonValue
+                    ) /
+                    Math.abs(
+                        seasonValue
+                    )
+                ) * 100,
+                1
+            );
+
+    }
+
+
+    let direction =
+        "neutral";
+
+
+    if (
+        percentageChange !== null
+    ) {
+
+        if (
+            percentageChange > 5
+        ) {
+
+            direction =
+                inverse
+                    ? "down"
+                    : "up";
+
+        }
+
+        else if (
+            percentageChange < -5
+        ) {
+
+            direction =
+                inverse
+                    ? "up"
+                    : "down";
+
+        }
+
+    }
+
+
+    return {
+
+        direction,
+
+        percentage:
+            percentageChange
+
+    };
+
+}
+
+
+// ============================================================
+// GERAR ARQUIVO FINAL DE HISTÓRICO
+// ============================================================
+
+function generateHistoryData() {
+
+    console.log(
+        "\n========================================"
+    );
+
+    console.log(
+        "📈 FASE 7 - HISTÓRICO TEMPORAL"
+    );
+
+    console.log(
+        "========================================"
+    );
+
+
+    const matchDetails =
+        loadMatchDetails();
+
+
+    if (
+        matchDetails.length === 0
+    ) {
+
+        console.log(
+            "⚠ Nenhuma partida histórica disponível."
+        );
+
+        return null;
+
+    }
+
+
+    const historyTeamsMap =
+        processHistoricalMatches(
+            matchDetails
+        );
+
+
+    const teams = [];
+
+
+    for (
+        const team of historyTeamsMap.values()
+    ) {
+
+        calculateHistoricalMetrics(
+            team
+        );
+
+
+        const summary =
+            generateTeamHistorySummary(
+                team
+            );
+
+
+        const offensiveTrend =
+            calculateTrend(
+                summary.season.xg,
+                summary.last_5.xg
+            );
+
+
+        // Para xGA:
+        // menor valor recente representa melhora defensiva.
+
+        const defensiveTrend =
+            calculateTrend(
+                summary.season.xga,
+                summary.last_5.xga,
+                true
+            );
+
+
+        const xgdTrend =
+            calculateTrend(
+                summary.season.xgd,
+                summary.last_5.xgd
+            );
+
+
+        teams.push({
+
+            id:
+                team.id,
+
+            name:
+                team.name,
+
+
+            summary,
+
+
+            trends: {
+
+                offensive:
+                    offensiveTrend,
+
+                defensive:
+                    defensiveTrend,
+
+                balance:
+                    xgdTrend
+
+            },
+
+
+            matches:
+                team.matches
+
+        });
+
+    }
+
+
+    // --------------------------------------------------------
+    // ORDENAR ALFABETICAMENTE
+    // --------------------------------------------------------
+
+    teams.sort(
+        (a, b) =>
+            a.name.localeCompare(
+                b.name,
+                "pt-BR"
+            )
+    );
+
+
+    // --------------------------------------------------------
+    // ESTRUTURA FINAL
+    // --------------------------------------------------------
+
+    const output = {
+
+        metadata: {
+
+            competition:
+                "Campeonato Brasileiro Série A",
+
+            season:
+                2026,
+
+            source:
+                "FotMob",
+
+            generated_at:
+                new Date().toISOString(),
+
+            total_teams:
+                teams.length,
+
+            total_matches:
+                matchDetails.length
+
+        },
+
+
+        teams
+
+    };
+
+
+    // --------------------------------------------------------
+    // SALVAR
+    // --------------------------------------------------------
+
+    saveJSON(
+        HISTORY_OUTPUT_FILE,
+        output
+    );
+
+
+    console.log(
+        `✓ Histórico gerado para ${teams.length} equipes`
+    );
+
+    console.log(
+        `✓ Arquivo: ${HISTORY_OUTPUT_FILE}`
+    );
+
+
+    return output;
+
+}
+
+
+// ============================================================
 // EXECUÇÃO PRINCIPAL
 // ============================================================
 
@@ -1268,17 +2185,29 @@ function main() {
             "📂 Carregando arquivos..."
         );
 
+
         const matches =
-            readJSON(MATCHES_FILE);
+            readJSON(
+                MATCHES_FILE
+            );
+
 
         const xgData =
-            readJSON(XG_FILE);
+            readJSON(
+                XG_FILE
+            );
+
 
         const xgaData =
-            readJSON(XGA_FILE);
+            readJSON(
+                XGA_FILE
+            );
+
 
         const xgdData =
-            readJSON(XGD_FILE);
+            readJSON(
+                XGD_FILE
+            );
 
 
         // ----------------------------------------------------
@@ -1288,6 +2217,7 @@ function main() {
         console.log(
             "\n📊 Processando dados de xG..."
         );
+
 
         const xgTeams =
             normalizeXGStats(
@@ -1310,8 +2240,11 @@ function main() {
             "\n⚽ Processando partidas..."
         );
 
+
         const result =
-            processMatches(matches);
+            processMatches(
+                matches
+            );
 
 
         // ----------------------------------------------------
@@ -1322,6 +2255,7 @@ function main() {
             "\n🔗 Consolidando dados..."
         );
 
+
         let teams =
             mergeXGData(
                 result.teams,
@@ -1330,7 +2264,9 @@ function main() {
 
 
         teams =
-            sortTeams(teams);
+            sortTeams(
+                teams
+            );
 
 
         // ----------------------------------------------------
@@ -1339,7 +2275,10 @@ function main() {
 
         teams =
             teams.map(
-                (team, index) => ({
+                (
+                    team,
+                    index
+                ) => ({
 
                     position:
                         index + 1,
@@ -1362,7 +2301,7 @@ function main() {
 
 
         // ----------------------------------------------------
-        // BANCO FINAL
+        // BANCO FINAL PRINCIPAL
         // ----------------------------------------------------
 
         const output = {
@@ -1400,13 +2339,20 @@ function main() {
 
 
         // ----------------------------------------------------
-        // SALVAR
+        // SALVAR BANCO PRINCIPAL
         // ----------------------------------------------------
 
         saveJSON(
             OUTPUT_FILE,
             output
         );
+
+
+        // ----------------------------------------------------
+        // FASE 7 - GERAR HISTÓRICO TEMPORAL
+        // ----------------------------------------------------
+
+        generateHistoryData();
 
 
         // ----------------------------------------------------
@@ -1430,6 +2376,7 @@ function main() {
             "RESUMO DA LIGA:"
         );
 
+
         console.table(
             leagueSummary
         );
@@ -1439,52 +2386,64 @@ function main() {
             "\nPRIMEIRAS EQUIPES:"
         );
 
+
         console.table(
-            teams.slice(0, 10).map(team => ({
 
-                Pos:
-                    team.position,
+            teams
+                .slice(
+                    0,
+                    10
+                )
+                .map(team => ({
 
-                Time:
-                    team.name,
+                    Pos:
+                        team.position,
 
-                Jogos:
-                    team.overall.matches,
+                    Time:
+                        team.name,
 
-                GF:
-                    team.overall.goals_for,
+                    Jogos:
+                        team.overall.matches,
 
-                GA:
-                    team.overall.goals_against,
+                    GF:
+                        team.overall.goals_for,
 
-                SG:
-                    team.overall.goal_difference,
+                    GA:
+                        team.overall.goals_against,
 
-                "Over 2.5":
-                    team.overall.over_25.percentage,
+                    SG:
+                        team.overall.goal_difference,
 
-                BTTS:
-                    team.overall.btts.percentage,
+                    "Over 2.5":
+                        team.overall.over_25.percentage,
 
-                xG:
-                    team.overall.xg.value,
+                    BTTS:
+                        team.overall.btts.percentage,
 
-                xGA:
-                    team.overall.xga.value,
+                    xG:
+                        team.overall.xg.value,
 
-                xGD:
-                    team.overall.xgd.value
+                    xGA:
+                        team.overall.xga.value,
 
-            }))
+                    xGD:
+                        team.overall.xgd.value
+
+                }))
+
         );
 
 
         console.log(
-            "\nArquivo gerado:"
+            "\nArquivos gerados:"
         );
 
         console.log(
             OUTPUT_FILE
+        );
+
+        console.log(
+            HISTORY_OUTPUT_FILE
         );
 
 
