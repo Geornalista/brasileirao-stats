@@ -1,0 +1,18 @@
+{
+  "match_id": 5103481,
+  "round": 12,
+  "date": "2026-04-19T19:00:00Z",
+  "finished": true,
+  "home": {
+    "id": 9767,
+    "name": "Coritiba",
+    "goals": 2,
+    "xg": 1.01
+  },
+  "away": {
+    "id": 10272,
+    "name": "Atlético-MG",
+    "goals": 0,
+    "xg": 1.29
+  }
+}

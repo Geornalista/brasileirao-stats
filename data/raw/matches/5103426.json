@@ -1,0 +1,18 @@
+{
+  "match_id": 5103426,
+  "round": 7,
+  "date": "2026-03-19T00:30:00Z",
+  "finished": true,
+  "home": {
+    "id": 8514,
+    "name": "Santos",
+    "goals": 1,
+    "xg": 1.17
+  },
+  "away": {
+    "id": 8702,
+    "name": "Internacional",
+    "goals": 2,
+    "xg": 1.24
+  }
+}

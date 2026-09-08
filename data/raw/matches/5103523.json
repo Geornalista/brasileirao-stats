@@ -1,0 +1,18 @@
+{
+  "match_id": 5103523,
+  "round": 16,
+  "date": "2026-05-17T21:30:00Z",
+  "finished": true,
+  "home": {
+    "id": 197693,
+    "name": "Chapecoense",
+    "goals": 2,
+    "xg": 2.37
+  },
+  "away": {
+    "id": 1626,
+    "name": "Remo",
+    "goals": 3,
+    "xg": 1.13
+  }
+}

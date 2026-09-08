@@ -1,0 +1,18 @@
+{
+  "match_id": 5103420,
+  "round": 6,
+  "date": "2026-03-15T19:00:00Z",
+  "finished": true,
+  "home": {
+    "id": 8702,
+    "name": "Internacional",
+    "goals": 0,
+    "xg": 1.65
+  },
+  "away": {
+    "id": 7877,
+    "name": "Bahia",
+    "goals": 1,
+    "xg": 0.85
+  }
+}

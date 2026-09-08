@@ -228,11 +228,11 @@
           "ParticiantId": 0,
           "TeamId": 7733,
           "TeamColor": "#B81808",
-          "StatValue": 24,
+          "StatValue": 24.7,
           "SubStatValue": 24,
           "MinutesPlayed": 0,
           "MatchesPlayed": 26,
-          "StatValueCount": 25,
+          "StatValueCount": 26,
           "Rank": 19
         },
         {
@@ -240,11 +240,11 @@
           "ParticiantId": 0,
           "TeamId": 9769,
           "TeamColor": "#0783BD",
-          "StatValue": 23.3,
+          "StatValue": 23.5,
           "SubStatValue": 27,
           "MinutesPlayed": 0,
           "MatchesPlayed": 25,
-          "StatValueCount": 24,
+          "StatValueCount": 25,
           "Rank": 20
         }
       ],

@@ -1,0 +1,18 @@
+{
+  "match_id": 5103438,
+  "round": 8,
+  "date": "2026-03-21T19:00:00Z",
+  "finished": true,
+  "home": {
+    "id": 109705,
+    "name": "RB Bragantino",
+    "goals": 1,
+    "xg": 1.85
+  },
+  "away": {
+    "id": 8517,
+    "name": "Botafogo",
+    "goals": 2,
+    "xg": 1.18
+  }
+}

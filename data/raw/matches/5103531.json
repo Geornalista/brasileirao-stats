@@ -1,0 +1,18 @@
+{
+  "match_id": 5103531,
+  "round": 17,
+  "date": "2026-05-25T23:00:00Z",
+  "finished": true,
+  "home": {
+    "id": 9767,
+    "name": "Coritiba",
+    "goals": 3,
+    "xg": 1.07
+  },
+  "away": {
+    "id": 7877,
+    "name": "Bahia",
+    "goals": 2,
+    "xg": 1.25
+  }
+}

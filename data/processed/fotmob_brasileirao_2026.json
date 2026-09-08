@@ -3,7 +3,7 @@
     "source": "FotMob",
     "league_id": 268,
     "season": 2026,
-    "fetched_at": "2026-09-07T23:12:05.410Z"
+    "fetched_at": "2026-09-08T00:24:59.780Z"
   },
   "competition": {
     "league_id": 268,
@@ -7857,11 +7857,11 @@
               "ParticiantId": 0,
               "TeamId": 7733,
               "TeamColor": "#B81808",
-              "StatValue": 24,
+              "StatValue": 24.7,
               "SubStatValue": 24,
               "MinutesPlayed": 0,
               "MatchesPlayed": 26,
-              "StatValueCount": 25,
+              "StatValueCount": 26,
               "Rank": 19
             },
             {
@@ -7869,11 +7869,11 @@
               "ParticiantId": 0,
               "TeamId": 9769,
               "TeamColor": "#0783BD",
-              "StatValue": 23.3,
+              "StatValue": 23.5,
               "SubStatValue": 27,
               "MinutesPlayed": 0,
               "MatchesPlayed": 25,
-              "StatValueCount": 24,
+              "StatValueCount": 25,
               "Rank": 20
             }
           ],
@@ -8070,11 +8070,11 @@
               "ParticiantId": 0,
               "TeamId": 7733,
               "TeamColor": "#B81808",
-              "StatValue": 37.2,
+              "StatValue": 37.5,
               "SubStatValue": 37,
               "MinutesPlayed": 0,
               "MatchesPlayed": 26,
-              "StatValueCount": 25,
+              "StatValueCount": 26,
               "Rank": 15
             },
             {
@@ -8102,18 +8102,6 @@
               "Rank": 17
             },
             {
-              "ParticipantName": "Grêmio",
-              "ParticiantId": 0,
-              "TeamId": 9769,
-              "TeamColor": "#0783BD",
-              "StatValue": 40.3,
-              "SubStatValue": 32,
-              "MinutesPlayed": 0,
-              "MatchesPlayed": 25,
-              "StatValueCount": 24,
-              "Rank": 18
-            },
-            {
               "ParticipantName": "Coritiba",
               "ParticiantId": 0,
               "TeamId": 9767,
@@ -8123,6 +8111,18 @@
               "MinutesPlayed": 0,
               "MatchesPlayed": 26,
               "StatValueCount": 26,
+              "Rank": 18
+            },
+            {
+              "ParticipantName": "Grêmio",
+              "ParticiantId": 0,
+              "TeamId": 9769,
+              "TeamColor": "#0783BD",
+              "StatValue": 41,
+              "SubStatValue": 32,
+              "MinutesPlayed": 0,
+              "MatchesPlayed": 25,
+              "StatValueCount": 25,
               "Rank": 19
             },
             {
@@ -8367,12 +8367,12 @@
               "ParticiantId": 0,
               "TeamId": 7733,
               "TeamColor": "#B81808",
-              "StatValue": -13.3,
+              "StatValue": -12.8,
               "SubStatValue": -13,
               "MinutesPlayed": 0,
               "MatchesPlayed": 26,
               "StatValueCount": 1,
-              "Rank": 18
+              "Rank": 17
             },
             {
               "ParticipantName": "Chapecoense",
@@ -8391,7 +8391,7 @@
               "ParticiantId": 0,
               "TeamId": 9769,
               "TeamColor": "#0783BD",
-              "StatValue": -17,
+              "StatValue": -17.5,
               "SubStatValue": -5,
               "MinutesPlayed": 0,
               "MatchesPlayed": 25,

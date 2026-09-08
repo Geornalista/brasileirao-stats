@@ -1,0 +1,18 @@
+{
+  "match_id": 5103383,
+  "round": 2,
+  "date": "2026-02-04T23:00:00Z",
+  "finished": true,
+  "home": {
+    "id": 1626,
+    "name": "Remo",
+    "goals": 2,
+    "xg": 1.48
+  },
+  "away": {
+    "id": 163782,
+    "name": "Mirassol",
+    "goals": 2,
+    "xg": 1.76
+  }
+}

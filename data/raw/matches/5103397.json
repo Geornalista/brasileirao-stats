@@ -1,0 +1,18 @@
+{
+  "match_id": 5103397,
+  "round": 4,
+  "date": "2026-02-26T00:30:00Z",
+  "finished": true,
+  "home": {
+    "id": 10283,
+    "name": "Palmeiras",
+    "goals": 2,
+    "xg": 1.59
+  },
+  "away": {
+    "id": 9863,
+    "name": "Fluminense",
+    "goals": 1,
+    "xg": 1.23
+  }
+}

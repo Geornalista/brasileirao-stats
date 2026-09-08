@@ -1,0 +1,18 @@
+{
+  "match_id": 5103508,
+  "round": 15,
+  "date": "2026-05-10T21:30:00Z",
+  "finished": true,
+  "home": {
+    "id": 163782,
+    "name": "Mirassol",
+    "goals": 1,
+    "xg": 1.48
+  },
+  "away": {
+    "id": 197693,
+    "name": "Chapecoense",
+    "goals": 1,
+    "xg": 0.46
+  }
+}

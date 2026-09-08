@@ -1,0 +1,18 @@
+{
+  "match_id": 5103534,
+  "round": 18,
+  "date": "2026-05-30T19:00:00Z",
+  "finished": true,
+  "home": {
+    "id": 9770,
+    "name": "Flamengo",
+    "goals": 3,
+    "xg": 1.46
+  },
+  "away": {
+    "id": 9767,
+    "name": "Coritiba",
+    "goals": 0,
+    "xg": 0.83
+  }
+}

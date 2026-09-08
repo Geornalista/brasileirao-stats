@@ -1,0 +1,18 @@
+{
+  "match_id": 5103538,
+  "round": 18,
+  "date": "2026-05-31T14:00:00Z",
+  "finished": true,
+  "home": {
+    "id": 109705,
+    "name": "RB Bragantino",
+    "goals": 3,
+    "xg": 1.88
+  },
+  "away": {
+    "id": 8702,
+    "name": "Internacional",
+    "goals": 1,
+    "xg": 0.88
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "match_id": 5103389,
+  "round": 3,
+  "date": "2026-02-11T23:00:00Z",
+  "finished": true,
+  "home": {
+    "id": 10272,
+    "name": "Atlético-MG",
+    "goals": 3,
+    "xg": 2.75
+  },
+  "away": {
+    "id": 1626,
+    "name": "Remo",
+    "goals": 3,
+    "xg": 2.38
+  }
+}

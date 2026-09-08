@@ -1,0 +1,18 @@
+{
+  "match_id": 5103562,
+  "round": 20,
+  "date": "2026-07-25T21:30:00Z",
+  "finished": true,
+  "home": {
+    "id": 8514,
+    "name": "Santos",
+    "goals": 2,
+    "xg": 1.83
+  },
+  "away": {
+    "id": 197693,
+    "name": "Chapecoense",
+    "goals": 2,
+    "xg": 0.97
+  }
+}

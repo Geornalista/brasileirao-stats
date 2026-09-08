@@ -1,0 +1,18 @@
+{
+  "match_id": 5103580,
+  "round": 22,
+  "date": "2026-08-08T19:00:00Z",
+  "finished": true,
+  "home": {
+    "id": 9769,
+    "name": "Grêmio",
+    "goals": 2,
+    "xg": 1.45
+  },
+  "away": {
+    "id": 10277,
+    "name": "São Paulo",
+    "goals": 1,
+    "xg": 1.94
+  }
+}

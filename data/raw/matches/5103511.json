@@ -1,0 +1,18 @@
+{
+  "match_id": 5103511,
+  "round": 15,
+  "date": "2026-05-09T19:00:00Z",
+  "finished": true,
+  "home": {
+    "id": 9767,
+    "name": "Coritiba",
+    "goals": 2,
+    "xg": 0.55
+  },
+  "away": {
+    "id": 8702,
+    "name": "Internacional",
+    "goals": 2,
+    "xg": 3.35
+  }
+}

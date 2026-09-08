@@ -1,0 +1,18 @@
+{
+  "match_id": 5103539,
+  "round": 18,
+  "date": "2026-05-31T23:30:00Z",
+  "finished": true,
+  "home": {
+    "id": 9781,
+    "name": "Cruzeiro",
+    "goals": 1,
+    "xg": 1.11
+  },
+  "away": {
+    "id": 9863,
+    "name": "Fluminense",
+    "goals": 1,
+    "xg": 0.77
+  }
+}

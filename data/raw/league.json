@@ -125,8 +125,9 @@
             "stage": "26",
             "time": "08.09.2026 01:00",
             "status": "S",
-            "sId": 2,
+            "sId": 3,
             "gs": "08.09.2026 01:02:04",
+            "shs": "08.09.2026 02:07:37",
             "extId": "ls_19tqwwl9je4prxbyucu3fhmac"
           }
         ],
@@ -357,8 +358,9 @@
                 "stage": "26",
                 "time": "08.09.2026 01:00",
                 "status": "S",
-                "sId": 2,
+                "sId": 3,
                 "gs": "08.09.2026 01:02:04",
+                "shs": "08.09.2026 02:07:37",
                 "extId": "ls_19tqwwl9je4prxbyucu3fhmac"
               },
               "played": 26,
@@ -388,8 +390,9 @@
                 "stage": "26",
                 "time": "08.09.2026 01:00",
                 "status": "S",
-                "sId": 2,
+                "sId": 3,
                 "gs": "08.09.2026 01:02:04",
+                "shs": "08.09.2026 02:07:37",
                 "extId": "ls_19tqwwl9je4prxbyucu3fhmac"
               },
               "played": 25,
@@ -569,8 +572,9 @@
                 "stage": "26",
                 "time": "08.09.2026 01:00",
                 "status": "S",
-                "sId": 2,
+                "sId": 3,
                 "gs": "08.09.2026 01:02:04",
+                "shs": "08.09.2026 02:07:37",
                 "extId": "ls_19tqwwl9je4prxbyucu3fhmac"
               },
               "played": 13,
@@ -635,8 +639,9 @@
                 "stage": "26",
                 "time": "08.09.2026 01:00",
                 "status": "S",
-                "sId": 2,
+                "sId": 3,
                 "gs": "08.09.2026 01:02:04",
+                "shs": "08.09.2026 02:07:37",
                 "extId": "ls_19tqwwl9je4prxbyucu3fhmac"
               },
               "played": 12,
@@ -1179,8 +1184,9 @@
                 "stage": "26",
                 "time": "08.09.2026 01:00",
                 "status": "S",
-                "sId": 2,
+                "sId": 3,
                 "gs": "08.09.2026 01:02:04",
+                "shs": "08.09.2026 02:07:37",
                 "extId": "ls_19tqwwl9je4prxbyucu3fhmac"
               },
               "played": 13,
@@ -1211,8 +1217,9 @@
                 "stage": "26",
                 "time": "08.09.2026 01:00",
                 "status": "S",
-                "sId": 2,
+                "sId": 3,
                 "gs": "08.09.2026 01:02:04",
+                "shs": "08.09.2026 02:07:37",
                 "extId": "ls_19tqwwl9je4prxbyucu3fhmac"
               },
               "played": 13,
@@ -1423,8 +1430,9 @@
                 "stage": "26",
                 "time": "08.09.2026 01:00",
                 "status": "S",
-                "sId": 2,
+                "sId": 3,
                 "gs": "08.09.2026 01:02:04",
+                "shs": "08.09.2026 02:07:37",
                 "extId": "ls_19tqwwl9je4prxbyucu3fhmac"
               },
               "idx": 11,
@@ -1557,8 +1565,9 @@
                 "stage": "26",
                 "time": "08.09.2026 01:00",
                 "status": "S",
-                "sId": 2,
+                "sId": 3,
                 "gs": "08.09.2026 01:02:04",
+                "shs": "08.09.2026 02:07:37",
                 "extId": "ls_19tqwwl9je4prxbyucu3fhmac"
               },
               "idx": 18,
@@ -2006,8 +2015,9 @@
                 "stage": "26",
                 "time": "08.09.2026 01:00",
                 "status": "S",
-                "sId": 2,
+                "sId": 3,
                 "gs": "08.09.2026 01:02:04",
+                "shs": "08.09.2026 02:07:37",
                 "extId": "ls_19tqwwl9je4prxbyucu3fhmac"
               },
               "played": 26,
@@ -2019,13 +2029,13 @@
               "pts": 30,
               "teamId": 7733,
               "teamName": "Vitória",
-              "xg": 24.0129,
-              "xgConceded": 37.2424,
-              "xPoints": 27.967969877372365,
+              "xg": 24.670899999999996,
+              "xgConceded": 37.46430000000001,
+              "xPoints": 28.671789642533195,
               "position": 16,
-              "xgDiff": -0.012899999999998357,
-              "xgConcededDiff": -0.2424000000000035,
-              "xPointsDiff": 2.032030122627635,
+              "xgDiff": -0.670899999999996,
+              "xgConcededDiff": -0.4643000000000086,
+              "xPointsDiff": 1.328210357466805,
               "xPosition": 16,
               "idx": 16,
               "xPositionDiff": -2,
@@ -2125,8 +2135,9 @@
                 "stage": "26",
                 "time": "08.09.2026 01:00",
                 "status": "S",
-                "sId": 2,
+                "sId": 3,
                 "gs": "08.09.2026 01:02:04",
+                "shs": "08.09.2026 02:07:37",
                 "extId": "ls_19tqwwl9je4prxbyucu3fhmac"
               },
               "played": 25,
@@ -2138,13 +2149,13 @@
               "pts": 29,
               "teamId": 9769,
               "teamName": "Grêmio",
-              "xg": 23.3032,
-              "xgConceded": 40.3259,
-              "xPoints": 24.20020626306014,
+              "xg": 23.525100000000002,
+              "xgConceded": 40.98389999999999,
+              "xPoints": 24.002550644060236,
               "position": 20,
-              "xgDiff": 3.6967999999999996,
-              "xgConcededDiff": -8.325899999999997,
-              "xPointsDiff": 4.799793736939861,
+              "xgDiff": 3.474899999999998,
+              "xgConcededDiff": -8.983899999999991,
+              "xPointsDiff": 4.997449355939764,
               "xPosition": 20,
               "idx": 20,
               "xPositionDiff": -5,
@@ -8998,8 +9009,9 @@
               "stage": "26",
               "time": "08.09.2026 01:00",
               "status": "S",
-              "sId": 2,
+              "sId": 3,
               "gs": "08.09.2026 01:02:04",
+              "shs": "08.09.2026 02:07:37",
               "extId": "ls_19tqwwl9je4prxbyucu3fhmac"
             }
           ],
@@ -9230,8 +9242,9 @@
                   "stage": "26",
                   "time": "08.09.2026 01:00",
                   "status": "S",
-                  "sId": 2,
+                  "sId": 3,
                   "gs": "08.09.2026 01:02:04",
+                  "shs": "08.09.2026 02:07:37",
                   "extId": "ls_19tqwwl9je4prxbyucu3fhmac"
                 },
                 "played": 26,
@@ -9261,8 +9274,9 @@
                   "stage": "26",
                   "time": "08.09.2026 01:00",
                   "status": "S",
-                  "sId": 2,
+                  "sId": 3,
                   "gs": "08.09.2026 01:02:04",
+                  "shs": "08.09.2026 02:07:37",
                   "extId": "ls_19tqwwl9je4prxbyucu3fhmac"
                 },
                 "played": 25,
@@ -9442,8 +9456,9 @@
                   "stage": "26",
                   "time": "08.09.2026 01:00",
                   "status": "S",
-                  "sId": 2,
+                  "sId": 3,
                   "gs": "08.09.2026 01:02:04",
+                  "shs": "08.09.2026 02:07:37",
                   "extId": "ls_19tqwwl9je4prxbyucu3fhmac"
                 },
                 "played": 13,
@@ -9508,8 +9523,9 @@
                   "stage": "26",
                   "time": "08.09.2026 01:00",
                   "status": "S",
-                  "sId": 2,
+                  "sId": 3,
                   "gs": "08.09.2026 01:02:04",
+                  "shs": "08.09.2026 02:07:37",
                   "extId": "ls_19tqwwl9je4prxbyucu3fhmac"
                 },
                 "played": 12,
@@ -10052,8 +10068,9 @@
                   "stage": "26",
                   "time": "08.09.2026 01:00",
                   "status": "S",
-                  "sId": 2,
+                  "sId": 3,
                   "gs": "08.09.2026 01:02:04",
+                  "shs": "08.09.2026 02:07:37",
                   "extId": "ls_19tqwwl9je4prxbyucu3fhmac"
                 },
                 "played": 13,
@@ -10084,8 +10101,9 @@
                   "stage": "26",
                   "time": "08.09.2026 01:00",
                   "status": "S",
-                  "sId": 2,
+                  "sId": 3,
                   "gs": "08.09.2026 01:02:04",
+                  "shs": "08.09.2026 02:07:37",
                   "extId": "ls_19tqwwl9je4prxbyucu3fhmac"
                 },
                 "played": 13,
@@ -10296,8 +10314,9 @@
                   "stage": "26",
                   "time": "08.09.2026 01:00",
                   "status": "S",
-                  "sId": 2,
+                  "sId": 3,
                   "gs": "08.09.2026 01:02:04",
+                  "shs": "08.09.2026 02:07:37",
                   "extId": "ls_19tqwwl9je4prxbyucu3fhmac"
                 },
                 "idx": 11,
@@ -10430,8 +10449,9 @@
                   "stage": "26",
                   "time": "08.09.2026 01:00",
                   "status": "S",
-                  "sId": 2,
+                  "sId": 3,
                   "gs": "08.09.2026 01:02:04",
+                  "shs": "08.09.2026 02:07:37",
                   "extId": "ls_19tqwwl9je4prxbyucu3fhmac"
                 },
                 "idx": 18,
@@ -10879,8 +10899,9 @@
                   "stage": "26",
                   "time": "08.09.2026 01:00",
                   "status": "S",
-                  "sId": 2,
+                  "sId": 3,
                   "gs": "08.09.2026 01:02:04",
+                  "shs": "08.09.2026 02:07:37",
                   "extId": "ls_19tqwwl9je4prxbyucu3fhmac"
                 },
                 "played": 26,
@@ -10892,13 +10913,13 @@
                 "pts": 30,
                 "teamId": 7733,
                 "teamName": "Vitória",
-                "xg": 24.0129,
-                "xgConceded": 37.2424,
-                "xPoints": 27.967969877372365,
+                "xg": 24.670899999999996,
+                "xgConceded": 37.46430000000001,
+                "xPoints": 28.671789642533195,
                 "position": 16,
-                "xgDiff": -0.012899999999998357,
-                "xgConcededDiff": -0.2424000000000035,
-                "xPointsDiff": 2.032030122627635,
+                "xgDiff": -0.670899999999996,
+                "xgConcededDiff": -0.4643000000000086,
+                "xPointsDiff": 1.328210357466805,
                 "xPosition": 16,
                 "idx": 16,
                 "xPositionDiff": -2,
@@ -10998,8 +11019,9 @@
                   "stage": "26",
                   "time": "08.09.2026 01:00",
                   "status": "S",
-                  "sId": 2,
+                  "sId": 3,
                   "gs": "08.09.2026 01:02:04",
+                  "shs": "08.09.2026 02:07:37",
                   "extId": "ls_19tqwwl9je4prxbyucu3fhmac"
                 },
                 "played": 25,
@@ -11011,13 +11033,13 @@
                 "pts": 29,
                 "teamId": 9769,
                 "teamName": "Grêmio",
-                "xg": 23.3032,
-                "xgConceded": 40.3259,
-                "xPoints": 24.20020626306014,
+                "xg": 23.525100000000002,
+                "xgConceded": 40.98389999999999,
+                "xPoints": 24.002550644060236,
                 "position": 20,
-                "xgDiff": 3.6967999999999996,
-                "xgConcededDiff": -8.325899999999997,
-                "xPointsDiff": 4.799793736939861,
+                "xgDiff": 3.474899999999998,
+                "xgConcededDiff": -8.983899999999991,
+                "xPointsDiff": 4.997449355939764,
                 "xPosition": 20,
                 "idx": 20,
                 "xPositionDiff": -5,
@@ -24450,7 +24472,8 @@
         "status": {
           "utcTime": "2026-09-07T23:00:00.000Z",
           "halfs": {
-            "firstHalfStarted": "08.09.2026 01:02:04"
+            "firstHalfStarted": "08.09.2026 01:02:04",
+            "secondHalfStarted": "08.09.2026 02:07:37"
           },
           "periodLength": 45,
           "finished": false,
@@ -24459,12 +24482,12 @@
           "ongoing": true,
           "scoreStr": "0 - 0",
           "liveTime": {
-            "short": "8‎’‎",
+            "short": "59‎’‎",
             "shortKey": "",
-            "long": "7:03",
+            "long": "58:11",
             "longKey": "",
-            "maxTime": 45,
-            "basePeriod": 45,
+            "maxTime": 90,
+            "basePeriod": 90,
             "addedTime": 0
           }
         }
@@ -36118,7 +36141,8 @@
           "status": {
             "utcTime": "2026-09-07T23:00:00.000Z",
             "halfs": {
-              "firstHalfStarted": "08.09.2026 01:02:04"
+              "firstHalfStarted": "08.09.2026 01:02:04",
+              "secondHalfStarted": "08.09.2026 02:07:37"
             },
             "periodLength": 45,
             "finished": false,
@@ -36127,12 +36151,12 @@
             "ongoing": true,
             "scoreStr": "0 - 0",
             "liveTime": {
-              "short": "8‎’‎",
+              "short": "59‎’‎",
               "shortKey": "",
-              "long": "7:03",
+              "long": "58:11",
               "longKey": "",
-              "maxTime": 45,
-              "basePeriod": 45,
+              "maxTime": 90,
+              "basePeriod": 90,
               "addedTime": 0
             }
           }
@@ -41412,11 +41436,11 @@
             }
           },
           {
-            "id": 124130,
-            "name": "Léo Vieira",
+            "id": 267826,
+            "name": "Weverton",
             "rank": 3,
-            "teamId": 7877,
-            "teamName": "Bahia",
+            "teamId": 9769,
+            "teamName": "Grêmio",
             "value": 7.9,
             "stat": {
               "name": "ball_recovery",
@@ -41425,9 +41449,9 @@
               "fractions": 1
             },
             "teamColors": {
-              "darkMode": "#1D669E",
-              "lightMode": "#044879",
-              "fontDarkMode": "rgba(255, 255, 255, 1.0)",
+              "darkMode": "#2ebaf2",
+              "lightMode": "#0783BD",
+              "fontDarkMode": "rgba(29, 29, 29, 1.0)",
               "fontLightMode": "rgba(255, 255, 255, 1.0)"
             }
           }
@@ -41733,10 +41757,10 @@
             "rank": 2,
             "teamId": 7733,
             "teamName": "Vitória",
-            "value": 3.8,
+            "value": 4,
             "stat": {
               "name": "saves",
-              "value": 3.8,
+              "value": 4,
               "format": "fraction",
               "fractions": 1
             },
@@ -41776,15 +41800,15 @@
       {
         "header": "Goals prevented",
         "participant": {
-          "id": 124130,
-          "name": "Léo Vieira",
+          "id": 267826,
+          "name": "Weverton",
           "rank": 1,
-          "teamId": 7877,
-          "teamName": "Bahia",
-          "value": 5.7,
+          "teamId": 9769,
+          "teamName": "Grêmio",
+          "value": 5.9,
           "stat": {
             "name": "_goals_prevented",
-            "value": 5.7,
+            "value": 5.9,
             "format": "fraction",
             "fractions": 1
           }
@@ -41792,9 +41816,29 @@
         "fetchAllUrl": "https://data.fotmob.com/stats/268/season/1000000388/_goals_prevented.json",
         "topThree": [
           {
+            "id": 267826,
+            "name": "Weverton",
+            "rank": 1,
+            "teamId": 9769,
+            "teamName": "Grêmio",
+            "value": 5.9,
+            "stat": {
+              "name": "_goals_prevented",
+              "value": 5.9,
+              "format": "fraction",
+              "fractions": 1
+            },
+            "teamColors": {
+              "darkMode": "#2ebaf2",
+              "lightMode": "#0783BD",
+              "fontDarkMode": "rgba(29, 29, 29, 1.0)",
+              "fontLightMode": "rgba(255, 255, 255, 1.0)"
+            }
+          },
+          {
             "id": 124130,
             "name": "Léo Vieira",
-            "rank": 1,
+            "rank": 2,
             "teamId": 7877,
             "teamName": "Bahia",
             "value": 5.7,
@@ -41814,7 +41858,7 @@
           {
             "id": 812077,
             "name": "Ronaldo",
-            "rank": 2,
+            "rank": 3,
             "teamId": 7877,
             "teamName": "Bahia",
             "value": 5.2,
@@ -41828,26 +41872,6 @@
               "darkMode": "#1D669E",
               "lightMode": "#044879",
               "fontDarkMode": "rgba(255, 255, 255, 1.0)",
-              "fontLightMode": "rgba(255, 255, 255, 1.0)"
-            }
-          },
-          {
-            "id": 267826,
-            "name": "Weverton",
-            "rank": 3,
-            "teamId": 9769,
-            "teamName": "Grêmio",
-            "value": 4.9,
-            "stat": {
-              "name": "_goals_prevented",
-              "value": 4.9,
-              "format": "fraction",
-              "fractions": 1
-            },
-            "teamColors": {
-              "darkMode": "#2ebaf2",
-              "lightMode": "#0783BD",
-              "fontDarkMode": "rgba(29, 29, 29, 1.0)",
               "fontLightMode": "rgba(255, 255, 255, 1.0)"
             }
           }
@@ -43116,10 +43140,10 @@
             "name": "Grêmio",
             "rank": 2,
             "teamId": 9769,
-            "value": 26.1,
+            "value": 26.8,
             "stat": {
               "name": "accurate_long_balls_team",
-              "value": 26.1,
+              "value": 26.8,
               "format": "fraction",
               "fractions": 1
             },
@@ -43772,20 +43796,20 @@
           },
           {
             "id": 0,
-            "name": "Botafogo",
+            "name": "Vitória",
             "rank": 3,
-            "teamId": 8517,
-            "value": 15.9,
+            "teamId": 7733,
+            "value": 16.1,
             "stat": {
               "name": "total_tackle_team",
-              "value": 15.9,
+              "value": 16.1,
               "format": "fraction",
               "fractions": 1
             },
             "teamColors": {
-              "darkMode": "#ffffff",
-              "lightMode": "#181818",
-              "fontDarkMode": "rgba(29, 29, 29, 1.0)",
+              "darkMode": "#FF1000",
+              "lightMode": "#B81808",
+              "fontDarkMode": "rgba(255, 255, 255, 1.0)",
               "fontLightMode": "rgba(255, 255, 255, 1.0)"
             }
           }
@@ -52413,7 +52437,8 @@
         "status": {
           "utcTime": "2026-09-07T23:00:00.000Z",
           "halfs": {
-            "firstHalfStarted": "08.09.2026 01:02:04"
+            "firstHalfStarted": "08.09.2026 01:02:04",
+            "secondHalfStarted": "08.09.2026 02:07:37"
           },
           "periodLength": 45,
           "finished": false,
@@ -52422,12 +52447,12 @@
           "ongoing": true,
           "scoreStr": "0 - 0",
           "liveTime": {
-            "short": "8‎’‎",
+            "short": "59‎’‎",
             "shortKey": "",
-            "long": "7:03",
+            "long": "58:11",
             "longKey": "",
-            "maxTime": 45,
-            "basePeriod": 45,
+            "maxTime": 90,
+            "basePeriod": 90,
             "addedTime": 0
           }
         }

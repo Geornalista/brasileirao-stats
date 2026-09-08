@@ -1,0 +1,18 @@
+{
+  "match_id": 5103586,
+  "round": 23,
+  "date": "2026-08-16T00:00:00Z",
+  "finished": true,
+  "home": {
+    "id": 10277,
+    "name": "São Paulo",
+    "goals": 1,
+    "xg": 1.12
+  },
+  "away": {
+    "id": 9767,
+    "name": "Coritiba",
+    "goals": 1,
+    "xg": 0.41
+  }
+}

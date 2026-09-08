@@ -1,0 +1,18 @@
+{
+  "match_id": 5103533,
+  "round": 17,
+  "date": "2026-05-24T19:00:00Z",
+  "finished": true,
+  "home": {
+    "id": 1626,
+    "name": "Remo",
+    "goals": 1,
+    "xg": 0.36
+  },
+  "away": {
+    "id": 10273,
+    "name": "Athletico Paranaense",
+    "goals": 2,
+    "xg": 1.92
+  }
+}
