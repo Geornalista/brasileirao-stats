@@ -3,9 +3,6 @@ name: Atualizar Dados do Brasileirao
 on:
   workflow_dispatch:
 
-  schedule:
-    - cron: "0 5 * * *"
-
 permissions:
   contents: write
 
@@ -22,7 +19,7 @@ jobs:
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 20
 
       - name: Verificar versao do Node
         run: node --version
