@@ -3,7 +3,7 @@
     "source": "FotMob",
     "league_id": 268,
     "season": 2026,
-    "fetched_at": "2026-09-08T00:24:59.780Z"
+    "fetched_at": "2026-09-08T00:39:13.431Z"
   },
   "competition": {
     "league_id": 268,
@@ -5187,7 +5187,7 @@
       "started": true,
       "cancelled": false,
       "score": {
-        "home": 0,
+        "home": 1,
         "away": 0
       },
       "home": {
@@ -7622,8 +7622,8 @@
   ],
   "match_details": {
     "total": 255,
-    "cached": 0,
-    "downloaded": 255,
+    "cached": 255,
+    "downloaded": 0,
     "errors": 0
   },
   "stats": {
@@ -7857,8 +7857,8 @@
               "ParticiantId": 0,
               "TeamId": 7733,
               "TeamColor": "#B81808",
-              "StatValue": 24.7,
-              "SubStatValue": 24,
+              "StatValue": 25.3,
+              "SubStatValue": 25,
               "MinutesPlayed": 0,
               "MatchesPlayed": 26,
               "StatValueCount": 26,
@@ -8118,8 +8118,8 @@
               "ParticiantId": 0,
               "TeamId": 9769,
               "TeamColor": "#0783BD",
-              "StatValue": 41,
-              "SubStatValue": 32,
+              "StatValue": 41.6,
+              "SubStatValue": 33,
               "MinutesPlayed": 0,
               "MatchesPlayed": 25,
               "StatValueCount": 25,
@@ -8339,6 +8339,18 @@
               "Rank": 15
             },
             {
+              "ParticipantName": "Vitória",
+              "ParticiantId": 0,
+              "TeamId": 7733,
+              "TeamColor": "#B81808",
+              "StatValue": -12.2,
+              "SubStatValue": -12,
+              "MinutesPlayed": 0,
+              "MatchesPlayed": 26,
+              "StatValueCount": 1,
+              "Rank": 16
+            },
+            {
               "ParticipantName": "Coritiba",
               "ParticiantId": 0,
               "TeamId": 9767,
@@ -8348,7 +8360,7 @@
               "MinutesPlayed": 0,
               "MatchesPlayed": 26,
               "StatValueCount": 1,
-              "Rank": 16
+              "Rank": 17
             },
             {
               "ParticipantName": "Remo",
@@ -8360,19 +8372,7 @@
               "MinutesPlayed": 0,
               "MatchesPlayed": 26,
               "StatValueCount": 1,
-              "Rank": 17
-            },
-            {
-              "ParticipantName": "Vitória",
-              "ParticiantId": 0,
-              "TeamId": 7733,
-              "TeamColor": "#B81808",
-              "StatValue": -12.8,
-              "SubStatValue": -13,
-              "MinutesPlayed": 0,
-              "MatchesPlayed": 26,
-              "StatValueCount": 1,
-              "Rank": 17
+              "Rank": 18
             },
             {
               "ParticipantName": "Chapecoense",
@@ -8391,8 +8391,8 @@
               "ParticiantId": 0,
               "TeamId": 9769,
               "TeamColor": "#0783BD",
-              "StatValue": -17.5,
-              "SubStatValue": -5,
+              "StatValue": -18.1,
+              "SubStatValue": -6,
               "MinutesPlayed": 0,
               "MatchesPlayed": 25,
               "StatValueCount": 1,
