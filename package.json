@@ -1,12 +1,14 @@
 {
-  "name": "fotmob-brasileirao",
+  "name": "brasileirao-stats",
   "version": "1.0.0",
   "description": "Coleta e processamento de dados do Campeonato Brasileiro",
   "type": "module",
 
   "scripts": {
     "fetch": "node fetch-fotmob.js",
-    "process": "node process-stats.js"
+    "process": "node process-stats.js",
+    "update": "node fetch-fotmob.js && node process-stats.js",
+    "serve": "python3 -m http.server 8080"
   },
 
   "dependencies": {}

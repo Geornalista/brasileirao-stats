@@ -13,6 +13,7 @@ const DATA_DIR = path.join(__dirname, "data");
 const RAW_DIR = path.join(DATA_DIR, "raw");
 const PROCESSED_DIR = path.join(DATA_DIR, "processed");
 const APP_DIR = path.join(DATA_DIR, "app");
+const MATCHES_DIR = path.join(RAW_DIR, "matches");
 
 const SEASON = 2026;
 
@@ -279,6 +280,10 @@ function finalizeStats(stats) {
     games
   );
 
+  stats.xg_total = round(stats.xg_total, 2);
+  stats.xga_total = round(stats.xga_total, 2);
+  stats.xgd_total = round(stats.xgd_total, 2);
+
   stats.xg = average(stats.xg_total, games);
   stats.xga = average(stats.xga_total, games);
   stats.xgd = average(stats.xgd_total, games);
@@ -324,29 +329,51 @@ function getAwayTeam(match) {
 }
 
 function getHomeGoals(match) {
-  return toNumber(
-    getNestedValue(match, [
-      "homeScore",
-      "home_score",
-      "score.home",
-      "score.homeScore.current",
-      "result.home",
-      "goals.home"
-    ])
-  );
+  const v = getNestedValue(match, [
+    "score.home",
+    "home.goals",
+    "homeScore",
+    "home_score",
+    "score.homeScore.current",
+    "result.home",
+    "goals.home"
+  ]);
+
+  if (v === null || v === undefined || v === "") {
+    return null;
+  }
+
+  const num = Number(v);
+  return Number.isFinite(num) ? num : null;
 }
 
 function getAwayGoals(match) {
-  return toNumber(
-    getNestedValue(match, [
-      "awayScore",
-      "away_score",
-      "score.away",
-      "score.awayScore.current",
-      "result.away",
-      "goals.away"
-    ])
-  );
+  const v = getNestedValue(match, [
+    "score.away",
+    "away.goals",
+    "awayScore",
+    "away_score",
+    "score.awayScore.current",
+    "result.away",
+    "goals.away"
+  ]);
+
+  if (v === null || v === undefined || v === "") {
+    return null;
+  }
+
+  const num = Number(v);
+  return Number.isFinite(num) ? num : null;
+}
+
+function isMatchFinished(match) {
+  if (!match) return false;
+  if (match.cancelled === true) return false;
+  if (match.finished === true) return true;
+  if (match.status && (match.status.finished === true || match.status.type === "finished")) return true;
+  const h = getHomeGoals(match);
+  const a = getAwayGoals(match);
+  return h !== null && a !== null;
 }
 
 function getRound(match) {
@@ -388,32 +415,44 @@ function getDate(match) {
    EXTRAÇÃO DE xG
 ============================================================ */
 
-function getHomeXG(match) {
-  return toNumber(
-    getNestedValue(match, [
-      "homeXg",
-      "home_xg",
-      "xg.home",
-      "stats.home.xg",
-      "statistics.home.xg",
-      "expectedGoals.home",
-      "homeExpectedGoals"
-    ])
-  );
+function getHomeXG(match, details = null) {
+  const val = getNestedValue(details || {}, [
+    "home.xg",
+    "home_xg",
+    "homeXg",
+    "xg.home"
+  ]) ?? getNestedValue(match, [
+    "home.xg",
+    "home_xg",
+    "homeXg",
+    "xg.home",
+    "stats.home.xg",
+    "statistics.home.xg",
+    "expectedGoals.home",
+    "homeExpectedGoals"
+  ]);
+
+  return toNumber(val, 0);
 }
 
-function getAwayXG(match) {
-  return toNumber(
-    getNestedValue(match, [
-      "awayXg",
-      "away_xg",
-      "xg.away",
-      "stats.away.xg",
-      "statistics.away.xg",
-      "expectedGoals.away",
-      "awayExpectedGoals"
-    ])
-  );
+function getAwayXG(match, details = null) {
+  const val = getNestedValue(details || {}, [
+    "away.xg",
+    "away_xg",
+    "awayXg",
+    "xg.away"
+  ]) ?? getNestedValue(match, [
+    "away.xg",
+    "away_xg",
+    "awayXg",
+    "xg.away",
+    "stats.away.xg",
+    "statistics.away.xg",
+    "expectedGoals.away",
+    "awayExpectedGoals"
+  ]);
+
+  return toNumber(val, 0);
 }
 
 /* ============================================================
@@ -821,8 +860,13 @@ const teams = {};
 const history = {};
 
 let processedMatches = 0;
+const validFinishedMatches = [];
 
 for (const match of matches) {
+  if (!isMatchFinished(match)) {
+    continue;
+  }
+
   const homeTeam = getHomeTeam(match);
   const awayTeam = getAwayTeam(match);
 
@@ -836,15 +880,19 @@ for (const match of matches) {
   /*
     Ignora partidas sem placar válido.
   */
-
-  if (
-    homeGoals === null ||
-    awayGoals === null ||
-    homeGoals === undefined ||
-    awayGoals === undefined
-  ) {
+  if (homeGoals === null || awayGoals === null) {
     continue;
   }
+
+  const matchId = match.match_id || match.id;
+  let details = null;
+  if (matchId) {
+    const detailsPath = path.join(MATCHES_DIR, `${matchId}.json`);
+    details = readJSON(detailsPath, null);
+  }
+
+  const homeXG = getHomeXG(match, details);
+  const awayXG = getAwayXG(match, details);
 
   if (!teams[homeTeam]) {
     teams[homeTeam] = createTeam(homeTeam);
@@ -861,9 +909,6 @@ for (const match of matches) {
   if (!history[awayTeam]) {
     history[awayTeam] = [];
   }
-
-  const homeXG = getHomeXG(match);
-  const awayXG = getAwayXG(match);
 
   /*
     HOME TEAM
@@ -938,6 +983,16 @@ for (const match of matches) {
       homeXG
     )
   );
+
+  validFinishedMatches.push({
+    match,
+    homeTeam,
+    awayTeam,
+    homeGoals,
+    awayGoals,
+    homeXG,
+    awayXG
+  });
 
   processedMatches++;
 }
@@ -1020,33 +1075,12 @@ Object.entries(history).forEach(
 
 const leagueStats = createEmptyStats();
 
-Object.values(teams).forEach((team) => {
-  /*
-    Não somamos diretamente os stats de cada equipe,
-    pois isso duplicaria os jogos da liga.
-
-    A liga é calculada novamente a partir das partidas.
-  */
-});
-
-for (const match of matches) {
-  const homeTeam = getHomeTeam(match);
-  const awayTeam = getAwayTeam(match);
-
-  if (!homeTeam || !awayTeam) {
-    continue;
-  }
-
-  const homeGoals = getHomeGoals(match);
-  const awayGoals = getAwayGoals(match);
-
-  const homeXG = getHomeXG(match);
-  const awayXG = getAwayXG(match);
+for (const item of validFinishedMatches) {
+  const { homeGoals, awayGoals, homeXG, awayXG } = item;
 
   leagueStats.games++;
 
-  const totalGoals =
-    homeGoals + awayGoals;
+  const totalGoals = homeGoals + awayGoals;
 
   leagueStats.total_goals += totalGoals;
   leagueStats.goals_for += totalGoals;
@@ -1067,25 +1101,16 @@ for (const match of matches) {
     leagueStats.over_35_count++;
   }
 
-  if (
-    homeGoals > 0 &&
-    awayGoals > 0
-  ) {
+  if (homeGoals > 0 && awayGoals > 0) {
     leagueStats.btts_count++;
   }
 
-  if (
-    homeGoals === 0 &&
-    awayGoals === 0
-  ) {
+  if (homeGoals === 0 && awayGoals === 0) {
     leagueStats.zero_zero_count++;
   }
 
-  leagueStats.xg_total +=
-    homeXG + awayXG;
-
-  leagueStats.xga_total +=
-    homeXG + awayXG;
+  leagueStats.xg_total += homeXG + awayXG;
+  leagueStats.xga_total += homeXG + awayXG;
 }
 
 finalizeStats(leagueStats);
