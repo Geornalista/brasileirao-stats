@@ -1576,101 +1576,49 @@ let currentTab = "overview";
    DATA
 ============================================================ */
 
-function normalizeAppData(data) {
-    if (!data || typeof data !== "object") {
-        return null;
-    }
-
-    let teams = [];
-
-    if (Array.isArray(data.teams)) {
-        teams = data.teams;
-    } else if (Array.isArray(data.team_stats)) {
-        teams = data.team_stats;
-    } else if (Array.isArray(data.equipes)) {
-        teams = data.equipes;
-    } else if (data.data && Array.isArray(data.data.teams)) {
-        teams = data.data.teams;
-    }
-
-    if (!teams.length) {
-        return null;
-    }
-
-    return {
-        ...data,
-        teams
-    };
-}
-
 async function loadData() {
 
-    const paths = [
-        "./data/app/brasileirao_stats_2026.json",
-        "data/app/brasileirao_stats_2026.json"
-    ];
+    try {
 
-    let lastError = null;
+        const response = await fetch(
+            "./data/app/brasileirao_stats_2026.json"
+        );
 
-    for (const path of paths) {
-        try {
-            const url = new URL(path, window.location.href);
-            url.searchParams.set("v", Date.now().toString());
+        if (!response.ok) {
 
-            const response = await fetch(url.href, {
-                cache: "no-store",
-                headers: {
-                    "Accept": "application/json"
-                }
-            });
+            throw new Error(
+                "Arquivo de dados não encontrado."
+            );
 
-            if (!response.ok) {
-                throw new Error(`HTTP ${response.status}`);
-            }
-
-            const rawData = await response.json();
-            const normalized = normalizeAppData(rawData);
-
-            if (!normalized) {
-                console.error("Estrutura JSON recebida:", rawData);
-                throw new Error("JSON carregado, mas nenhuma lista válida de equipes foi encontrada.");
-            }
-
-            appData = normalized;
-            initializeApp();
-            return;
-
-        } catch (error) {
-            lastError = error;
-            console.warn("Falha ao carregar dados por", path, error);
         }
+
+        appData =
+            await response.json();
+
+        initializeApp();
+
     }
 
-    console.error("Erro ao carregar Brasileirao Stats:", lastError);
+    catch(error) {
 
-    const loading = document.getElementById("loading");
-    const app = document.getElementById("app");
+        console.error(error);
 
-    if (app) {
-        app.style.display = "none";
-    }
+        document.getElementById(
+            "loading"
+        ).innerHTML = `
 
-    if (loading) {
-        loading.style.display = "flex";
-        loading.innerHTML = `
-            <div style="max-width:700px;text-align:center;background:#121b25;border:1px solid #253444;border-radius:14px;padding:24px;">
-                <div style="color:#ef4444;font-weight:800;font-size:18px;margin-bottom:10px;">
-                    Erro ao carregar os dados
-                </div>
-                <div style="color:#94a3b8;line-height:1.6">
-                    ${lastError?.message || "Erro desconhecido."}
-                </div>
-                <div style="margin-top:12px;color:#64748b;font-size:12px;">
-                    Não foi possível obter dados válidos em data/app/brasileirao_stats_2026.json.
-                </div>
+            <div style="color:#ef4444">
+                Erro ao carregar dados
             </div>
+
+            <div>
+                ${error.message}
+            </div>
+
         `;
+
     }
+
 }
 
 
@@ -1690,32 +1638,26 @@ function initializeApp() {
     ).style.display = "block";
 
 
-    const metadata =
-        appData.metadata || {};
-
     document.getElementById(
         "seasonLabel"
     ).textContent =
 
-        `${metadata.competition || "Campeonato Brasileiro"}${metadata.season ? " " + metadata.season : ""}`;
+        `${appData.metadata.competition}
+         ${appData.metadata.season}`;
 
-
-    const generatedAt =
-        metadata.generated_at;
 
     const date =
-        generatedAt
-            ? new Date(generatedAt)
-            : null;
+        new Date(
+            appData.metadata.generated_at
+        );
 
 
     document.getElementById(
         "updatedLabel"
     ).textContent =
 
-        date && !Number.isNaN(date.getTime())
-            ? `Atualizado: ${date.toLocaleString("pt-BR")}`
-            : "Dados carregados";
+        `Atualizado:
+         ${date.toLocaleString("pt-BR")}`;
 
 
     renderHero();
@@ -1800,7 +1742,7 @@ function renderHero() {
         <div class="hero-stat">
 
             <div class="hero-stat-value">
-                ${s.over_25?.percentage ?? 0}%
+                ${s.over_25}%
             </div>
 
             <div class="hero-stat-label">
@@ -1813,7 +1755,7 @@ function renderHero() {
         <div class="hero-stat">
 
             <div class="hero-stat-value">
-                ${s.btts?.percentage ?? 0}%
+                ${s.btts}%
             </div>
 
             <div class="hero-stat-label">
@@ -2106,7 +2048,7 @@ function createSummaryCards() {
                 formatNumber(
                     avg(
                         s =>
-                            (Number(s.avg_total_goals) || (Number(s.avg_goals_for) || 0) + (Number(s.avg_goals_against) || 0))
+                            s.avg_total_goals
                     )
                 )
             )}
@@ -2360,7 +2302,7 @@ function renderOverview() {
             ${createRanking(
                 "Média de Gols",
                 s =>
-                    (Number(s.avg_total_goals) || (Number(s.avg_goals_for) || 0) + (Number(s.avg_goals_against) || 0)),
+                    s.avg_total_goals,
                 v =>
                     formatNumber(v)
             )}
@@ -2424,13 +2366,13 @@ function renderGoals() {
             ${createRanking(
                 "Clean Sheet",
                 s =>
-                    (s.clean_sheet?.percentage ?? 0)
+                    s.clean_sheet.percentage
             )}
 
             ${createRanking(
                 "Sem Marcar",
                 s =>
-                    (s.failed_to_score?.percentage ?? 0)
+                    s.failed_to_score.percentage
             )}
 
             ${createRanking(
@@ -2683,7 +2625,7 @@ function renderTeamsTable() {
 
                 avg_total_goals:
                     s =>
-                        (Number(s.avg_total_goals) || (Number(s.avg_goals_for) || 0) + (Number(s.avg_goals_against) || 0)),
+                        s.avg_total_goals,
 
                 xg:
                     s =>
@@ -2807,7 +2749,7 @@ function renderTeamsTable() {
                                     <td>
 
                                         ${formatNumber(
-                                            (Number(s.avg_total_goals) || (Number(s.avg_goals_for) || 0) + (Number(s.avg_goals_against) || 0))
+                                            s.avg_total_goals
                                         )}
 
                                     </td>
@@ -3064,7 +3006,7 @@ function createContextCard(
             ${contextRow(
                 "Média de Gols",
                 formatNumber(
-                    (Number(s.avg_total_goals) || (Number(s.avg_goals_for) || 0) + (Number(s.avg_goals_against) || 0))
+                    s.avg_total_goals
                 )
             )}
 
@@ -3144,7 +3086,7 @@ function createTeamBarChart(team) {
         {
             label: "Clean Sheet",
             value:
-                (s.clean_sheet?.percentage ?? 0)
+                s.clean_sheet.percentage
         }
 
     ];
