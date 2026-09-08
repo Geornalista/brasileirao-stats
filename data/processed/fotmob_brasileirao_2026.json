@@ -3,7 +3,7 @@
     "source": "FotMob",
     "league_id": 268,
     "season": 2026,
-    "fetched_at": "2026-09-08T01:12:06.283Z"
+    "fetched_at": "2026-09-08T14:38:52.803Z"
   },
   "competition": {
     "league_id": 268,
@@ -7622,8 +7622,8 @@
   ],
   "match_details": {
     "total": 256,
-    "cached": 0,
-    "downloaded": 256,
+    "cached": 256,
+    "downloaded": 0,
     "errors": 0
   },
   "stats": {
@@ -7641,7 +7641,7 @@
               "ParticiantId": 0,
               "TeamId": 9770,
               "TeamColor": "#C80010",
-              "StatValue": 43,
+              "StatValue": 43.4,
               "SubStatValue": 51,
               "MinutesPlayed": 0,
               "MatchesPlayed": 26,
@@ -8090,24 +8090,24 @@
               "Rank": 16
             },
             {
-              "ParticipantName": "Remo",
-              "ParticiantId": 0,
-              "TeamId": 1626,
-              "TeamColor": "#1C1F2F",
-              "StatValue": 40.2,
-              "SubStatValue": 43,
-              "MinutesPlayed": 0,
-              "MatchesPlayed": 26,
-              "StatValueCount": 26,
-              "Rank": 17
-            },
-            {
               "ParticipantName": "Coritiba",
               "ParticiantId": 0,
               "TeamId": 9767,
               "TeamColor": "#00736C",
               "StatValue": 40.4,
               "SubStatValue": 35,
+              "MinutesPlayed": 0,
+              "MatchesPlayed": 26,
+              "StatValueCount": 26,
+              "Rank": 17
+            },
+            {
+              "ParticipantName": "Remo",
+              "ParticiantId": 0,
+              "TeamId": 1626,
+              "TeamColor": "#1C1F2F",
+              "StatValue": 40.5,
+              "SubStatValue": 43,
               "MinutesPlayed": 0,
               "MatchesPlayed": 26,
               "StatValueCount": 26,
@@ -8163,7 +8163,7 @@
               "ParticiantId": 0,
               "TeamId": 9770,
               "TeamColor": "#C80010",
-              "StatValue": 18.3,
+              "StatValue": 18.6,
               "SubStatValue": 30,
               "MinutesPlayed": 0,
               "MatchesPlayed": 26,
@@ -8367,7 +8367,7 @@
               "ParticiantId": 0,
               "TeamId": 1626,
               "TeamColor": "#1C1F2F",
-              "StatValue": -12.8,
+              "StatValue": -13.1,
               "SubStatValue": -13,
               "MinutesPlayed": 0,
               "MatchesPlayed": 26,

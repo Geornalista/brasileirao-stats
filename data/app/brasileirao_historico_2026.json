@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updated_at": "2026-09-08T00:06:33.493Z",
+  "updated_at": "2026-09-08T14:38:52.984Z",
   "teams": {
     "Atlético-MG": {
       "team": "Atlético-MG",
@@ -3988,12 +3988,12 @@
         },
         {
           "rodada": 26,
-          "data": "2026-09-07T23:00:00.000Z",
+          "data": "2026-09-07T23:00:00Z",
           "local": "Casa",
           "adversario": "Grêmio",
-          "gols_pro": 0,
+          "gols_pro": 1,
           "gols_contra": 0,
-          "placar": "0 x 0",
+          "placar": "1 x 0",
           "xg": 0,
           "xga": 0,
           "xgd": 0,
@@ -5791,12 +5791,12 @@
         },
         {
           "rodada": 26,
-          "data": "2026-09-07T23:00:00.000Z",
+          "data": "2026-09-07T23:00:00Z",
           "local": "Fora",
           "adversario": "Vitória",
           "gols_pro": 0,
-          "gols_contra": 0,
-          "placar": "0 x 0",
+          "gols_contra": 1,
+          "placar": "0 x 1",
           "xg": 0,
           "xga": 0,
           "xgd": 0,

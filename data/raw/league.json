@@ -1559,13 +1559,13 @@
               "pts": 54,
               "teamId": 9770,
               "teamName": "Flamengo",
-              "xg": 43.03,
-              "xgConceded": 24.696699999999993,
-              "xPoints": 49.01217815902153,
+              "xg": 43.35280000000001,
+              "xgConceded": 24.730399999999996,
+              "xPoints": 49.11690976386558,
               "position": 1,
-              "xgDiff": 7.969999999999999,
-              "xgConcededDiff": -3.6966999999999928,
-              "xPointsDiff": 4.987821840978469,
+              "xgDiff": 7.647199999999991,
+              "xgConcededDiff": -3.730399999999996,
+              "xPointsDiff": 4.8830902361344215,
               "xPosition": 1,
               "idx": 1,
               "xPositionDiff": 0,
@@ -2018,13 +2018,13 @@
               "pts": 23,
               "teamId": 1626,
               "teamName": "Remo",
-              "xg": 27.361199999999997,
-              "xgConceded": 40.193599999999996,
-              "xPoints": 26.17171628482134,
+              "xg": 27.394899999999993,
+              "xgConceded": 40.5164,
+              "xPoints": 26.10122210090749,
               "position": 18,
-              "xgDiff": 2.6388000000000034,
-              "xgConcededDiff": 2.8064000000000036,
-              "xPointsDiff": -3.17171628482134,
+              "xgDiff": 2.6051000000000073,
+              "xgConcededDiff": 2.4836000000000027,
+              "xPointsDiff": -3.1012221009074885,
               "xPosition": 18,
               "idx": 18,
               "xPositionDiff": 1,
@@ -5491,6 +5491,40 @@
     "type": "league",
     "data": [
       {
+        "name": "João Almeida",
+        "playerId": 1734201,
+        "position": {
+          "label": "LB",
+          "key": "leftback_short"
+        },
+        "transferDate": "2026-09-08T10:39:47Z",
+        "transferText": [
+          null,
+          null,
+          null
+        ],
+        "fromClub": "Coritiba",
+        "fromClubFullName": "Coritiba",
+        "fromClubId": 9767,
+        "toClub": "Le Mans",
+        "toClubFullName": "Le Mans",
+        "toClubId": 8682,
+        "fee": {
+          "feeText": "on loan",
+          "localizedFeeText": "on_loan"
+        },
+        "amountEuroEstimated": null,
+        "transferType": {
+          "text": "on loan",
+          "localizationKey": "on_loan"
+        },
+        "contractExtension": false,
+        "onLoan": true,
+        "fromDate": "2026-09-08T00:00:00Z",
+        "toDate": "2027-06-30T00:00:00Z",
+        "marketValue": null
+      },
+      {
         "name": "Maik Gomes",
         "playerId": 1764428,
         "position": {
@@ -8827,41 +8861,6 @@
         "fromDate": "2026-07-20T00:00:00Z",
         "toDate": "2026-12-31T00:00:00Z",
         "marketValue": 1500530
-      },
-      {
-        "name": "Warleson",
-        "playerId": 810487,
-        "position": {
-          "label": "GK",
-          "key": "keeper"
-        },
-        "transferDate": "2026-07-21T06:22:16Z",
-        "transferText": [
-          null,
-          null,
-          null
-        ],
-        "fromClub": "Cercle Brugge",
-        "fromClubFullName": "Cercle Brugge",
-        "fromClubId": 9984,
-        "toClub": "Botafogo RJ",
-        "toClubFullName": "Botafogo RJ",
-        "toClubId": 8517,
-        "fee": {
-          "feeText": "fee",
-          "localizedFeeText": "transfer_fee",
-          "value": 750000
-        },
-        "amountEuroEstimated": null,
-        "transferType": {
-          "text": "contract",
-          "localizationKey": "contract"
-        },
-        "contractExtension": false,
-        "onLoan": false,
-        "fromDate": "2026-07-20T00:00:00Z",
-        "toDate": "2029-12-31T00:00:00Z",
-        "marketValue": 569567
       }
     ]
   },
@@ -10366,13 +10365,13 @@
                 "pts": 54,
                 "teamId": 9770,
                 "teamName": "Flamengo",
-                "xg": 43.03,
-                "xgConceded": 24.696699999999993,
-                "xPoints": 49.01217815902153,
+                "xg": 43.35280000000001,
+                "xgConceded": 24.730399999999996,
+                "xPoints": 49.11690976386558,
                 "position": 1,
-                "xgDiff": 7.969999999999999,
-                "xgConcededDiff": -3.6966999999999928,
-                "xPointsDiff": 4.987821840978469,
+                "xgDiff": 7.647199999999991,
+                "xgConcededDiff": -3.730399999999996,
+                "xPointsDiff": 4.8830902361344215,
                 "xPosition": 1,
                 "idx": 1,
                 "xPositionDiff": 0,
@@ -10825,13 +10824,13 @@
                 "pts": 23,
                 "teamId": 1626,
                 "teamName": "Remo",
-                "xg": 27.361199999999997,
-                "xgConceded": 40.193599999999996,
-                "xPoints": 26.17171628482134,
+                "xg": 27.394899999999993,
+                "xgConceded": 40.5164,
+                "xPoints": 26.10122210090749,
                 "position": 18,
-                "xgDiff": 2.6388000000000034,
-                "xgConcededDiff": 2.8064000000000036,
-                "xPointsDiff": -3.17171628482134,
+                "xgDiff": 2.6051000000000073,
+                "xgConcededDiff": 2.4836000000000027,
+                "xPointsDiff": -3.1012221009074885,
                 "xPosition": 18,
                 "idx": 18,
                 "xPositionDiff": 1,
@@ -39572,10 +39571,10 @@
             "rank": 2,
             "teamId": 9770,
             "teamName": "Flamengo",
-            "value": 12.9,
+            "value": 12.8,
             "stat": {
               "name": "expected_goals",
-              "value": 12.9,
+              "value": 12.8,
               "format": "fraction",
               "fractions": 1
             },
@@ -39740,10 +39739,10 @@
             "rank": 2,
             "teamId": 9770,
             "teamName": "Flamengo",
-            "value": 14.2,
+            "value": 14.7,
             "stat": {
               "name": "expected_goalsontarget",
-              "value": 14.2,
+              "value": 14.7,
               "format": "fraction",
               "fractions": 1
             },
@@ -39956,10 +39955,10 @@
           "rank": 1,
           "teamId": 9770,
           "teamName": "Flamengo",
-          "value": 78.5,
+          "value": 78.4,
           "stat": {
             "name": "accurate_pass",
-            "value": 78.5,
+            "value": 78.4,
             "format": "fraction",
             "fractions": 1
           }
@@ -39972,10 +39971,10 @@
             "rank": 1,
             "teamId": 9770,
             "teamName": "Flamengo",
-            "value": 78.5,
+            "value": 78.4,
             "stat": {
               "name": "accurate_pass",
-              "value": 78.5,
+              "value": 78.4,
               "format": "fraction",
               "fractions": 1
             },
@@ -40852,10 +40851,10 @@
             "rank": 3,
             "teamId": 1626,
             "teamName": "Remo",
-            "value": 11.2,
+            "value": 11.3,
             "stat": {
               "name": "defensive_contributions",
-              "value": 11.2,
+              "value": 11.3,
               "format": "fraction",
               "fractions": 1
             },
@@ -42457,10 +42456,10 @@
           "name": "Flamengo",
           "rank": 1,
           "teamId": 9770,
-          "value": 43,
+          "value": 43.4,
           "stat": {
             "name": "expected_goals_team",
-            "value": 43,
+            "value": 43.4,
             "format": "fraction",
             "fractions": 1
           }
@@ -42472,10 +42471,10 @@
             "name": "Flamengo",
             "rank": 1,
             "teamId": 9770,
-            "value": 43,
+            "value": 43.4,
             "stat": {
               "name": "expected_goals_team",
-              "value": 43,
+              "value": 43.4,
               "format": "fraction",
               "fractions": 1
             },
@@ -42537,10 +42536,10 @@
           "name": "Flamengo",
           "rank": 1,
           "teamId": 9770,
-          "value": 18.3,
+          "value": 18.6,
           "stat": {
             "name": "_xg_diff_team",
-            "value": 18.3,
+            "value": 18.6,
             "format": "fraction",
             "fractions": 1
           }
@@ -42552,10 +42551,10 @@
             "name": "Flamengo",
             "rank": 1,
             "teamId": 9770,
-            "value": 18.3,
+            "value": 18.6,
             "stat": {
               "name": "_xg_diff_team",
-              "value": 18.3,
+              "value": 18.6,
               "format": "fraction",
               "fractions": 1
             },
@@ -43211,10 +43210,10 @@
             "name": "Flamengo",
             "rank": 2,
             "teamId": 9770,
-            "value": 668,
+            "value": 669,
             "stat": {
               "name": "touches_in_opp_box_team",
-              "value": 668,
+              "value": 669,
               "format": "number",
               "fractions": 0
             },
@@ -43528,8 +43527,27 @@
           },
           {
             "id": 0,
-            "name": "Vasco da Gama",
+            "name": "Remo",
             "rank": 2,
+            "teamId": 1626,
+            "value": 9.7,
+            "stat": {
+              "name": "interception_team",
+              "value": 9.7,
+              "format": "fraction",
+              "fractions": 1
+            },
+            "teamColors": {
+              "darkMode": "#ffffff",
+              "lightMode": "#1C1F2F",
+              "fontDarkMode": "rgba(29, 29, 29, 1.0)",
+              "fontLightMode": "rgba(255, 255, 255, 1.0)"
+            }
+          },
+          {
+            "id": 0,
+            "name": "Vasco da Gama",
+            "rank": 3,
             "teamId": 10276,
             "value": 9.7,
             "stat": {
@@ -43541,25 +43559,6 @@
             "teamColors": {
               "darkMode": "#ffffff",
               "lightMode": "#1a1a1a",
-              "fontDarkMode": "rgba(29, 29, 29, 1.0)",
-              "fontLightMode": "rgba(255, 255, 255, 1.0)"
-            }
-          },
-          {
-            "id": 0,
-            "name": "Remo",
-            "rank": 3,
-            "teamId": 1626,
-            "value": 9.6,
-            "stat": {
-              "name": "interception_team",
-              "value": 9.6,
-              "format": "fraction",
-              "fractions": 1
-            },
-            "teamColors": {
-              "darkMode": "#ffffff",
-              "lightMode": "#1C1F2F",
               "fontDarkMode": "rgba(29, 29, 29, 1.0)",
               "fontLightMode": "rgba(255, 255, 255, 1.0)"
             }
@@ -43630,10 +43629,10 @@
             "name": "Vitória",
             "rank": 3,
             "teamId": 7733,
-            "value": 16.4,
+            "value": 16.5,
             "stat": {
               "name": "total_tackle_team",
-              "value": 16.4,
+              "value": 16.5,
               "format": "fraction",
               "fractions": 1
             },
@@ -43691,10 +43690,10 @@
             "name": "Remo",
             "rank": 2,
             "teamId": 1626,
-            "value": 27.9,
+            "value": 27.8,
             "stat": {
               "name": "effective_clearance_team",
-              "value": 27.9,
+              "value": 27.8,
               "format": "fraction",
               "fractions": 1
             },

@@ -200,24 +200,24 @@
           "Rank": 16
         },
         {
-          "ParticipantName": "Remo",
-          "ParticiantId": 0,
-          "TeamId": 1626,
-          "TeamColor": "#1C1F2F",
-          "StatValue": 40.2,
-          "SubStatValue": 43,
-          "MinutesPlayed": 0,
-          "MatchesPlayed": 26,
-          "StatValueCount": 26,
-          "Rank": 17
-        },
-        {
           "ParticipantName": "Coritiba",
           "ParticiantId": 0,
           "TeamId": 9767,
           "TeamColor": "#00736C",
           "StatValue": 40.4,
           "SubStatValue": 35,
+          "MinutesPlayed": 0,
+          "MatchesPlayed": 26,
+          "StatValueCount": 26,
+          "Rank": 17
+        },
+        {
+          "ParticipantName": "Remo",
+          "ParticiantId": 0,
+          "TeamId": 1626,
+          "TeamColor": "#1C1F2F",
+          "StatValue": 40.5,
+          "SubStatValue": 43,
           "MinutesPlayed": 0,
           "MatchesPlayed": 26,
           "StatValueCount": 26,
