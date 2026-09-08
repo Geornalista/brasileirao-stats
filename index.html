@@ -1576,120 +1576,101 @@ let currentTab = "overview";
    DATA
 ============================================================ */
 
+function normalizeAppData(data) {
+    if (!data || typeof data !== "object") {
+        return null;
+    }
+
+    let teams = [];
+
+    if (Array.isArray(data.teams)) {
+        teams = data.teams;
+    } else if (Array.isArray(data.team_stats)) {
+        teams = data.team_stats;
+    } else if (Array.isArray(data.equipes)) {
+        teams = data.equipes;
+    } else if (data.data && Array.isArray(data.data.teams)) {
+        teams = data.data.teams;
+    }
+
+    if (!teams.length) {
+        return null;
+    }
+
+    return {
+        ...data,
+        teams
+    };
+}
+
 async function loadData() {
 
-    try {
+    const paths = [
+        "./data/app/brasileirao_stats_2026.json",
+        "data/app/brasileirao_stats_2026.json"
+    ];
 
-        /*
-         * URL construída a partir da localização atual da página.
-         * Isso evita problemas de caminho no GitHub Pages e o parâmetro
-         * de versão impede que o navegador reutilize um JSON antigo em cache.
-         */
-        const dataUrl = new URL(
-            "data/app/brasileirao_stats_2026.json",
-            window.location.href
-        );
+    let lastError = null;
 
-        dataUrl.searchParams.set(
-            "v",
-            Date.now().toString()
-        );
+    for (const path of paths) {
+        try {
+            const url = new URL(path, window.location.href);
+            url.searchParams.set("v", Date.now().toString());
 
-        const response = await fetch(
-            dataUrl.href,
-            {
-                cache: "no-store"
+            const response = await fetch(url.href, {
+                cache: "no-store",
+                headers: {
+                    "Accept": "application/json"
+                }
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}`);
             }
-        );
 
-        if (!response.ok) {
+            const rawData = await response.json();
+            const normalized = normalizeAppData(rawData);
 
-            throw new Error(
-                `Não foi possível carregar os dados (${response.status}).`
-            );
+            if (!normalized) {
+                console.error("Estrutura JSON recebida:", rawData);
+                throw new Error("JSON carregado, mas nenhuma lista válida de equipes foi encontrada.");
+            }
 
+            appData = normalized;
+            initializeApp();
+            return;
+
+        } catch (error) {
+            lastError = error;
+            console.warn("Falha ao carregar dados por", path, error);
         }
-
-        const data = await response.json();
-
-        /*
-         * Validação explícita para evitar que a interface fique
-         * parcialmente aberta sem dados.
-         */
-        if (
-            !data ||
-            !Array.isArray(data.teams) ||
-            data.teams.length === 0
-        ) {
-
-            throw new Error(
-                "O arquivo JSON foi carregado, mas não possui equipes válidas."
-            );
-
-        }
-
-        appData = data;
-
-        initializeApp();
-
     }
 
-    catch(error) {
+    console.error("Erro ao carregar Brasileirao Stats:", lastError);
 
-        console.error("Erro ao carregar Brasileirao Stats:", error);
+    const loading = document.getElementById("loading");
+    const app = document.getElementById("app");
 
-        const loading =
-            document.getElementById("loading");
+    if (app) {
+        app.style.display = "none";
+    }
 
-        const app =
-            document.getElementById("app");
-
-        if (app) {
-            app.style.display = "none";
-        }
-
-        if (loading) {
-
-            loading.style.display = "flex";
-
-            loading.innerHTML = `
-
-                <div style="
-                    max-width:700px;
-                    text-align:center;
-                    background:#121b25;
-                    border:1px solid #253444;
-                    border-radius:14px;
-                    padding:24px;
-                ">
-                    <div style="
-                        color:#ef4444;
-                        font-weight:800;
-                        font-size:18px;
-                        margin-bottom:10px;
-                    ">
-                        Erro ao carregar os dados
-                    </div>
-
-                    <div style="color:#94a3b8;line-height:1.6">
-                        ${error.message}
-                    </div>
-
-                    <div style="
-                        margin-top:12px;
-                        color:#64748b;
-                        font-size:12px;
-                    ">
-                        Verifique se o arquivo data/app/brasileirao_stats_2026.json existe no repositório.
-                    </div>
+    if (loading) {
+        loading.style.display = "flex";
+        loading.innerHTML = `
+            <div style="max-width:700px;text-align:center;background:#121b25;border:1px solid #253444;border-radius:14px;padding:24px;">
+                <div style="color:#ef4444;font-weight:800;font-size:18px;margin-bottom:10px;">
+                    Erro ao carregar os dados
                 </div>
-
-            `;
-
-        }
-
+                <div style="color:#94a3b8;line-height:1.6">
+                    ${lastError?.message || "Erro desconhecido."}
+                </div>
+                <div style="margin-top:12px;color:#64748b;font-size:12px;">
+                    Não foi possível obter dados válidos em data/app/brasileirao_stats_2026.json.
+                </div>
+            </div>
+        `;
     }
-
 }
 
 
