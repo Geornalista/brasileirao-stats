@@ -1,0 +1,18 @@
+{
+  "match_id": 5103622,
+  "round": 26,
+  "date": "2026-09-07T23:00:00Z",
+  "finished": true,
+  "home": {
+    "id": 7733,
+    "name": "Vitória",
+    "goals": 1,
+    "xg": 1.67
+  },
+  "away": {
+    "id": 9769,
+    "name": "Grêmio",
+    "goals": 0,
+    "xg": 0.45
+  }
+}

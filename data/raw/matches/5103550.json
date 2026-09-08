@@ -1,0 +1,18 @@
+{
+  "match_id": 5103550,
+  "round": 19,
+  "date": "2026-07-23T00:30:00Z",
+  "finished": true,
+  "home": {
+    "id": 8702,
+    "name": "Internacional",
+    "goals": 1,
+    "xg": 2.14
+  },
+  "away": {
+    "id": 9781,
+    "name": "Cruzeiro",
+    "goals": 2,
+    "xg": 1.67
+  }
+}

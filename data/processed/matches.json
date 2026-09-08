@@ -5163,12 +5163,12 @@
     "match_id": 5103622,
     "round": 26,
     "date": "2026-09-07T23:00:00Z",
-    "finished": false,
-    "started": false,
+    "finished": true,
+    "started": true,
     "cancelled": false,
     "score": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 0
     },
     "home": {
       "id": 7733,

@@ -1,0 +1,18 @@
+{
+  "match_id": 5103417,
+  "round": 6,
+  "date": "2026-03-15T21:30:00Z",
+  "finished": true,
+  "home": {
+    "id": 10283,
+    "name": "Palmeiras",
+    "goals": 1,
+    "xg": 0.52
+  },
+  "away": {
+    "id": 163782,
+    "name": "Mirassol",
+    "goals": 0,
+    "xg": 0.65
+  }
+}

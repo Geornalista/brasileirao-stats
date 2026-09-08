@@ -1,0 +1,18 @@
+{
+  "match_id": 5103376,
+  "round": 2,
+  "date": "2026-02-04T23:00:00Z",
+  "finished": true,
+  "home": {
+    "id": 8514,
+    "name": "Santos",
+    "goals": 1,
+    "xg": 1.09
+  },
+  "away": {
+    "id": 10277,
+    "name": "São Paulo",
+    "goals": 1,
+    "xg": 0.59
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "match_id": 5103463,
+  "round": 10,
+  "date": "2026-04-05T19:00:00Z",
+  "finished": true,
+  "home": {
+    "id": 197693,
+    "name": "Chapecoense",
+    "goals": 1,
+    "xg": 2.15
+  },
+  "away": {
+    "id": 7733,
+    "name": "Vitória",
+    "goals": 1,
+    "xg": 1.45
+  }
+}

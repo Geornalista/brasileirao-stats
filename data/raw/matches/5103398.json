@@ -1,0 +1,18 @@
+{
+  "match_id": 5103398,
+  "round": 4,
+  "date": "2026-02-25T22:00:00Z",
+  "finished": true,
+  "home": {
+    "id": 109705,
+    "name": "RB Bragantino",
+    "goals": 1,
+    "xg": 0.64
+  },
+  "away": {
+    "id": 10273,
+    "name": "Athletico Paranaense",
+    "goals": 1,
+    "xg": 1
+  }
+}

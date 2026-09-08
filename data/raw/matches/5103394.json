@@ -1,0 +1,18 @@
+{
+  "match_id": 5103394,
+  "round": 4,
+  "date": "2026-09-02T22:30:00Z",
+  "finished": true,
+  "home": {
+    "id": 9770,
+    "name": "Flamengo",
+    "goals": 2,
+    "xg": 1.91
+  },
+  "away": {
+    "id": 163782,
+    "name": "Mirassol",
+    "goals": 0,
+    "xg": 0.7
+  }
+}

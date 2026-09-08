@@ -1,0 +1,18 @@
+{
+  "match_id": 5103578,
+  "round": 22,
+  "date": "2026-08-09T21:30:00Z",
+  "finished": true,
+  "home": {
+    "id": 109705,
+    "name": "RB Bragantino",
+    "goals": 0,
+    "xg": 0.49
+  },
+  "away": {
+    "id": 9808,
+    "name": "Corinthians",
+    "goals": 2,
+    "xg": 1.32
+  }
+}

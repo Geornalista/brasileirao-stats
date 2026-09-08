@@ -1,0 +1,18 @@
+{
+  "match_id": 5103379,
+  "round": 2,
+  "date": "2026-02-06T00:30:00Z",
+  "finished": true,
+  "home": {
+    "id": 9781,
+    "name": "Cruzeiro",
+    "goals": 1,
+    "xg": 0.9
+  },
+  "away": {
+    "id": 9767,
+    "name": "Coritiba",
+    "goals": 2,
+    "xg": 2.35
+  }
+}

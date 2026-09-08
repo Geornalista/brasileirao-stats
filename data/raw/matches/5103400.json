@@ -1,0 +1,18 @@
+{
+  "match_id": 5103400,
+  "round": 4,
+  "date": "2026-02-26T00:30:00Z",
+  "finished": true,
+  "home": {
+    "id": 9769,
+    "name": "Grêmio",
+    "goals": 2,
+    "xg": 0.93
+  },
+  "away": {
+    "id": 10272,
+    "name": "Atlético-MG",
+    "goals": 1,
+    "xg": 0.41
+  }
+}

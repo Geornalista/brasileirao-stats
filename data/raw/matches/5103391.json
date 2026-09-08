@@ -1,0 +1,18 @@
+{
+  "match_id": 5103391,
+  "round": 3,
+  "date": "2026-02-12T22:00:00Z",
+  "finished": true,
+  "home": {
+    "id": 10273,
+    "name": "Athletico Paranaense",
+    "goals": 2,
+    "xg": 2.3
+  },
+  "away": {
+    "id": 8514,
+    "name": "Santos",
+    "goals": 1,
+    "xg": 0.97
+  }
+}

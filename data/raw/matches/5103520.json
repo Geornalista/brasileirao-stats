@@ -1,0 +1,18 @@
+{
+  "match_id": 5103520,
+  "round": 16,
+  "date": "2026-05-16T21:30:00Z",
+  "finished": true,
+  "home": {
+    "id": 8702,
+    "name": "Internacional",
+    "goals": 4,
+    "xg": 1.79
+  },
+  "away": {
+    "id": 10276,
+    "name": "Vasco da Gama",
+    "goals": 1,
+    "xg": 0.58
+  }
+}

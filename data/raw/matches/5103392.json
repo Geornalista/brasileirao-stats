@@ -1,0 +1,18 @@
+{
+  "match_id": 5103392,
+  "round": 3,
+  "date": "2026-02-11T00:30:00Z",
+  "finished": true,
+  "home": {
+    "id": 7733,
+    "name": "Vitória",
+    "goals": 1,
+    "xg": 1.65
+  },
+  "away": {
+    "id": 9770,
+    "name": "Flamengo",
+    "goals": 2,
+    "xg": 0.52
+  }
+}

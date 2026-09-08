@@ -1,0 +1,18 @@
+{
+  "match_id": 5103381,
+  "round": 2,
+  "date": "2026-02-19T22:30:00Z",
+  "finished": true,
+  "home": {
+    "id": 10273,
+    "name": "Athletico Paranaense",
+    "goals": 0,
+    "xg": 2.05
+  },
+  "away": {
+    "id": 9808,
+    "name": "Corinthians",
+    "goals": 1,
+    "xg": 0.16
+  }
+}

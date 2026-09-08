@@ -1363,24 +1363,6 @@
               "qualColor": "#0046A7"
             },
             {
-              "name": "Grêmio",
-              "shortName": "Grêmio",
-              "featuredInMatch": false,
-              "id": 9769,
-              "pageUrl": "/teams/9769/overview/gremio",
-              "played": 5,
-              "wins": 2,
-              "draws": 1,
-              "losses": 2,
-              "scoresStr": "6-7",
-              "goalConDiff": -1,
-              "goalsScored": 6,
-              "pts": 7,
-              "ongoing": null,
-              "idx": 11,
-              "qualColor": "#0046A7"
-            },
-            {
               "name": "Palmeiras",
               "shortName": "Palmeiras",
               "featuredInMatch": false,
@@ -1395,7 +1377,43 @@
               "goalsScored": 7,
               "pts": 6,
               "ongoing": null,
+              "idx": 11,
+              "qualColor": "#0046A7"
+            },
+            {
+              "name": "Grêmio",
+              "shortName": "Grêmio",
+              "featuredInMatch": false,
+              "id": 9769,
+              "pageUrl": "/teams/9769/overview/gremio",
+              "played": 5,
+              "wins": 2,
+              "draws": 0,
+              "losses": 3,
+              "scoresStr": "5-7",
+              "goalConDiff": -2,
+              "goalsScored": 5,
+              "pts": 6,
+              "ongoing": null,
               "idx": 12,
+              "qualColor": null
+            },
+            {
+              "name": "Vitória",
+              "shortName": "Vitória",
+              "featuredInMatch": false,
+              "id": 7733,
+              "pageUrl": "/teams/7733/overview/vitoria",
+              "played": 5,
+              "wins": 2,
+              "draws": 0,
+              "losses": 3,
+              "scoresStr": "3-6",
+              "goalConDiff": -3,
+              "goalsScored": 3,
+              "pts": 6,
+              "ongoing": null,
+              "idx": 13,
               "qualColor": null
             },
             {
@@ -1413,7 +1431,7 @@
               "goalsScored": 5,
               "pts": 5,
               "ongoing": null,
-              "idx": 13,
+              "idx": 14,
               "qualColor": null
             },
             {
@@ -1431,7 +1449,7 @@
               "goalsScored": 5,
               "pts": 4,
               "ongoing": null,
-              "idx": 14,
+              "idx": 15,
               "qualColor": null
             },
             {
@@ -1449,7 +1467,7 @@
               "goalsScored": 4,
               "pts": 4,
               "ongoing": null,
-              "idx": 15,
+              "idx": 16,
               "qualColor": null
             },
             {
@@ -1467,8 +1485,8 @@
               "goalsScored": 5,
               "pts": 3,
               "ongoing": null,
-              "idx": 16,
-              "qualColor": null
+              "idx": 17,
+              "qualColor": "#FF4646"
             },
             {
               "name": "Corinthians",
@@ -1483,24 +1501,6 @@
               "scoresStr": "5-7",
               "goalConDiff": -2,
               "goalsScored": 5,
-              "pts": 3,
-              "ongoing": null,
-              "idx": 17,
-              "qualColor": "#FF4646"
-            },
-            {
-              "name": "Vitória",
-              "shortName": "Vitória",
-              "featuredInMatch": false,
-              "id": 7733,
-              "pageUrl": "/teams/7733/overview/vitoria",
-              "played": 5,
-              "wins": 1,
-              "draws": 0,
-              "losses": 4,
-              "scoresStr": "2-10",
-              "goalConDiff": -8,
-              "goalsScored": 2,
               "pts": 3,
               "ongoing": null,
               "idx": 18,
@@ -1964,13 +1964,13 @@
               "pts": 32,
               "teamId": 7733,
               "teamName": "Vitória",
-              "xg": 25.636799999999997,
-              "xgConceded": 37.68240000000001,
-              "xPoints": 29.235975150690496,
+              "xg": 25.635099999999998,
+              "xgConceded": 37.69220000000001,
+              "xPoints": 29.226819303105966,
               "position": 16,
-              "xgDiff": -0.6367999999999974,
-              "xgConcededDiff": -0.6824000000000083,
-              "xPointsDiff": 2.7640248493095037,
+              "xgDiff": -0.6350999999999978,
+              "xgConcededDiff": -0.6922000000000068,
+              "xPointsDiff": 2.773180696894034,
               "xPosition": 16,
               "idx": 16,
               "xPositionDiff": -5,
@@ -2072,13 +2072,13 @@
               "pts": 28,
               "teamId": 9769,
               "teamName": "Grêmio",
-              "xg": 23.743200000000005,
-              "xgConceded": 41.94979999999999,
-              "xPoints": 23.679625406287805,
+              "xg": 23.753000000000004,
+              "xgConceded": 41.94809999999999,
+              "xPoints": 23.68735292868343,
               "position": 20,
-              "xgDiff": 3.256799999999995,
-              "xgConcededDiff": -8.949799999999989,
-              "xPointsDiff": 4.320374593712195,
+              "xgDiff": 3.2469999999999963,
+              "xgConcededDiff": -8.94809999999999,
+              "xPointsDiff": 4.312647071316569,
               "xPosition": 20,
               "idx": 20,
               "xPositionDiff": -5,
@@ -2261,36 +2261,6 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10283_xsmall.png",
-            "linkToMatch": "/matches/vitoria-vs-palmeiras/2omr8l#5103572",
-            "date": null,
-            "teamPageUrl": "/teams/10283/overview/palmeiras",
-            "tooltipText": {
-              "utcTime": "2026-07-30T00:30:00Z",
-              "homeTeam": "Vitória",
-              "homeTeamId": 7733,
-              "homeScore": 0,
-              "awayTeam": "Palmeiras",
-              "awayTeamId": 10283,
-              "awayScore": 4
-            },
-            "score": "0 - 4",
-            "home": {
-              "id": "7733",
-              "name": "Vitória",
-              "shortName": "Vitória",
-              "isOurTeam": true
-            },
-            "away": {
-              "id": "10283",
-              "name": "Palmeiras",
-              "shortName": "Palmeiras",
-              "isOurTeam": false
-            }
-          },
-          {
-            "result": -1,
-            "resultString": "L",
             "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9770_xsmall.png",
             "linkToMatch": "/matches/vitoria-vs-flamengo/2j7it6#5103574",
             "date": null,
@@ -2406,6 +2376,36 @@
               "name": "Vitória",
               "shortName": "Vitória",
               "isOurTeam": true
+            }
+          },
+          {
+            "result": 1,
+            "resultString": "W",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9769_xsmall.png",
+            "linkToMatch": "/matches/vitoria-vs-gremio/2j75ay#5103622",
+            "date": null,
+            "teamPageUrl": "/teams/9769/overview/gremio",
+            "tooltipText": {
+              "utcTime": "2026-09-07T23:00:00Z",
+              "homeTeam": "Vitória",
+              "homeTeamId": 7733,
+              "homeScore": 1,
+              "awayTeam": "Grêmio",
+              "awayTeamId": 9769,
+              "awayScore": 0
+            },
+            "score": "1 - 0",
+            "home": {
+              "id": "7733",
+              "name": "Vitória",
+              "shortName": "Vitória",
+              "isOurTeam": true
+            },
+            "away": {
+              "id": "9769",
+              "name": "Grêmio",
+              "shortName": "Grêmio",
+              "isOurTeam": false
             }
           }
         ],
@@ -3171,36 +3171,6 @@
         ],
         "9769": [
           {
-            "result": 0,
-            "resultString": "D",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9863_xsmall.png",
-            "linkToMatch": "/matches/gremio-vs-fluminense/36qten#5103556",
-            "date": null,
-            "teamPageUrl": "/teams/9863/overview/fluminense",
-            "tooltipText": {
-              "utcTime": "2026-07-26T21:30:00Z",
-              "homeTeam": "Grêmio",
-              "homeTeamId": 9769,
-              "homeScore": 1,
-              "awayTeam": "Fluminense",
-              "awayTeamId": 9863,
-              "awayScore": 1
-            },
-            "score": "1 - 1",
-            "home": {
-              "id": "9769",
-              "name": "Grêmio",
-              "shortName": "Grêmio",
-              "isOurTeam": true
-            },
-            "away": {
-              "id": "9863",
-              "name": "Fluminense",
-              "shortName": "Fluminense",
-              "isOurTeam": false
-            }
-          },
-          {
             "result": 1,
             "resultString": "W",
             "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10277_xsmall.png",
@@ -3318,6 +3288,36 @@
               "name": "Chapecoense",
               "shortName": "Chapecoense",
               "isOurTeam": false
+            }
+          },
+          {
+            "result": -1,
+            "resultString": "L",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7733_xsmall.png",
+            "linkToMatch": "/matches/vitoria-vs-gremio/2j75ay#5103622",
+            "date": null,
+            "teamPageUrl": "/teams/7733/overview/vitoria",
+            "tooltipText": {
+              "utcTime": "2026-09-07T23:00:00Z",
+              "homeTeam": "Vitória",
+              "homeTeamId": 7733,
+              "homeScore": 1,
+              "awayTeam": "Grêmio",
+              "awayTeamId": 9769,
+              "awayScore": 0
+            },
+            "score": "1 - 0",
+            "home": {
+              "id": "7733",
+              "name": "Vitória",
+              "shortName": "Vitória",
+              "isOurTeam": false
+            },
+            "away": {
+              "id": "9769",
+              "name": "Grêmio",
+              "shortName": "Grêmio",
+              "isOurTeam": true
             }
           }
         ],
@@ -10170,24 +10170,6 @@
                 "qualColor": "#0046A7"
               },
               {
-                "name": "Grêmio",
-                "shortName": "Grêmio",
-                "featuredInMatch": false,
-                "id": 9769,
-                "pageUrl": "/teams/9769/overview/gremio",
-                "played": 5,
-                "wins": 2,
-                "draws": 1,
-                "losses": 2,
-                "scoresStr": "6-7",
-                "goalConDiff": -1,
-                "goalsScored": 6,
-                "pts": 7,
-                "ongoing": null,
-                "idx": 11,
-                "qualColor": "#0046A7"
-              },
-              {
                 "name": "Palmeiras",
                 "shortName": "Palmeiras",
                 "featuredInMatch": false,
@@ -10202,7 +10184,43 @@
                 "goalsScored": 7,
                 "pts": 6,
                 "ongoing": null,
+                "idx": 11,
+                "qualColor": "#0046A7"
+              },
+              {
+                "name": "Grêmio",
+                "shortName": "Grêmio",
+                "featuredInMatch": false,
+                "id": 9769,
+                "pageUrl": "/teams/9769/overview/gremio",
+                "played": 5,
+                "wins": 2,
+                "draws": 0,
+                "losses": 3,
+                "scoresStr": "5-7",
+                "goalConDiff": -2,
+                "goalsScored": 5,
+                "pts": 6,
+                "ongoing": null,
                 "idx": 12,
+                "qualColor": null
+              },
+              {
+                "name": "Vitória",
+                "shortName": "Vitória",
+                "featuredInMatch": false,
+                "id": 7733,
+                "pageUrl": "/teams/7733/overview/vitoria",
+                "played": 5,
+                "wins": 2,
+                "draws": 0,
+                "losses": 3,
+                "scoresStr": "3-6",
+                "goalConDiff": -3,
+                "goalsScored": 3,
+                "pts": 6,
+                "ongoing": null,
+                "idx": 13,
                 "qualColor": null
               },
               {
@@ -10220,7 +10238,7 @@
                 "goalsScored": 5,
                 "pts": 5,
                 "ongoing": null,
-                "idx": 13,
+                "idx": 14,
                 "qualColor": null
               },
               {
@@ -10238,7 +10256,7 @@
                 "goalsScored": 5,
                 "pts": 4,
                 "ongoing": null,
-                "idx": 14,
+                "idx": 15,
                 "qualColor": null
               },
               {
@@ -10256,7 +10274,7 @@
                 "goalsScored": 4,
                 "pts": 4,
                 "ongoing": null,
-                "idx": 15,
+                "idx": 16,
                 "qualColor": null
               },
               {
@@ -10274,8 +10292,8 @@
                 "goalsScored": 5,
                 "pts": 3,
                 "ongoing": null,
-                "idx": 16,
-                "qualColor": null
+                "idx": 17,
+                "qualColor": "#FF4646"
               },
               {
                 "name": "Corinthians",
@@ -10290,24 +10308,6 @@
                 "scoresStr": "5-7",
                 "goalConDiff": -2,
                 "goalsScored": 5,
-                "pts": 3,
-                "ongoing": null,
-                "idx": 17,
-                "qualColor": "#FF4646"
-              },
-              {
-                "name": "Vitória",
-                "shortName": "Vitória",
-                "featuredInMatch": false,
-                "id": 7733,
-                "pageUrl": "/teams/7733/overview/vitoria",
-                "played": 5,
-                "wins": 1,
-                "draws": 0,
-                "losses": 4,
-                "scoresStr": "2-10",
-                "goalConDiff": -8,
-                "goalsScored": 2,
                 "pts": 3,
                 "ongoing": null,
                 "idx": 18,
@@ -10771,13 +10771,13 @@
                 "pts": 32,
                 "teamId": 7733,
                 "teamName": "Vitória",
-                "xg": 25.636799999999997,
-                "xgConceded": 37.68240000000001,
-                "xPoints": 29.235975150690496,
+                "xg": 25.635099999999998,
+                "xgConceded": 37.69220000000001,
+                "xPoints": 29.226819303105966,
                 "position": 16,
-                "xgDiff": -0.6367999999999974,
-                "xgConcededDiff": -0.6824000000000083,
-                "xPointsDiff": 2.7640248493095037,
+                "xgDiff": -0.6350999999999978,
+                "xgConcededDiff": -0.6922000000000068,
+                "xPointsDiff": 2.773180696894034,
                 "xPosition": 16,
                 "idx": 16,
                 "xPositionDiff": -5,
@@ -10879,13 +10879,13 @@
                 "pts": 28,
                 "teamId": 9769,
                 "teamName": "Grêmio",
-                "xg": 23.743200000000005,
-                "xgConceded": 41.94979999999999,
-                "xPoints": 23.679625406287805,
+                "xg": 23.753000000000004,
+                "xgConceded": 41.94809999999999,
+                "xPoints": 23.68735292868343,
                 "position": 20,
-                "xgDiff": 3.256799999999995,
-                "xgConcededDiff": -8.949799999999989,
-                "xPointsDiff": 4.320374593712195,
+                "xgDiff": 3.2469999999999963,
+                "xgConcededDiff": -8.94809999999999,
+                "xPointsDiff": 4.312647071316569,
                 "xPosition": 20,
                 "idx": 20,
                 "xPositionDiff": -5,
@@ -11068,36 +11068,6 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10283_xsmall.png",
-              "linkToMatch": "/matches/vitoria-vs-palmeiras/2omr8l#5103572",
-              "date": null,
-              "teamPageUrl": "/teams/10283/overview/palmeiras",
-              "tooltipText": {
-                "utcTime": "2026-07-30T00:30:00Z",
-                "homeTeam": "Vitória",
-                "homeTeamId": 7733,
-                "homeScore": 0,
-                "awayTeam": "Palmeiras",
-                "awayTeamId": 10283,
-                "awayScore": 4
-              },
-              "score": "0 - 4",
-              "home": {
-                "id": "7733",
-                "name": "Vitória",
-                "shortName": "Vitória",
-                "isOurTeam": true
-              },
-              "away": {
-                "id": "10283",
-                "name": "Palmeiras",
-                "shortName": "Palmeiras",
-                "isOurTeam": false
-              }
-            },
-            {
-              "result": -1,
-              "resultString": "L",
               "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9770_xsmall.png",
               "linkToMatch": "/matches/vitoria-vs-flamengo/2j7it6#5103574",
               "date": null,
@@ -11213,6 +11183,36 @@
                 "name": "Vitória",
                 "shortName": "Vitória",
                 "isOurTeam": true
+              }
+            },
+            {
+              "result": 1,
+              "resultString": "W",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9769_xsmall.png",
+              "linkToMatch": "/matches/vitoria-vs-gremio/2j75ay#5103622",
+              "date": null,
+              "teamPageUrl": "/teams/9769/overview/gremio",
+              "tooltipText": {
+                "utcTime": "2026-09-07T23:00:00Z",
+                "homeTeam": "Vitória",
+                "homeTeamId": 7733,
+                "homeScore": 1,
+                "awayTeam": "Grêmio",
+                "awayTeamId": 9769,
+                "awayScore": 0
+              },
+              "score": "1 - 0",
+              "home": {
+                "id": "7733",
+                "name": "Vitória",
+                "shortName": "Vitória",
+                "isOurTeam": true
+              },
+              "away": {
+                "id": "9769",
+                "name": "Grêmio",
+                "shortName": "Grêmio",
+                "isOurTeam": false
               }
             }
           ],
@@ -11978,36 +11978,6 @@
           ],
           "9769": [
             {
-              "result": 0,
-              "resultString": "D",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9863_xsmall.png",
-              "linkToMatch": "/matches/gremio-vs-fluminense/36qten#5103556",
-              "date": null,
-              "teamPageUrl": "/teams/9863/overview/fluminense",
-              "tooltipText": {
-                "utcTime": "2026-07-26T21:30:00Z",
-                "homeTeam": "Grêmio",
-                "homeTeamId": 9769,
-                "homeScore": 1,
-                "awayTeam": "Fluminense",
-                "awayTeamId": 9863,
-                "awayScore": 1
-              },
-              "score": "1 - 1",
-              "home": {
-                "id": "9769",
-                "name": "Grêmio",
-                "shortName": "Grêmio",
-                "isOurTeam": true
-              },
-              "away": {
-                "id": "9863",
-                "name": "Fluminense",
-                "shortName": "Fluminense",
-                "isOurTeam": false
-              }
-            },
-            {
               "result": 1,
               "resultString": "W",
               "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10277_xsmall.png",
@@ -12125,6 +12095,36 @@
                 "name": "Chapecoense",
                 "shortName": "Chapecoense",
                 "isOurTeam": false
+              }
+            },
+            {
+              "result": -1,
+              "resultString": "L",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7733_xsmall.png",
+              "linkToMatch": "/matches/vitoria-vs-gremio/2j75ay#5103622",
+              "date": null,
+              "teamPageUrl": "/teams/7733/overview/vitoria",
+              "tooltipText": {
+                "utcTime": "2026-09-07T23:00:00Z",
+                "homeTeam": "Vitória",
+                "homeTeamId": 7733,
+                "homeScore": 1,
+                "awayTeam": "Grêmio",
+                "awayTeamId": 9769,
+                "awayScore": 0
+              },
+              "score": "1 - 0",
+              "home": {
+                "id": "7733",
+                "name": "Vitória",
+                "shortName": "Vitória",
+                "isOurTeam": false
+              },
+              "away": {
+                "id": "9769",
+                "name": "Grêmio",
+                "shortName": "Grêmio",
+                "isOurTeam": true
               }
             }
           ],
@@ -24311,25 +24311,22 @@
           "score": 0
         },
         "displayTournament": true,
-        "notStarted": true,
+        "notStarted": false,
         "tournament": {
           "stage": ""
         },
         "status": {
           "utcTime": "2026-09-07T23:00:00Z",
-          "finished": false,
+          "finished": true,
           "started": true,
           "cancelled": false,
-          "ongoing": true,
+          "awarded": false,
           "scoreStr": "1 - 0",
-          "liveTime": {
-            "short": "1‎’‎",
-            "shortKey": "",
-            "long": "00:01",
-            "longKey": "",
-            "maxTime": 90,
-            "basePeriod": 90,
-            "addedTime": 0
+          "reason": {
+            "short": "FT",
+            "shortKey": "fulltime_short",
+            "long": "Full-Time",
+            "longKey": "finished"
           }
         }
       },
@@ -27964,12 +27961,12 @@
         }
       }
     ],
-    "hasOngoingMatch": true,
+    "hasOngoingMatch": false,
     "shotMap": null,
     "matches": {
       "firstUnplayedMatch": {
-        "firstUnplayedMatchIndex": 258,
-        "firstUnplayedMatchId": "5103622"
+        "firstUnplayedMatchIndex": 259,
+        "firstUnplayedMatchId": "5103631"
       },
       "allMatches": [
         {
@@ -35982,9 +35979,17 @@
           "status": {
             "utcTime": "2026-09-07T23:00:00Z",
             "timezone": "",
-            "started": false,
+            "finished": true,
+            "started": true,
             "cancelled": false,
-            "finished": false
+            "awarded": false,
+            "scoreStr": "1 - 0",
+            "reason": {
+              "short": "FT",
+              "shortKey": "fulltime_short",
+              "long": "Full-Time",
+              "longKey": "finished"
+            }
           }
         },
         {
@@ -38771,10 +38776,10 @@
           }
         }
       ],
-      "hasOngoingMatch": true,
+      "hasOngoingMatch": false,
       "fixtureInfo": {
         "activeRound": {
-          "roundId": "26",
+          "roundId": "27",
           "localizedKey": "round_fmt"
         },
         "rounds": [
@@ -41262,22 +41267,22 @@
             }
           },
           {
-            "id": 267826,
-            "name": "Weverton",
+            "id": 124130,
+            "name": "Léo Vieira",
             "rank": 3,
-            "teamId": 9769,
-            "teamName": "Grêmio",
-            "value": 8,
+            "teamId": 7877,
+            "teamName": "Bahia",
+            "value": 7.9,
             "stat": {
               "name": "ball_recovery",
-              "value": 8,
+              "value": 7.9,
               "format": "fraction",
               "fractions": 1
             },
             "teamColors": {
-              "darkMode": "#2ebaf2",
-              "lightMode": "#0783BD",
-              "fontDarkMode": "rgba(29, 29, 29, 1.0)",
+              "darkMode": "#1D669E",
+              "lightMode": "#044879",
+              "fontDarkMode": "rgba(255, 255, 255, 1.0)",
               "fontLightMode": "rgba(255, 255, 255, 1.0)"
             }
           }
@@ -41583,10 +41588,10 @@
             "rank": 2,
             "teamId": 7733,
             "teamName": "Vitória",
-            "value": 4,
+            "value": 3.9,
             "stat": {
               "name": "saves",
-              "value": 4,
+              "value": 3.9,
               "format": "fraction",
               "fractions": 1
             },
@@ -41631,10 +41636,10 @@
           "rank": 1,
           "teamId": 9769,
           "teamName": "Grêmio",
-          "value": 5.7,
+          "value": 5.9,
           "stat": {
             "name": "_goals_prevented",
-            "value": 5.7,
+            "value": 5.9,
             "format": "fraction",
             "fractions": 1
           }
@@ -41647,10 +41652,10 @@
             "rank": 1,
             "teamId": 9769,
             "teamName": "Grêmio",
-            "value": 5.7,
+            "value": 5.9,
             "stat": {
               "name": "_goals_prevented",
-              "value": 5.7,
+              "value": 5.9,
               "format": "fraction",
               "fractions": 1
             },
@@ -44249,8 +44254,8 @@
   },
   "fixtures": {
     "firstUnplayedMatch": {
-      "firstUnplayedMatchIndex": 258,
-      "firstUnplayedMatchId": "5103622"
+      "firstUnplayedMatchIndex": 259,
+      "firstUnplayedMatchId": "5103631"
     },
     "allMatches": [
       {
@@ -52263,9 +52268,17 @@
         "status": {
           "utcTime": "2026-09-07T23:00:00Z",
           "timezone": "",
-          "started": false,
+          "finished": true,
+          "started": true,
           "cancelled": false,
-          "finished": false
+          "awarded": false,
+          "scoreStr": "1 - 0",
+          "reason": {
+            "short": "FT",
+            "shortKey": "fulltime_short",
+            "long": "Full-Time",
+            "longKey": "finished"
+          }
         }
       },
       {
@@ -55052,10 +55065,10 @@
         }
       }
     ],
-    "hasOngoingMatch": true,
+    "hasOngoingMatch": false,
     "fixtureInfo": {
       "activeRound": {
-        "roundId": "26",
+        "roundId": "27",
         "localizedKey": "round_fmt"
       },
       "rounds": [
