@@ -1,53 +1,56 @@
-name: Atualizar Dados do Brasileirao
+name: Atualizar dados do Brasileirão
 
 on:
-  workflow_dispatch:
-
   schedule:
+    # GitHub Actions usa UTC.
+    # 05:00 UTC = 02:00 horário de Brasília (UTC-3)
     - cron: "0 5 * * *"
+
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
   update-data:
-
     runs-on: ubuntu-latest
 
     steps:
 
-      - name: Baixar repositorio
+      - name: Baixar repositório
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 24
+          node-version: 22
 
-      - name: Verificar versao do Node
+      - name: Verificar versão do Node
         run: node --version
 
       - name: Executar coleta FotMob
         run: npm run fetch
 
-      - name: Processar estatisticas
+      - name: Processar estatísticas
         run: npm run process
 
       - name: Verificar arquivos gerados
         run: |
-          echo "Arquivos em data:"
-          find data -type f
+          echo "Arquivos em data/app:"
+          ls -la data/app/
 
-      - name: Salvar dados atualizados no repositorio
+      - name: Salvar dados atualizados no repositório
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
 
           git add data/
 
           if git diff --cached --quiet; then
-            echo "Nenhuma alteracao nos dados."
+            echo "Nenhuma alteração nos dados."
           else
-            git commit -m "Atualizacao automatica dos dados do Brasileirao"
+            git commit -m "Atualização automática dos dados"
             git push
           fi
