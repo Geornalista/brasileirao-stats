@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updated_at": "2026-09-08T00:39:13.579Z",
+  "updated_at": "2026-09-08T01:05:09.613Z",
   "league": {
     "name": "Campeonato Brasileiro Série A",
     "season": 2026,
@@ -10,28 +10,28 @@
       "wins": 0,
       "draws": 0,
       "losses": 0,
-      "goals_for": 674,
+      "goals_for": 673,
       "goals_against": 0,
-      "total_goals": 674,
+      "total_goals": 673,
       "avg_goals_for": 1.77,
       "avg_goals_against": 0,
       "avg_total_goals": 1.77,
-      "over_05_count": 241,
+      "over_05_count": 240,
       "over_15_count": 198,
       "over_25_count": 128,
       "over_35_count": 64,
-      "over_05": 63.4,
+      "over_05": 63.2,
       "over_15": 52.1,
       "over_25": 33.7,
       "over_35": 16.8,
-      "under_05": 36.6,
+      "under_05": 36.8,
       "under_15": 47.9,
       "under_25": 66.3,
       "under_35": 83.2,
       "btts_count": 149,
       "btts": 39.2,
-      "zero_zero_count": 139,
-      "zero_zero": 36.6,
+      "zero_zero_count": 140,
+      "zero_zero": 36.8,
       "clean_sheets_count": 0,
       "clean_sheets": 0,
       "failed_to_score_count": 0,
@@ -789,83 +789,83 @@
       "team": "Vitória",
       "geral": {
         "games": 38,
-        "wins": 9,
-        "draws": 17,
+        "wins": 8,
+        "draws": 18,
         "losses": 12,
-        "goals_for": 25,
+        "goals_for": 24,
         "goals_against": 37,
-        "total_goals": 62,
-        "avg_goals_for": 0.66,
+        "total_goals": 61,
+        "avg_goals_for": 0.63,
         "avg_goals_against": 0.97,
-        "avg_total_goals": 1.63,
-        "over_05_count": 24,
+        "avg_total_goals": 1.61,
+        "over_05_count": 23,
         "over_15_count": 20,
         "over_25_count": 9,
         "over_35_count": 6,
-        "over_05": 63.2,
+        "over_05": 60.5,
         "over_15": 52.6,
         "over_25": 23.7,
         "over_35": 15.8,
-        "under_05": 36.8,
+        "under_05": 39.5,
         "under_15": 47.4,
         "under_25": 76.3,
         "under_35": 84.2,
         "btts_count": 9,
         "btts": 23.7,
-        "zero_zero_count": 14,
-        "zero_zero": 36.8,
+        "zero_zero_count": 15,
+        "zero_zero": 39.5,
         "clean_sheets_count": 22,
         "clean_sheets": 57.9,
-        "failed_to_score_count": 21,
-        "failed_to_score": 55.3,
+        "failed_to_score_count": 22,
+        "failed_to_score": 57.9,
         "xg_total": 0,
         "xga_total": 0,
         "xgd_total": 0,
         "xg": 0,
         "xga": 0,
         "xgd": 0,
-        "points": 44,
-        "points_per_game": 1.16
+        "points": 42,
+        "points_per_game": 1.11
       },
       "mandante": {
         "games": 19,
-        "wins": 9,
-        "draws": 7,
+        "wins": 8,
+        "draws": 8,
         "losses": 3,
-        "goals_for": 17,
+        "goals_for": 16,
         "goals_against": 9,
-        "total_goals": 26,
-        "avg_goals_for": 0.89,
+        "total_goals": 25,
+        "avg_goals_for": 0.84,
         "avg_goals_against": 0.47,
-        "avg_total_goals": 1.37,
-        "over_05_count": 12,
+        "avg_total_goals": 1.32,
+        "over_05_count": 11,
         "over_15_count": 8,
         "over_25_count": 3,
         "over_35_count": 2,
-        "over_05": 63.2,
+        "over_05": 57.9,
         "over_15": 42.1,
         "over_25": 15.8,
         "over_35": 10.5,
-        "under_05": 36.8,
+        "under_05": 42.1,
         "under_15": 57.9,
         "under_25": 84.2,
         "under_35": 89.5,
         "btts_count": 2,
         "btts": 10.5,
-        "zero_zero_count": 7,
-        "zero_zero": 36.8,
+        "zero_zero_count": 8,
+        "zero_zero": 42.1,
         "clean_sheets_count": 15,
         "clean_sheets": 78.9,
-        "failed_to_score_count": 9,
-        "failed_to_score": 47.4,
+        "failed_to_score_count": 10,
+        "failed_to_score": 52.6,
         "xg_total": 0,
         "xga_total": 0,
         "xgd_total": 0,
         "xg": 0,
         "xga": 0,
         "xgd": 0,
-        "points": 34,
-        "points_per_game": 1.79
+        "points": 32,
+        "points_per_game": 1.68
       },
       "visitante": {
         "games": 19,
@@ -1159,32 +1159,32 @@
       "geral": {
         "games": 38,
         "wins": 7,
-        "draws": 20,
-        "losses": 11,
+        "draws": 21,
+        "losses": 10,
         "goals_for": 27,
-        "goals_against": 33,
-        "total_goals": 60,
+        "goals_against": 32,
+        "total_goals": 59,
         "avg_goals_for": 0.71,
-        "avg_goals_against": 0.87,
-        "avg_total_goals": 1.58,
-        "over_05_count": 22,
+        "avg_goals_against": 0.84,
+        "avg_total_goals": 1.55,
+        "over_05_count": 21,
         "over_15_count": 18,
         "over_25_count": 11,
         "over_35_count": 4,
-        "over_05": 57.9,
+        "over_05": 55.3,
         "over_15": 47.4,
         "over_25": 28.9,
         "over_35": 10.5,
-        "under_05": 42.1,
+        "under_05": 44.7,
         "under_15": 52.6,
         "under_25": 71.1,
         "under_35": 89.5,
         "btts_count": 14,
         "btts": 36.8,
-        "zero_zero_count": 16,
-        "zero_zero": 42.1,
-        "clean_sheets_count": 18,
-        "clean_sheets": 47.4,
+        "zero_zero_count": 17,
+        "zero_zero": 44.7,
+        "clean_sheets_count": 19,
+        "clean_sheets": 50,
         "failed_to_score_count": 22,
         "failed_to_score": 57.9,
         "xg_total": 0,
@@ -1193,8 +1193,8 @@
         "xg": 0,
         "xga": 0,
         "xgd": 0,
-        "points": 41,
-        "points_per_game": 1.08
+        "points": 42,
+        "points_per_game": 1.11
       },
       "mandante": {
         "games": 19,
@@ -1239,32 +1239,32 @@
       "visitante": {
         "games": 19,
         "wins": 0,
-        "draws": 10,
-        "losses": 9,
+        "draws": 11,
+        "losses": 8,
         "goals_for": 6,
-        "goals_against": 19,
-        "total_goals": 25,
+        "goals_against": 18,
+        "total_goals": 24,
         "avg_goals_for": 0.32,
-        "avg_goals_against": 1,
-        "avg_total_goals": 1.32,
-        "over_05_count": 11,
+        "avg_goals_against": 0.95,
+        "avg_total_goals": 1.26,
+        "over_05_count": 10,
         "over_15_count": 9,
         "over_25_count": 5,
         "over_35_count": 0,
-        "over_05": 57.9,
+        "over_05": 52.6,
         "over_15": 47.4,
         "over_25": 26.3,
         "over_35": 0,
-        "under_05": 42.1,
+        "under_05": 47.4,
         "under_15": 52.6,
         "under_25": 73.7,
         "under_35": 100,
         "btts_count": 6,
         "btts": 31.6,
-        "zero_zero_count": 8,
-        "zero_zero": 42.1,
-        "clean_sheets_count": 8,
-        "clean_sheets": 42.1,
+        "zero_zero_count": 9,
+        "zero_zero": 47.4,
+        "clean_sheets_count": 9,
+        "clean_sheets": 47.4,
         "failed_to_score_count": 13,
         "failed_to_score": 68.4,
         "xg_total": 0,
@@ -1273,8 +1273,8 @@
         "xg": 0,
         "xga": 0,
         "xgd": 0,
-        "points": 10,
-        "points_per_game": 0.53
+        "points": 11,
+        "points_per_game": 0.58
       }
     },
     "Chapecoense": {
@@ -2551,10 +2551,6 @@
         "value": 63.2
       },
       {
-        "team": "Vitória",
-        "value": 63.2
-      },
-      {
         "team": "Chapecoense",
         "value": 63.2
       },
@@ -2579,16 +2575,20 @@
         "value": 60.5
       },
       {
+        "team": "Vitória",
+        "value": 60.5
+      },
+      {
         "team": "Botafogo",
         "value": 60.5
       },
       {
-        "team": "Grêmio",
+        "team": "Corinthians",
         "value": 57.9
       },
       {
-        "team": "Corinthians",
-        "value": 57.9
+        "team": "Grêmio",
+        "value": 55.3
       }
     ],
     "over_15": [
@@ -2922,7 +2922,7 @@
     "zero_zero": [
       {
         "team": "Grêmio",
-        "value": 42.1
+        "value": 44.7
       },
       {
         "team": "Corinthians",
@@ -2934,6 +2934,10 @@
       },
       {
         "team": "Internacional",
+        "value": 39.5
+      },
+      {
+        "team": "Vitória",
         "value": 39.5
       },
       {
@@ -2950,10 +2954,6 @@
       },
       {
         "team": "Athletico Paranaense",
-        "value": 36.8
-      },
-      {
-        "team": "Vitória",
         "value": 36.8
       },
       {
@@ -3064,14 +3064,14 @@
       },
       {
         "team": "Vitória",
-        "value": 1.63
-      },
-      {
-        "team": "Grêmio",
-        "value": 1.58
+        "value": 1.61
       },
       {
         "team": "RB Bragantino",
+        "value": 1.55
+      },
+      {
+        "team": "Grêmio",
         "value": 1.55
       },
       {
@@ -3162,7 +3162,7 @@
       },
       {
         "team": "Vitória",
-        "value": 0.66
+        "value": 0.63
       }
     ],
     "avg_goals_against": [
@@ -3207,11 +3207,11 @@
         "value": 0.89
       },
       {
-        "team": "Grêmio",
-        "value": 0.87
+        "team": "Fluminense",
+        "value": 0.84
       },
       {
-        "team": "Fluminense",
+        "team": "Grêmio",
         "value": 0.84
       },
       {

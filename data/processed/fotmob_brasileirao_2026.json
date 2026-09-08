@@ -3,7 +3,7 @@
     "source": "FotMob",
     "league_id": 268,
     "season": 2026,
-    "fetched_at": "2026-09-08T00:39:13.431Z"
+    "fetched_at": "2026-09-08T01:05:09.430Z"
   },
   "competition": {
     "league_id": 268,
@@ -5182,13 +5182,13 @@
     {
       "match_id": 5103622,
       "round": 26,
-      "date": "2026-09-07T23:00:00.000Z",
+      "date": "2026-09-07T23:00:00Z",
       "finished": false,
-      "started": true,
+      "started": false,
       "cancelled": false,
       "score": {
-        "home": 1,
-        "away": 0
+        "home": null,
+        "away": null
       },
       "home": {
         "id": 7733,
@@ -7622,8 +7622,8 @@
   ],
   "match_details": {
     "total": 255,
-    "cached": 255,
-    "downloaded": 0,
+    "cached": 0,
+    "downloaded": 255,
     "errors": 0
   },
   "stats": {
@@ -7869,7 +7869,7 @@
               "ParticiantId": 0,
               "TeamId": 9769,
               "TeamColor": "#0783BD",
-              "StatValue": 23.5,
+              "StatValue": 23.7,
               "SubStatValue": 27,
               "MinutesPlayed": 0,
               "MatchesPlayed": 25,
@@ -8070,7 +8070,7 @@
               "ParticiantId": 0,
               "TeamId": 7733,
               "TeamColor": "#B81808",
-              "StatValue": 37.5,
+              "StatValue": 37.7,
               "SubStatValue": 37,
               "MinutesPlayed": 0,
               "MatchesPlayed": 26,
@@ -8343,7 +8343,7 @@
               "ParticiantId": 0,
               "TeamId": 7733,
               "TeamColor": "#B81808",
-              "StatValue": -12.2,
+              "StatValue": -12.3,
               "SubStatValue": -12,
               "MinutesPlayed": 0,
               "MatchesPlayed": 26,
@@ -8391,7 +8391,7 @@
               "ParticiantId": 0,
               "TeamId": 9769,
               "TeamColor": "#0783BD",
-              "StatValue": -18.1,
+              "StatValue": -17.9,
               "SubStatValue": -6,
               "MinutesPlayed": 0,
               "MatchesPlayed": 25,

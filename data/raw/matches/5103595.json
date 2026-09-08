@@ -1,0 +1,18 @@
+{
+  "match_id": 5103595,
+  "round": 24,
+  "date": "2026-08-24T23:00:00Z",
+  "finished": true,
+  "home": {
+    "id": 8517,
+    "name": "Botafogo",
+    "goals": 2,
+    "xg": 2.79
+  },
+  "away": {
+    "id": 10273,
+    "name": "Athletico Paranaense",
+    "goals": 3,
+    "xg": 1.18
+  }
+}

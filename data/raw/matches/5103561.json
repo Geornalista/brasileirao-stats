@@ -1,0 +1,18 @@
+{
+  "match_id": 5103561,
+  "round": 20,
+  "date": "2026-07-25T23:30:00Z",
+  "finished": true,
+  "home": {
+    "id": 10276,
+    "name": "Vasco da Gama",
+    "goals": 1,
+    "xg": 1.73
+  },
+  "away": {
+    "id": 163782,
+    "name": "Mirassol",
+    "goals": 1,
+    "xg": 1.21
+  }
+}

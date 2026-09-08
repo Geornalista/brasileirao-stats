@@ -1,0 +1,18 @@
+{
+  "match_id": 5103450,
+  "round": 9,
+  "date": "2026-04-01T22:30:00Z",
+  "finished": true,
+  "home": {
+    "id": 8702,
+    "name": "Internacional",
+    "goals": 1,
+    "xg": 0.92
+  },
+  "away": {
+    "id": 10277,
+    "name": "São Paulo",
+    "goals": 1,
+    "xg": 0.96
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "match_id": 5103542,
+  "round": 18,
+  "date": "2026-05-30T20:30:00Z",
+  "finished": true,
+  "home": {
+    "id": 7877,
+    "name": "Bahia",
+    "goals": 2,
+    "xg": 2.43
+  },
+  "away": {
+    "id": 8517,
+    "name": "Botafogo",
+    "goals": 1,
+    "xg": 1.05
+  }
+}

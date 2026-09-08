@@ -1,0 +1,18 @@
+{
+  "match_id": 5103536,
+  "round": 18,
+  "date": "2026-05-30T23:00:00Z",
+  "finished": true,
+  "home": {
+    "id": 8514,
+    "name": "Santos",
+    "goals": 3,
+    "xg": 0.62
+  },
+  "away": {
+    "id": 7733,
+    "name": "Vitória",
+    "goals": 1,
+    "xg": 0.98
+  }
+}

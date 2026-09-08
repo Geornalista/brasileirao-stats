@@ -1,0 +1,18 @@
+{
+  "match_id": 5103621,
+  "round": 26,
+  "date": "2026-09-06T14:00:00Z",
+  "finished": true,
+  "home": {
+    "id": 9767,
+    "name": "Coritiba",
+    "goals": 1,
+    "xg": 1.88
+  },
+  "away": {
+    "id": 163782,
+    "name": "Mirassol",
+    "goals": 2,
+    "xg": 2.19
+  }
+}

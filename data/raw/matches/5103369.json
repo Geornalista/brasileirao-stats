@@ -1,0 +1,18 @@
+{
+  "match_id": 5103369,
+  "round": 1,
+  "date": "2026-01-28T22:00:00Z",
+  "finished": true,
+  "home": {
+    "id": 10272,
+    "name": "Atlético-MG",
+    "goals": 2,
+    "xg": 0.53
+  },
+  "away": {
+    "id": 10283,
+    "name": "Palmeiras",
+    "goals": 2,
+    "xg": 1.01
+  }
+}

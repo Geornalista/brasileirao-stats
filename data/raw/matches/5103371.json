@@ -1,0 +1,18 @@
+{
+  "match_id": 5103371,
+  "round": 1,
+  "date": "2026-01-28T22:00:00Z",
+  "finished": true,
+  "home": {
+    "id": 9767,
+    "name": "Coritiba",
+    "goals": 0,
+    "xg": 0.31
+  },
+  "away": {
+    "id": 109705,
+    "name": "RB Bragantino",
+    "goals": 1,
+    "xg": 2.77
+  }
+}

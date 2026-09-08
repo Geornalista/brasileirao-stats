@@ -1,0 +1,18 @@
+{
+  "match_id": 5103445,
+  "round": 9,
+  "date": "2026-04-01T22:30:00Z",
+  "finished": true,
+  "home": {
+    "id": 8517,
+    "name": "Botafogo",
+    "goals": 3,
+    "xg": 2.66
+  },
+  "away": {
+    "id": 163782,
+    "name": "Mirassol",
+    "goals": 2,
+    "xg": 1.08
+  }
+}

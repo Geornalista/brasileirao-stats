@@ -1,0 +1,18 @@
+{
+  "match_id": 5103404,
+  "round": 5,
+  "date": "2026-03-12T00:30:00Z",
+  "finished": true,
+  "home": {
+    "id": 9770,
+    "name": "Flamengo",
+    "goals": 2,
+    "xg": 1.24
+  },
+  "away": {
+    "id": 9781,
+    "name": "Cruzeiro",
+    "goals": 0,
+    "xg": 0.57
+  }
+}

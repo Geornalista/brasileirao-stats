@@ -1,0 +1,18 @@
+{
+  "match_id": 5103572,
+  "round": 21,
+  "date": "2026-07-30T00:30:00Z",
+  "finished": true,
+  "home": {
+    "id": 7733,
+    "name": "Vitória",
+    "goals": 0,
+    "xg": 0.48
+  },
+  "away": {
+    "id": 10283,
+    "name": "Palmeiras",
+    "goals": 4,
+    "xg": 1.39
+  }
+}
