@@ -1431,9 +1431,9 @@ async function init() {
             historyResponse
         ] = await Promise.all([
 
-            fetch(DATA_URL),
+            fetch(`${DATA_URL}?t=${Date.now()}`, { cache: "no-store" }),
 
-            fetch(HISTORY_URL)
+            fetch(`${HISTORY_URL}?t=${Date.now()}`, { cache: "no-store" })
                 .catch(() => null)
 
         ]);
