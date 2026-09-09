@@ -44,18 +44,6 @@
           "Rank": 3
         },
         {
-          "ParticipantName": "Vasco da Gama",
-          "ParticiantId": 0,
-          "TeamId": 10276,
-          "TeamColor": "#1a1a1a",
-          "StatValue": 38.4,
-          "SubStatValue": 27,
-          "MinutesPlayed": 0,
-          "MatchesPlayed": 25,
-          "StatValueCount": 25,
-          "Rank": 4
-        },
-        {
           "ParticipantName": "Fluminense",
           "ParticiantId": 0,
           "TeamId": 9863,
@@ -65,6 +53,18 @@
           "MinutesPlayed": 0,
           "MatchesPlayed": 26,
           "StatValueCount": 26,
+          "Rank": 4
+        },
+        {
+          "ParticipantName": "Vasco da Gama",
+          "ParticiantId": 0,
+          "TeamId": 10276,
+          "TeamColor": "#1a1a1a",
+          "StatValue": 38.3,
+          "SubStatValue": 27,
+          "MinutesPlayed": 0,
+          "MatchesPlayed": 25,
+          "StatValueCount": 25,
           "Rank": 5
         },
         {

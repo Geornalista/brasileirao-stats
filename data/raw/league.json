@@ -1587,12 +1587,12 @@
               "teamId": 9863,
               "teamName": "Fluminense",
               "xg": 38.2725,
-              "xgConceded": 29.1658,
-              "xPoints": 42.140906669067434,
+              "xgConceded": 29.096300000000003,
+              "xPoints": 42.1923937137878,
               "position": 2,
               "xgDiff": 1.7274999999999991,
-              "xgConcededDiff": 2.834199999999999,
-              "xPointsDiff": 2.8590933309325663,
+              "xgConcededDiff": 2.903699999999997,
+              "xPointsDiff": 2.8076062862121987,
               "xPosition": 2,
               "idx": 2,
               "xPositionDiff": 2,
@@ -1721,13 +1721,13 @@
               "pts": 25,
               "teamId": 10276,
               "teamName": "Vasco da Gama",
-              "xg": 38.4122,
+              "xg": 38.3427,
               "xgConceded": 30.0326,
-              "xPoints": 39.25764795143465,
+              "xPoints": 39.21309181565775,
               "position": 7,
-              "xgDiff": -11.412199999999999,
+              "xgDiff": -11.3427,
               "xgConcededDiff": 9.967400000000001,
-              "xPointsDiff": -14.257647951434649,
+              "xPointsDiff": -14.213091815657748,
               "xPosition": 7,
               "idx": 7,
               "xPositionDiff": 10,
@@ -5491,6 +5491,41 @@
     "type": "league",
     "data": [
       {
+        "name": "Alan Lescano",
+        "playerId": 1342579,
+        "position": {
+          "label": "CM",
+          "key": "centermidfielder_short"
+        },
+        "transferDate": "2026-09-09T14:50:29Z",
+        "transferText": [
+          null,
+          null,
+          null
+        ],
+        "fromClub": "Argentinos Juniors",
+        "fromClubFullName": "Argentinos Juniors",
+        "fromClubId": 10086,
+        "toClub": "Vasco da Gama",
+        "toClubFullName": "Vasco da Gama",
+        "toClubId": 10276,
+        "fee": {
+          "feeText": "fee",
+          "localizedFeeText": "transfer_fee",
+          "value": 6450000
+        },
+        "amountEuroEstimated": null,
+        "transferType": {
+          "text": "contract",
+          "localizationKey": "contract"
+        },
+        "contractExtension": false,
+        "onLoan": false,
+        "fromDate": "2026-09-09T00:00:00Z",
+        "toDate": "2029-12-31T00:00:00Z",
+        "marketValue": 4429984
+      },
+      {
         "name": "João Almeida",
         "playerId": 1734201,
         "position": {
@@ -8827,40 +8862,6 @@
         "fromDate": "2026-07-21T00:00:00Z",
         "toDate": "2026-12-31T00:00:00Z",
         "marketValue": null
-      },
-      {
-        "name": "Zé Ivaldo",
-        "playerId": 769769,
-        "position": {
-          "label": "CB",
-          "key": "centerback_short"
-        },
-        "transferDate": "2026-07-21T06:24:46Z",
-        "transferText": [
-          null,
-          null,
-          null
-        ],
-        "fromClub": "Santos FC",
-        "fromClubFullName": "Santos FC",
-        "fromClubId": 8514,
-        "toClub": "Remo",
-        "toClubFullName": "Remo",
-        "toClubId": 1626,
-        "fee": {
-          "feeText": "on loan",
-          "localizedFeeText": "on_loan"
-        },
-        "amountEuroEstimated": null,
-        "transferType": {
-          "text": "on loan",
-          "localizationKey": "on_loan"
-        },
-        "contractExtension": false,
-        "onLoan": true,
-        "fromDate": "2026-07-20T00:00:00Z",
-        "toDate": "2026-12-31T00:00:00Z",
-        "marketValue": 1500530
       }
     ]
   },
@@ -10393,12 +10394,12 @@
                 "teamId": 9863,
                 "teamName": "Fluminense",
                 "xg": 38.2725,
-                "xgConceded": 29.1658,
-                "xPoints": 42.140906669067434,
+                "xgConceded": 29.096300000000003,
+                "xPoints": 42.1923937137878,
                 "position": 2,
                 "xgDiff": 1.7274999999999991,
-                "xgConcededDiff": 2.834199999999999,
-                "xPointsDiff": 2.8590933309325663,
+                "xgConcededDiff": 2.903699999999997,
+                "xPointsDiff": 2.8076062862121987,
                 "xPosition": 2,
                 "idx": 2,
                 "xPositionDiff": 2,
@@ -10527,13 +10528,13 @@
                 "pts": 25,
                 "teamId": 10276,
                 "teamName": "Vasco da Gama",
-                "xg": 38.4122,
+                "xg": 38.3427,
                 "xgConceded": 30.0326,
-                "xPoints": 39.25764795143465,
+                "xPoints": 39.21309181565775,
                 "position": 7,
-                "xgDiff": -11.412199999999999,
+                "xgDiff": -11.3427,
                 "xgConcededDiff": 9.967400000000001,
-                "xPointsDiff": -14.257647951434649,
+                "xPointsDiff": -14.213091815657748,
                 "xPosition": 7,
                 "idx": 7,
                 "xPositionDiff": 10,
@@ -39907,10 +39908,10 @@
             "rank": 2,
             "teamId": 10276,
             "teamName": "Vasco da Gama",
-            "value": 4.6,
+            "value": 4.5,
             "stat": {
               "name": "total_scoring_att",
-              "value": 4.6,
+              "value": 4.5,
               "format": "fraction",
               "fractions": 1
             },
@@ -42589,10 +42590,10 @@
             "name": "Fluminense",
             "rank": 3,
             "teamId": 9863,
-            "value": 9.1,
+            "value": 9.2,
             "stat": {
               "name": "_xg_diff_team",
-              "value": 9.1,
+              "value": 9.2,
               "format": "fraction",
               "fractions": 1
             },

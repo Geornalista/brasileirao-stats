@@ -3,7 +3,7 @@
     "source": "FotMob",
     "league_id": 268,
     "season": 2026,
-    "fetched_at": "2026-09-09T00:48:58.229Z"
+    "fetched_at": "2026-09-09T15:11:46.222Z"
   },
   "competition": {
     "league_id": 268,
@@ -7622,8 +7622,8 @@
   ],
   "match_details": {
     "total": 256,
-    "cached": 0,
-    "downloaded": 256,
+    "cached": 256,
+    "downloaded": 0,
     "errors": 0
   },
   "stats": {
@@ -7673,18 +7673,6 @@
               "Rank": 3
             },
             {
-              "ParticipantName": "Vasco da Gama",
-              "ParticiantId": 0,
-              "TeamId": 10276,
-              "TeamColor": "#1a1a1a",
-              "StatValue": 38.4,
-              "SubStatValue": 27,
-              "MinutesPlayed": 0,
-              "MatchesPlayed": 25,
-              "StatValueCount": 25,
-              "Rank": 4
-            },
-            {
               "ParticipantName": "Fluminense",
               "ParticiantId": 0,
               "TeamId": 9863,
@@ -7694,6 +7682,18 @@
               "MinutesPlayed": 0,
               "MatchesPlayed": 26,
               "StatValueCount": 26,
+              "Rank": 4
+            },
+            {
+              "ParticipantName": "Vasco da Gama",
+              "ParticiantId": 0,
+              "TeamId": 10276,
+              "TeamColor": "#1a1a1a",
+              "StatValue": 38.3,
+              "SubStatValue": 27,
+              "MinutesPlayed": 0,
+              "MatchesPlayed": 25,
+              "StatValueCount": 25,
               "Rank": 5
             },
             {
@@ -7962,7 +7962,7 @@
               "ParticiantId": 0,
               "TeamId": 9863,
               "TeamColor": "#900020",
-              "StatValue": 29.2,
+              "StatValue": 29.1,
               "SubStatValue": 32,
               "MinutesPlayed": 0,
               "MatchesPlayed": 26,
@@ -8187,24 +8187,12 @@
               "ParticiantId": 0,
               "TeamId": 9863,
               "TeamColor": "#900020",
-              "StatValue": 9.1,
+              "StatValue": 9.2,
               "SubStatValue": 8,
               "MinutesPlayed": 0,
               "MatchesPlayed": 26,
               "StatValueCount": 1,
               "Rank": 3
-            },
-            {
-              "ParticipantName": "Vasco da Gama",
-              "ParticiantId": 0,
-              "TeamId": 10276,
-              "TeamColor": "#1a1a1a",
-              "StatValue": 8.4,
-              "SubStatValue": -13,
-              "MinutesPlayed": 0,
-              "MatchesPlayed": 25,
-              "StatValueCount": 1,
-              "Rank": 4
             },
             {
               "ParticipantName": "Internacional",
@@ -8215,6 +8203,18 @@
               "SubStatValue": -6,
               "MinutesPlayed": 0,
               "MatchesPlayed": 26,
+              "StatValueCount": 1,
+              "Rank": 4
+            },
+            {
+              "ParticipantName": "Vasco da Gama",
+              "ParticiantId": 0,
+              "TeamId": 10276,
+              "TeamColor": "#1a1a1a",
+              "StatValue": 8.3,
+              "SubStatValue": -13,
+              "MinutesPlayed": 0,
+              "MatchesPlayed": 25,
               "StatValueCount": 1,
               "Rank": 5
             },
