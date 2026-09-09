@@ -1097,6 +1097,101 @@ tr.team-row:hover {
 
 }
 
+/* Raio-X Técnico & H2H */
+.adv-pills {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 22px;
+    flex-wrap: wrap;
+}
+
+.adv-pill {
+    padding: 10px 20px;
+    border-radius: 999px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.adv-pill:hover {
+    border-color: var(--green);
+    color: #fff;
+}
+
+.adv-pill.active {
+    background: var(--green);
+    color: #0b1118;
+    border-color: var(--green);
+}
+
+.th-sortable {
+    cursor: pointer;
+    user-select: none;
+    transition: color .2s ease;
+}
+
+.th-sortable:hover {
+    color: var(--green);
+}
+
+.compare-h2h-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.compare-h2h-item {
+    background: #0f1822;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+}
+
+.compare-h2h-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.compare-h2h-values {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.compare-h2h-bar {
+    display: flex;
+    height: 6px;
+    border-radius: 999px;
+    overflow: hidden;
+    margin-top: 10px;
+    background: rgba(255,255,255,0.06);
+}
+
+.compare-h2h-bar-home {
+    background: var(--green);
+    transition: width .3s ease;
+}
+
+.compare-h2h-bar-away {
+    background: var(--blue);
+    transition: width .3s ease;
+}
+
 </style>
 </head>
 
@@ -1634,6 +1729,13 @@ function renderApp() {
             </button>
 
             <button
+                data-tab="advanced"
+                onclick="openTab('advanced')"
+            >
+                🎯 Raio-X Técnico
+            </button>
+
+            <button
                 data-tab="compare"
                 onclick="openTab('compare')"
             >
@@ -1679,6 +1781,14 @@ function renderApp() {
             class="tab"
         >
             ${renderTeams()}
+        </section>
+
+
+        <section
+            id="tab-advanced"
+            class="tab"
+        >
+            ${renderAdvancedStats()}
         </section>
 
 
@@ -3053,6 +3163,464 @@ function renderTeams() {
 
 
 /* ============================================================
+   RAIO-X TÉCNICO / MÉTRICAS AVANÇADAS
+============================================================ */
+
+let CURRENT_ADV_CATEGORY = "shots";
+let ADV_SORT_COL = null;
+let ADV_SORT_DESC = true;
+
+function changeAdvCategory(cat) {
+    CURRENT_ADV_CATEGORY = cat;
+    ADV_SORT_COL = null;
+    const tabEl = document.getElementById("tab-advanced");
+    if (tabEl) {
+        tabEl.innerHTML = renderAdvancedStats();
+        setTimeout(renderAdvancedCharts, 50);
+    }
+}
+
+function sortAdvTable(colKey) {
+    if (ADV_SORT_COL === colKey) {
+        ADV_SORT_DESC = !ADV_SORT_DESC;
+    } else {
+        ADV_SORT_COL = colKey;
+        ADV_SORT_DESC = true;
+    }
+    const tabEl = document.getElementById("tab-advanced");
+    if (tabEl) {
+        tabEl.innerHTML = renderAdvancedStats();
+        setTimeout(renderAdvancedCharts, 50);
+    }
+}
+
+function renderAdvancedStats() {
+    const teams = getTeamsArray();
+    const cat = CURRENT_ADV_CATEGORY;
+
+    let defaultCol = "shots_on_target_avg";
+    if (cat === "creation") defaultCol = "possession_avg";
+    if (cat === "defense") defaultCol = "tackles_avg";
+    if (cat === "xg") defaultCol = "xg";
+
+    const sortCol = ADV_SORT_COL || defaultCol;
+    const isDesc = ADV_SORT_DESC;
+
+    const sortedTeams = [...teams].sort((a, b) => {
+        const valA = number(getStats(a)[sortCol]);
+        const valB = number(getStats(b)[sortCol]);
+        return isDesc ? valB - valA : valA - valB;
+    });
+
+    const topShotsOnTarget = [...teams].sort((a, b) => number(getStats(b).shots_on_target_avg) - number(getStats(a).shots_on_target_avg))[0];
+    const topPossession = [...teams].sort((a, b) => number(getStats(b).possession_avg) - number(getStats(a).possession_avg))[0];
+    const topCorners = [...teams].sort((a, b) => number(getStats(b).corners_avg) - number(getStats(a).corners_avg))[0];
+    const topTackles = [...teams].sort((a, b) => number(getStats(b).tackles_avg) - number(getStats(a).tackles_avg))[0];
+    const topXGOT = [...teams].sort((a, b) => number(getStats(b).xgot) - number(getStats(a).xgot))[0];
+    const topFewestShotsConc = [...teams].sort((a, b) => number(getStats(a).shots_conceded_avg) - number(getStats(b).shots_conceded_avg))[0];
+
+    const th = (label, col) => {
+        const isCurrent = sortCol === col;
+        const arrow = isCurrent ? (isDesc ? " ↓" : " ↑") : "";
+        const style = isCurrent ? "color:var(--green); font-weight:700;" : "";
+        return `<th class="th-sortable" style="${style}" onclick="sortAdvTable('${col}')" title="Clique para ordenar">${label}${arrow}</th>`;
+    };
+
+    let kpisHtml = "";
+    if (cat === "shots") {
+        kpisHtml = `
+            ${kpi("Mais Chutes no Gol", `${topShotsOnTarget.team} (${formatNumber(getStats(topShotsOnTarget).shots_on_target_avg, 2)}/j)`)}
+            ${kpi("Maior xGOT (Qualidade)", `${topXGOT.team} (${formatNumber(getStats(topXGOT).xgot, 2)}/j)`)}
+            ${kpi("Média Chutes/Jogo", formatNumber(averageMetric(teams, "shots_total_avg"), 2))}
+            ${kpi("Média Chutes no Gol", formatNumber(averageMetric(teams, "shots_on_target_avg"), 2))}
+        `;
+    } else if (cat === "creation") {
+        kpisHtml = `
+            ${kpi("Maior Posse de Bola", `${topPossession.team} (${formatNumber(getStats(topPossession).possession_avg, 1)}%)`)}
+            ${kpi("Mais Escanteios", `${topCorners.team} (${formatNumber(getStats(topCorners).corners_avg, 2)}/j)`)}
+            ${kpi("Média Posse da Liga", "50.0%")}
+            ${kpi("Média Escanteios/Jogo", formatNumber(averageMetric(teams, "corners_total_avg"), 2))}
+        `;
+    } else if (cat === "defense") {
+        kpisHtml = `
+            ${kpi("Mais Desarmes", `${topTackles.team} (${formatNumber(getStats(topTackles).tackles_avg, 2)}/j)`)}
+            ${kpi("Menos Chutes Cedidos", `${topFewestShotsConc.team} (${formatNumber(getStats(topFewestShotsConc).shots_conceded_avg, 2)}/j)`)}
+            ${kpi("Média Desarmes/Jogo", formatNumber(averageMetric(teams, "tackles_avg"), 2))}
+            ${kpi("Média Intercepções", formatNumber(averageMetric(teams, "interceptions_avg"), 2))}
+        `;
+    } else {
+        const topOpenPlay = [...teams].sort((a, b) => number(getStats(b).xg_open_play) - number(getStats(a).xg_open_play))[0];
+        const topSetPlay = [...teams].sort((a, b) => number(getStats(b).xg_set_play) - number(getStats(a).xg_set_play))[0];
+        kpisHtml = `
+            ${kpi("Top xG Jogada Normal", `${topOpenPlay.team} (${formatNumber(getStats(topOpenPlay).xg_open_play, 2)}/j)`)}
+            ${kpi("Top Bola Parada", `${topSetPlay.team} (${formatNumber(getStats(topSetPlay).xg_set_play, 2)}/j)`)}
+            ${kpi("Top xGOT (Alvo)", `${topXGOT.team} (${formatNumber(getStats(topXGOT).xgot, 2)}/j)`)}
+            ${kpi("Média xG/Jogo Liga", "2.59")}
+        `;
+    }
+
+    return `
+        <h2 class="section-title">
+            Raio-X Técnico: Métricas Avançadas
+        </h2>
+        <p class="section-subtitle">
+            Análise detalhada de finalizações, posse, criação, defesa e xG extraídos partida a partida da temporada 2026.
+        </p>
+
+        <div class="adv-pills">
+            <button class="adv-pill ${cat === 'shots' ? 'active' : ''}" onclick="changeAdvCategory('shots')">
+                🎯 Finalizações & Chutes
+            </button>
+            <button class="adv-pill ${cat === 'creation' ? 'active' : ''}" onclick="changeAdvCategory('creation')">
+                ⚽ Posse & Criação
+            </button>
+            <button class="adv-pill ${cat === 'defense' ? 'active' : ''}" onclick="changeAdvCategory('defense')">
+                🛡️ Defesa & Disciplina
+            </button>
+            <button class="adv-pill ${cat === 'xg' ? 'active' : ''}" onclick="changeAdvCategory('xg')">
+                📈 Gols Esperados (xG)
+            </button>
+        </div>
+
+        <div class="kpi-grid">
+            ${kpisHtml}
+        </div>
+
+        <div class="chart-grid">
+            <div class="chart-card">
+                <h3 id="advChart1Title">Destaques da Categoria</h3>
+                <p id="advChart1Subtitle">Top 10 equipes no fundamento</p>
+                <div class="chart-container">
+                    <canvas id="chartAdv1"></canvas>
+                </div>
+            </div>
+            <div class="chart-card">
+                <h3 id="advChart2Title">Eficiência e Desempenho</h3>
+                <p id="advChart2Subtitle">Comparativo técnico</p>
+                <div class="chart-container">
+                    <canvas id="chartAdv2"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title" style="margin-top:30px;">
+            Tabela Comparativa Completa
+        </h2>
+        <p class="section-subtitle">
+            Clique em qualquer cabeçalho de coluna para ordenar ou clique na equipe para abrir sua ficha técnica.
+        </p>
+
+        <div class="table-card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Equipe</th>
+                        ${th("Jogos", "games")}
+                        ${cat === 'shots' ? `
+                            ${th("Chutes/j", "shots_total_avg")}
+                            ${th("No Gol/j", "shots_on_target_avg")}
+                            ${th("Na Área/j", "shots_inside_box_avg")}
+                            ${th("Fora Área/j", "shots_outside_box_avg")}
+                            ${th("Fora Gol/j", "shots_off_target_avg")}
+                            ${th("Bloqueados", "shots_blocked_avg")}
+                            ${th("xGOT/j", "xgot")}
+                            ${th("Chutes Cedidos/j", "shots_conceded_avg")}
+                        ` : ''}
+                        ${cat === 'creation' ? `
+                            ${th("Posse %", "possession_avg")}
+                            ${th("Passes Certos/j", "passes_accurate_avg")}
+                            ${th("Precisão %", "passes_accuracy_pct_avg")}
+                            ${th("Campo Adv/j", "passes_opp_half_avg")}
+                            ${th("Toques Área/j", "touches_opp_box_avg")}
+                            ${th("Grandes Chances", "big_chances_avg")}
+                            ${th("Escanteios/j", "corners_avg")}
+                            ${th("Escanteios Jogo", "corners_total_avg")}
+                        ` : ''}
+                        ${cat === 'defense' ? `
+                            ${th("Desarmes/j", "tackles_avg")}
+                            ${th("Intercepções/j", "interceptions_avg")}
+                            ${th("Bloqueios/j", "blocks_avg")}
+                            ${th("Afastadas/j", "clearances_avg")}
+                            ${th("Defesas Goleiro", "keeper_saves_avg")}
+                            ${th("Chutes Cedidos", "shots_conceded_avg")}
+                            ${th("Faltas/j", "fouls_avg")}
+                            ${th("Amarelos/j", "yellow_cards_avg")}
+                        ` : ''}
+                        ${cat === 'xg' ? `
+                            ${th("xG/j", "xg")}
+                            ${th("xGA/j", "xga")}
+                            ${th("xGD/j", "xgd")}
+                            ${th("xG Aberto/j", "xg_open_play")}
+                            ${th("xG Bola Parada", "xg_set_play")}
+                            ${th("xG s/ Pênalti", "xg_non_penalty")}
+                            ${th("xGOT Feito", "xgot")}
+                            ${th("xGOT Cedido", "xgot_conceded")}
+                        ` : ''}
+                    </tr>
+                </thead>
+                <tbody>
+                    ${sortedTeams.map((team, idx) => {
+                        const s = getStats(team);
+                        return `
+                            <tr class="team-row" onclick="openTeamModal('${escapeQuote(team.team)}')">
+                                <td>${idx + 1}</td>
+                                <td>
+                                    <div class="team-cell">
+                                        ${getTeamLogo(team.team)}
+                                        ${team.team}
+                                    </div>
+                                </td>
+                                <td>${number(s.games)}</td>
+                                ${cat === 'shots' ? `
+                                    <td><strong>${formatNumber(s.shots_total_avg, 2)}</strong></td>
+                                    <td class="metric-positive"><strong>${formatNumber(s.shots_on_target_avg, 2)}</strong></td>
+                                    <td>${formatNumber(s.shots_inside_box_avg, 2)}</td>
+                                    <td>${formatNumber(s.shots_outside_box_avg, 2)}</td>
+                                    <td>${formatNumber(s.shots_off_target_avg, 2)}</td>
+                                    <td>${formatNumber(s.shots_blocked_avg, 2)}</td>
+                                    <td class="metric-blue"><strong>${formatNumber(s.xgot, 2)}</strong></td>
+                                    <td class="metric-negative">${formatNumber(s.shots_conceded_avg, 2)}</td>
+                                ` : ''}
+                                ${cat === 'creation' ? `
+                                    <td class="metric-positive"><strong>${formatNumber(s.possession_avg, 1)}%</strong></td>
+                                    <td>${formatNumber(s.passes_accurate_avg, 1)}</td>
+                                    <td>${formatNumber(s.passes_accuracy_pct_avg, 1)}%</td>
+                                    <td>${formatNumber(s.passes_opp_half_avg, 1)}</td>
+                                    <td class="metric-blue"><strong>${formatNumber(s.touches_opp_box_avg, 1)}</strong></td>
+                                    <td>${formatNumber(s.big_chances_avg, 2)}</td>
+                                    <td class="metric-positive"><strong>${formatNumber(s.corners_avg, 2)}</strong></td>
+                                    <td>${formatNumber(s.corners_total_avg, 2)}</td>
+                                ` : ''}
+                                ${cat === 'defense' ? `
+                                    <td class="metric-positive"><strong>${formatNumber(s.tackles_avg, 2)}</strong></td>
+                                    <td class="metric-blue"><strong>${formatNumber(s.interceptions_avg, 2)}</strong></td>
+                                    <td>${formatNumber(s.blocks_avg, 2)}</td>
+                                    <td>${formatNumber(s.clearances_avg, 1)}</td>
+                                    <td>${formatNumber(s.keeper_saves_avg, 2)}</td>
+                                    <td class="metric-negative"><strong>${formatNumber(s.shots_conceded_avg, 2)}</strong></td>
+                                    <td>${formatNumber(s.fouls_avg, 1)}</td>
+                                    <td>${formatNumber(s.yellow_cards_avg, 2)}</td>
+                                ` : ''}
+                                ${cat === 'xg' ? `
+                                    <td class="metric-positive"><strong>${formatNumber(s.xg, 2)}</strong></td>
+                                    <td class="metric-negative"><strong>${formatNumber(s.xga, 2)}</strong></td>
+                                    <td class="${number(s.xgd) >= 0 ? 'metric-positive' : 'metric-negative'}"><strong>${formatNumber(s.xgd, 2)}</strong></td>
+                                    <td>${formatNumber(s.xg_open_play, 2)}</td>
+                                    <td>${formatNumber(s.xg_set_play, 2)}</td>
+                                    <td>${formatNumber(s.xg_non_penalty, 2)}</td>
+                                    <td class="metric-blue"><strong>${formatNumber(s.xgot, 2)}</strong></td>
+                                    <td>${formatNumber(s.xgot_conceded, 2)}</td>
+                                ` : ''}
+                            </tr>
+                        `;
+                    }).join("")}
+                </tbody>
+            </table>
+        </div>
+    `;
+}
+
+function renderAdvancedCharts() {
+    if (!window.Chart) return;
+    const teams = getTeamsArray();
+    const cat = CURRENT_ADV_CATEGORY;
+
+    destroyChart("adv1");
+    destroyChart("adv2");
+
+    const canvas1 = document.getElementById("chartAdv1");
+    const canvas2 = document.getElementById("chartAdv2");
+    if (!canvas1 || !canvas2) return;
+
+    if (cat === "shots") {
+        document.getElementById("advChart1Title").innerText = "Finalizações no Gol vs Fora";
+        document.getElementById("advChart1Subtitle").innerText = "Top 10 equipes com mais chutes a gol por partida";
+
+        const top10 = [...teams].sort((a, b) => number(getStats(b).shots_on_target_avg) - number(getStats(a).shots_on_target_avg)).slice(0, 10);
+        charts.adv1 = new Chart(canvas1, {
+            type: "bar",
+            data: {
+                labels: top10.map(t => t.team),
+                datasets: [
+                    {
+                        label: "No Gol / Jogo",
+                        data: top10.map(t => number(getStats(t).shots_on_target_avg)),
+                        backgroundColor: "rgba(53,199,122,.85)",
+                        borderRadius: 6
+                    },
+                    {
+                        label: "Fora do Gol / Jogo",
+                        data: top10.map(t => number(getStats(t).shots_off_target_avg)),
+                        backgroundColor: "rgba(239,100,97,.7)",
+                        borderRadius: 6
+                    }
+                ]
+            },
+            options: chartOptions("")
+        });
+
+        document.getElementById("advChart2Title").innerText = "Qualidade de Chute: xGOT";
+        document.getElementById("advChart2Subtitle").innerText = "Gols esperados no alvo (após a finalização)";
+
+        const topXGOT = [...teams].sort((a, b) => number(getStats(b).xgot) - number(getStats(a).xgot)).slice(0, 10);
+        charts.adv2 = new Chart(canvas2, {
+            type: "bar",
+            data: {
+                labels: topXGOT.map(t => t.team),
+                datasets: [{
+                    label: "xGOT / Jogo",
+                    data: topXGOT.map(t => number(getStats(t).xgot)),
+                    backgroundColor: "rgba(72,169,230,.85)",
+                    borderRadius: 6
+                }]
+            },
+            options: chartOptions("")
+        });
+    } else if (cat === "creation") {
+        document.getElementById("advChart1Title").innerText = "Posse de Bola Média (%)";
+        document.getElementById("advChart1Subtitle").innerText = "Top 10 equipes com maior controle de posse";
+
+        const top10 = [...teams].sort((a, b) => number(getStats(b).possession_avg) - number(getStats(a).possession_avg)).slice(0, 10);
+        charts.adv1 = new Chart(canvas1, {
+            type: "bar",
+            data: {
+                labels: top10.map(t => t.team),
+                datasets: [{
+                    label: "Posse (%)",
+                    data: top10.map(t => number(getStats(t).possession_avg)),
+                    backgroundColor: "rgba(53,199,122,.85)",
+                    borderRadius: 6
+                }]
+            },
+            options: chartOptions("")
+        });
+
+        document.getElementById("advChart2Title").innerText = "Média de Escanteios por Jogo";
+        document.getElementById("advChart2Subtitle").innerText = "Escanteios a favor vs Total no jogo";
+
+        const topCorners = [...teams].sort((a, b) => number(getStats(b).corners_avg) - number(getStats(a).corners_avg)).slice(0, 10);
+        charts.adv2 = new Chart(canvas2, {
+            type: "bar",
+            data: {
+                labels: topCorners.map(t => t.team),
+                datasets: [
+                    {
+                        label: "A Favor / Jogo",
+                        data: topCorners.map(t => number(getStats(t).corners_avg)),
+                        backgroundColor: "rgba(240,165,74,.85)",
+                        borderRadius: 6
+                    },
+                    {
+                        label: "Total no Jogo (Ambos)",
+                        data: topCorners.map(t => number(getStats(t).corners_total_avg)),
+                        backgroundColor: "rgba(155,126,222,.7)",
+                        borderRadius: 6
+                    }
+                ]
+            },
+            options: chartOptions("")
+        });
+    } else if (cat === "defense") {
+        document.getElementById("advChart1Title").innerText = "Ações Defensivas (Desarmes & Intercepções)";
+        document.getElementById("advChart1Subtitle").innerText = "Top 10 equipes em volume de desarmes";
+
+        const top10 = [...teams].sort((a, b) => number(getStats(b).tackles_avg) - number(getStats(a).tackles_avg)).slice(0, 10);
+        charts.adv1 = new Chart(canvas1, {
+            type: "bar",
+            data: {
+                labels: top10.map(t => t.team),
+                datasets: [
+                    {
+                        label: "Desarmes / Jogo",
+                        data: top10.map(t => number(getStats(t).tackles_avg)),
+                        backgroundColor: "rgba(53,199,122,.85)",
+                        borderRadius: 6
+                    },
+                    {
+                        label: "Intercepções / Jogo",
+                        data: top10.map(t => number(getStats(t).interceptions_avg)),
+                        backgroundColor: "rgba(72,169,230,.8)",
+                        borderRadius: 6
+                    }
+                ]
+            },
+            options: chartOptions("")
+        });
+
+        document.getElementById("advChart2Title").innerText = "Menos Chutes Cedidos por Jogo";
+        document.getElementById("advChart2Subtitle").innerText = "Equipes que menos sofrem finalizações";
+
+        const topFewest = [...teams].sort((a, b) => number(getStats(a).shots_conceded_avg) - number(getStats(b).shots_conceded_avg)).slice(0, 10);
+        charts.adv2 = new Chart(canvas2, {
+            type: "bar",
+            data: {
+                labels: topFewest.map(t => t.team),
+                datasets: [{
+                    label: "Chutes Cedidos / Jogo",
+                    data: topFewest.map(t => number(getStats(t).shots_conceded_avg)),
+                    backgroundColor: "rgba(72,169,230,.85)",
+                    borderRadius: 6
+                }]
+            },
+            options: chartOptions("")
+        });
+    } else {
+        document.getElementById("advChart1Title").innerText = "xG: Jogada Normal vs Bola Parada";
+        document.getElementById("advChart1Subtitle").innerText = "Origem dos gols esperados das melhores equipes";
+
+        const top10 = [...teams].sort((a, b) => number(getStats(b).xg) - number(getStats(a).xg)).slice(0, 10);
+        charts.adv1 = new Chart(canvas1, {
+            type: "bar",
+            data: {
+                labels: top10.map(t => t.team),
+                datasets: [
+                    {
+                        label: "xG Jogada Normal",
+                        data: top10.map(t => number(getStats(t).xg_open_play)),
+                        backgroundColor: "rgba(53,199,122,.85)",
+                        borderRadius: 6
+                    },
+                    {
+                        label: "xG Bola Parada",
+                        data: top10.map(t => number(getStats(t).xg_set_play)),
+                        backgroundColor: "rgba(240,165,74,.85)",
+                        borderRadius: 6
+                    }
+                ]
+            },
+            options: chartOptions("")
+        });
+
+        document.getElementById("advChart2Title").innerText = "Qualidade da Finalização (xGOT vs xG)";
+        document.getElementById("advChart2Subtitle").innerText = "Gols esperados criados vs qualidade final no alvo";
+
+        charts.adv2 = new Chart(canvas2, {
+            type: "bar",
+            data: {
+                labels: top10.map(t => t.team),
+                datasets: [
+                    {
+                        label: "xG Criado",
+                        data: top10.map(t => number(getStats(t).xg)),
+                        backgroundColor: "rgba(155,126,222,.7)",
+                        borderRadius: 6
+                    },
+                    {
+                        label: "xGOT no Alvo",
+                        data: top10.map(t => number(getStats(t).xgot)),
+                        backgroundColor: "rgba(72,169,230,.85)",
+                        borderRadius: 6
+                    }
+                ]
+            },
+            options: chartOptions("")
+        });
+    }
+}
+
+
+/* ============================================================
    COMPARAR PARTIDA
 ============================================================ */
 
@@ -3564,9 +4132,55 @@ function updateComparison() {
                 )}
 
             </div>
+
+            <h2 class="section-title" style="margin-top:34px;">
+                Raio-X do Confronto: Estatísticas Médias
+            </h2>
+            <p class="section-subtitle">
+                Comparativo direto entre o desempenho de <strong>${homeName}</strong> (em casa) e <strong>${awayName}</strong> (fora).
+            </p>
+
+            <div class="compare-h2h-grid">
+                ${h2hBarCard("Posse de Bola Média", homeName, awayName, home.mandante.possession_avg, away.visitante.possession_avg, "%", 1)}
+                ${h2hBarCard("Finalizações no Gol / Jogo", homeName, awayName, home.mandante.shots_on_target_avg, away.visitante.shots_on_target_avg, "", 2)}
+                ${h2hBarCard("Chutes Dentro da Área / Jogo", homeName, awayName, home.mandante.shots_inside_box_avg, away.visitante.shots_inside_box_avg, "", 2)}
+                ${h2hBarCard("Qualidade no Alvo (xGOT)", homeName, awayName, home.mandante.xgot, away.visitante.xgot, "", 2)}
+                ${h2hBarCard("Escanteios a Favor / Jogo", homeName, awayName, home.mandante.corners_avg, away.visitante.corners_avg, "", 2, true)}
+                ${h2hBarCard("Toques na Área Adversária / Jogo", homeName, awayName, home.mandante.touches_opp_box_avg, away.visitante.touches_opp_box_avg, "", 1)}
+                ${h2hBarCard("Desarmes / Jogo", homeName, awayName, home.mandante.tackles_avg, away.visitante.tackles_avg, "", 2)}
+                ${h2hBarCard("Defesas do Goleiro / Jogo", homeName, awayName, home.mandante.keeper_saves_avg, away.visitante.keeper_saves_avg, "", 2)}
+            </div>
         `;
 }
 
+function h2hBarCard(title, homeName, awayName, valHome, valAway, unit = "", decimals = 2, showTotal = false) {
+    const numH = number(valHome);
+    const numA = number(valAway);
+    const sum = numH + numA;
+    const pctH = sum > 0 ? Math.round((numH / sum) * 100) : 50;
+    const pctA = sum > 0 ? (100 - pctH) : 50;
+    const totalText = showTotal ? ` <span style="font-size:11px;color:var(--text-secondary);font-weight:400;">(Total: ${formatNumber(sum, decimals)})</span>` : "";
+
+    return `
+        <div class="compare-h2h-item">
+            <div class="compare-h2h-header">
+                <span>${title}${totalText}</span>
+            </div>
+            <div class="compare-h2h-values">
+                <span style="color:var(--green);">${formatNumber(numH, decimals)}${unit}</span>
+                <span style="color:var(--blue);">${formatNumber(numA, decimals)}${unit}</span>
+            </div>
+            <div class="compare-h2h-bar">
+                <div class="compare-h2h-bar-home" style="width:${pctH}%;"></div>
+                <div class="compare-h2h-bar-away" style="width:${pctA}%;"></div>
+            </div>
+            <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--text-secondary);margin-top:6px;">
+                <span>${homeName} (${pctH}%)</span>
+                <span>${awayName} (${pctA}%)</span>
+            </div>
+        </div>
+    `;
+}
 
 function predictionCard(label, value) {
 
@@ -4316,7 +4930,7 @@ function openTeamModal(teamName) {
                     <div class="ranking-header">
 
                         <h3>
-                            Expected Goals
+                            Expected Goals (xG Detalhado)
                         </h3>
 
                     </div>
@@ -4352,6 +4966,249 @@ function openTeamModal(teamName) {
                             formatNumber(
                                 stats.xgd,
                                 2
+                            )
+                        )}
+
+                        ${detailMetric(
+                            "xG Aberto",
+                            formatNumber(
+                                stats.xg_open_play,
+                                2
+                            )
+                        )}
+
+                        ${detailMetric(
+                            "Bola Parada",
+                            formatNumber(
+                                stats.xg_set_play,
+                                2
+                            )
+                        )}
+
+                        ${detailMetric(
+                            "xGOT (Alvo)",
+                            formatNumber(
+                                stats.xgot,
+                                2
+                            )
+                        )}
+
+                    </div>
+
+                </div>
+
+
+                <div class="ranking-card">
+
+                    <div class="ranking-header">
+
+                        <h3>
+                            Finalizações (Chutes)
+                        </h3>
+
+                    </div>
+
+                    <div
+                        style="
+                            padding:20px;
+                            display:grid;
+                            grid-template-columns:
+                                repeat(3,1fr);
+                            gap:14px;
+                        "
+                    >
+
+                        ${detailMetric(
+                            "Chutes/j",
+                            formatNumber(
+                                stats.shots_total_avg,
+                                1
+                            )
+                        )}
+
+                        ${detailMetric(
+                            "No Gol/j",
+                            formatNumber(
+                                stats.shots_on_target_avg,
+                                1
+                            )
+                        )}
+
+                        ${detailMetric(
+                            "Na Área/j",
+                            formatNumber(
+                                stats.shots_inside_box_avg,
+                                1
+                            )
+                        )}
+
+                        ${detailMetric(
+                            "Fora Área",
+                            formatNumber(
+                                stats.shots_outside_box_avg,
+                                1
+                            )
+                        )}
+
+                        ${detailMetric(
+                            "Bloqueados",
+                            formatNumber(
+                                stats.shots_blocked_avg,
+                                1
+                            )
+                        )}
+
+                        ${detailMetric(
+                            "Cedidos/j",
+                            formatNumber(
+                                stats.shots_conceded_avg,
+                                1
+                            )
+                        )}
+
+                    </div>
+
+                </div>
+
+
+                <div class="ranking-card">
+
+                    <div class="ranking-header">
+
+                        <h3>
+                            Passes & Criação
+                        </h3>
+
+                    </div>
+
+                    <div
+                        style="
+                            padding:20px;
+                            display:grid;
+                            grid-template-columns:
+                                repeat(3,1fr);
+                            gap:14px;
+                        "
+                    >
+
+                        ${detailMetric(
+                            "Posse",
+                            formatNumber(
+                                stats.possession_avg,
+                                1
+                            ) + "%"
+                        )}
+
+                        ${detailMetric(
+                            "Precisão",
+                            formatNumber(
+                                stats.passes_accuracy_pct_avg,
+                                0
+                            ) + "%"
+                        )}
+
+                        ${detailMetric(
+                            "Passes Certos",
+                            formatNumber(
+                                stats.passes_accurate_avg,
+                                0
+                            )
+                        )}
+
+                        ${detailMetric(
+                            "Campo Adv.",
+                            formatNumber(
+                                stats.passes_opp_half_avg,
+                                0
+                            )
+                        )}
+
+                        ${detailMetric(
+                            "Toques Área",
+                            formatNumber(
+                                stats.touches_opp_box_avg,
+                                1
+                            )
+                        )}
+
+                        ${detailMetric(
+                            "Escanteios",
+                            formatNumber(
+                                stats.corners_avg,
+                                1
+                            )
+                        )}
+
+                    </div>
+
+                </div>
+
+
+                <div class="ranking-card">
+
+                    <div class="ranking-header">
+
+                        <h3>
+                            Defesa & Disciplina
+                        </h3>
+
+                    </div>
+
+                    <div
+                        style="
+                            padding:20px;
+                            display:grid;
+                            grid-template-columns:
+                                repeat(3,1fr);
+                            gap:14px;
+                        "
+                    >
+
+                        ${detailMetric(
+                            "Desarmes/j",
+                            formatNumber(
+                                stats.tackles_avg,
+                                1
+                            )
+                        )}
+
+                        ${detailMetric(
+                            "Intercepções",
+                            formatNumber(
+                                stats.interceptions_avg,
+                                1
+                            )
+                        )}
+
+                        ${detailMetric(
+                            "Bloqueios",
+                            formatNumber(
+                                stats.blocks_avg,
+                                1
+                            )
+                        )}
+
+                        ${detailMetric(
+                            "Afastadas",
+                            formatNumber(
+                                stats.clearances_avg,
+                                1
+                            )
+                        )}
+
+                        ${detailMetric(
+                            "Defesas Gol",
+                            formatNumber(
+                                stats.keeper_saves_avg,
+                                1
+                            )
+                        )}
+
+                        ${detailMetric(
+                            "Faltas/j",
+                            formatNumber(
+                                stats.fouls_avg,
+                                1
                             )
                         )}
 
@@ -4604,6 +5461,11 @@ function openTab(tabName) {
         ) {
 
             updateHistory();
+        }
+
+        if (tabName === "advanced") {
+
+            renderAdvancedCharts();
         }
 
     }, 50);

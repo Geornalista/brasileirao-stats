@@ -20,7 +20,7 @@ const RAW_DIR = path.join(DATA_DIR, "raw");
 const PROCESSED_DIR = path.join(DATA_DIR, "processed");
 const MATCHES_DIR = path.join(RAW_DIR, "matches");
 
-const REQUEST_DELAY = 400;
+const REQUEST_DELAY = 100;
 
 
 // ============================================================
@@ -460,83 +460,111 @@ async function fetchMatchDetails(matchId) {
 
 
 // ============================================================
-// 8. EXTRAIR XG DA PARTIDA
+// 8. EXTRAIR ESTATÍSTICAS DETALHADAS DA PARTIDA
 // ============================================================
 
-function extractMatchXG(matchData) {
-
-    try {
-
-        const periods =
-            matchData?.content?.stats?.Periods;
-
-        if (!periods) {
-
-            return null;
-
-        }
-
-        const allPeriod =
-            periods.All ||
-            periods["All"];
-
-        if (!allPeriod) {
-
-            return null;
-
-        }
-
-        const groups =
-            allPeriod.stats || [];
-
-        for (const group of groups) {
-
-            const stats =
-                group.stats || [];
-
-            for (const stat of stats) {
-
-                if (
-                    stat.key === "expected_goals"
-                ) {
-
-                    const values =
-                        stat.stats || [];
-
-                    if (
-                        values.length >= 2 &&
-                        values[0] !== null &&
-                        values[1] !== null
-                    ) {
-
-                        return {
-
-                            home:
-                                Number(values[0]),
-
-                            away:
-                                Number(values[1])
-
-                        };
-
-                    }
-
-                }
-
-            }
-
-        }
-
-    } catch (error) {
-
-        console.log(
-            `⚠ Erro ao extrair xG: ${error.message}`
-        );
-
+function parseStatValue(raw) {
+    if (raw === null || raw === undefined || raw === "") return { value: 0, percent: null };
+    if (typeof raw === "number") return { value: raw, percent: null };
+    
+    // Formato com porcentagem: "413 (85%)"
+    const match = String(raw).match(/([\d.,]+)\s*\(([\d.,]+)%\)/);
+    if (match) {
+        const count = parseFloat(match[1].replace(",", "."));
+        const pct = parseFloat(match[2].replace(",", "."));
+        return { value: count, percent: pct };
     }
+    
+    const num = parseFloat(String(raw).replace(",", "."));
+    return { value: isNaN(num) ? 0 : num, percent: null };
+}
 
-    return null;
+function extractMatchStats(matchData) {
+    try {
+        const periods = matchData?.content?.stats?.Periods;
+        const allPeriod = periods?.All?.stats || [];
+        
+        const rawMap = {};
+        for (const group of allPeriod) {
+            for (const stat of (group.stats || [])) {
+                if (stat.key && stat.stats && stat.stats.length >= 2) {
+                    rawMap[stat.key] = {
+                        home: stat.stats[0],
+                        away: stat.stats[1]
+                    };
+                }
+            }
+        }
+        
+        const parseFor = (side) => {
+            const get = (key) => rawMap[key]?.[side];
+            const val = (key) => parseStatValue(get(key)).value;
+            
+            const passesParsed = parseStatValue(get("accurate_passes"));
+            const crossesParsed = parseStatValue(get("accurate_crosses"));
+            const longBallsParsed = parseStatValue(get("long_balls_accurate"));
+            const groundDuelsParsed = parseStatValue(get("ground_duels_won"));
+            const aerialDuelsParsed = parseStatValue(get("aerials_won"));
+            const dribblesParsed = parseStatValue(get("dribbles_succeeded"));
+            
+            return {
+                possession: val("BallPossesion"),
+                xg: val("expected_goals"),
+                xg_open_play: val("expected_goals_open_play"),
+                xg_set_play: val("expected_goals_set_play"),
+                xg_non_penalty: val("expected_goals_non_penalty"),
+                xgot: val("expected_goals_on_target"),
+                
+                shots_total: val("total_shots"),
+                shots_on_target: val("ShotsOnTarget"),
+                shots_off_target: val("ShotsOffTarget"),
+                shots_blocked: val("blocked_shots"),
+                shots_woodwork: val("shots_woodwork"),
+                shots_inside_box: val("shots_inside_box"),
+                shots_outside_box: val("shots_outside_box"),
+                
+                passes_accurate: passesParsed.value,
+                passes_accuracy_pct: passesParsed.percent,
+                passes_own_half: val("own_half_passes"),
+                passes_opp_half: val("opposition_half_passes"),
+                long_balls_accurate: longBallsParsed.value,
+                long_balls_accuracy_pct: longBallsParsed.percent,
+                crosses_accurate: crossesParsed.value,
+                crosses_accuracy_pct: crossesParsed.percent,
+                touches_opp_box: val("touches_opp_box"),
+                offsides: val("Offsides"),
+                big_chances: val("big_chance"),
+                big_chances_missed: val("big_chance_missed_title"),
+                
+                tackles: val("matchstats.headers.tackles"),
+                interceptions: val("interceptions"),
+                blocks: val("shot_blocks"),
+                clearances: val("clearances"),
+                keeper_saves: val("keeper_saves"),
+                
+                duels_won: val("duel_won"),
+                ground_duels_won: groundDuelsParsed.value,
+                ground_duels_pct: groundDuelsParsed.percent,
+                aerial_duels_won: aerialDuelsParsed.value,
+                aerial_duels_pct: aerialDuelsParsed.percent,
+                dribbles_won: dribblesParsed.value,
+                dribbles_pct: dribblesParsed.percent,
+                
+                corners: val("corners"),
+                yellow_cards: val("yellow_cards"),
+                red_cards: val("red_cards"),
+                fouls: val("fouls")
+            };
+        };
 
+        return {
+            home: parseFor("home"),
+            away: parseFor("away")
+        };
+    } catch (error) {
+        console.log(`⚠ Erro ao extrair estatísticas detalhadas: ${error.message}`);
+        return null;
+    }
 }
 
 
@@ -548,12 +576,9 @@ function normalizeMatchDetails(
     match,
     matchData
 ) {
-
-    const xg =
-        extractMatchXG(matchData);
+    const detailedStats = extractMatchStats(matchData);
 
     return {
-
         match_id:
             match.match_id,
 
@@ -567,7 +592,6 @@ function normalizeMatchDetails(
             match.finished,
 
         home: {
-
             id:
                 match.home.id,
 
@@ -578,12 +602,13 @@ function normalizeMatchDetails(
                 match.score.home,
 
             xg:
-                xg?.home ?? null
+                detailedStats?.home?.xg ?? null,
 
+            stats:
+                detailedStats?.home ?? null
         },
 
         away: {
-
             id:
                 match.away.id,
 
@@ -594,12 +619,12 @@ function normalizeMatchDetails(
                 match.score.away,
 
             xg:
-                xg?.away ?? null
+                detailedStats?.away?.xg ?? null,
 
+            stats:
+                detailedStats?.away ?? null
         }
-
     };
-
 }
 
 
@@ -656,15 +681,12 @@ async function getFinishedMatchesDetails(matches) {
         // ----------------------------------------------------
 
         if (fs.existsSync(filename)) {
-
-            console.log(
-                "✓ Cache encontrado"
-            );
-
-            cached++;
-
-            continue;
-
+            const existing = readJSON(filename);
+            if (existing && existing.home && existing.home.stats) {
+                console.log("✓ Cache completo encontrado");
+                cached++;
+                continue;
+            }
         }
 
 

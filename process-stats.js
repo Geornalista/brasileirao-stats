@@ -233,13 +233,110 @@ function createEmptyStats() {
     failed_to_score_count: 0,
     failed_to_score: 0,
 
+    // Gols Esperados (xG Detalhado)
     xg_total: 0,
     xga_total: 0,
     xgd_total: 0,
-
     xg: 0,
     xga: 0,
     xgd: 0,
+    xg_open_play_total: 0,
+    xg_open_play: 0,
+    xg_set_play_total: 0,
+    xg_set_play: 0,
+    xg_non_penalty_total: 0,
+    xg_non_penalty: 0,
+    xgot_total: 0,
+    xgot: 0,
+    xgot_conceded_total: 0,
+    xgot_conceded: 0,
+
+    // Finalizações & Chutes
+    shots_total_sum: 0,
+    shots_total_avg: 0,
+    shots_on_target_sum: 0,
+    shots_on_target_avg: 0,
+    shots_off_target_sum: 0,
+    shots_off_target_avg: 0,
+    shots_blocked_sum: 0,
+    shots_blocked_avg: 0,
+    shots_woodwork_sum: 0,
+    shots_woodwork_avg: 0,
+    shots_inside_box_sum: 0,
+    shots_inside_box_avg: 0,
+    shots_outside_box_sum: 0,
+    shots_outside_box_avg: 0,
+    shots_conceded_total_sum: 0,
+    shots_conceded_avg: 0,
+    shots_on_target_conceded_sum: 0,
+    shots_on_target_conceded_avg: 0,
+    shots_inside_box_conceded_sum: 0,
+    shots_inside_box_conceded_avg: 0,
+
+    // Posse de Bola, Passes & Criação
+    possession_sum: 0,
+    possession_avg: 0,
+    passes_accurate_sum: 0,
+    passes_accurate_avg: 0,
+    passes_accuracy_pct_sum: 0,
+    passes_accuracy_pct_count: 0,
+    passes_accuracy_pct_avg: 0,
+    passes_own_half_sum: 0,
+    passes_own_half_avg: 0,
+    passes_opp_half_sum: 0,
+    passes_opp_half_avg: 0,
+    long_balls_accurate_sum: 0,
+    long_balls_accurate_avg: 0,
+    crosses_accurate_sum: 0,
+    crosses_accurate_avg: 0,
+    crosses_accuracy_pct_sum: 0,
+    crosses_accuracy_pct_count: 0,
+    crosses_accuracy_pct_avg: 0,
+    touches_opp_box_sum: 0,
+    touches_opp_box_avg: 0,
+    touches_opp_box_conceded_sum: 0,
+    touches_opp_box_conceded_avg: 0,
+    offsides_sum: 0,
+    offsides_avg: 0,
+    big_chances_sum: 0,
+    big_chances_avg: 0,
+    big_chances_missed_sum: 0,
+    big_chances_missed_avg: 0,
+
+    // Defesa
+    tackles_sum: 0,
+    tackles_avg: 0,
+    interceptions_sum: 0,
+    interceptions_avg: 0,
+    blocks_sum: 0,
+    blocks_avg: 0,
+    clearances_sum: 0,
+    clearances_avg: 0,
+    keeper_saves_sum: 0,
+    keeper_saves_avg: 0,
+
+    // Duelos
+    duels_won_sum: 0,
+    duels_won_avg: 0,
+    ground_duels_won_sum: 0,
+    ground_duels_won_avg: 0,
+    aerial_duels_won_sum: 0,
+    aerial_duels_won_avg: 0,
+    dribbles_won_sum: 0,
+    dribbles_won_avg: 0,
+
+    // Escanteios & Disciplina
+    corners_sum: 0,
+    corners_avg: 0,
+    corners_conceded_sum: 0,
+    corners_conceded_avg: 0,
+    corners_total_avg: 0,
+    yellow_cards_sum: 0,
+    yellow_cards_avg: 0,
+    red_cards_sum: 0,
+    red_cards_avg: 0,
+    fouls_sum: 0,
+    fouls_avg: 0,
 
     points: 0,
     points_per_game: 0
@@ -287,6 +384,66 @@ function finalizeStats(stats) {
   stats.xg = average(stats.xg_total, games);
   stats.xga = average(stats.xga_total, games);
   stats.xgd = average(stats.xgd_total, games);
+
+  // xG detalhado
+  stats.xg_open_play = average(stats.xg_open_play_total, games);
+  stats.xg_set_play = average(stats.xg_set_play_total, games);
+  stats.xg_non_penalty = average(stats.xg_non_penalty_total, games);
+  stats.xgot = average(stats.xgot_total, games);
+  stats.xgot_conceded = average(stats.xgot_conceded_total, games);
+
+  // Finalizações
+  stats.shots_total_avg = average(stats.shots_total_sum, games);
+  stats.shots_on_target_avg = average(stats.shots_on_target_sum, games);
+  stats.shots_off_target_avg = average(stats.shots_off_target_sum, games);
+  stats.shots_blocked_avg = average(stats.shots_blocked_sum, games);
+  stats.shots_woodwork_avg = average(stats.shots_woodwork_sum, games);
+  stats.shots_inside_box_avg = average(stats.shots_inside_box_sum, games);
+  stats.shots_outside_box_avg = average(stats.shots_outside_box_sum, games);
+  stats.shots_conceded_avg = average(stats.shots_conceded_total_sum, games);
+  stats.shots_on_target_conceded_avg = average(stats.shots_on_target_conceded_sum, games);
+  stats.shots_inside_box_conceded_avg = average(stats.shots_inside_box_conceded_sum, games);
+
+  // Posse, Passes e Criação
+  stats.possession_avg = average(stats.possession_sum, games);
+  stats.passes_accurate_avg = average(stats.passes_accurate_sum, games);
+  stats.passes_accuracy_pct_avg = stats.passes_accuracy_pct_count > 0
+    ? round(stats.passes_accuracy_pct_sum / stats.passes_accuracy_pct_count, 1)
+    : 0;
+  stats.passes_own_half_avg = average(stats.passes_own_half_sum, games);
+  stats.passes_opp_half_avg = average(stats.passes_opp_half_sum, games);
+  stats.long_balls_accurate_avg = average(stats.long_balls_accurate_sum, games);
+  stats.crosses_accurate_avg = average(stats.crosses_accurate_sum, games);
+  stats.crosses_accuracy_pct_avg = stats.crosses_accuracy_pct_count > 0
+    ? round(stats.crosses_accuracy_pct_sum / stats.crosses_accuracy_pct_count, 1)
+    : 0;
+  stats.touches_opp_box_avg = average(stats.touches_opp_box_sum, games);
+  stats.touches_opp_box_conceded_avg = average(stats.touches_opp_box_conceded_sum, games);
+  stats.offsides_avg = average(stats.offsides_sum, games);
+  stats.big_chances_avg = average(stats.big_chances_sum, games);
+  stats.big_chances_missed_avg = average(stats.big_chances_missed_sum, games);
+
+  // Defesa
+  stats.tackles_avg = average(stats.tackles_sum, games);
+  stats.interceptions_avg = average(stats.interceptions_sum, games);
+  stats.blocks_avg = average(stats.blocks_sum, games);
+  stats.clearances_avg = average(stats.clearances_sum, games);
+  stats.keeper_saves_avg = average(stats.keeper_saves_sum, games);
+
+  // Duelos
+  stats.duels_won_avg = average(stats.duels_won_sum, games);
+  stats.ground_duels_won_avg = average(stats.ground_duels_won_sum, games);
+  stats.aerial_duels_won_avg = average(stats.aerial_duels_won_sum, games);
+  stats.dribbles_won_avg = average(stats.dribbles_won_sum, games);
+
+  // Escanteios & Disciplina
+  stats.corners_avg = average(stats.corners_sum, games);
+  stats.corners_conceded_avg = average(stats.corners_conceded_sum, games);
+  stats.corners_total_avg = round(stats.corners_avg + stats.corners_conceded_avg, 2);
+
+  stats.yellow_cards_avg = average(stats.yellow_cards_sum, games);
+  stats.red_cards_avg = average(stats.red_cards_sum, games);
+  stats.fouls_avg = average(stats.fouls_sum, games);
 
   stats.points_per_game = average(
     stats.points,
@@ -459,12 +616,75 @@ function getAwayXG(match, details = null) {
    ATUALIZAÇÃO DE ESTATÍSTICAS
 ============================================================ */
 
+function updateAdvancedStats(stats, teamStats, oppStats) {
+  if (!teamStats) return;
+
+  stats.possession_sum += toNumber(teamStats.possession);
+  stats.xg_open_play_total += toNumber(teamStats.xg_open_play);
+  stats.xg_set_play_total += toNumber(teamStats.xg_set_play);
+  stats.xg_non_penalty_total += toNumber(teamStats.xg_non_penalty);
+  stats.xgot_total += toNumber(teamStats.xgot);
+
+  stats.shots_total_sum += toNumber(teamStats.shots_total);
+  stats.shots_on_target_sum += toNumber(teamStats.shots_on_target);
+  stats.shots_off_target_sum += toNumber(teamStats.shots_off_target);
+  stats.shots_blocked_sum += toNumber(teamStats.shots_blocked);
+  stats.shots_woodwork_sum += toNumber(teamStats.shots_woodwork);
+  stats.shots_inside_box_sum += toNumber(teamStats.shots_inside_box);
+  stats.shots_outside_box_sum += toNumber(teamStats.shots_outside_box);
+
+  stats.passes_accurate_sum += toNumber(teamStats.passes_accurate);
+  if (teamStats.passes_accuracy_pct !== null && teamStats.passes_accuracy_pct !== undefined) {
+    stats.passes_accuracy_pct_sum += toNumber(teamStats.passes_accuracy_pct);
+    stats.passes_accuracy_pct_count++;
+  }
+  stats.passes_own_half_sum += toNumber(teamStats.passes_own_half);
+  stats.passes_opp_half_sum += toNumber(teamStats.passes_opp_half);
+  stats.long_balls_accurate_sum += toNumber(teamStats.long_balls_accurate);
+  stats.crosses_accurate_sum += toNumber(teamStats.crosses_accurate);
+  if (teamStats.crosses_accuracy_pct !== null && teamStats.crosses_accuracy_pct !== undefined) {
+    stats.crosses_accuracy_pct_sum += toNumber(teamStats.crosses_accuracy_pct);
+    stats.crosses_accuracy_pct_count++;
+  }
+  stats.touches_opp_box_sum += toNumber(teamStats.touches_opp_box);
+  stats.offsides_sum += toNumber(teamStats.offsides);
+  stats.big_chances_sum += toNumber(teamStats.big_chances);
+  stats.big_chances_missed_sum += toNumber(teamStats.big_chances_missed);
+
+  stats.tackles_sum += toNumber(teamStats.tackles);
+  stats.interceptions_sum += toNumber(teamStats.interceptions);
+  stats.blocks_sum += toNumber(teamStats.blocks);
+  stats.clearances_sum += toNumber(teamStats.clearances);
+  stats.keeper_saves_sum += toNumber(teamStats.keeper_saves);
+
+  stats.duels_won_sum += toNumber(teamStats.duels_won);
+  stats.ground_duels_won_sum += toNumber(teamStats.ground_duels_won);
+  stats.aerial_duels_won_sum += toNumber(teamStats.aerial_duels_won);
+  stats.dribbles_won_sum += toNumber(teamStats.dribbles_won);
+
+  stats.corners_sum += toNumber(teamStats.corners);
+  stats.yellow_cards_sum += toNumber(teamStats.yellow_cards);
+  stats.red_cards_sum += toNumber(teamStats.red_cards);
+  stats.fouls_sum += toNumber(teamStats.fouls);
+
+  if (oppStats) {
+    stats.shots_conceded_total_sum += toNumber(oppStats.shots_total);
+    stats.shots_on_target_conceded_sum += toNumber(oppStats.shots_on_target);
+    stats.shots_inside_box_conceded_sum += toNumber(oppStats.shots_inside_box);
+    stats.corners_conceded_sum += toNumber(oppStats.corners);
+    stats.touches_opp_box_conceded_sum += toNumber(oppStats.touches_opp_box);
+    stats.xgot_conceded_total += toNumber(oppStats.xgot);
+  }
+}
+
 function updateStats(
   stats,
   goalsFor,
   goalsAgainst,
   xgFor = 0,
-  xgAgainst = 0
+  xgAgainst = 0,
+  teamStats = null,
+  oppStats = null
 ) {
   stats.games++;
 
@@ -527,6 +747,10 @@ function updateStats(
   stats.xg_total += xgFor;
   stats.xga_total += xgAgainst;
   stats.xgd_total += xgFor - xgAgainst;
+
+  if (teamStats) {
+    updateAdvancedStats(stats, teamStats, oppStats);
+  }
 }
 
 /* ============================================================
@@ -555,7 +779,9 @@ function createHistoryRecord(
   goalsFor,
   goalsAgainst,
   xg,
-  xga
+  xga,
+  teamStats = null,
+  oppStats = null
 ) {
   return {
     rodada: getRound(match),
@@ -574,7 +800,13 @@ function createHistoryRecord(
 
     xg: round(xg, 2),
     xga: round(xga, 2),
-    xgd: round(xg - xga, 2)
+    xgd: round(xg - xga, 2),
+
+    posse: teamStats ? toNumber(teamStats.possession) : null,
+    chutes: teamStats ? toNumber(teamStats.shots_total) : null,
+    chutes_no_gol: teamStats ? toNumber(teamStats.shots_on_target) : null,
+    escanteios: teamStats ? toNumber(teamStats.corners) : null,
+    desarmes: teamStats ? toNumber(teamStats.tackles) : null
   };
 }
 
@@ -894,6 +1126,9 @@ for (const match of matches) {
   const homeXG = getHomeXG(match, details);
   const awayXG = getAwayXG(match, details);
 
+  const homeStats = details?.home?.stats || null;
+  const awayStats = details?.away?.stats || null;
+
   if (!teams[homeTeam]) {
     teams[homeTeam] = createTeam(homeTeam);
   }
@@ -919,7 +1154,9 @@ for (const match of matches) {
     homeGoals,
     awayGoals,
     homeXG,
-    awayXG
+    awayXG,
+    homeStats,
+    awayStats
   );
 
   updateStats(
@@ -927,7 +1164,9 @@ for (const match of matches) {
     homeGoals,
     awayGoals,
     homeXG,
-    awayXG
+    awayXG,
+    homeStats,
+    awayStats
   );
 
   /*
@@ -939,7 +1178,9 @@ for (const match of matches) {
     awayGoals,
     homeGoals,
     awayXG,
-    homeXG
+    homeXG,
+    awayStats,
+    homeStats
   );
 
   updateStats(
@@ -947,7 +1188,9 @@ for (const match of matches) {
     awayGoals,
     homeGoals,
     awayXG,
-    homeXG
+    homeXG,
+    awayStats,
+    homeStats
   );
 
   /*
@@ -963,7 +1206,9 @@ for (const match of matches) {
       homeGoals,
       awayGoals,
       homeXG,
-      awayXG
+      awayXG,
+      homeStats,
+      awayStats
     )
   );
 
@@ -980,7 +1225,9 @@ for (const match of matches) {
       awayGoals,
       homeGoals,
       awayXG,
-      homeXG
+      homeXG,
+      awayStats,
+      homeStats
     )
   );
 
@@ -991,7 +1238,9 @@ for (const match of matches) {
     homeGoals,
     awayGoals,
     homeXG,
-    awayXG
+    awayXG,
+    homeStats,
+    awayStats
   });
 
   processedMatches++;
@@ -1076,7 +1325,7 @@ Object.entries(history).forEach(
 const leagueStats = createEmptyStats();
 
 for (const item of validFinishedMatches) {
-  const { homeGoals, awayGoals, homeXG, awayXG } = item;
+  const { homeGoals, awayGoals, homeXG, awayXG, homeStats, awayStats } = item;
 
   leagueStats.games++;
 
@@ -1111,6 +1360,9 @@ for (const item of validFinishedMatches) {
 
   leagueStats.xg_total += homeXG + awayXG;
   leagueStats.xga_total += homeXG + awayXG;
+
+  if (homeStats) updateAdvancedStats(leagueStats, homeStats, awayStats);
+  if (awayStats) updateAdvancedStats(leagueStats, awayStats, homeStats);
 }
 
 finalizeStats(leagueStats);
@@ -1121,7 +1373,7 @@ finalizeStats(leagueStats);
 
 const teamList = Object.values(teams);
 
-function ranking(metric, context = "geral") {
+function ranking(metric, context = "geral", order = "desc") {
   return [...teamList]
     .map((team) => ({
       team: team.team,
@@ -1129,7 +1381,7 @@ function ranking(metric, context = "geral") {
         team[context][metric]
       )
     }))
-    .sort((a, b) => b.value - a.value);
+    .sort((a, b) => order === "asc" ? a.value - b.value : b.value - a.value);
 }
 
 const rankings = {
@@ -1158,7 +1410,23 @@ const rankings = {
 
   xga: ranking("xga"),
 
-  xgd: ranking("xgd")
+  xgd: ranking("xgd"),
+
+  // Métricas Avançadas
+  possession_avg: ranking("possession_avg"),
+  shots_total_avg: ranking("shots_total_avg"),
+  shots_on_target_avg: ranking("shots_on_target_avg"),
+  shots_inside_box_avg: ranking("shots_inside_box_avg"),
+  xgot: ranking("xgot"),
+  touches_opp_box_avg: ranking("touches_opp_box_avg"),
+  big_chances_avg: ranking("big_chances_avg"),
+  passes_accuracy_pct_avg: ranking("passes_accuracy_pct_avg"),
+  corners_avg: ranking("corners_avg"),
+  corners_total_avg: ranking("corners_total_avg"),
+  tackles_avg: ranking("tackles_avg"),
+  interceptions_avg: ranking("interceptions_avg"),
+  keeper_saves_avg: ranking("keeper_saves_avg"),
+  shots_conceded_avg: ranking("shots_conceded_avg", "geral", "asc")
 };
 
 /* ============================================================

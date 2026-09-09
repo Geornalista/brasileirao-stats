@@ -3,7 +3,7 @@
     "source": "FotMob",
     "league_id": 268,
     "season": 2026,
-    "fetched_at": "2026-09-09T00:16:31.868Z"
+    "fetched_at": "2026-09-09T00:48:58.229Z"
   },
   "competition": {
     "league_id": 268,
@@ -7622,8 +7622,8 @@
   ],
   "match_details": {
     "total": 256,
-    "cached": 256,
-    "downloaded": 0,
+    "cached": 0,
+    "downloaded": 256,
     "errors": 0
   },
   "stats": {
