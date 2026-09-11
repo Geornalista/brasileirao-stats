@@ -29,10 +29,10 @@
   "details": {
     "id": 268,
     "type": "league",
-    "name": "Serie A",
+    "name": "Série A",
     "selectedSeason": "2026",
     "latestSeason": "2026",
-    "shortName": "Serie A",
+    "shortName": "Série A",
     "country": "BRA",
     "gender": "male",
     "faqJSONLD": null,
@@ -49,7 +49,7 @@
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Serie A",
+          "name": "Série A",
           "item": "https://www.fotmob.com/leagues/268/overview/serie"
         }
       ]
@@ -1964,13 +1964,13 @@
               "pts": 32,
               "teamId": 7733,
               "teamName": "Vitória",
-              "xg": 25.635099999999998,
+              "xg": 25.649799999999995,
               "xgConceded": 37.69220000000001,
-              "xPoints": 29.226819303105966,
+              "xPoints": 29.23557175344514,
               "position": 16,
-              "xgDiff": -0.6350999999999978,
+              "xgDiff": -0.6497999999999955,
               "xgConcededDiff": -0.6922000000000068,
-              "xPointsDiff": 2.773180696894034,
+              "xPointsDiff": 2.7644282465548606,
               "xPosition": 16,
               "idx": 16,
               "xPositionDiff": -5,
@@ -2073,12 +2073,12 @@
               "teamId": 9769,
               "teamName": "Grêmio",
               "xg": 23.753000000000004,
-              "xgConceded": 41.94809999999999,
-              "xPoints": 23.68735292868343,
+              "xgConceded": 41.962799999999994,
+              "xPoints": 23.68111324383461,
               "position": 20,
               "xgDiff": 3.2469999999999963,
-              "xgConcededDiff": -8.94809999999999,
-              "xPointsDiff": 4.312647071316569,
+              "xgConcededDiff": -8.962799999999994,
+              "xPointsDiff": 4.318886756165391,
               "xPosition": 20,
               "idx": 20,
               "xPositionDiff": -5,
@@ -2109,7 +2109,7 @@
           {
             "result": 0,
             "resultString": "D",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10272_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10272.png",
             "linkToMatch": "/matches/remo-vs-atletico-mg/1658yx#5103583",
             "date": null,
             "teamPageUrl": "/teams/10272/overview/atletico-mg",
@@ -2139,7 +2139,7 @@
           {
             "result": 0,
             "resultString": "D",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8702_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8702.png",
             "linkToMatch": "/matches/remo-vs-internacional/vrfbe#5103590",
             "date": null,
             "teamPageUrl": "/teams/8702/overview/internacional",
@@ -2169,7 +2169,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9863_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9863.png",
             "linkToMatch": "/matches/remo-vs-fluminense/13awuw#5103594",
             "date": null,
             "teamPageUrl": "/teams/9863/overview/fluminense",
@@ -2199,7 +2199,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9767_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9767.png",
             "linkToMatch": "/matches/remo-vs-coritiba/12nd9k#5103613",
             "date": null,
             "teamPageUrl": "/teams/9767/overview/coritiba",
@@ -2229,7 +2229,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9770_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9770.png",
             "linkToMatch": "/matches/remo-vs-flamengo/12o3n8#5103623",
             "date": null,
             "teamPageUrl": "/teams/9770/overview/flamengo",
@@ -2261,7 +2261,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9770_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9770.png",
             "linkToMatch": "/matches/vitoria-vs-flamengo/2j7it6#5103574",
             "date": null,
             "teamPageUrl": "/teams/9770/overview/flamengo",
@@ -2291,7 +2291,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8517_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8517.png",
             "linkToMatch": "/matches/vitoria-vs-botafogo/26m8t0#5103592",
             "date": null,
             "teamPageUrl": "/teams/8517/overview/botafogo",
@@ -2321,7 +2321,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7877_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7877.png",
             "linkToMatch": "/matches/vitoria-vs-bahia/20jpec#5103602",
             "date": null,
             "teamPageUrl": "/teams/7877/overview/bahia",
@@ -2351,7 +2351,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10272_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10272.png",
             "linkToMatch": "/matches/vitoria-vs-atletico-mg/2oiid8#5103609",
             "date": null,
             "teamPageUrl": "/teams/10272/overview/atletico-mg",
@@ -2381,7 +2381,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9769_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9769.png",
             "linkToMatch": "/matches/vitoria-vs-gremio/2j75ay#5103622",
             "date": null,
             "teamPageUrl": "/teams/9769/overview/gremio",
@@ -2413,7 +2413,7 @@
           {
             "result": 0,
             "resultString": "D",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10276_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10276.png",
             "linkToMatch": "/matches/bahia-vs-vasco-da-gama/2q3v42#5103582",
             "date": null,
             "teamPageUrl": "/teams/10276/overview/vasco-da-gama",
@@ -2443,7 +2443,7 @@
           {
             "result": 0,
             "resultString": "D",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/197693_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/197693.png",
             "linkToMatch": "/matches/bahia-vs-chapecoense/9pg15jc#5103593",
             "date": null,
             "teamPageUrl": "/teams/197693/overview/chapecoense",
@@ -2473,7 +2473,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7733_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7733.png",
             "linkToMatch": "/matches/vitoria-vs-bahia/20jpec#5103602",
             "date": null,
             "teamPageUrl": "/teams/7733/overview/vitoria",
@@ -2503,7 +2503,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8702_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8702.png",
             "linkToMatch": "/matches/bahia-vs-internacional/29u010#5103612",
             "date": null,
             "teamPageUrl": "/teams/8702/overview/internacional",
@@ -2533,7 +2533,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/109705_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/109705.png",
             "linkToMatch": "/matches/bahia-vs-rb-bragantino/36bpxse#5103618",
             "date": null,
             "teamPageUrl": "/teams/109705/overview/rb-bragantino",
@@ -2565,7 +2565,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10273_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10273.png",
             "linkToMatch": "/matches/santos-vs-athletico-paranaense/2x2vbs#5103576",
             "date": null,
             "teamPageUrl": "/teams/10273/overview/athletico-paranaense",
@@ -2595,7 +2595,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10276_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10276.png",
             "linkToMatch": "/matches/santos-vs-vasco-da-gama/2x42tj#5103585",
             "date": null,
             "teamPageUrl": "/teams/10276/overview/vasco-da-gama",
@@ -2625,7 +2625,7 @@
           {
             "result": 0,
             "resultString": "D",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/163782_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/163782.png",
             "linkToMatch": "/matches/santos-vs-mirassol/6th631i#5103596",
             "date": null,
             "teamPageUrl": "/teams/163782/overview/mirassol",
@@ -2655,7 +2655,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9808_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9808.png",
             "linkToMatch": "/matches/santos-vs-corinthians/2rxyuz#5103607",
             "date": null,
             "teamPageUrl": "/teams/9808/overview/corinthians",
@@ -2685,7 +2685,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8702_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8702.png",
             "linkToMatch": "/matches/santos-vs-internacional/2g8plq#5103620",
             "date": null,
             "teamPageUrl": "/teams/8702/overview/internacional",
@@ -2717,7 +2717,7 @@
           {
             "result": 0,
             "resultString": "D",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9863_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9863.png",
             "linkToMatch": "/matches/botafogo-vs-fluminense/2sks6t#5103575",
             "date": null,
             "teamPageUrl": "/teams/9863/overview/fluminense",
@@ -2747,7 +2747,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7733_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7733.png",
             "linkToMatch": "/matches/vitoria-vs-botafogo/26m8t0#5103592",
             "date": null,
             "teamPageUrl": "/teams/7733/overview/vitoria",
@@ -2777,7 +2777,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10273_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10273.png",
             "linkToMatch": "/matches/botafogo-vs-athletico-paranaense/2x42tm#5103595",
             "date": null,
             "teamPageUrl": "/teams/10273/overview/athletico-paranaense",
@@ -2807,7 +2807,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9770_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9770.png",
             "linkToMatch": "/matches/botafogo-vs-flamengo/2rk8he#5103604",
             "date": null,
             "teamPageUrl": "/teams/9770/overview/flamengo",
@@ -2837,7 +2837,7 @@
           {
             "result": 0,
             "resultString": "D",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10283_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10283.png",
             "linkToMatch": "/matches/botafogo-vs-palmeiras/2x83ul#5103615",
             "date": null,
             "teamPageUrl": "/teams/10283/overview/palmeiras",
@@ -2869,7 +2869,7 @@
           {
             "result": 0,
             "resultString": "D",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10283_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10283.png",
             "linkToMatch": "/matches/internacional-vs-palmeiras/2zb0wr#5103577",
             "date": null,
             "teamPageUrl": "/teams/10283/overview/palmeiras",
@@ -2899,7 +2899,7 @@
           {
             "result": 0,
             "resultString": "D",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/1626_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/1626.png",
             "linkToMatch": "/matches/remo-vs-internacional/vrfbe#5103590",
             "date": null,
             "teamPageUrl": "/teams/1626/overview/remo",
@@ -2929,7 +2929,7 @@
           {
             "result": 0,
             "resultString": "D",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10272_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10272.png",
             "linkToMatch": "/matches/internacional-vs-atletico-mg/2z6jtb#5103600",
             "date": null,
             "teamPageUrl": "/teams/10272/overview/atletico-mg",
@@ -2959,7 +2959,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7877_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7877.png",
             "linkToMatch": "/matches/bahia-vs-internacional/29u010#5103612",
             "date": null,
             "teamPageUrl": "/teams/7877/overview/bahia",
@@ -2989,7 +2989,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8514_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8514.png",
             "linkToMatch": "/matches/santos-vs-internacional/2g8plq#5103620",
             "date": null,
             "teamPageUrl": "/teams/8514/overview/santos",
@@ -3021,7 +3021,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/197693_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/197693.png",
             "linkToMatch": "/matches/coritiba-vs-chapecoense/9vwezfl#5103581",
             "date": null,
             "teamPageUrl": "/teams/197693/overview/chapecoense",
@@ -3051,7 +3051,7 @@
           {
             "result": 0,
             "resultString": "D",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10277_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10277.png",
             "linkToMatch": "/matches/coritiba-vs-sao-paulo/3bm00l#5103586",
             "date": null,
             "teamPageUrl": "/teams/10277/overview/sao-paulo",
@@ -3081,7 +3081,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9808_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9808.png",
             "linkToMatch": "/matches/coritiba-vs-corinthians/362v5g#5103601",
             "date": null,
             "teamPageUrl": "/teams/9808/overview/corinthians",
@@ -3111,7 +3111,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/1626_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/1626.png",
             "linkToMatch": "/matches/remo-vs-coritiba/12nd9k#5103613",
             "date": null,
             "teamPageUrl": "/teams/1626/overview/remo",
@@ -3141,7 +3141,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/163782_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/163782.png",
             "linkToMatch": "/matches/coritiba-vs-mirassol/6x265le#5103621",
             "date": null,
             "teamPageUrl": "/teams/163782/overview/mirassol",
@@ -3173,7 +3173,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10277_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10277.png",
             "linkToMatch": "/matches/gremio-vs-sao-paulo/3bmuya#5103580",
             "date": null,
             "teamPageUrl": "/teams/10277/overview/sao-paulo",
@@ -3203,7 +3203,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10272_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10272.png",
             "linkToMatch": "/matches/gremio-vs-atletico-mg/3bkpme#5103589",
             "date": null,
             "teamPageUrl": "/teams/10272/overview/atletico-mg",
@@ -3233,7 +3233,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/109705_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/109705.png",
             "linkToMatch": "/matches/gremio-vs-rb-bragantino/3a18k84#5103598",
             "date": null,
             "teamPageUrl": "/teams/109705/overview/rb-bragantino",
@@ -3263,7 +3263,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/197693_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/197693.png",
             "linkToMatch": "/matches/gremio-vs-chapecoense/9vwnvla#5103610",
             "date": null,
             "teamPageUrl": "/teams/197693/overview/chapecoense",
@@ -3293,7 +3293,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7733_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7733.png",
             "linkToMatch": "/matches/vitoria-vs-gremio/2j75ay#5103622",
             "date": null,
             "teamPageUrl": "/teams/7733/overview/vitoria",
@@ -3325,7 +3325,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/163782_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/163782.png",
             "linkToMatch": "/matches/flamengo-vs-mirassol/6x2hbc2#5103588",
             "date": null,
             "teamPageUrl": "/teams/163782/overview/mirassol",
@@ -3355,7 +3355,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9781_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9781.png",
             "linkToMatch": "/matches/flamengo-vs-cruzeiro/35ssud#5103599",
             "date": null,
             "teamPageUrl": "/teams/9781/overview/cruzeiro",
@@ -3385,7 +3385,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8517_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8517.png",
             "linkToMatch": "/matches/botafogo-vs-flamengo/2rk8he#5103604",
             "date": null,
             "teamPageUrl": "/teams/8517/overview/botafogo",
@@ -3415,7 +3415,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/163782_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/163782.png",
             "linkToMatch": "/matches/flamengo-vs-mirassol/6x2hbc2#5103394",
             "date": null,
             "teamPageUrl": "/teams/163782/overview/mirassol",
@@ -3445,7 +3445,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/1626_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/1626.png",
             "linkToMatch": "/matches/remo-vs-flamengo/12o3n8#5103623",
             "date": null,
             "teamPageUrl": "/teams/1626/overview/remo",
@@ -3477,7 +3477,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/163782_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/163782.png",
             "linkToMatch": "/matches/cruzeiro-vs-mirassol/6x3m8fz#5103579",
             "date": null,
             "teamPageUrl": "/teams/163782/overview/mirassol",
@@ -3507,7 +3507,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9808_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9808.png",
             "linkToMatch": "/matches/cruzeiro-vs-corinthians/368qov#5103587",
             "date": null,
             "teamPageUrl": "/teams/9808/overview/corinthians",
@@ -3537,7 +3537,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9770_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9770.png",
             "linkToMatch": "/matches/flamengo-vs-cruzeiro/35ssud#5103599",
             "date": null,
             "teamPageUrl": "/teams/9770/overview/flamengo",
@@ -3567,7 +3567,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10276_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10276.png",
             "linkToMatch": "/matches/cruzeiro-vs-vasco-da-gama/3brl5m#5103605",
             "date": null,
             "teamPageUrl": "/teams/10276/overview/vasco-da-gama",
@@ -3597,7 +3597,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10273_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10273.png",
             "linkToMatch": "/matches/cruzeiro-vs-athletico-paranaense/3bqaqa#5103619",
             "date": null,
             "teamPageUrl": "/teams/10273/overview/athletico-paranaense",
@@ -3629,7 +3629,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/109705_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/109705.png",
             "linkToMatch": "/matches/corinthians-vs-rb-bragantino/3a40g51#5103578",
             "date": null,
             "teamPageUrl": "/teams/109705/overview/rb-bragantino",
@@ -3659,7 +3659,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9781_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9781.png",
             "linkToMatch": "/matches/cruzeiro-vs-corinthians/368qov#5103587",
             "date": null,
             "teamPageUrl": "/teams/9781/overview/cruzeiro",
@@ -3689,7 +3689,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9767_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9767.png",
             "linkToMatch": "/matches/coritiba-vs-corinthians/362v5g#5103601",
             "date": null,
             "teamPageUrl": "/teams/9767/overview/coritiba",
@@ -3719,7 +3719,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8514_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8514.png",
             "linkToMatch": "/matches/santos-vs-corinthians/2rxyuz#5103607",
             "date": null,
             "teamPageUrl": "/teams/8514/overview/santos",
@@ -3749,7 +3749,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/197693_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/197693.png",
             "linkToMatch": "/matches/corinthians-vs-chapecoense/9w1hbaj#5103617",
             "date": null,
             "teamPageUrl": "/teams/197693/overview/chapecoense",
@@ -3781,7 +3781,7 @@
           {
             "result": 0,
             "resultString": "D",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8517_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8517.png",
             "linkToMatch": "/matches/botafogo-vs-fluminense/2sks6t#5103575",
             "date": null,
             "teamPageUrl": "/teams/8517/overview/botafogo",
@@ -3811,7 +3811,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10283_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10283.png",
             "linkToMatch": "/matches/fluminense-vs-palmeiras/3ctxoi#5103584",
             "date": null,
             "teamPageUrl": "/teams/10283/overview/palmeiras",
@@ -3841,7 +3841,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/1626_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/1626.png",
             "linkToMatch": "/matches/remo-vs-fluminense/13awuw#5103594",
             "date": null,
             "teamPageUrl": "/teams/1626/overview/remo",
@@ -3871,7 +3871,7 @@
           {
             "result": 0,
             "resultString": "D",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10273_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10273.png",
             "linkToMatch": "/matches/fluminense-vs-athletico-paranaense/3cpm9n#5103611",
             "date": null,
             "teamPageUrl": "/teams/10273/overview/athletico-paranaense",
@@ -3901,7 +3901,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10276_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10276.png",
             "linkToMatch": "/matches/fluminense-vs-vasco-da-gama/3cqwvt#5103614",
             "date": null,
             "teamPageUrl": "/teams/10276/overview/vasco-da-gama",
@@ -3933,7 +3933,7 @@
           {
             "result": 0,
             "resultString": "D",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/1626_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/1626.png",
             "linkToMatch": "/matches/remo-vs-atletico-mg/1658yx#5103583",
             "date": null,
             "teamPageUrl": "/teams/1626/overview/remo",
@@ -3963,7 +3963,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9769_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9769.png",
             "linkToMatch": "/matches/gremio-vs-atletico-mg/3bkpme#5103589",
             "date": null,
             "teamPageUrl": "/teams/9769/overview/gremio",
@@ -3993,7 +3993,7 @@
           {
             "result": 0,
             "resultString": "D",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8702_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8702.png",
             "linkToMatch": "/matches/internacional-vs-atletico-mg/2z6jtb#5103600",
             "date": null,
             "teamPageUrl": "/teams/8702/overview/internacional",
@@ -4023,7 +4023,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7733_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7733.png",
             "linkToMatch": "/matches/vitoria-vs-atletico-mg/2oiid8#5103609",
             "date": null,
             "teamPageUrl": "/teams/7733/overview/vitoria",
@@ -4053,7 +4053,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10277_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10277.png",
             "linkToMatch": "/matches/atletico-mg-vs-sao-paulo/3hppck#5103616",
             "date": null,
             "teamPageUrl": "/teams/10277/overview/sao-paulo",
@@ -4085,7 +4085,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8514_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8514.png",
             "linkToMatch": "/matches/santos-vs-athletico-paranaense/2x2vbs#5103576",
             "date": null,
             "teamPageUrl": "/teams/8514/overview/santos",
@@ -4115,7 +4115,7 @@
           {
             "result": 0,
             "resultString": "D",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/109705_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/109705.png",
             "linkToMatch": "/matches/athletico-paranaense-vs-rb-bragantino/3b181n4#5103591",
             "date": null,
             "teamPageUrl": "/teams/109705/overview/rb-bragantino",
@@ -4145,7 +4145,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8517_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8517.png",
             "linkToMatch": "/matches/botafogo-vs-athletico-paranaense/2x42tm#5103595",
             "date": null,
             "teamPageUrl": "/teams/8517/overview/botafogo",
@@ -4175,7 +4175,7 @@
           {
             "result": 0,
             "resultString": "D",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9863_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9863.png",
             "linkToMatch": "/matches/fluminense-vs-athletico-paranaense/3cpm9n#5103611",
             "date": null,
             "teamPageUrl": "/teams/9863/overview/fluminense",
@@ -4205,7 +4205,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9781_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9781.png",
             "linkToMatch": "/matches/cruzeiro-vs-athletico-paranaense/3bqaqa#5103619",
             "date": null,
             "teamPageUrl": "/teams/9781/overview/cruzeiro",
@@ -4237,7 +4237,7 @@
           {
             "result": 0,
             "resultString": "D",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7877_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7877.png",
             "linkToMatch": "/matches/bahia-vs-vasco-da-gama/2q3v42#5103582",
             "date": null,
             "teamPageUrl": "/teams/7877/overview/bahia",
@@ -4267,7 +4267,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8514_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8514.png",
             "linkToMatch": "/matches/santos-vs-vasco-da-gama/2x42tj#5103585",
             "date": null,
             "teamPageUrl": "/teams/8514/overview/santos",
@@ -4297,7 +4297,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10283_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10283.png",
             "linkToMatch": "/matches/vasco-da-gama-vs-palmeiras/3hu3yb#5103597",
             "date": null,
             "teamPageUrl": "/teams/10283/overview/palmeiras",
@@ -4327,7 +4327,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9781_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9781.png",
             "linkToMatch": "/matches/cruzeiro-vs-vasco-da-gama/3brl5m#5103605",
             "date": null,
             "teamPageUrl": "/teams/9781/overview/cruzeiro",
@@ -4357,7 +4357,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9863_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9863.png",
             "linkToMatch": "/matches/fluminense-vs-vasco-da-gama/3cqwvt#5103614",
             "date": null,
             "teamPageUrl": "/teams/9863/overview/fluminense",
@@ -4389,7 +4389,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9769_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9769.png",
             "linkToMatch": "/matches/gremio-vs-sao-paulo/3bmuya#5103580",
             "date": null,
             "teamPageUrl": "/teams/9769/overview/gremio",
@@ -4419,7 +4419,7 @@
           {
             "result": 0,
             "resultString": "D",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9767_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9767.png",
             "linkToMatch": "/matches/coritiba-vs-sao-paulo/3bm00l#5103586",
             "date": null,
             "teamPageUrl": "/teams/9767/overview/coritiba",
@@ -4449,7 +4449,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/197693_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/197693.png",
             "linkToMatch": "/matches/sao-paulo-vs-chapecoense/9xnlkc0#5103603",
             "date": null,
             "teamPageUrl": "/teams/197693/overview/chapecoense",
@@ -4479,7 +4479,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/109705_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/109705.png",
             "linkToMatch": "/matches/sao-paulo-vs-rb-bragantino/3b1ibya#5103606",
             "date": null,
             "teamPageUrl": "/teams/109705/overview/rb-bragantino",
@@ -4509,7 +4509,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10272_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10272.png",
             "linkToMatch": "/matches/atletico-mg-vs-sao-paulo/3hppck#5103616",
             "date": null,
             "teamPageUrl": "/teams/10272/overview/atletico-mg",
@@ -4541,7 +4541,7 @@
           {
             "result": 0,
             "resultString": "D",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8702_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8702.png",
             "linkToMatch": "/matches/internacional-vs-palmeiras/2zb0wr#5103577",
             "date": null,
             "teamPageUrl": "/teams/8702/overview/internacional",
@@ -4571,7 +4571,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9863_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9863.png",
             "linkToMatch": "/matches/fluminense-vs-palmeiras/3ctxoi#5103584",
             "date": null,
             "teamPageUrl": "/teams/9863/overview/fluminense",
@@ -4601,7 +4601,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10276_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10276.png",
             "linkToMatch": "/matches/vasco-da-gama-vs-palmeiras/3hu3yb#5103597",
             "date": null,
             "teamPageUrl": "/teams/10276/overview/vasco-da-gama",
@@ -4631,7 +4631,7 @@
           {
             "result": 0,
             "resultString": "D",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/163782_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/163782.png",
             "linkToMatch": "/matches/palmeiras-vs-mirassol/6yjnpkf#5103608",
             "date": null,
             "teamPageUrl": "/teams/163782/overview/mirassol",
@@ -4661,7 +4661,7 @@
           {
             "result": 0,
             "resultString": "D",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8517_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8517.png",
             "linkToMatch": "/matches/botafogo-vs-palmeiras/2x83ul#5103615",
             "date": null,
             "teamPageUrl": "/teams/8517/overview/botafogo",
@@ -4693,7 +4693,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9808_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9808.png",
             "linkToMatch": "/matches/corinthians-vs-rb-bragantino/3a40g51#5103578",
             "date": null,
             "teamPageUrl": "/teams/9808/overview/corinthians",
@@ -4723,7 +4723,7 @@
           {
             "result": 0,
             "resultString": "D",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10273_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10273.png",
             "linkToMatch": "/matches/athletico-paranaense-vs-rb-bragantino/3b181n4#5103591",
             "date": null,
             "teamPageUrl": "/teams/10273/overview/athletico-paranaense",
@@ -4753,7 +4753,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9769_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9769.png",
             "linkToMatch": "/matches/gremio-vs-rb-bragantino/3a18k84#5103598",
             "date": null,
             "teamPageUrl": "/teams/9769/overview/gremio",
@@ -4783,7 +4783,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10277_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10277.png",
             "linkToMatch": "/matches/sao-paulo-vs-rb-bragantino/3b1ibya#5103606",
             "date": null,
             "teamPageUrl": "/teams/10277/overview/sao-paulo",
@@ -4813,7 +4813,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7877_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7877.png",
             "linkToMatch": "/matches/bahia-vs-rb-bragantino/36bpxse#5103618",
             "date": null,
             "teamPageUrl": "/teams/7877/overview/bahia",
@@ -4845,7 +4845,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9770_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9770.png",
             "linkToMatch": "/matches/flamengo-vs-mirassol/6x2hbc2#5103588",
             "date": null,
             "teamPageUrl": "/teams/9770/overview/flamengo",
@@ -4875,7 +4875,7 @@
           {
             "result": 0,
             "resultString": "D",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8514_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8514.png",
             "linkToMatch": "/matches/santos-vs-mirassol/6th631i#5103596",
             "date": null,
             "teamPageUrl": "/teams/8514/overview/santos",
@@ -4905,7 +4905,7 @@
           {
             "result": 0,
             "resultString": "D",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10283_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10283.png",
             "linkToMatch": "/matches/palmeiras-vs-mirassol/6yjnpkf#5103608",
             "date": null,
             "teamPageUrl": "/teams/10283/overview/palmeiras",
@@ -4935,7 +4935,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9770_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9770.png",
             "linkToMatch": "/matches/flamengo-vs-mirassol/6x2hbc2#5103394",
             "date": null,
             "teamPageUrl": "/teams/9770/overview/flamengo",
@@ -4965,7 +4965,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9767_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9767.png",
             "linkToMatch": "/matches/coritiba-vs-mirassol/6x265le#5103621",
             "date": null,
             "teamPageUrl": "/teams/9767/overview/coritiba",
@@ -4997,7 +4997,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9767_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9767.png",
             "linkToMatch": "/matches/coritiba-vs-chapecoense/9vwezfl#5103581",
             "date": null,
             "teamPageUrl": "/teams/9767/overview/coritiba",
@@ -5027,7 +5027,7 @@
           {
             "result": 0,
             "resultString": "D",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7877_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7877.png",
             "linkToMatch": "/matches/bahia-vs-chapecoense/9pg15jc#5103593",
             "date": null,
             "teamPageUrl": "/teams/7877/overview/bahia",
@@ -5057,7 +5057,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10277_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10277.png",
             "linkToMatch": "/matches/sao-paulo-vs-chapecoense/9xnlkc0#5103603",
             "date": null,
             "teamPageUrl": "/teams/10277/overview/sao-paulo",
@@ -5087,7 +5087,7 @@
           {
             "result": -1,
             "resultString": "L",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9769_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9769.png",
             "linkToMatch": "/matches/gremio-vs-chapecoense/9vwnvla#5103610",
             "date": null,
             "teamPageUrl": "/teams/9769/overview/gremio",
@@ -5117,7 +5117,7 @@
           {
             "result": 1,
             "resultString": "W",
-            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9808_xsmall.png",
+            "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9808.png",
             "linkToMatch": "/matches/corinthians-vs-chapecoense/9w1hbaj#5103617",
             "date": null,
             "teamPageUrl": "/teams/9808/overview/corinthians",
@@ -5490,6 +5490,204 @@
   "transfers": {
     "type": "league",
     "data": [
+      {
+        "name": "Nicolás Fonseca",
+        "playerId": 950599,
+        "position": {
+          "label": "DM",
+          "key": "centerdefensivemidfielder_short"
+        },
+        "transferDate": "2026-09-11T10:22:23Z",
+        "transferText": [
+          null,
+          null,
+          null
+        ],
+        "fromClub": "León",
+        "fromClubFullName": "León",
+        "fromClubId": 1841,
+        "toClub": "Coritiba",
+        "toClubFullName": "Coritiba",
+        "toClubId": 9767,
+        "fee": {
+          "feeText": "on loan",
+          "localizedFeeText": "on_loan"
+        },
+        "amountEuroEstimated": null,
+        "transferType": {
+          "text": "on loan",
+          "localizationKey": "on_loan"
+        },
+        "contractExtension": false,
+        "onLoan": true,
+        "fromDate": "2026-09-10T00:00:00Z",
+        "toDate": "2027-08-31T00:00:00Z",
+        "marketValue": 2197421
+      },
+      {
+        "name": "Lautaro López",
+        "playerId": 1515144,
+        "position": {
+          "label": "CM",
+          "key": "centermidfielder_short"
+        },
+        "transferDate": "2026-09-11T10:19:20Z",
+        "transferText": [
+          null,
+          null,
+          null
+        ],
+        "fromClub": "Torque",
+        "fromClubFullName": "Montevideo City Torque",
+        "fromClubId": 395613,
+        "toClub": "Bahia",
+        "toClubFullName": "Bahia",
+        "toClubId": 7877,
+        "fee": {
+          "feeText": "on loan",
+          "localizedFeeText": "on_loan"
+        },
+        "amountEuroEstimated": null,
+        "transferType": {
+          "text": "on loan",
+          "localizationKey": "on_loan"
+        },
+        "contractExtension": false,
+        "onLoan": true,
+        "fromDate": "2026-09-10T00:00:00Z",
+        "toDate": "2026-12-31T00:00:00Z",
+        "marketValue": 777165
+      },
+      {
+        "name": "Éverton",
+        "playerId": 528348,
+        "position": {
+          "label": "LW",
+          "key": "leftwinger_short"
+        },
+        "transferDate": "2026-09-10T17:29:38Z",
+        "transferText": [
+          null,
+          null,
+          null
+        ],
+        "fromClub": "Flamengo",
+        "fromClubFullName": "Flamengo",
+        "fromClubId": 9770,
+        "toClub": "Santos",
+        "toClubFullName": "Santos",
+        "toClubId": 8514,
+        "fee": {
+          "feeText": "free transfer",
+          "localizedFeeText": "transfer_type_free_transfer"
+        },
+        "amountEuroEstimated": null,
+        "transferType": {
+          "text": "contract",
+          "localizationKey": "contract"
+        },
+        "contractExtension": false,
+        "onLoan": false,
+        "fromDate": "2026-09-10T00:00:00Z",
+        "toDate": "2026-12-31T00:00:00Z",
+        "marketValue": 2033776
+      },
+      {
+        "name": "Hakim Ziyech",
+        "playerId": 360559,
+        "position": {
+          "label": "RW",
+          "key": "rightwinger_short"
+        },
+        "transferDate": "2026-09-10T17:25:24Z",
+        "transferText": [
+          null,
+          null,
+          null
+        ],
+        "fromClub": "Wydad Casablanca",
+        "fromClubFullName": "Wydad Casablanca",
+        "fromClubId": 102050,
+        "toClub": "Botafogo",
+        "toClubFullName": "Botafogo",
+        "toClubId": 8517,
+        "fee": {
+          "feeText": "free transfer",
+          "localizedFeeText": "transfer_type_free_transfer"
+        },
+        "amountEuroEstimated": null,
+        "transferType": {
+          "text": "contract",
+          "localizationKey": "contract"
+        },
+        "contractExtension": false,
+        "onLoan": false,
+        "fromDate": "2026-09-10T00:00:00Z",
+        "toDate": "2028-12-31T00:00:00Z",
+        "marketValue": 1266643
+      },
+      {
+        "name": "Rosivan",
+        "playerId": 1793366,
+        "position": null,
+        "transferDate": "2026-09-10T11:12:57Z",
+        "transferText": [
+          null,
+          null,
+          null
+        ],
+        "fromClub": "Maranhão",
+        "fromClubFullName": "Maranhão",
+        "fromClubId": 197781,
+        "toClub": "Chapecoense",
+        "toClubFullName": "Chapecoense",
+        "toClubId": 197693,
+        "fee": {
+          "feeText": "free transfer",
+          "localizedFeeText": "transfer_type_free_transfer"
+        },
+        "amountEuroEstimated": null,
+        "transferType": {
+          "text": "contract",
+          "localizationKey": "contract"
+        },
+        "contractExtension": false,
+        "onLoan": false,
+        "fromDate": "2026-09-09T00:00:00Z",
+        "toDate": "2027-12-31T00:00:00Z",
+        "marketValue": null
+      },
+      {
+        "name": "Ruan Índio",
+        "playerId": 1565753,
+        "position": null,
+        "transferDate": "2026-09-09T20:18:32Z",
+        "transferText": [
+          null,
+          null,
+          null
+        ],
+        "fromClub": "Cruzeiro",
+        "fromClubFullName": "Cruzeiro",
+        "fromClubId": 9781,
+        "toClub": "Radomiak Radom",
+        "toClubFullName": "Radomiak Radom",
+        "toClubId": 5769,
+        "fee": {
+          "feeText": "on loan",
+          "localizedFeeText": "on_loan"
+        },
+        "amountEuroEstimated": null,
+        "transferType": {
+          "text": "on loan",
+          "localizationKey": "on_loan"
+        },
+        "contractExtension": false,
+        "onLoan": true,
+        "fromDate": "2026-09-09T00:00:00Z",
+        "toDate": "2027-06-30T00:00:00Z",
+        "marketValue": null
+      },
       {
         "name": "Alan Lescano",
         "playerId": 1342579,
@@ -8657,211 +8855,6 @@
         "fromDate": "2026-07-21T00:00:00Z",
         "toDate": "2027-06-30T00:00:00Z",
         "marketValue": 4615980
-      },
-      {
-        "name": "Lautaro Díaz",
-        "playerId": 1111937,
-        "position": {
-          "label": "ST",
-          "key": "striker_short"
-        },
-        "transferDate": "2026-07-22T10:28:45Z",
-        "transferText": [
-          null,
-          null,
-          null
-        ],
-        "fromClub": "Cruzeiro",
-        "fromClubFullName": "Cruzeiro",
-        "fromClubId": 9781,
-        "toClub": "Racing Club",
-        "toClubFullName": "Racing Club",
-        "toClubId": 10080,
-        "fee": {
-          "feeText": "on loan",
-          "localizedFeeText": "on_loan"
-        },
-        "amountEuroEstimated": null,
-        "transferType": {
-          "text": "on loan",
-          "localizationKey": "on_loan"
-        },
-        "contractExtension": false,
-        "onLoan": true,
-        "fromDate": "2026-07-21T00:00:00Z",
-        "toDate": "2027-06-30T00:00:00Z",
-        "marketValue": 1086660
-      },
-      {
-        "name": "Kaiky Naves",
-        "playerId": 1320170,
-        "position": {
-          "label": "CB",
-          "key": "centerback_short"
-        },
-        "transferDate": "2026-07-22T08:37:18Z",
-        "transferText": [
-          null,
-          null,
-          null
-        ],
-        "fromClub": "Palmeiras",
-        "fromClubFullName": "Palmeiras",
-        "fromClubId": 10283,
-        "toClub": "Necaxa",
-        "toClubFullName": "Necaxa",
-        "toClubId": 1842,
-        "fee": {
-          "feeText": "fee",
-          "localizedFeeText": "transfer_fee",
-          "value": 2600000
-        },
-        "amountEuroEstimated": null,
-        "transferType": {
-          "text": "contract",
-          "localizationKey": "contract"
-        },
-        "contractExtension": false,
-        "onLoan": false,
-        "fromDate": "2026-07-21T00:00:00Z",
-        "toDate": "2030-06-30T00:00:00Z",
-        "marketValue": null
-      },
-      {
-        "name": "Guillermo Maripán",
-        "playerId": 402830,
-        "position": {
-          "label": "CB",
-          "key": "centerback_short"
-        },
-        "transferDate": "2026-07-21T23:48:11Z",
-        "transferText": [
-          null,
-          null,
-          null
-        ],
-        "fromClub": "Free agent",
-        "fromClubFullName": "Free agent",
-        "fromClubId": 2,
-        "toClub": "Internacional",
-        "toClubFullName": "Internacional",
-        "toClubId": 8702,
-        "fee": {
-          "feeText": "free transfer",
-          "localizedFeeText": "transfer_type_free_transfer"
-        },
-        "amountEuroEstimated": null,
-        "transferType": {
-          "text": "contract",
-          "localizationKey": "contract"
-        },
-        "contractExtension": false,
-        "onLoan": false,
-        "fromDate": "2026-07-01T00:00:00Z",
-        "toDate": "2028-12-31T00:00:00Z",
-        "marketValue": 2020014
-      },
-      {
-        "name": "Gustavo Silva",
-        "playerId": 816000,
-        "position": {
-          "label": "AM",
-          "key": "centerattackingmidfielder_short"
-        },
-        "transferDate": "2026-07-21T16:17:39Z",
-        "transferText": [
-          null,
-          null,
-          null
-        ],
-        "fromClub": "Jubilo Iwata",
-        "fromClubFullName": "Jubilo Iwata",
-        "fromClubId": 8065,
-        "toClub": "Mirassol",
-        "toClubFullName": "Mirassol",
-        "toClubId": 163782,
-        "fee": {
-          "feeText": "free transfer",
-          "localizedFeeText": "transfer_type_free_transfer"
-        },
-        "amountEuroEstimated": null,
-        "transferType": {
-          "text": "contract",
-          "localizationKey": "contract"
-        },
-        "contractExtension": false,
-        "onLoan": false,
-        "fromDate": "2026-07-21T00:00:00Z",
-        "toDate": "2027-12-31T00:00:00Z",
-        "marketValue": null
-      },
-      {
-        "name": "Yarlen",
-        "playerId": 1622637,
-        "position": {
-          "label": "LW",
-          "key": "leftwinger_short"
-        },
-        "transferDate": "2026-07-21T10:18:44Z",
-        "transferText": [
-          null,
-          null,
-          null
-        ],
-        "fromClub": "Botafogo RJ",
-        "fromClubFullName": "Botafogo RJ",
-        "fromClubId": 8517,
-        "toClub": "Athletic Club",
-        "toClubFullName": "Athletic Club",
-        "toClubId": -1,
-        "fee": {
-          "feeText": "free transfer",
-          "localizedFeeText": "transfer_type_free_transfer"
-        },
-        "amountEuroEstimated": null,
-        "transferType": {
-          "text": "contract",
-          "localizationKey": "contract"
-        },
-        "contractExtension": false,
-        "onLoan": false,
-        "fromDate": "2026-07-20T00:00:00Z",
-        "toDate": "2026-11-30T00:00:00Z",
-        "marketValue": 1349293
-      },
-      {
-        "name": "Felipe Negrucci",
-        "playerId": 1481530,
-        "position": {
-          "label": "CB",
-          "key": "centerback_short"
-        },
-        "transferDate": "2026-07-21T10:15:30Z",
-        "transferText": [
-          null,
-          null,
-          null
-        ],
-        "fromClub": "Sao Paulo",
-        "fromClubFullName": "Sao Paulo",
-        "fromClubId": 10277,
-        "toClub": "Athletic Club",
-        "toClubFullName": "Athletic Club",
-        "toClubId": -1,
-        "fee": {
-          "feeText": "on loan",
-          "localizedFeeText": "on_loan"
-        },
-        "amountEuroEstimated": null,
-        "transferType": {
-          "text": "on loan",
-          "localizationKey": "on_loan"
-        },
-        "contractExtension": false,
-        "onLoan": true,
-        "fromDate": "2026-07-21T00:00:00Z",
-        "toDate": "2026-12-31T00:00:00Z",
-        "marketValue": null
       }
     ]
   },
@@ -10771,13 +10764,13 @@
                 "pts": 32,
                 "teamId": 7733,
                 "teamName": "Vitória",
-                "xg": 25.635099999999998,
+                "xg": 25.649799999999995,
                 "xgConceded": 37.69220000000001,
-                "xPoints": 29.226819303105966,
+                "xPoints": 29.23557175344514,
                 "position": 16,
-                "xgDiff": -0.6350999999999978,
+                "xgDiff": -0.6497999999999955,
                 "xgConcededDiff": -0.6922000000000068,
-                "xPointsDiff": 2.773180696894034,
+                "xPointsDiff": 2.7644282465548606,
                 "xPosition": 16,
                 "idx": 16,
                 "xPositionDiff": -5,
@@ -10880,12 +10873,12 @@
                 "teamId": 9769,
                 "teamName": "Grêmio",
                 "xg": 23.753000000000004,
-                "xgConceded": 41.94809999999999,
-                "xPoints": 23.68735292868343,
+                "xgConceded": 41.962799999999994,
+                "xPoints": 23.68111324383461,
                 "position": 20,
                 "xgDiff": 3.2469999999999963,
-                "xgConcededDiff": -8.94809999999999,
-                "xPointsDiff": 4.312647071316569,
+                "xgConcededDiff": -8.962799999999994,
+                "xPointsDiff": 4.318886756165391,
                 "xPosition": 20,
                 "idx": 20,
                 "xPositionDiff": -5,
@@ -10916,7 +10909,7 @@
             {
               "result": 0,
               "resultString": "D",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10272_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10272.png",
               "linkToMatch": "/matches/remo-vs-atletico-mg/1658yx#5103583",
               "date": null,
               "teamPageUrl": "/teams/10272/overview/atletico-mg",
@@ -10946,7 +10939,7 @@
             {
               "result": 0,
               "resultString": "D",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8702_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8702.png",
               "linkToMatch": "/matches/remo-vs-internacional/vrfbe#5103590",
               "date": null,
               "teamPageUrl": "/teams/8702/overview/internacional",
@@ -10976,7 +10969,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9863_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9863.png",
               "linkToMatch": "/matches/remo-vs-fluminense/13awuw#5103594",
               "date": null,
               "teamPageUrl": "/teams/9863/overview/fluminense",
@@ -11006,7 +10999,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9767_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9767.png",
               "linkToMatch": "/matches/remo-vs-coritiba/12nd9k#5103613",
               "date": null,
               "teamPageUrl": "/teams/9767/overview/coritiba",
@@ -11036,7 +11029,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9770_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9770.png",
               "linkToMatch": "/matches/remo-vs-flamengo/12o3n8#5103623",
               "date": null,
               "teamPageUrl": "/teams/9770/overview/flamengo",
@@ -11068,7 +11061,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9770_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9770.png",
               "linkToMatch": "/matches/vitoria-vs-flamengo/2j7it6#5103574",
               "date": null,
               "teamPageUrl": "/teams/9770/overview/flamengo",
@@ -11098,7 +11091,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8517_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8517.png",
               "linkToMatch": "/matches/vitoria-vs-botafogo/26m8t0#5103592",
               "date": null,
               "teamPageUrl": "/teams/8517/overview/botafogo",
@@ -11128,7 +11121,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7877_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7877.png",
               "linkToMatch": "/matches/vitoria-vs-bahia/20jpec#5103602",
               "date": null,
               "teamPageUrl": "/teams/7877/overview/bahia",
@@ -11158,7 +11151,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10272_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10272.png",
               "linkToMatch": "/matches/vitoria-vs-atletico-mg/2oiid8#5103609",
               "date": null,
               "teamPageUrl": "/teams/10272/overview/atletico-mg",
@@ -11188,7 +11181,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9769_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9769.png",
               "linkToMatch": "/matches/vitoria-vs-gremio/2j75ay#5103622",
               "date": null,
               "teamPageUrl": "/teams/9769/overview/gremio",
@@ -11220,7 +11213,7 @@
             {
               "result": 0,
               "resultString": "D",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10276_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10276.png",
               "linkToMatch": "/matches/bahia-vs-vasco-da-gama/2q3v42#5103582",
               "date": null,
               "teamPageUrl": "/teams/10276/overview/vasco-da-gama",
@@ -11250,7 +11243,7 @@
             {
               "result": 0,
               "resultString": "D",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/197693_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/197693.png",
               "linkToMatch": "/matches/bahia-vs-chapecoense/9pg15jc#5103593",
               "date": null,
               "teamPageUrl": "/teams/197693/overview/chapecoense",
@@ -11280,7 +11273,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7733_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7733.png",
               "linkToMatch": "/matches/vitoria-vs-bahia/20jpec#5103602",
               "date": null,
               "teamPageUrl": "/teams/7733/overview/vitoria",
@@ -11310,7 +11303,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8702_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8702.png",
               "linkToMatch": "/matches/bahia-vs-internacional/29u010#5103612",
               "date": null,
               "teamPageUrl": "/teams/8702/overview/internacional",
@@ -11340,7 +11333,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/109705_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/109705.png",
               "linkToMatch": "/matches/bahia-vs-rb-bragantino/36bpxse#5103618",
               "date": null,
               "teamPageUrl": "/teams/109705/overview/rb-bragantino",
@@ -11372,7 +11365,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10273_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10273.png",
               "linkToMatch": "/matches/santos-vs-athletico-paranaense/2x2vbs#5103576",
               "date": null,
               "teamPageUrl": "/teams/10273/overview/athletico-paranaense",
@@ -11402,7 +11395,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10276_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10276.png",
               "linkToMatch": "/matches/santos-vs-vasco-da-gama/2x42tj#5103585",
               "date": null,
               "teamPageUrl": "/teams/10276/overview/vasco-da-gama",
@@ -11432,7 +11425,7 @@
             {
               "result": 0,
               "resultString": "D",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/163782_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/163782.png",
               "linkToMatch": "/matches/santos-vs-mirassol/6th631i#5103596",
               "date": null,
               "teamPageUrl": "/teams/163782/overview/mirassol",
@@ -11462,7 +11455,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9808_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9808.png",
               "linkToMatch": "/matches/santos-vs-corinthians/2rxyuz#5103607",
               "date": null,
               "teamPageUrl": "/teams/9808/overview/corinthians",
@@ -11492,7 +11485,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8702_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8702.png",
               "linkToMatch": "/matches/santos-vs-internacional/2g8plq#5103620",
               "date": null,
               "teamPageUrl": "/teams/8702/overview/internacional",
@@ -11524,7 +11517,7 @@
             {
               "result": 0,
               "resultString": "D",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9863_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9863.png",
               "linkToMatch": "/matches/botafogo-vs-fluminense/2sks6t#5103575",
               "date": null,
               "teamPageUrl": "/teams/9863/overview/fluminense",
@@ -11554,7 +11547,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7733_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7733.png",
               "linkToMatch": "/matches/vitoria-vs-botafogo/26m8t0#5103592",
               "date": null,
               "teamPageUrl": "/teams/7733/overview/vitoria",
@@ -11584,7 +11577,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10273_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10273.png",
               "linkToMatch": "/matches/botafogo-vs-athletico-paranaense/2x42tm#5103595",
               "date": null,
               "teamPageUrl": "/teams/10273/overview/athletico-paranaense",
@@ -11614,7 +11607,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9770_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9770.png",
               "linkToMatch": "/matches/botafogo-vs-flamengo/2rk8he#5103604",
               "date": null,
               "teamPageUrl": "/teams/9770/overview/flamengo",
@@ -11644,7 +11637,7 @@
             {
               "result": 0,
               "resultString": "D",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10283_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10283.png",
               "linkToMatch": "/matches/botafogo-vs-palmeiras/2x83ul#5103615",
               "date": null,
               "teamPageUrl": "/teams/10283/overview/palmeiras",
@@ -11676,7 +11669,7 @@
             {
               "result": 0,
               "resultString": "D",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10283_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10283.png",
               "linkToMatch": "/matches/internacional-vs-palmeiras/2zb0wr#5103577",
               "date": null,
               "teamPageUrl": "/teams/10283/overview/palmeiras",
@@ -11706,7 +11699,7 @@
             {
               "result": 0,
               "resultString": "D",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/1626_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/1626.png",
               "linkToMatch": "/matches/remo-vs-internacional/vrfbe#5103590",
               "date": null,
               "teamPageUrl": "/teams/1626/overview/remo",
@@ -11736,7 +11729,7 @@
             {
               "result": 0,
               "resultString": "D",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10272_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10272.png",
               "linkToMatch": "/matches/internacional-vs-atletico-mg/2z6jtb#5103600",
               "date": null,
               "teamPageUrl": "/teams/10272/overview/atletico-mg",
@@ -11766,7 +11759,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7877_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7877.png",
               "linkToMatch": "/matches/bahia-vs-internacional/29u010#5103612",
               "date": null,
               "teamPageUrl": "/teams/7877/overview/bahia",
@@ -11796,7 +11789,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8514_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8514.png",
               "linkToMatch": "/matches/santos-vs-internacional/2g8plq#5103620",
               "date": null,
               "teamPageUrl": "/teams/8514/overview/santos",
@@ -11828,7 +11821,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/197693_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/197693.png",
               "linkToMatch": "/matches/coritiba-vs-chapecoense/9vwezfl#5103581",
               "date": null,
               "teamPageUrl": "/teams/197693/overview/chapecoense",
@@ -11858,7 +11851,7 @@
             {
               "result": 0,
               "resultString": "D",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10277_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10277.png",
               "linkToMatch": "/matches/coritiba-vs-sao-paulo/3bm00l#5103586",
               "date": null,
               "teamPageUrl": "/teams/10277/overview/sao-paulo",
@@ -11888,7 +11881,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9808_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9808.png",
               "linkToMatch": "/matches/coritiba-vs-corinthians/362v5g#5103601",
               "date": null,
               "teamPageUrl": "/teams/9808/overview/corinthians",
@@ -11918,7 +11911,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/1626_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/1626.png",
               "linkToMatch": "/matches/remo-vs-coritiba/12nd9k#5103613",
               "date": null,
               "teamPageUrl": "/teams/1626/overview/remo",
@@ -11948,7 +11941,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/163782_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/163782.png",
               "linkToMatch": "/matches/coritiba-vs-mirassol/6x265le#5103621",
               "date": null,
               "teamPageUrl": "/teams/163782/overview/mirassol",
@@ -11980,7 +11973,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10277_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10277.png",
               "linkToMatch": "/matches/gremio-vs-sao-paulo/3bmuya#5103580",
               "date": null,
               "teamPageUrl": "/teams/10277/overview/sao-paulo",
@@ -12010,7 +12003,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10272_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10272.png",
               "linkToMatch": "/matches/gremio-vs-atletico-mg/3bkpme#5103589",
               "date": null,
               "teamPageUrl": "/teams/10272/overview/atletico-mg",
@@ -12040,7 +12033,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/109705_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/109705.png",
               "linkToMatch": "/matches/gremio-vs-rb-bragantino/3a18k84#5103598",
               "date": null,
               "teamPageUrl": "/teams/109705/overview/rb-bragantino",
@@ -12070,7 +12063,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/197693_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/197693.png",
               "linkToMatch": "/matches/gremio-vs-chapecoense/9vwnvla#5103610",
               "date": null,
               "teamPageUrl": "/teams/197693/overview/chapecoense",
@@ -12100,7 +12093,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7733_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7733.png",
               "linkToMatch": "/matches/vitoria-vs-gremio/2j75ay#5103622",
               "date": null,
               "teamPageUrl": "/teams/7733/overview/vitoria",
@@ -12132,7 +12125,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/163782_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/163782.png",
               "linkToMatch": "/matches/flamengo-vs-mirassol/6x2hbc2#5103588",
               "date": null,
               "teamPageUrl": "/teams/163782/overview/mirassol",
@@ -12162,7 +12155,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9781_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9781.png",
               "linkToMatch": "/matches/flamengo-vs-cruzeiro/35ssud#5103599",
               "date": null,
               "teamPageUrl": "/teams/9781/overview/cruzeiro",
@@ -12192,7 +12185,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8517_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8517.png",
               "linkToMatch": "/matches/botafogo-vs-flamengo/2rk8he#5103604",
               "date": null,
               "teamPageUrl": "/teams/8517/overview/botafogo",
@@ -12222,7 +12215,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/163782_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/163782.png",
               "linkToMatch": "/matches/flamengo-vs-mirassol/6x2hbc2#5103394",
               "date": null,
               "teamPageUrl": "/teams/163782/overview/mirassol",
@@ -12252,7 +12245,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/1626_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/1626.png",
               "linkToMatch": "/matches/remo-vs-flamengo/12o3n8#5103623",
               "date": null,
               "teamPageUrl": "/teams/1626/overview/remo",
@@ -12284,7 +12277,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/163782_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/163782.png",
               "linkToMatch": "/matches/cruzeiro-vs-mirassol/6x3m8fz#5103579",
               "date": null,
               "teamPageUrl": "/teams/163782/overview/mirassol",
@@ -12314,7 +12307,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9808_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9808.png",
               "linkToMatch": "/matches/cruzeiro-vs-corinthians/368qov#5103587",
               "date": null,
               "teamPageUrl": "/teams/9808/overview/corinthians",
@@ -12344,7 +12337,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9770_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9770.png",
               "linkToMatch": "/matches/flamengo-vs-cruzeiro/35ssud#5103599",
               "date": null,
               "teamPageUrl": "/teams/9770/overview/flamengo",
@@ -12374,7 +12367,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10276_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10276.png",
               "linkToMatch": "/matches/cruzeiro-vs-vasco-da-gama/3brl5m#5103605",
               "date": null,
               "teamPageUrl": "/teams/10276/overview/vasco-da-gama",
@@ -12404,7 +12397,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10273_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10273.png",
               "linkToMatch": "/matches/cruzeiro-vs-athletico-paranaense/3bqaqa#5103619",
               "date": null,
               "teamPageUrl": "/teams/10273/overview/athletico-paranaense",
@@ -12436,7 +12429,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/109705_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/109705.png",
               "linkToMatch": "/matches/corinthians-vs-rb-bragantino/3a40g51#5103578",
               "date": null,
               "teamPageUrl": "/teams/109705/overview/rb-bragantino",
@@ -12466,7 +12459,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9781_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9781.png",
               "linkToMatch": "/matches/cruzeiro-vs-corinthians/368qov#5103587",
               "date": null,
               "teamPageUrl": "/teams/9781/overview/cruzeiro",
@@ -12496,7 +12489,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9767_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9767.png",
               "linkToMatch": "/matches/coritiba-vs-corinthians/362v5g#5103601",
               "date": null,
               "teamPageUrl": "/teams/9767/overview/coritiba",
@@ -12526,7 +12519,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8514_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8514.png",
               "linkToMatch": "/matches/santos-vs-corinthians/2rxyuz#5103607",
               "date": null,
               "teamPageUrl": "/teams/8514/overview/santos",
@@ -12556,7 +12549,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/197693_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/197693.png",
               "linkToMatch": "/matches/corinthians-vs-chapecoense/9w1hbaj#5103617",
               "date": null,
               "teamPageUrl": "/teams/197693/overview/chapecoense",
@@ -12588,7 +12581,7 @@
             {
               "result": 0,
               "resultString": "D",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8517_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8517.png",
               "linkToMatch": "/matches/botafogo-vs-fluminense/2sks6t#5103575",
               "date": null,
               "teamPageUrl": "/teams/8517/overview/botafogo",
@@ -12618,7 +12611,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10283_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10283.png",
               "linkToMatch": "/matches/fluminense-vs-palmeiras/3ctxoi#5103584",
               "date": null,
               "teamPageUrl": "/teams/10283/overview/palmeiras",
@@ -12648,7 +12641,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/1626_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/1626.png",
               "linkToMatch": "/matches/remo-vs-fluminense/13awuw#5103594",
               "date": null,
               "teamPageUrl": "/teams/1626/overview/remo",
@@ -12678,7 +12671,7 @@
             {
               "result": 0,
               "resultString": "D",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10273_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10273.png",
               "linkToMatch": "/matches/fluminense-vs-athletico-paranaense/3cpm9n#5103611",
               "date": null,
               "teamPageUrl": "/teams/10273/overview/athletico-paranaense",
@@ -12708,7 +12701,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10276_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10276.png",
               "linkToMatch": "/matches/fluminense-vs-vasco-da-gama/3cqwvt#5103614",
               "date": null,
               "teamPageUrl": "/teams/10276/overview/vasco-da-gama",
@@ -12740,7 +12733,7 @@
             {
               "result": 0,
               "resultString": "D",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/1626_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/1626.png",
               "linkToMatch": "/matches/remo-vs-atletico-mg/1658yx#5103583",
               "date": null,
               "teamPageUrl": "/teams/1626/overview/remo",
@@ -12770,7 +12763,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9769_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9769.png",
               "linkToMatch": "/matches/gremio-vs-atletico-mg/3bkpme#5103589",
               "date": null,
               "teamPageUrl": "/teams/9769/overview/gremio",
@@ -12800,7 +12793,7 @@
             {
               "result": 0,
               "resultString": "D",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8702_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8702.png",
               "linkToMatch": "/matches/internacional-vs-atletico-mg/2z6jtb#5103600",
               "date": null,
               "teamPageUrl": "/teams/8702/overview/internacional",
@@ -12830,7 +12823,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7733_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7733.png",
               "linkToMatch": "/matches/vitoria-vs-atletico-mg/2oiid8#5103609",
               "date": null,
               "teamPageUrl": "/teams/7733/overview/vitoria",
@@ -12860,7 +12853,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10277_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10277.png",
               "linkToMatch": "/matches/atletico-mg-vs-sao-paulo/3hppck#5103616",
               "date": null,
               "teamPageUrl": "/teams/10277/overview/sao-paulo",
@@ -12892,7 +12885,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8514_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8514.png",
               "linkToMatch": "/matches/santos-vs-athletico-paranaense/2x2vbs#5103576",
               "date": null,
               "teamPageUrl": "/teams/8514/overview/santos",
@@ -12922,7 +12915,7 @@
             {
               "result": 0,
               "resultString": "D",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/109705_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/109705.png",
               "linkToMatch": "/matches/athletico-paranaense-vs-rb-bragantino/3b181n4#5103591",
               "date": null,
               "teamPageUrl": "/teams/109705/overview/rb-bragantino",
@@ -12952,7 +12945,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8517_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8517.png",
               "linkToMatch": "/matches/botafogo-vs-athletico-paranaense/2x42tm#5103595",
               "date": null,
               "teamPageUrl": "/teams/8517/overview/botafogo",
@@ -12982,7 +12975,7 @@
             {
               "result": 0,
               "resultString": "D",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9863_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9863.png",
               "linkToMatch": "/matches/fluminense-vs-athletico-paranaense/3cpm9n#5103611",
               "date": null,
               "teamPageUrl": "/teams/9863/overview/fluminense",
@@ -13012,7 +13005,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9781_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9781.png",
               "linkToMatch": "/matches/cruzeiro-vs-athletico-paranaense/3bqaqa#5103619",
               "date": null,
               "teamPageUrl": "/teams/9781/overview/cruzeiro",
@@ -13044,7 +13037,7 @@
             {
               "result": 0,
               "resultString": "D",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7877_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7877.png",
               "linkToMatch": "/matches/bahia-vs-vasco-da-gama/2q3v42#5103582",
               "date": null,
               "teamPageUrl": "/teams/7877/overview/bahia",
@@ -13074,7 +13067,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8514_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8514.png",
               "linkToMatch": "/matches/santos-vs-vasco-da-gama/2x42tj#5103585",
               "date": null,
               "teamPageUrl": "/teams/8514/overview/santos",
@@ -13104,7 +13097,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10283_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10283.png",
               "linkToMatch": "/matches/vasco-da-gama-vs-palmeiras/3hu3yb#5103597",
               "date": null,
               "teamPageUrl": "/teams/10283/overview/palmeiras",
@@ -13134,7 +13127,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9781_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9781.png",
               "linkToMatch": "/matches/cruzeiro-vs-vasco-da-gama/3brl5m#5103605",
               "date": null,
               "teamPageUrl": "/teams/9781/overview/cruzeiro",
@@ -13164,7 +13157,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9863_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9863.png",
               "linkToMatch": "/matches/fluminense-vs-vasco-da-gama/3cqwvt#5103614",
               "date": null,
               "teamPageUrl": "/teams/9863/overview/fluminense",
@@ -13196,7 +13189,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9769_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9769.png",
               "linkToMatch": "/matches/gremio-vs-sao-paulo/3bmuya#5103580",
               "date": null,
               "teamPageUrl": "/teams/9769/overview/gremio",
@@ -13226,7 +13219,7 @@
             {
               "result": 0,
               "resultString": "D",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9767_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9767.png",
               "linkToMatch": "/matches/coritiba-vs-sao-paulo/3bm00l#5103586",
               "date": null,
               "teamPageUrl": "/teams/9767/overview/coritiba",
@@ -13256,7 +13249,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/197693_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/197693.png",
               "linkToMatch": "/matches/sao-paulo-vs-chapecoense/9xnlkc0#5103603",
               "date": null,
               "teamPageUrl": "/teams/197693/overview/chapecoense",
@@ -13286,7 +13279,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/109705_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/109705.png",
               "linkToMatch": "/matches/sao-paulo-vs-rb-bragantino/3b1ibya#5103606",
               "date": null,
               "teamPageUrl": "/teams/109705/overview/rb-bragantino",
@@ -13316,7 +13309,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10272_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10272.png",
               "linkToMatch": "/matches/atletico-mg-vs-sao-paulo/3hppck#5103616",
               "date": null,
               "teamPageUrl": "/teams/10272/overview/atletico-mg",
@@ -13348,7 +13341,7 @@
             {
               "result": 0,
               "resultString": "D",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8702_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8702.png",
               "linkToMatch": "/matches/internacional-vs-palmeiras/2zb0wr#5103577",
               "date": null,
               "teamPageUrl": "/teams/8702/overview/internacional",
@@ -13378,7 +13371,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9863_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9863.png",
               "linkToMatch": "/matches/fluminense-vs-palmeiras/3ctxoi#5103584",
               "date": null,
               "teamPageUrl": "/teams/9863/overview/fluminense",
@@ -13408,7 +13401,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10276_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10276.png",
               "linkToMatch": "/matches/vasco-da-gama-vs-palmeiras/3hu3yb#5103597",
               "date": null,
               "teamPageUrl": "/teams/10276/overview/vasco-da-gama",
@@ -13438,7 +13431,7 @@
             {
               "result": 0,
               "resultString": "D",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/163782_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/163782.png",
               "linkToMatch": "/matches/palmeiras-vs-mirassol/6yjnpkf#5103608",
               "date": null,
               "teamPageUrl": "/teams/163782/overview/mirassol",
@@ -13468,7 +13461,7 @@
             {
               "result": 0,
               "resultString": "D",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8517_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8517.png",
               "linkToMatch": "/matches/botafogo-vs-palmeiras/2x83ul#5103615",
               "date": null,
               "teamPageUrl": "/teams/8517/overview/botafogo",
@@ -13500,7 +13493,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9808_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9808.png",
               "linkToMatch": "/matches/corinthians-vs-rb-bragantino/3a40g51#5103578",
               "date": null,
               "teamPageUrl": "/teams/9808/overview/corinthians",
@@ -13530,7 +13523,7 @@
             {
               "result": 0,
               "resultString": "D",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10273_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10273.png",
               "linkToMatch": "/matches/athletico-paranaense-vs-rb-bragantino/3b181n4#5103591",
               "date": null,
               "teamPageUrl": "/teams/10273/overview/athletico-paranaense",
@@ -13560,7 +13553,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9769_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9769.png",
               "linkToMatch": "/matches/gremio-vs-rb-bragantino/3a18k84#5103598",
               "date": null,
               "teamPageUrl": "/teams/9769/overview/gremio",
@@ -13590,7 +13583,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10277_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10277.png",
               "linkToMatch": "/matches/sao-paulo-vs-rb-bragantino/3b1ibya#5103606",
               "date": null,
               "teamPageUrl": "/teams/10277/overview/sao-paulo",
@@ -13620,7 +13613,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7877_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7877.png",
               "linkToMatch": "/matches/bahia-vs-rb-bragantino/36bpxse#5103618",
               "date": null,
               "teamPageUrl": "/teams/7877/overview/bahia",
@@ -13652,7 +13645,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9770_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9770.png",
               "linkToMatch": "/matches/flamengo-vs-mirassol/6x2hbc2#5103588",
               "date": null,
               "teamPageUrl": "/teams/9770/overview/flamengo",
@@ -13682,7 +13675,7 @@
             {
               "result": 0,
               "resultString": "D",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8514_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8514.png",
               "linkToMatch": "/matches/santos-vs-mirassol/6th631i#5103596",
               "date": null,
               "teamPageUrl": "/teams/8514/overview/santos",
@@ -13712,7 +13705,7 @@
             {
               "result": 0,
               "resultString": "D",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10283_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10283.png",
               "linkToMatch": "/matches/palmeiras-vs-mirassol/6yjnpkf#5103608",
               "date": null,
               "teamPageUrl": "/teams/10283/overview/palmeiras",
@@ -13742,7 +13735,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9770_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9770.png",
               "linkToMatch": "/matches/flamengo-vs-mirassol/6x2hbc2#5103394",
               "date": null,
               "teamPageUrl": "/teams/9770/overview/flamengo",
@@ -13772,7 +13765,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9767_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9767.png",
               "linkToMatch": "/matches/coritiba-vs-mirassol/6x265le#5103621",
               "date": null,
               "teamPageUrl": "/teams/9767/overview/coritiba",
@@ -13804,7 +13797,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9767_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9767.png",
               "linkToMatch": "/matches/coritiba-vs-chapecoense/9vwezfl#5103581",
               "date": null,
               "teamPageUrl": "/teams/9767/overview/coritiba",
@@ -13834,7 +13827,7 @@
             {
               "result": 0,
               "resultString": "D",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7877_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7877.png",
               "linkToMatch": "/matches/bahia-vs-chapecoense/9pg15jc#5103593",
               "date": null,
               "teamPageUrl": "/teams/7877/overview/bahia",
@@ -13864,7 +13857,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10277_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10277.png",
               "linkToMatch": "/matches/sao-paulo-vs-chapecoense/9xnlkc0#5103603",
               "date": null,
               "teamPageUrl": "/teams/10277/overview/sao-paulo",
@@ -13894,7 +13887,7 @@
             {
               "result": -1,
               "resultString": "L",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9769_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9769.png",
               "linkToMatch": "/matches/gremio-vs-chapecoense/9vwnvla#5103610",
               "date": null,
               "teamPageUrl": "/teams/9769/overview/gremio",
@@ -13924,7 +13917,7 @@
             {
               "result": 1,
               "resultString": "W",
-              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9808_xsmall.png",
+              "imageUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9808.png",
               "linkToMatch": "/matches/corinthians-vs-chapecoense/9w1hbaj#5103617",
               "date": null,
               "teamPageUrl": "/teams/9808/overview/corinthians",
@@ -41631,15 +41624,15 @@
       {
         "header": "Goals prevented",
         "participant": {
-          "id": 267826,
-          "name": "Weverton",
+          "id": 124130,
+          "name": "Léo Vieira",
           "rank": 1,
-          "teamId": 9769,
-          "teamName": "Grêmio",
-          "value": 5.9,
+          "teamId": 7877,
+          "teamName": "Bahia",
+          "value": 5.7,
           "stat": {
             "name": "_goals_prevented",
-            "value": 5.9,
+            "value": 5.7,
             "format": "fraction",
             "fractions": 1
           }
@@ -41647,29 +41640,9 @@
         "fetchAllUrl": "https://data.fotmob.com/stats/268/season/1000000388/_goals_prevented.json",
         "topThree": [
           {
-            "id": 267826,
-            "name": "Weverton",
-            "rank": 1,
-            "teamId": 9769,
-            "teamName": "Grêmio",
-            "value": 5.9,
-            "stat": {
-              "name": "_goals_prevented",
-              "value": 5.9,
-              "format": "fraction",
-              "fractions": 1
-            },
-            "teamColors": {
-              "darkMode": "#2ebaf2",
-              "lightMode": "#0783BD",
-              "fontDarkMode": "rgba(29, 29, 29, 1.0)",
-              "fontLightMode": "rgba(255, 255, 255, 1.0)"
-            }
-          },
-          {
             "id": 124130,
             "name": "Léo Vieira",
-            "rank": 2,
+            "rank": 1,
             "teamId": 7877,
             "teamName": "Bahia",
             "value": 5.7,
@@ -41683,6 +41656,26 @@
               "darkMode": "#1D669E",
               "lightMode": "#044879",
               "fontDarkMode": "rgba(255, 255, 255, 1.0)",
+              "fontLightMode": "rgba(255, 255, 255, 1.0)"
+            }
+          },
+          {
+            "id": 267826,
+            "name": "Weverton",
+            "rank": 2,
+            "teamId": 9769,
+            "teamName": "Grêmio",
+            "value": 5.2,
+            "stat": {
+              "name": "_goals_prevented",
+              "value": 5.2,
+              "format": "fraction",
+              "fractions": 1
+            },
+            "teamColors": {
+              "darkMode": "#2ebaf2",
+              "lightMode": "#0783BD",
+              "fontDarkMode": "rgba(29, 29, 29, 1.0)",
               "fontLightMode": "rgba(255, 255, 255, 1.0)"
             }
           },
@@ -42971,10 +42964,10 @@
             "name": "Grêmio",
             "rank": 2,
             "teamId": 9769,
-            "value": 27.2,
+            "value": 27.1,
             "stat": {
               "name": "accurate_long_balls_team",
-              "value": 27.2,
+              "value": 27.1,
               "format": "fraction",
               "fractions": 1
             },
@@ -43630,10 +43623,10 @@
             "name": "Vitória",
             "rank": 3,
             "teamId": 7733,
-            "value": 16.5,
+            "value": 16.6,
             "stat": {
               "name": "total_tackle_team",
-              "value": 16.5,
+              "value": 16.6,
               "format": "fraction",
               "fractions": 1
             },
@@ -44136,7 +44129,7 @@
         "Name": "2026",
         "CountryCode": "BRA",
         "RelativePath": "stats/268/season/1000000388/topstats.json",
-        "League": "Serie A",
+        "League": "Série A",
         "StageId": 0,
         "TemplateId": 268,
         "TournamentId": 1000000388
@@ -44145,7 +44138,7 @@
         "Name": "2025",
         "CountryCode": "BRA",
         "RelativePath": "stats/268/season/25077/topstats.json",
-        "League": "Serie A",
+        "League": "Série A",
         "StageId": 0,
         "TemplateId": 268,
         "TournamentId": 25077
@@ -44154,7 +44147,7 @@
         "Name": "2024",
         "CountryCode": "BRA",
         "RelativePath": "stats/268/season/22978/topstats.json",
-        "League": "Serie A",
+        "League": "Série A",
         "StageId": 0,
         "TemplateId": 268,
         "TournamentId": 22978
@@ -44163,7 +44156,7 @@
         "Name": "2023",
         "CountryCode": "BRA",
         "RelativePath": "stats/268/season/18982/topstats.json",
-        "League": "Serie A",
+        "League": "Série A",
         "StageId": 0,
         "TemplateId": 268,
         "TournamentId": 18982
@@ -44172,7 +44165,7 @@
         "Name": "2022",
         "CountryCode": "BRA",
         "RelativePath": "stats/268/season/17409/topstats.json",
-        "League": "Serie A",
+        "League": "Série A",
         "StageId": 0,
         "TemplateId": 268,
         "TournamentId": 17409
@@ -44181,7 +44174,7 @@
         "Name": "2021",
         "CountryCode": "BRA",
         "RelativePath": "stats/268/season/16201/topstats.json",
-        "League": "Serie A",
+        "League": "Série A",
         "StageId": 0,
         "TemplateId": 268,
         "TournamentId": 16201
@@ -44190,7 +44183,7 @@
         "Name": "2020",
         "CountryCode": "BRA",
         "RelativePath": "stats/268/season/15027/topstats.json",
-        "League": "Serie A",
+        "League": "Série A",
         "StageId": 0,
         "TemplateId": 268,
         "TournamentId": 15027
@@ -44199,7 +44192,7 @@
         "Name": "2019",
         "CountryCode": "BRA",
         "RelativePath": "stats/268/season/13680/topstats.json",
-        "League": "Serie A",
+        "League": "Série A",
         "StageId": 0,
         "TemplateId": 268,
         "TournamentId": 13680
@@ -44208,7 +44201,7 @@
         "Name": "2018",
         "CountryCode": "BRA",
         "RelativePath": "stats/268/season/12515/topstats.json",
-        "League": "Serie A",
+        "League": "Série A",
         "StageId": 0,
         "TemplateId": 268,
         "TournamentId": 12515
@@ -44217,7 +44210,7 @@
         "Name": "2017",
         "CountryCode": "BRA",
         "RelativePath": "stats/268/season/11289/topstats.json",
-        "League": "Serie A",
+        "League": "Série A",
         "StageId": 0,
         "TemplateId": 268,
         "TournamentId": 11289
@@ -44226,7 +44219,7 @@
         "Name": "2016",
         "CountryCode": "BRA",
         "RelativePath": "stats/268/season/10271/topstats.json",
-        "League": "Serie A",
+        "League": "Série A",
         "StageId": 0,
         "TemplateId": 268,
         "TournamentId": 10271
